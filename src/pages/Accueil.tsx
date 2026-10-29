@@ -13,12 +13,16 @@ import { Nav } from "../components/Nav";
 import { Recherche } from "../components/Recherche";
 import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { Tampon } from "../components/Tampon";
+import { TrioConnexions } from "../components/TrioConnexions";
 import { DOMAINES, TOTAL_ENTREES, nouvellesEntrees } from "../data/brands";
+import { trioDeLaSemaine } from "../data/trios";
 import { cn } from "../lib/cn";
 import { LIENS } from "../lib/liens";
 import { defilerVers, useFacteurParallax } from "../lib/mouvement";
 
 const NOUVELLES = nouvellesEntrees(3);
+// Calculé au chargement : le trio change de lui-même chaque lundi
+const TRIO = trioDeLaSemaine();
 
 function Cote({ children, className }: { children: string; className?: string }) {
   return <p className={cn("t-cote-s md:t-cote-m text-signal", className)}>{children}</p>;
@@ -164,6 +168,29 @@ export default function Accueil() {
           <div className="relative mt-[39px] md:mt-[33px]">
             <Bandeau className="-ml-[60px] w-[calc(100%+120px)] -rotate-2 md:-ml-[100px] md:w-[calc(100%+200px)]" />
           </div>
+        </section>
+
+        {/* ── Le trio de la semaine ── */}
+        <section id="trio" className="scroll-mt-28 pt-[76px] md:pt-[126px]">
+          <Conteneur>
+            <Apparition>
+              <Cote>{`/ le trio de la semaine — semaine ${TRIO.numero}`}</Cote>
+              <div className="mt-[7px] flex flex-col gap-6 md:mt-[13px] lg:flex-row lg:items-end lg:justify-between">
+                <h2>
+                  <span className="t-titre-l md:t-display-l block md:-ml-2">{TRIO.titre}</span>
+                  <span className="t-serif-m md:t-serif-l mt-1.5 block md:mt-[11px] md:pl-[12%]">{TRIO.intro}</span>
+                </h2>
+                <div className="shrink-0 lg:mb-2">
+                  <Bouton type="verre" href={LIENS.trios}>
+                    Tous les trios
+                  </Bouton>
+                </div>
+              </div>
+            </Apparition>
+            <div className="mt-10 md:mt-16">
+              <TrioConnexions trio={TRIO} />
+            </div>
+          </Conteneur>
         </section>
 
         {/* ── 01 — Le concept ── */}

@@ -9,7 +9,7 @@ import { Lien } from "./Lien";
 import { Logo } from "./Logo";
 
 const COLONNES = [
-  { titre: "Archive", liens: ["Index", "Domaines", "Nouvelles entrées", "Au hasard"] },
+  { titre: "Archive", liens: ["Index", "Domaines", "Trios", "Nouvelles entrées", "Au hasard"] },
   { titre: "Rework", liens: ["Manifeste", "Contact", "Proposer une marque"] },
   { titre: "Ailleurs", liens: ["Instagram", "Are.na", "Twitter"] },
 ];
@@ -18,6 +18,7 @@ const COLONNES = [
 const LIENS: Record<string, string> = {
   Index: ROUTES.index,
   Domaines: ROUTES.domaines,
+  Trios: ROUTES.trios,
   "Nouvelles entrées": ROUTES.nouvelles,
   "Au hasard": ROUTES.hasard,
   Manifeste: ROUTES.manifeste,
@@ -26,7 +27,7 @@ const LIENS: Record<string, string> = {
 };
 
 const COLONNES_MOBILE = [
-  ["Index", "Domaines", "Manifeste", "Contact"],
+  ["Index", "Domaines", "Trios", "Manifeste", "Contact"],
   ["Instagram", "Are.na", "Twitter"],
 ];
 

@@ -1,0 +1,122 @@
+[
+  {
+    "semaine": "2026-W44",
+    "titre": "Le paysage hostile",
+    "items": [328, 4, 232],
+    "liens": [
+      "L'Ascension suit deux partisans dans la neige biélorusse ; Arc'teryx conçoit ce qu'on porte quand le dehors devient hostile.",
+      "Même logique chez Casio avec la G-Shock : un objet pensé d'abord pour encaisser."
+    ],
+    "intro": "Le froid, la neige, et ce qu'il faut pour tenir."
+  },
+  {
+    "semaine": "2026-W45",
+    "titre": "La géométrie du plan",
+    "items": [332, 98, 121],
+    "liens": [
+      "Ozu compose des plans fixes, frontaux, presque en grille ; USM Haller a fait de la grille un meuble.",
+      "MDF Italia pousse la même idée vers la finesse : des étagères réduites à leur structure."
+    ],
+    "intro": "Des cadres fixes, des lignes droites, rien de trop."
+  },
+  {
+    "semaine": "2026-W46",
+    "titre": "Le rythme sous les doigts",
+    "items": [334, 208, 188],
+    "liens": [
+      "Whiplash fait du tempo une obsession ; la MPC d'Akai a mis le rythme sous les doigts des producteurs hip-hop.",
+      "Avec la SL-1200, Technics a fourni l'autre outil du genre : la platine devenue instrument."
+    ],
+    "intro": "Le tempo comme discipline, de la batterie aux machines."
+  },
+  {
+    "semaine": "2026-W47",
+    "titre": "La rue en noir et blanc",
+    "items": [305, 1, 17],
+    "liens": [
+      "La Haine filme vingt-quatre heures de cité en noir et blanc ; Human With Attitude revendique une esthétique sombre et brute, née à Paris.",
+      "Carhartt WIP a fait le même trajet : du vêtement de travail à l'uniforme de la rue."
+    ],
+    "intro": "La banlieue, Paris, et un vêtement qui vient de la rue."
+  },
+  {
+    "semaine": "2026-W48",
+    "titre": "Sable, grain, matière",
+    "items": [321, 102, 129],
+    "liens": [
+      "Teshigahara filme le sable grain par grain ; Frama travaille le bois brut et la pierre avec la même retenue.",
+      "101 Copenhagen prolonge cette attention à la surface, en céramiques texturées entre Japon et Scandinavie."
+    ],
+    "intro": "Une dune, du bois brut, de la céramique : la texture avant la forme."
+  },
+  {
+    "semaine": "2026-W49",
+    "titre": "L'ingénieur et le ciel",
+    "items": [318, 225, 31],
+    "liens": [
+      "Interstellar s'appuie sur un conseil scientifique pour imaginer son voyage ; Saab est née de l'aéronautique avant de construire des voitures.",
+      "Oakley garde ce vocabulaire d'ingénieur, en lunettes dessinées comme des pièces mécaniques."
+    ],
+    "intro": "Partir loin, avec des objets dessinés par des ingénieurs."
+  },
+  {
+    "semaine": "2026-W50",
+    "titre": "Peindre à la lumière",
+    "items": [333, 118, 119],
+    "liens": [
+      "Sciamma filme une peintre au travail, souvent à la lueur du feu ; Louis Poulsen dessine des lampes pour éclairer sans éblouir.",
+      "Artemide cherche la même chose par la technique : une lumière à l'échelle humaine."
+    ],
+    "intro": "Une peintre, une lampe, un atelier : la lumière comme outil."
+  },
+  {
+    "semaine": "2026-W51",
+    "titre": "Le temps de l'artisan",
+    "items": [325, 109, 165],
+    "liens": [
+      "Andreï Roublev suit un peintre d'icônes, images peintes sur des panneaux de bois ; Artek perpétue le bois courbé d'Alvar Aalto.",
+      "Karimoku porte le même attachement au bois, côté japonais, entre atelier et industrie."
+    ],
+    "intro": "Le travail lent, transmis d'une main à l'autre."
+  },
+  {
+    "semaine": "2026-W52",
+    "titre": "La maison d'architecte",
+    "items": [302, 125, 178],
+    "liens": [
+      "Parasite se joue dans une maison d'architecte, ses escaliers et ses baies vitrées ; Reform confie le dessin des cuisines à des architectes.",
+      "Bulthaup aborde la cuisine de la même façon : comme une pièce d'architecture."
+    ],
+    "intro": "Une maison pensée par un architecte, et ce qu'on y installe."
+  },
+  {
+    "semaine": "2026-W53",
+    "titre": "Garder les images",
+    "items": [299, 262, 273],
+    "liens": [
+      "Cinema Paradiso raconte un projectionniste et la salle d'un village ; Vimeo s'est construit comme la plateforme des cinéastes.",
+      "Internet Archive s'occupe de la suite : conserver ce qui a été diffusé."
+    ],
+    "intro": "Une cabine de projection, une plateforme, une archive : là où vivent les films."
+  },
+  {
+    "semaine": "2027-W01",
+    "titre": "L'uniforme et le combat",
+    "items": [291, 53, 55],
+    "liens": [
+      "Les Sept Samouraïs prend le temps du recrutement et de la préparation ; WTAPS fait de cette rigueur militaire un vestiaire, détail par détail.",
+      "Maharishi reprend le registre militaire pour le retourner : le camouflage comme motif pacifiste."
+    ],
+    "intro": "Se préparer, s'équiper, et ce que l'uniforme raconte."
+  },
+  {
+    "semaine": "2027-W02",
+    "titre": "La ville en béton",
+    "items": [308, 54, 46],
+    "liens": [
+      "The Dark Knight filme Gotham dans le verre et le béton, souvent de nuit ; Neighborhood habille une atmosphère proche, version Tokyo et moto.",
+      "A-COLD-WALL* pousse cette ville jusqu'au vêtement : béton, symétrie, brutalisme."
+    ],
+    "intro": "Une ville sombre, de nuit, et des vêtements qui lui ressemblent."
+  }
+]

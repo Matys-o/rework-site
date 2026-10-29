@@ -137,6 +137,13 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
               >
                 Ouvrir une fiche au hasard →
               </a>
+              <a
+                href={LIENS.trio}
+                onClick={onFermer}
+                className="t-serif-s mt-2 block text-encre transition-colors duration-240 ease-rw hover:text-signal"
+              >
+                Le trio de la semaine →
+              </a>
             </div>
 
             <p className="t-cote-m mt-auto hidden pt-16 lg:block">Instagram · Are.na · Twitter</p>
