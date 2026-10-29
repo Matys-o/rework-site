@@ -40,6 +40,8 @@ export type Marque = {
   realisation?: string;
   /** Films : titre original (le nom est le titre français) */
   titreOriginal?: string;
+  /** Date d'entrée dans l'archive (AAAA-MM-JJ, champ « addedAt ») — absente pour les marques d'origine */
+  ajouteLe?: string;
 };
 
 type LigneBrute = {
@@ -55,6 +57,7 @@ type LigneBrute = {
   rank?: number;
   director?: string;
   originalTitle?: string;
+  addedAt?: string;
 };
 
 /** Valeur « type » de la table → domaine du site */
@@ -77,7 +80,8 @@ export function slugifier(nom: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-const propre = (v: string | null) => (v && v.trim() && v.trim() !== "#" ? v.trim() : undefined);
+const propre = (v: string | null) =>
+  v && v.trim() && v.trim() !== "#" ? v.trim() : undefined;
 
 function construire(lignes: LigneBrute[]): Marque[] {
   const slugs = new Set<string>();
@@ -107,16 +111,21 @@ function construire(lignes: LigneBrute[]): Marque[] {
         rang: l.rank,
         realisation: l.director,
         titreOriginal: l.originalTitle,
+        ajouteLe: l.addedAt,
       };
     });
 }
 
 /** Toutes les entrées (marques puis films), triées par id */
-export const MARQUES: Marque[] = construire([...BRUT, ...FILMS] as LigneBrute[]);
+export const MARQUES: Marque[] = construire([
+  ...BRUT,
+  ...FILMS,
+] as LigneBrute[]);
 
 export const TOTAL_ENTREES = MARQUES.length;
 
-export const compterParDomaine = (id: DomaineId) => MARQUES.filter((m) => m.domaine === id).length;
+export const compterParDomaine = (id: DomaineId) =>
+  MARQUES.filter((m) => m.domaine === id).length;
 
 export const DOMAINES: Record<DomaineId, Domaine> = {
   mode: {
@@ -162,10 +171,17 @@ export const DOMAINES: Record<DomaineId, Domaine> = {
 };
 
 const PAR_SLUG = new Map(MARQUES.map((m) => [m.slug, m]));
-export const trouverMarque = (slug: string | undefined) => (slug ? PAR_SLUG.get(slug) : undefined);
+export const trouverMarque = (slug: string | undefined) =>
+  slug ? PAR_SLUG.get(slug) : undefined;
 
 /** Les n plus grands id = les dernières entrées */
 export const nouvellesEntrees = (n = 3) => MARQUES.slice(-n).reverse();
+
+/** Entrées ajoutées entre deux dates incluses (AAAA-MM-JJ), les plus récentes d'abord */
+export const entreesAjoutees = (debut: string, fin: string) =>
+  MARQUES.filter(
+    (m) => m.ajouteLe && m.ajouteLe >= debut && m.ajouteLe <= fin,
+  ).sort((a, b) => b.ajouteLe!.localeCompare(a.ajouteLe!) || b.id - a.id);
 
 /** Fiche précédente / suivante selon l'id (boucle aux extrémités) */
 export function voisins(marque: Marque) {
@@ -178,4 +194,10 @@ export function voisins(marque: Marque) {
 
 /** Méta des fiches : DOMAINE · ANNÉE · ORIGINE — FILM · ANNÉE · RÉALISATION pour un film (capitales via t-cote) */
 export const metaMarque = (m: Marque) =>
-  [DOMAINES[m.domaine].nom, m.annee || null, (m.domaine === "film" ? m.realisation : m.origine) || null].filter(Boolean).join(" · ");
+  [
+    DOMAINES[m.domaine].nom,
+    m.annee || null,
+    (m.domaine === "film" ? m.realisation : m.origine) || null,
+  ]
+    .filter(Boolean)
+    .join(" · ");

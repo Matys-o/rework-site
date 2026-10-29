@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: "10 0 * * 1"
   workflow_dispatch:
+    inputs:
+      lettre:
+        description: "Préparer aussi la lettre (brouillon Brevo + test)"
+        type: boolean
+        default: false
 
 concurrency:
   group: deploiement
@@ -38,3 +43,13 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 6df853fdd35a832bbbbd4d99464a6f14
           command: pages deploy dist --project-name rework-archive --branch main
+
+      # Le lundi, une fois le site en ligne (images de la lettre comprises) : campagne Brevo en BROUILLON + test.
+      # Jamais d'envoi à la liste : l'envoi se fait à la main depuis Brevo, après relecture.
+      - name: Lettre — brouillon Brevo et test
+        if: github.event_name == 'schedule' || inputs.lettre
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ vars.BREVO_SENDER_EMAIL }}
+        run: node scripts/lettre.mjs brouillon --a "${{ vars.LETTRE_TEST_EMAIL }}"

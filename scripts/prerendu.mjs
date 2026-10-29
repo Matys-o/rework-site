@@ -7,6 +7,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { createServer } from "vite";
+import { genererImagesLettre } from "./images-lettre.mjs";
 
 const racine = path.resolve(import.meta.dirname, "..");
 const dist = path.join(racine, "dist");
@@ -54,6 +55,20 @@ try {
     );
   }
   console.log(`images de partage : ${avecImage.length} fiches (les autres utilisent /og/rework-og.png)`);
+
+  // ── La lettre : images des trios (toutes les semaines écrites, pour que le brouillon du lundi les trouve en ligne)
+  //    et version web /lettre/n des lettres publiées (lien « voir en ligne »), hors index des moteurs ──
+  const { LETTRES, lettresPubliees } = await vite.ssrLoadModule("/src/lettre/lettre.ts");
+  const { rendreLettre } = await vite.ssrLoadModule("/src/lettre/rendu.tsx");
+  const itemsTrios = [...new Map(LETTRES.flatMap((l) => l.trio.items).map((m) => [m.id, m])).values()];
+  const degradees = await genererImagesLettre(itemsTrios, path.join(dist, "email"), racine);
+  const publiees = lettresPubliees();
+  await mkdir(path.join(dist, "lettre"), { recursive: true });
+  for (const l of publiees) {
+    const { html } = await rendreLettre(l);
+    await writeFile(path.join(dist, `lettre/${l.numero}.html`), html.replace("<head>", '<head><meta name="robots" content="noindex" />'));
+  }
+  console.log(`lettre : ${publiees.length} version(s) web, ${itemsTrios.length} images (${degradees.length} sur l'aura : ${degradees.join(", ")})`);
 
   // ── sitemap.xml : toutes les pages prérendues + les filtres de domaine de l'index ──
   const aujourdHui = new Date().toISOString().slice(0, 10);

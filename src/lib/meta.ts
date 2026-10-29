@@ -1,10 +1,22 @@
 // Métadonnées de chaque page : titre, description, image de partage, JSON-LD.
 // Partagé par le prérendu (scripts/prerendu.mjs : balises écrites dans le HTML de chaque route, lisibles sans JavaScript),
 // la Pages Function de /index (filtre ?domaine=) et le navigateur (useMeta : mise à jour pendant la navigation interne).
-import { DOMAINES, MARQUES, TOTAL_ENTREES, type DomaineId, type Marque } from "../data/brands";
+import {
+  DOMAINES,
+  MARQUES,
+  TOTAL_ENTREES,
+  type DomaineId,
+  type Marque,
+} from "../data/brands";
 import { TRIOS, semaineIso, type Trio } from "../data/trios";
 import { lienMarque } from "./liens";
-import { IMAGE_PARTAGE, IMAGE_PARTAGE_ALT, NOM_SITE, SITE_URL, absolue } from "./site";
+import {
+  IMAGE_PARTAGE,
+  IMAGE_PARTAGE_ALT,
+  NOM_SITE,
+  SITE_URL,
+  absolue,
+} from "./site";
 
 export type Meta = {
   titre: string;
@@ -39,7 +51,9 @@ const COMPLEMENTS = [
  */
 export function ajuster(texte: string, ...suites: string[]) {
   let t = texte.trim();
-  for (const s of [...suites, ...COMPLEMENTS].map((x) => x.trim()).filter(Boolean)) {
+  for (const s of [...suites, ...COMPLEMENTS]
+    .map((x) => x.trim())
+    .filter(Boolean)) {
     if (t.length >= LONGUEUR_MIN) break;
     if (t.length + 1 + s.length <= LONGUEUR_MAX) t = `${t} ${s}`;
   }
@@ -52,9 +66,20 @@ const NOMS_DOMAINES = Object.values(DOMAINES).map((d) => d.nom.toLowerCase());
 /** « mode, design, tech, digital et film » */
 const LISTE_DOMAINES = `${NOMS_DOMAINES.slice(0, -1).join(", ")} et ${NOMS_DOMAINES.at(-1)}`;
 
-const ORGANISATION = { "@type": "Organization", name: NOM_SITE, url: SITE_URL, logo: absolue("/icons/icon-512.png") };
+const ORGANISATION = {
+  "@type": "Organization",
+  name: NOM_SITE,
+  url: SITE_URL,
+  logo: absolue("/icons/icon-512.png"),
+};
 
-const base = (m: Omit<Meta, "image" | "imageAlt" | "imageLargeur" | "imageHauteur" | "type" | "jsonLd"> & Partial<Meta>): Meta => ({
+const base = (
+  m: Omit<
+    Meta,
+    "image" | "imageAlt" | "imageLargeur" | "imageHauteur" | "type" | "jsonLd"
+  > &
+    Partial<Meta>,
+): Meta => ({
   image: IMAGE_PARTAGE,
   imageAlt: IMAGE_PARTAGE_ALT,
   imageLargeur: 1200,
@@ -65,7 +90,8 @@ const base = (m: Omit<Meta, "image" | "imageAlt" | "imageLargeur" | "imageHauteu
 });
 
 /** Image de partage d'une fiche : copie JPEG 1200 × 630 générée au build depuis la photo locale (pas pour les vidéos) */
-export const aImagePartage = (m: Marque) => !!m.image && m.image.startsWith("/images/") && !m.video;
+export const aImagePartage = (m: Marque) =>
+  !!m.image && m.image.startsWith("/images/") && !m.video;
 export const imagePartageFiche = (m: Marque) => `/og/fiches/${m.slug}.jpg`;
 
 // ── Pages ────────────────────────────────────────────────
@@ -90,7 +116,10 @@ export function metaAccueil(): Meta {
         publisher: ORGANISATION,
         potentialAction: {
           "@type": "SearchAction",
-          target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/index?q={search_term_string}` },
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${SITE_URL}/index?q={search_term_string}`,
+          },
           "query-input": "required name=search_term_string",
         },
       },
@@ -101,11 +130,15 @@ export function metaAccueil(): Meta {
 
 export function metaIndex(domaine?: DomaineId | null): Meta {
   const d = domaine ? DOMAINES[domaine] : null;
-  const titre = d ? `L'index · ${d.nom} — ${d.entrees} entités | ${NOM_SITE}` : `L'index — ${TOTAL_ENTREES} entités | ${NOM_SITE}`;
+  const titre = d
+    ? `L'index · ${d.nom} — ${d.entrees} entités | ${NOM_SITE}`
+    : `L'index — ${TOTAL_ENTREES} entités | ${NOM_SITE}`;
   const description = d
     ? ajuster(
         `${d.nom} : ${d.entrees} entités de l'archive Rework. ${d.description}`,
-        d.id === "film" ? "Le top 50 Letterboxd, classé par rang, avec réalisation, pays et année." : "Recherche par nom, ville ou année, tri par date d'entrée ou par nom.",
+        d.id === "film"
+          ? "Le top 50 Letterboxd, classé par rang, avec réalisation, pays et année."
+          : "Recherche par nom, ville ou année, tri par date d'entrée ou par nom.",
       )
     : ajuster(
         `Les ${TOTAL_ENTREES} entités de l'archive Rework, classées par domaine : ${LISTE_DOMAINES}.`,
@@ -125,7 +158,10 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
         url: absolue(chemin),
         inLanguage: "fr-FR",
         isPartOf: { "@type": "WebSite", name: NOM_SITE, url: `${SITE_URL}/` },
-        mainEntity: { "@type": "ItemList", numberOfItems: d ? d.entrees : TOTAL_ENTREES },
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: d ? d.entrees : TOTAL_ENTREES,
+        },
       },
     ],
     resume: description,
@@ -140,7 +176,9 @@ export function metaFiche(m: Marque): Meta {
     ? `Film de ${m.realisation}${m.origine ? ` (${m.origine}` : " ("}${m.annee ? `, ${m.annee})` : ")"}, n°${m.rang} du top Letterboxd.`
     : `${m.nom} : ${[d.nom.toLowerCase(), m.etiquette.toLowerCase(), m.origine].filter(Boolean).join(", ")}${m.annee ? `, depuis ${m.annee}` : ""}.`;
   const cote = `Fiche ${m.cote} de l'archive Rework.`;
-  const description = m.description ? ajuster(m.description, contexte, cote) : ajuster(contexte, cote);
+  const description = m.description
+    ? ajuster(m.description, contexte, cote)
+    : ajuster(contexte, cote);
   const image = aImagePartage(m) ? imagePartageFiche(m) : IMAGE_PARTAGE;
   const url = absolue(lienMarque(m.slug));
 
@@ -149,15 +187,22 @@ export function metaFiche(m: Marque): Meta {
         "@context": "https://schema.org",
         "@type": "Movie",
         name: m.nom,
-        ...(m.titreOriginal && m.titreOriginal !== m.nom && { alternateName: m.titreOriginal }),
+        ...(m.titreOriginal &&
+          m.titreOriginal !== m.nom && { alternateName: m.titreOriginal }),
         url,
         ...(m.url && { sameAs: [m.url] }),
         description: m.description,
         image: absolue(image),
         ...(m.annee && { dateCreated: String(m.annee) }),
-        ...(m.origine && { countryOfOrigin: { "@type": "Country", name: m.origine } }),
+        ...(m.origine && {
+          countryOfOrigin: { "@type": "Country", name: m.origine },
+        }),
         ...(m.etiquette && { genre: m.etiquette }),
-        ...(m.realisation && { director: m.realisation.split(/,\s*/).map((name) => ({ "@type": "Person", name })) }),
+        ...(m.realisation && {
+          director: m.realisation
+            .split(/,\s*/)
+            .map((name) => ({ "@type": "Person", name })),
+        }),
       }
     : {
         "@context": "https://schema.org",
@@ -168,7 +213,9 @@ export function metaFiche(m: Marque): Meta {
         description: m.description,
         image: absolue(image),
         ...(m.annee && { foundingDate: String(m.annee) }),
-        ...(m.origine && { foundingLocation: { "@type": "Place", name: m.origine } }),
+        ...(m.origine && {
+          foundingLocation: { "@type": "Place", name: m.origine },
+        }),
         ...(m.etiquette && { keywords: `${d.nom}, ${m.etiquette}` }),
       };
 
@@ -177,7 +224,9 @@ export function metaFiche(m: Marque): Meta {
     description,
     chemin: lienMarque(m.slug),
     image,
-    imageAlt: aImagePartage(m) ? `${m.nom}${film ? `, film de ${m.realisation}` : ` — ${d.nom}`}` : IMAGE_PARTAGE_ALT,
+    imageAlt: aImagePartage(m)
+      ? `${m.nom}${film ? `, film de ${m.realisation}` : ` — ${d.nom}`}`
+      : IMAGE_PARTAGE_ALT,
     type: "article",
     jsonLd: [ld],
     resume: `${m.nom} — ${d.nom}${m.annee ? `, ${m.annee}` : ""}. ${m.description}`,
@@ -191,7 +240,8 @@ export function metaManifeste(): Meta {
       "Pourquoi Rework existe : curater, contextualiser, ralentir, transmettre. Une archive vivante plutôt qu'un magazine, une nouvelle entrée par semaine.",
     ),
     chemin: "/manifeste",
-    resume: "Rework n'est pas un magazine, c'est une archive vivante. Curater, contextualiser, ralentir, transmettre.",
+    resume:
+      "Rework n'est pas un magazine, c'est une archive vivante. Curater, contextualiser, ralentir, transmettre.",
   });
 }
 
@@ -203,7 +253,31 @@ export function metaTrios(): Meta {
       "L'archive des trios.",
     ),
     chemin: "/trios",
-    resume: "Chaque semaine, un film, une marque, puis une autre marque, reliés par un fil commun.",
+    resume:
+      "Chaque semaine, un film, une marque, puis une autre marque, reliés par un fil commun.",
+  });
+}
+
+export function metaConfidentialite(): Meta {
+  return base({
+    titre: `Confidentialité — la lettre de rework° | ${NOM_SITE}`,
+    description: ajuster(
+      "Ce que Rework garde quand tu t'inscris à la lettre : ton email, rien d'autre. À quoi il sert, où il est hébergé (Brevo, en UE) et comment te désinscrire.",
+    ),
+    chemin: "/confidentialite",
+    resume:
+      "Seul ton email est conservé, pour t'envoyer la lettre hebdomadaire. Hébergé chez Brevo, en Union européenne. Désinscription en un clic.",
+  });
+}
+
+export function metaInscriptionConfirmee(): Meta {
+  return base({
+    titre: `Inscription confirmée | ${NOM_SITE}`,
+    description: ajuster(
+      "C'est confirmé : la lettre de Rework arrivera chaque lundi, avec le trio de la semaine et les nouvelles entrées de l'archive.",
+    ),
+    chemin: "/inscription-confirmee",
+    resume: "C'est confirmé : la lettre de Rework arrivera chaque lundi.",
   });
 }
 
@@ -215,10 +289,16 @@ export function metaTrio(t: Trio): Meta {
   const image = aImagePartage(a) ? imagePartageFiche(a) : IMAGE_PARTAGE;
   return base({
     titre,
-    description: ajuster(`${t.intro} ${a.nom} → ${b.nom} → ${c.nom}.`, `Le trio de la semaine ${t.numero} sur Rework : un film, deux marques, un fil commun.`),
+    description: ajuster(
+      `${t.intro} ${a.nom} → ${b.nom} → ${c.nom}.`,
+      `Le trio de la semaine ${t.numero} sur Rework : un film, deux marques, un fil commun.`,
+    ),
     chemin: lienTrio(t),
     image,
-    imageAlt: image === IMAGE_PARTAGE ? IMAGE_PARTAGE_ALT : `${a.nom}, film de ${a.realisation}`,
+    imageAlt:
+      image === IMAGE_PARTAGE
+        ? IMAGE_PARTAGE_ALT
+        : `${a.nom}, film de ${a.realisation}`,
     type: "article",
     jsonLd: [
       {
@@ -227,7 +307,12 @@ export function metaTrio(t: Trio): Meta {
         name: t.titre,
         description: t.intro,
         url: absolue(lienTrio(t)),
-        itemListElement: t.items.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.nom, url: absolue(lienMarque(m.slug)) })),
+        itemListElement: t.items.map((m, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: m.nom,
+          url: absolue(lienMarque(m.slug)),
+        })),
       },
     ],
     resume: `${t.titre}. ${t.intro} ${a.nom} → ${b.nom} → ${c.nom}. ${t.liens.join(" ")}`,
@@ -236,7 +321,12 @@ export function metaTrio(t: Trio): Meta {
 
 // ── Balises HTML ─────────────────────────────────────────
 
-const echapper = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const echapper = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 
 /** Balises propres à la page, à poser dans le <head> (entre les marqueurs <!--meta:debut--> et <!--meta:fin-->) */
 export function balisesHtml(meta: Meta) {
@@ -262,7 +352,10 @@ export function balisesHtml(meta: Meta) {
     `<meta name="twitter:description" content="${e(meta.description)}" />`,
     `<meta name="twitter:image" content="${e(image)}" />`,
     `<meta name="twitter:image:alt" content="${e(meta.imageAlt)}" />`,
-    ...meta.jsonLd.map((ld) => `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`),
+    ...meta.jsonLd.map(
+      (ld) =>
+        `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`,
+    ),
   ].join("\n    ");
 }
 
@@ -282,6 +375,7 @@ export function routesPrerendues(date = new Date()): RoutePrerendue[] {
     { chemin: "/index", meta: metaIndex() },
     { chemin: "/manifeste", meta: metaManifeste() },
     { chemin: "/trios", meta: metaTrios() },
+    { chemin: "/confidentialite", meta: metaConfidentialite() },
     ...publies.map((t) => ({ chemin: lienTrio(t), meta: metaTrio(t) })),
     ...MARQUES.map((m) => ({ chemin: lienMarque(m.slug), meta: metaFiche(m) })),
   ];

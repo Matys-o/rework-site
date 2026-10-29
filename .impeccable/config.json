@@ -1,0 +1,20 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-10-29T10:18:25.090Z",
+        "reason": "Police de la DA existante Rework 2.0 (Figma r5Gi2x15iNzlUHsmOrmxKO, tokens --font-mono dans src/styles/tokens.css) ; index.html ne fait que la charger, inchangé sur ce point"
+      },
+      {
+        "rule": "overused-font",
+        "value": "helvetica",
+        "createdAt": "2026-10-29T13:38:21.178Z",
+        "reason": "Police de secours email demandée explicitement par l'utilisateur (clients qui ne chargent pas les web fonts)"
+      }
+    ]
+  }
+}

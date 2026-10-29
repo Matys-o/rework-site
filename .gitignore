@@ -7,3 +7,5 @@ dist-apres/
 .env.*
 .DS_Store
 Thumbs.db
+!.env.example
+dist-lettre/

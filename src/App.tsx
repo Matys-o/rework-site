@@ -1,10 +1,17 @@
 import { MotionConfig } from "motion/react";
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router";
 import { Defilement } from "./components/Defilement";
 import { FpsMetre } from "./components/FpsMetre";
 import { Navigation } from "./components/Navigation";
 import Accueil from "./pages/Accueil";
 import Composants from "./pages/Composants";
+import Confidentialite, { InscriptionConfirmee } from "./pages/Confidentialite";
 import Hasard from "./pages/Hasard";
 import Index from "./pages/Index";
 import Manifeste from "./pages/Manifeste";
@@ -23,6 +30,8 @@ function Pages() {
       <Route path="/hasard" element={<Hasard />} />
       <Route path="/trios" element={<Trios />} />
       <Route path="/trios/:semaine" element={<TrioPage />} />
+      <Route path="/confidentialite" element={<Confidentialite />} />
+      <Route path="/inscription-confirmee" element={<InscriptionConfirmee />} />
       <Route path="/composants" element={<Composants />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
@@ -34,10 +43,10 @@ export default function App() {
     <BrowserRouter>
       {/* prefers-reduced-motion : Motion coupe aussi les animations de transform et de layout */}
       <MotionConfig reducedMotion="user">
-      <Defilement />
-      <Navigation />
-      <Pages />
-      <FpsMetre />
+        <Defilement />
+        <Navigation />
+        <Pages />
+        <FpsMetre />
       </MotionConfig>
     </BrowserRouter>
   );

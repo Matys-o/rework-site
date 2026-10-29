@@ -16,6 +16,9 @@ export const LIENS = {
   hasard: "/hasard",
   trio: "/#trio",
   trios: "/trios",
+  confidentialite: "/confidentialite",
+  desinscription: "/confidentialite#desinscription",
+  inscriptionConfirmee: "/inscription-confirmee",
   proposer: `mailto:${EMAIL_REDACTION}?subject=${encodeURIComponent("Proposer une marque à rework°")}`,
   ecrire: `mailto:${EMAIL_REDACTION}?subject=${encodeURIComponent("Message à la rédaction rework°")}`,
 } as const;
