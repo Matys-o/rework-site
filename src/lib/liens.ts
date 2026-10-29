@@ -16,6 +16,8 @@ export const LIENS = {
   hasard: "/hasard",
   trio: "/#trio",
   trios: "/trios",
+  /** Bloc d'inscription du footer, présent sur toutes les pages */
+  lettre: "#lettre",
   confidentialite: "/confidentialite",
   desinscription: "/confidentialite#desinscription",
   inscriptionConfirmee: "/inscription-confirmee",

@@ -4,7 +4,6 @@ import { TOTAL_ENTREES } from "../data/brands";
 import { LIENS as ROUTES } from "../lib/liens";
 import { useFacteurParallax } from "../lib/mouvement";
 import { Aura } from "./Aura";
-import { Icone } from "./Icone";
 import { Lien } from "./Lien";
 import { Logo } from "./Logo";
 
@@ -13,7 +12,10 @@ const COLONNES = [
     titre: "Archive",
     liens: ["Index", "Domaines", "Trios", "Nouvelles entrées", "Au hasard"],
   },
-  { titre: "Rework", liens: ["Manifeste", "Contact", "Proposer une marque"] },
+  {
+    titre: "Rework",
+    liens: ["La lettre", "Manifeste", "Contact", "Proposer une marque"],
+  },
   { titre: "Ailleurs", liens: ["Instagram", "Are.na", "Twitter"] },
 ];
 
@@ -24,13 +26,14 @@ const LIENS: Record<string, string> = {
   Trios: ROUTES.trios,
   "Nouvelles entrées": ROUTES.nouvelles,
   "Au hasard": ROUTES.hasard,
+  "La lettre": ROUTES.lettre,
   Manifeste: ROUTES.manifeste,
   Contact: ROUTES.ecrire,
   "Proposer une marque": ROUTES.proposer,
 };
 
 const COLONNES_MOBILE = [
-  ["Index", "Domaines", "Trios", "Manifeste", "Contact"],
+  ["Index", "Domaines", "Trios", "La lettre", "Manifeste", "Contact"],
   ["Instagram", "Are.na", "Twitter"],
 ];
 
@@ -60,22 +63,23 @@ function LienFooter({
 type EtatInscription =
   "repos" | "envoi" | "confirmation" | "deja" | "email" | "erreur";
 
-const MESSAGES: Record<Exclude<EtatInscription, "repos" | "envoi">, string> = {
-  confirmation:
-    "Presque. Un email de confirmation t'attend : un clic, et tu es dans la liste.",
-  deja: "Tu es déjà dans la liste. Rendez-vous lundi.",
-  email: "Cette adresse ne ressemble pas à un email. On réessaie ?",
-  erreur: "Le signal ne passe pas. Réessaie dans un instant.",
+const ERREURS: Partial<Record<EtatInscription, string>> = {
+  email: "Cette adresse ne ressemble pas à un email. Vérifie-la et réessaie.",
+  erreur:
+    "L'inscription ne passe pas pour le moment. Réessaie dans quelques minutes.",
 };
 
 // Lettre hebdomadaire : POST /api/subscribe (Pages Function → Brevo, double opt-in). La clé Brevo ne quitte jamais le serveur.
+// Après l'envoi, le formulaire laisse place à la marche à suivre : l'inscription n'est finie qu'au clic dans l'email.
 function Inscription() {
   const [etat, setEtat] = useState<EtatInscription>("repos");
+  const [adresse, setAdresse] = useState("");
   const reussi = etat === "confirmation" || etat === "deja";
 
   async function envoyer(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const donnees = new FormData(e.currentTarget);
+    setAdresse(String(donnees.get("email") ?? "").trim());
     setEtat("envoi");
     try {
       const r = await fetch("/api/subscribe", {
@@ -96,6 +100,41 @@ function Inscription() {
       setEtat("erreur");
     }
   }
+
+  if (reussi)
+    return (
+      <div
+        role="status"
+        aria-live="polite"
+        className="mt-5 rounded-[24px] border border-papier/25 bg-blanc/5 p-5 md:mt-8 md:p-7"
+      >
+        <p className="t-cote-m text-signal">
+          {etat === "deja" ? "/ déjà inscrit·e" : "/ étape 2 sur 2"}
+        </p>
+        {etat === "deja" ? (
+          <p className="t-texte-m mt-2">
+            {adresse} est déjà dans la liste. Rendez-vous lundi.
+          </p>
+        ) : (
+          <>
+            <p className="t-titre-s mt-2">Vérifie ta boîte mail.</p>
+            <p className="t-texte-s md:t-texte-m mt-2 text-papier/80">
+              Un email vient de partir vers{" "}
+              <span className="text-papier">{adresse}</span>. Clique sur «
+              Confirmer mon inscription » : sans ce clic, tu ne recevras pas la
+              lettre. Rien reçu ? Regarde dans Promotions ou les spams.
+            </p>
+          </>
+        )}
+        <button
+          type="button"
+          onClick={() => setEtat("repos")}
+          className="t-cote-s mt-4 min-h-11 cursor-pointer underline underline-offset-2 transition-colors duration-240 ease-rw hover:text-signal"
+        >
+          Utiliser une autre adresse
+        </button>
+      </div>
+    );
 
   return (
     <>
@@ -133,16 +172,15 @@ function Inscription() {
           type="submit"
           aria-label="S'inscrire"
           disabled={etat === "envoi" || reussi}
-          className="grid h-11 cursor-pointer place-items-center rounded-pill bg-signal text-encre transition-colors duration-240 ease-rw hover:bg-papier disabled:cursor-default disabled:hover:bg-signal max-md:w-11 md:h-[52px] md:px-[34px]"
+          className="grid h-11 shrink-0 cursor-pointer place-items-center rounded-pill bg-signal px-5 text-encre transition-colors duration-240 ease-rw hover:bg-papier disabled:cursor-default disabled:hover:bg-signal md:h-[52px] md:px-[34px]"
         >
-          <Icone nom="fleche" taille={20} className="md:hidden" />
-          <span className="hidden text-[14px] leading-[1.5] font-semibold md:inline">
-            {etat === "envoi" ? "Envoi…" : reussi ? "Inscrit·e" : "S'inscrire"}
+          <span className="text-[14px] leading-[1.5] font-semibold">
+            {etat === "envoi" ? "Envoi…" : "S'inscrire"}
           </span>
         </button>
       </form>
       <p id="newsletter-note" className="t-cote-s mt-3 text-papier/60 md:mt-4">
-        Une entrée par semaine. Désinscription en un clic.{" "}
+        Gratuit. Une entrée par semaine. Désinscription en un clic.{" "}
         <a
           href={ROUTES.confidentialite}
           className="underline underline-offset-2 transition-colors duration-240 ease-rw hover:text-papier"
@@ -153,9 +191,9 @@ function Inscription() {
       <p
         role="status"
         aria-live="polite"
-        className={`t-texte-s mt-2 min-h-[1.5em] ${etat === "email" || etat === "erreur" ? "text-signal" : "text-papier"}`}
+        className="t-texte-s mt-2 min-h-[1.5em] text-signal"
       >
-        {etat !== "repos" && etat !== "envoi" ? MESSAGES[etat] : ""}
+        {ERREURS[etat] ?? ""}
       </p>
     </>
   );
@@ -195,11 +233,13 @@ export function Footer() {
 
       <div className="mx-auto max-w-[1440px] px-(--marge) pt-9 pb-6 md:px-16 md:pt-[72px] md:pb-8">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,520px)_1fr] lg:gap-20">
-          <div>
-            <h2 className="t-titre-m md:t-titre-l">Restons en contact.</h2>
+          <div id="lettre" className="scroll-mt-24">
+            <p className="t-cote-m text-signal">/ la lettre de rework°</p>
+            <h2 className="t-titre-m md:t-titre-l mt-2">
+              Reçois la lettre du lundi.
+            </h2>
             <p className="t-serif-s md:t-serif-m mt-1 md:mt-2">
-              Une <span className="hidden md:inline">nouvelle </span>entrée par
-              semaine.
+              Le trio de la semaine et les nouvelles entrées, dans ta boîte.
             </p>
             <Inscription />
           </div>
