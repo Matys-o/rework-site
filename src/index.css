@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@layer base {
+  html {
+    background-color: var(--color-papier);
+    color: var(--color-encre);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  /* Un titre ne dépasse jamais son conteneur : coupure des mots trop longs, lignes équilibrées.
+     Césure automatique en mobile seulement (en desktop, les coupures de la maquette restent intactes). */
+  h1,
+  h2,
+  h3 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+  @media (max-width: 767px) {
+    h1,
+    h2,
+    h3 {
+      hyphens: auto;
+    }
+  }
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-blanc);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 3px;
+  }
+}
+
+/* View Transitions — entre les pages : fondu + légère montée (400 ms) */
+::view-transition-old(root) {
+  animation: vt-sortie 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+::view-transition-new(root) {
+  animation: vt-entree 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes vt-sortie {
+  to { opacity: 0; }
+}
+@keyframes vt-entree {
+  from { opacity: 0; transform: translate3d(0, 24px, 0); }
+}
+/* Élément partagé : la couverture de la fiche s'agrandit en image hero de la page marque */
+::view-transition-group(.couverture) {
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+::view-transition-old(.couverture),
+::view-transition-new(.couverture) {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* La nav ne clignote pas d'une page à l'autre */
+::view-transition-group(nav) {
+  animation-duration: 400ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* Lenis — scroll fluide */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

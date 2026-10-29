@@ -1,0 +1,37 @@
+# Mise en ligne automatique : chaque push sur main → build Vite → Cloudflare Pages (projet rework-archive).
+# Secret requis dans le dépôt : CLOUDFLARE_API_TOKEN (permission « Cloudflare Pages : Edit »).
+name: Déploiement
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploiement
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Mise en ligne sur Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 6df853fdd35a832bbbbd4d99464a6f14
+          command: pages deploy dist --project-name rework-archive --branch main

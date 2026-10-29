@@ -1,0 +1,9 @@
+# Anciennes adresses de rework-archive (site v1) → pages équivalentes de la v2
+/marque.html   /index      301
+/marque        /index      301
+/about.html    /manifeste  301
+/contact.html  /#contact   301
+
+# Cloudflare Pages redirige /index vers / (URL « propre » de index.html) : on force la réécriture vers l'app
+/index  /  200
+/*  /index.html  200

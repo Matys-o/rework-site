@@ -1,0 +1,281 @@
+/*
+ * Rework 2.0 — tokens
+ * Source : variables & styles Figma « Rework 2.0 »
+ * (fichier r5Gi2x15iNzlUHsmOrmxKO, sections 01 DA / 02 Composants).
+ * Les letter-spacing Figma sont en % → convertis en em.
+ */
+
+@theme {
+  /* Couleurs — collection Rework 2.0 */
+  --color-encre: #0e0e0e;      /* rw/encre/encre */
+  --color-carbone: #2a2926;    /* rw/encre/carbone */
+  --color-graphite: #75726b;   /* rw/encre/graphite */
+  --color-papier: #eeece7;     /* rw/papier/papier */
+  --color-brume: #e2e0d9;      /* rw/papier/brume */
+  --color-blanc: #ffffff;      /* rw/papier/blanc */
+  --color-signal: #ff3d2e;     /* rw/signal/rouge */
+  --color-aura-mode: #ff8fc7;    /* rose néon */
+  --color-aura-design: #d2f34c;  /* lime acide */
+  --color-aura-tech: #ff7a1a;    /* orange machine */
+  --color-aura-digital: #8cc8ff; /* bleu glacier */
+  --color-aura-film: #b49bff;    /* lilas projecteur */
+
+  /* Rayons — DA 06 Matières */
+  --radius-pill: 999px;
+  --radius-dossier: 28px;
+  --radius-carte: 20px;
+  --radius-chip: 14px;
+
+  /* Espaces — relevés sur les composants (base 2 px) */
+  --spacing-xs: 6px;
+  --spacing-s: 10px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 36px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+
+  /* Polices */
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Ombres — Rework/Ombre/* et Rework/Verre/* */
+  --shadow-repos: 0 2px 4px 0 rgb(13 13 10 / 0.05), 0 16px 40px -10px rgb(13 13 10 / 0.06);
+  --shadow-levee: 0 4px 8px 0 rgb(13 13 10 / 0.06), 0 40px 80px -16px rgb(13 13 10 / 0.16);
+  --shadow-pill: 0 10px 30px -6px rgb(13 13 10 / 0.1);
+  --shadow-panneau: 0 24px 60px -8px rgb(13 13 10 / 0.08), inset 0 1px 0 0 rgb(255 255 255 / 0.9);
+
+  /* Motion — DA 08 (les boucles et parallax sont pilotés par Motion, voir src/lib/mouvement.ts) */
+  --ease-rw: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Alias aux noms de variables Figma, pour du CSS hors Tailwind */
+:root {
+  --rw-encre-encre: var(--color-encre);
+  --rw-encre-carbone: var(--color-carbone);
+  --rw-encre-graphite: var(--color-graphite);
+  --rw-papier-papier: var(--color-papier);
+  --rw-papier-brume: var(--color-brume);
+  --rw-papier-blanc: var(--color-blanc);
+  --rw-signal-rouge: var(--color-signal);
+  --rw-aura-mode: var(--color-aura-mode);
+  --rw-aura-design: var(--color-aura-design);
+  --rw-aura-tech: var(--color-aura-tech);
+  --rw-aura-digital: var(--color-aura-digital);
+  --rw-aura-film: var(--color-aura-film);
+
+  /* Marge latérale fluide : 16 px (320) → 80 px (≥ 1600) ; contenu max 1280 px */
+  --marge: clamp(16px, 5vw, 80px);
+
+  /* Équivalents filter: drop-shadow() des ombres, pour les formes non rectangulaires (dossier) */
+  --drop-repos: drop-shadow(0 2px 2px rgb(13 13 10 / 0.05)) drop-shadow(0 16px 20px rgb(13 13 10 / 0.06));
+  --drop-levee: drop-shadow(0 4px 4px rgb(13 13 10 / 0.06)) drop-shadow(0 36px 32px rgb(13 13 10 / 0.14));
+}
+
+/* ── Styles typo « Rework/… » ─────────────────────────── */
+
+@utility t-display-xxl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(56px, 18vw, 260px);
+  line-height: 0.86;
+  letter-spacing: -0.06em;
+  font-variation-settings: "opsz" 96;
+}
+@utility t-display-xl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(48px, 11.7vw, 168px);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+  font-variation-settings: "opsz" 96;
+}
+@utility t-display-l {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 7.2vw, 104px);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-variation-settings: "opsz" 96;
+}
+@utility t-display-m {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(34px, 4.5vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-variation-settings: "opsz" 96;
+}
+@utility t-titre-l {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(30px, calc(24px + 1.25vw), 40px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 14;
+}
+@utility t-titre-m {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, calc(20px + 0.625vw), 28px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  font-variation-settings: "opsz" 14;
+}
+@utility t-titre-s {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 14;
+}
+@utility t-serif-xl {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(52px, 12.5vw, 180px);
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+}
+@utility t-serif-l {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(40px, 6.7vw, 96px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+@utility t-serif-m {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(28px, 3.1vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+@utility t-serif-s {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(22px, calc(18px + 0.625vw), 26px);
+  line-height: 1.15;
+}
+@utility t-texte-l {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: clamp(18px, calc(14px + 0.625vw), 22px);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+@utility t-texte-m {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+}
+@utility t-texte-s {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  /* Corps de texte ≥ 16 px en mobile */
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}
+@utility t-cote-m {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+@utility t-cote-s {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Rognage des titres serrés : avec un letter-spacing négatif, la boîte de la dernière lettre est plus
+   étroite que son dessin. Toute découpe (overflow) gagne donc une marge de sécurité en padding,
+   annulée par une marge négative égale : la mise en page ne bouge pas, seule la zone visible s'agrandit. */
+
+/* Masque de TitreRevele (une boîte par mot) */
+@utility masque-lettres {
+  padding: 0.1em 0.12em 0.08em;
+  margin: -0.1em -0.12em -0.08em;
+  /* Mot plus long que la colonne (écran étroit) : les lettres passent à la ligne au lieu de déborder */
+  flex-wrap: wrap;
+  max-width: calc(100% + 0.24em);
+}
+
+/* Remplace truncate sur les titres Bricolage : ellipse conservée, dernière lettre entière */
+@utility tronque {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-inline-end: 0.08em;
+  margin-inline-end: -0.08em;
+}
+
+/* ── Matières ─────────────────────────────────────────── */
+
+/* Verre liquide : blanc 14 %, liseré blanc 85 %, blur + saturate */
+@utility verre {
+  background-color: rgb(255 255 255 / 0.14);
+  border: 1px solid rgb(255 255 255 / 0.85);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  backdrop-filter: blur(14px) saturate(180%);
+  box-shadow: var(--shadow-panneau);
+}
+@utility verre-pill {
+  background-color: rgb(255 255 255 / 0.14);
+  border: 1px solid rgb(255 255 255 / 0.85);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  backdrop-filter: blur(8px) saturate(180%);
+  box-shadow: var(--shadow-pill);
+}
+
+/* Aura : halo de couleur — toujours posé derrière du verre.
+   radial-gradient au lieu de filter: blur (équivalent visuel du flou 140 px, sans coût GPU). */
+@utility aura {
+  position: absolute;
+  pointer-events: none;
+}
+/* Dérive en boucle 18–30 s, paramètres tirés au hasard par aura (voir Aura.tsx) */
+@keyframes derive {
+  from { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate3d(var(--x1), var(--y1), 0) scale(var(--s1)) rotate(var(--r1)); }
+  to { transform: translate3d(var(--x2), var(--y2), 0) scale(var(--s2)) rotate(var(--r2)); }
+}
+.aura-derive {
+  animation: derive var(--d, 24s) ease-in-out var(--retard, 0s) infinite alternate;
+}
+/* Mobile / tactile : auras 1,8× plus lentes (batterie) */
+@media (max-width: 767px), (pointer: coarse) {
+  .aura-derive { animation-duration: calc(var(--d, 24s) * 1.8); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aura-derive { animation: none; }
+}
+[data-aura] {
+  border-radius: 9999px;
+  background: radial-gradient(
+    closest-side,
+    var(--c) 0%,
+    var(--c) 30%,
+    color-mix(in srgb, var(--c) 50%, transparent) 64%,
+    color-mix(in srgb, var(--c) 12%, transparent) 84%,
+    transparent 100%
+  );
+}
