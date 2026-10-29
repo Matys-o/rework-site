@@ -108,14 +108,24 @@ try {
       recipients: { listIds: [listId] },
       // Pas de scheduledAt : la campagne reste un brouillon
     };
-    let id = existante?.id;
-    if (id) {
-      await brevo("PUT", `/emailCampaigns/${id}`, campagne);
-      console.log(`Brouillon mis à jour : campagne ${id} « ${nom} »`);
-    } else {
-      ({ id } = await brevo("POST", "/emailCampaigns", campagne));
-      console.log(`Brouillon créé : campagne ${id} « ${nom} »`);
+    // Brevo refuse une liste sans contact : le brouillon est alors créé sans destinataires (liste à choisir à l'envoi)
+    const enregistrer = async (corps) => {
+      if (existante) {
+        await brevo("PUT", `/emailCampaigns/${existante.id}`, corps);
+        return existante.id;
+      }
+      return (await brevo("POST", "/emailCampaigns", corps)).id;
+    };
+    let id;
+    try {
+      id = await enregistrer(campagne);
+    } catch (e) {
+      if (!/no contacts/i.test(e.donnees?.message ?? "")) throw e;
+      const { recipients, ...sansListe } = campagne;
+      id = await enregistrer(sansListe);
+      console.log("La liste est encore vide : brouillon créé sans destinataires, choisis la liste dans Brevo au moment d'envoyer.");
     }
+    console.log(`Brouillon ${existante ? "mis à jour" : "créé"} : campagne ${id} « ${nom} »`);
 
     if (values.a) {
       try {

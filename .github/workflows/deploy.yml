@@ -47,7 +47,7 @@ jobs:
       # Le lundi, une fois le site en ligne (images de la lettre comprises) : campagne Brevo en BROUILLON + test.
       # Jamais d'envoi à la liste : l'envoi se fait à la main depuis Brevo, après relecture.
       - name: Lettre — brouillon Brevo et test
-        if: github.event_name == 'schedule' || inputs.lettre
+        if: success() && (github.event_name == 'schedule' || inputs.lettre)
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
