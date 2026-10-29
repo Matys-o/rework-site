@@ -15,7 +15,9 @@ import { Nav } from "../components/Nav";
 import { Recherche } from "../components/Recherche";
 import { DOMAINES, MARQUES, TOTAL_ENTREES, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
+import { metaIndex } from "../lib/meta";
 import { EASE_REVELE, defilerVers } from "../lib/mouvement";
+import { useMeta } from "../lib/useMeta";
 
 const PAR_PAGE = 24;
 
@@ -82,9 +84,7 @@ export default function Index() {
   const affiches = resultats.slice(0, limite);
   const reste = resultats.length - affiches.length;
 
-  useEffect(() => {
-    document.title = "Index — rework°";
-  }, []);
+  useMeta(metaIndex(domaine));
 
   // Arrivée via « Chercher » / ⌘K depuis une autre page : /index#recherche
   useEffect(() => {

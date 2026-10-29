@@ -9,7 +9,7 @@ import Hasard from "./pages/Hasard";
 import Index from "./pages/Index";
 import Manifeste from "./pages/Manifeste";
 import MarquePage from "./pages/MarquePage";
-import Trios from "./pages/Trios";
+import Trios, { TrioPage } from "./pages/Trios";
 
 /** Une clé par chemin : chaque page est remontée (apparitions rejouées), mais pas quand seuls les filtres ?… changent */
 function Pages() {
@@ -22,6 +22,7 @@ function Pages() {
       <Route path="/manifeste" element={<Manifeste />} />
       <Route path="/hasard" element={<Hasard />} />
       <Route path="/trios" element={<Trios />} />
+      <Route path="/trios/:semaine" element={<TrioPage />} />
       <Route path="/composants" element={<Composants />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

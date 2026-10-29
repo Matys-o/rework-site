@@ -5,6 +5,9 @@ name: Déploiement
 on:
   push:
     branches: [main]
+  # Chaque lundi 00:10 UTC : reconstruction pour le trio de la semaine (page /trios/AAAA-Wnn prérendue, sitemap à jour)
+  schedule:
+    - cron: "10 0 * * 1"
   workflow_dispatch:
 
 concurrency:

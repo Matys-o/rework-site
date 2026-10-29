@@ -3,17 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#EEECE7" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&display=swap"
     />
+    <!-- Balises propres à chaque page : écrites au build par scripts/prerendu.mjs (lisibles sans JavaScript) -->
+    <!--meta:debut-->
     <title>rework° — archive vivante de la culture contemporaine</title>
+    <!--meta:fin-->
   </head>
   <body>
     <div id="root"></div>
+    <!--noscript-->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

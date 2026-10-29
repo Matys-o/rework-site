@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { Apparition } from "../components/Apparition";
 import { Aura } from "../components/Aura";
 import { Bouton } from "../components/Bouton";
@@ -9,6 +9,10 @@ import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { Tampon } from "../components/Tampon";
 import { TOTAL_ENTREES } from "../data/brands";
 import { LIENS } from "../lib/liens";
+import { metaManifeste } from "../lib/meta";
+import { useMeta } from "../lib/useMeta";
+
+const META = metaManifeste();
 
 const PRINCIPES = [
   { numero: "01", titre: "Curater", texte: `Choisir, c'est déjà écrire. ${TOTAL_ENTREES} entrées, pas 28 500.`, aura: "var(--color-aura-mode)" },
@@ -23,9 +27,7 @@ function Signal({ children }: { children: string }) {
 
 // Manifeste — version sombre : l'encre devient le papier, les auras restent la lumière.
 export default function Manifeste() {
-  useEffect(() => {
-    document.title = "Manifeste — rework°";
-  }, []);
+  useMeta(META);
 
   return (
     <div className="bg-encre text-papier">

@@ -14,7 +14,9 @@ import { Tampon } from "../components/Tampon";
 import { DOMAINES, MARQUES, metaMarque, trouverMarque, voisins, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
 import { LIENS, lienMarque } from "../lib/liens";
+import { metaFiche } from "../lib/meta";
 import { useFacteurParallax } from "../lib/mouvement";
+import { useMeta } from "../lib/useMeta";
 
 /** Aura secondaire en haut à gauche — une couleur voisine de celle du domaine */
 const AURA_VOISINE: Record<DomaineId, DomaineId> = { mode: "digital", design: "digital", tech: "design", digital: "mode", film: "mode" };
@@ -69,8 +71,9 @@ export default function MarquePage() {
   const { slug } = useParams();
   const marque = trouverMarque(slug);
 
+  useMeta(marque ? metaFiche(marque) : null);
   useEffect(() => {
-    document.title = marque ? `${marque.nom} — rework°` : "Fiche introuvable — rework°";
+    if (!marque) document.title = "Fiche introuvable — rework°";
   }, [marque]);
 
   // Parallax opposé : le grand titre descend (plus lent que la page), l'image hero monte et passe de 1.1 à 1

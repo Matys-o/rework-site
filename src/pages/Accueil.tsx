@@ -16,6 +16,8 @@ import { Tampon } from "../components/Tampon";
 import { TrioConnexions } from "../components/TrioConnexions";
 import { DOMAINES, TOTAL_ENTREES, nouvellesEntrees } from "../data/brands";
 import { trioDeLaSemaine } from "../data/trios";
+import { lienTrio, metaAccueil } from "../lib/meta";
+import { useMeta } from "../lib/useMeta";
 import { cn } from "../lib/cn";
 import { LIENS } from "../lib/liens";
 import { defilerVers, useFacteurParallax } from "../lib/mouvement";
@@ -23,6 +25,7 @@ import { defilerVers, useFacteurParallax } from "../lib/mouvement";
 const NOUVELLES = nouvellesEntrees(3);
 // Calculé au chargement : le trio change de lui-même chaque lundi
 const TRIO = trioDeLaSemaine();
+const META = metaAccueil();
 
 function Cote({ children, className }: { children: string; className?: string }) {
   return <p className={cn("t-cote-s md:t-cote-m text-signal", className)}>{children}</p>;
@@ -50,9 +53,7 @@ export default function Accueil() {
   const facteurParallax = useFacteurParallax();
   const reduit = facteurParallax === 0;
 
-  useEffect(() => {
-    document.title = "rework° — archive vivante de la culture contemporaine";
-  }, []);
+  useMeta(META);
 
   // Parallax du hero : auras 0.3x, « l'archive » 0.6x, « vivante » 0.8x (+ glisse à gauche), recherche 1x.
   // Le hero s'estompe (→ 0.3) et rétrécit (→ 0.96) en sortant.
@@ -177,7 +178,9 @@ export default function Accueil() {
               <Cote>{`/ le trio de la semaine — semaine ${TRIO.numero}`}</Cote>
               <div className="mt-[7px] flex flex-col gap-6 md:mt-[13px] lg:flex-row lg:items-end lg:justify-between">
                 <h2>
-                  <span className="t-titre-l md:t-display-l block md:-ml-2">{TRIO.titre}</span>
+                  <a href={lienTrio(TRIO)} className="transition-colors duration-240 ease-rw hover:text-signal">
+                    <span className="t-titre-l md:t-display-l block md:-ml-2">{TRIO.titre}</span>
+                  </a>
                   <span className="t-serif-m md:t-serif-l mt-1.5 block md:mt-[11px] md:pl-[12%]">{TRIO.intro}</span>
                 </h2>
                 <div className="shrink-0 lg:mb-2">

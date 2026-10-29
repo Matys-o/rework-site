@@ -4,6 +4,6 @@
 /about.html    /manifeste  301
 /contact.html  /#contact   301
 
-# Cloudflare Pages redirige /index vers / (URL « propre » de index.html) : on force la réécriture vers l'app
-/index  /  200
-/*  /index.html  200
+# /index est servi par la Pages Function functions/index.ts (page prérendue + filtre ?domaine=).
+# Les autres routes sont des fichiers HTML prérendus (scripts/prerendu.mjs) ; tout chemin inconnu
+# retombe sur index.html (mode SPA par défaut de Cloudflare Pages, en l'absence de 404.html).
