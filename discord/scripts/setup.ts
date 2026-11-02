@@ -402,8 +402,17 @@ async function parametres() {
     guild.systemChannelId !== voulu.systemChannel ||
     guild.systemChannelFlags.bitfield !== flags;
   if (diff) {
-    await guild.edit({ ...voulu, reason: "REWORK setup" });
+    // Le salon des mises à jour Communauté est refusé aux bots (50013) : on le tente à part.
+    const { publicUpdatesChannel, ...reste } = voulu;
+    await guild.edit({ ...reste, reason: "REWORK setup" });
     note("maj", "paramètres du serveur (vérification, filtre, notifications, salons système)");
+    if (guild.publicUpdatesChannelId !== publicUpdatesChannel) {
+      try {
+        await guild.edit({ publicUpdatesChannel, reason: "REWORK setup" });
+      } catch {
+        note("manuel", "Paramètres → Communauté → Vue d'ensemble : choisis 🛡️・modération comme salon des mises à jour.");
+      }
+    }
   } else note("inchange", "paramètres du serveur");
   if (guild.mfaLevel !== GuildMFALevel.Elevated)
     note("manuel", "2FA obligatoire pour la modération : Paramètres → Sécurité (réservé au propriétaire, impossible par API).");
@@ -452,7 +461,10 @@ async function automod() {
         note("maj", `AutoMod ${r.name}`);
       } else note("inchange", `AutoMod ${r.name}`);
     } catch (e) {
-      note("erreurs", `AutoMod ${r.name} : ${e instanceof Error ? e.message : e}`);
+      // Règle créée par Discord (ex. « Block Mention Spam ») : le bot ne peut pas la modifier, et un seul exemplaire est permis.
+      if (regle && regle.creatorId !== guild.client.user.id)
+        note("manuel", `AutoMod : la règle « ${regle.name} » vient de Discord. Ajuste-la à la main (Paramètres → AutoMod), ou supprime-la puis relance le setup.`);
+      else note("erreurs", `AutoMod ${r.name} : ${e instanceof Error ? e.message : e}`);
     }
   }
 }

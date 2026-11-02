@@ -159,7 +159,8 @@ export const LECTURE_SEULE: Surcharge[] = [
   { cible: "everyone", deny: ECRIRE },
   { cible: "fondateur", allow: ECRIRE_STAFF },
   { cible: "moderation", allow: ECRIRE_STAFF },
-  { cible: "bot", allow: [...ECRIRE_STAFF, P.ManageMessages, P.PinMessages, P.ManageThreads] },
+  // Le bot doit garder TOUT ce que @everyone perd : sinon Discord lui refuse de poser des surcharges dans la catégorie (50013).
+  { cible: "bot", allow: [...ECRIRE, ...ECRIRE_STAFF, P.ManageMessages, P.PinMessages, P.ManageThreads] },
 ];
 
 /** Lecture seule, mais les membres peuvent répondre dans les fils ouverts par le bot (« On en parle ? 💬 ») */
@@ -305,10 +306,11 @@ export const CATEGORIES: CategorieDef[] = [
         pinned: ["presentations"],
       },
       {
-        // Salon « média » : chaque photo devient un post avec son propre fil, et une image est obligatoire.
+        // Forum : chaque trouvaille devient un post avec son propre fil.
+        // (Le type « media » serait idéal, mais Discord le refuse sur ce serveur : erreur 50024.)
         key: "vos-trouvailles",
         name: "📸・vos-trouvailles",
-        type: "media",
+        type: "forum",
         topic:
           "Montre tes pièces, objets et setups. Une photo par post, dis-nous la marque et pourquoi tu l'aimes. Les commentaires se font dans le fil du post.",
         defaultReaction: "🔥",
