@@ -1,5 +1,40 @@
 {
-  "marque": { "total": 0, "cycle": 1, "publiees": [], "ignorees": [] },
-  "film": { "total": 0, "cycle": 1, "publiees": [], "ignorees": [] },
+  "marque": {
+    "total": 1,
+    "cycle": 1,
+    "publiees": [
+      {
+        "id": 42,
+        "slug": "yohji-yamamoto",
+        "nom": "Yohji Yamamoto",
+        "date": "2026-11-02",
+        "message": "1566947136736722946"
+      }
+    ],
+    "ignorees": [
+      {
+        "id": 252,
+        "slug": "craft",
+        "date": "2026-11-02",
+        "raison": "image inaccessible (https://cdn.cosmos.so/craft-docs.jpg)"
+      }
+    ],
+    "cycleDebut": "2026-11-02"
+  },
+  "film": {
+    "total": 1,
+    "cycle": 1,
+    "publiees": [
+      {
+        "id": 298,
+        "slug": "yi-yi",
+        "nom": "Yi Yi",
+        "date": "2026-11-02",
+        "message": "1566947153258225735"
+      }
+    ],
+    "ignorees": [],
+    "cycleDebut": "2026-11-02"
+  },
   "trio": {}
 }
