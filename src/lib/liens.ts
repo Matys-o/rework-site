@@ -22,6 +22,8 @@ export const LIENS = {
   desinscription: "/confidentialite#desinscription",
   inscriptionConfirmee: "/inscription-confirmee",
   proposer: `mailto:${EMAIL_REDACTION}?subject=${encodeURIComponent("Proposer une marque à rework°")}`,
+  /** Invitation permanente au serveur Discord (arrive dans 👋・nouveaux-arrivants), créée par le bot REWORK */
+  discord: "https://discord.gg/7Kau7UfDNZ",
   ecrire: `mailto:${EMAIL_REDACTION}?subject=${encodeURIComponent("Message à la rédaction rework°")}`,
 } as const;
 

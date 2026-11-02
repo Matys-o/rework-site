@@ -16,11 +16,12 @@ const COLONNES = [
     titre: "Rework",
     liens: ["La lettre", "Manifeste", "Contact", "Proposer une marque"],
   },
-  { titre: "Ailleurs", liens: ["Instagram", "Are.na", "Twitter"] },
+  { titre: "Ailleurs", liens: ["Discord", "Instagram", "Are.na", "Twitter"] },
 ];
 
 // Instagram, Are.na, Twitter : pas encore d'URL → affichés sans lien
 const LIENS: Record<string, string> = {
+  Discord: ROUTES.discord,
   Index: ROUTES.index,
   Domaines: ROUTES.domaines,
   Trios: ROUTES.trios,
@@ -34,7 +35,7 @@ const LIENS: Record<string, string> = {
 
 const COLONNES_MOBILE = [
   ["Index", "Domaines", "Trios", "La lettre", "Manifeste", "Contact"],
-  ["Instagram", "Are.na", "Twitter"],
+  ["Discord", "Instagram", "Are.na", "Twitter"],
 ];
 
 function LienFooter({
@@ -53,9 +54,17 @@ function LienFooter({
         {label}
       </span>
     );
+  // Lien externe (Discord…) : nouvel onglet, le site reste ouvert
+  const externe = /^https?:\/\//.test(href);
   return (
-    <Lien ton="papier" href={href} className={className}>
+    <Lien
+      ton="papier"
+      href={href}
+      className={className}
+      {...(externe && { target: "_blank", rel: "noopener noreferrer" })}
+    >
       {label}
+      {externe && <span className="sr-only"> (nouvel onglet)</span>}
     </Lien>
   );
 }
