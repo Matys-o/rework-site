@@ -426,6 +426,16 @@ export const CATEGORIES: CategorieDef[] = [
 
 // ─── Paramètres du serveur ──────────────────────────────────────────────────
 
+/**
+ * Ce que `--prune` ne supprime jamais, même hors config : rôles et salons créés par Wick (anti-raid / anti-nuke),
+ * sa quarantaine, sa vérification et ses logs. Les rôles gérés par un bot (ex. « Wick ») sont déjà protégés.
+ * Ajoute un motif ici si un autre bot crée ses propres rôles ou salons.
+ */
+export const CONSERVER = {
+  roles: [/wick/i, /quarant/i, /mute/i, /v[ée]rifi/i, /unverified/i],
+  salons: [/wick/i, /quarant/i, /v[ée]rifi/i, /logs?\b/i, /^rules$/i],
+};
+
 export const PARAMETRES = {
   /** Salon de règles (Communauté) */
   rulesChannel: "regles",

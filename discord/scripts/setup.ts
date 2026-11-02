@@ -39,6 +39,7 @@ import {
   GEREES_EVERYONE,
   ONBOARDING,
   PARAMETRES,
+  CONSERVER,
   PERMS_EVERYONE,
   ROLES,
   type Cible,
@@ -398,22 +399,21 @@ async function parametres() {
     guild.explicitContentFilter !== voulu.explicitContentFilter ||
     guild.defaultMessageNotifications !== voulu.defaultMessageNotifications ||
     guild.rulesChannelId !== voulu.rulesChannel ||
-    guild.publicUpdatesChannelId !== voulu.publicUpdatesChannel ||
     guild.systemChannelId !== voulu.systemChannel ||
     guild.systemChannelFlags.bitfield !== flags;
+  // Le salon des mises à jour Communauté est refusé aux bots (50013) : on le tente à part.
+  const { publicUpdatesChannel, ...reste } = voulu;
   if (diff) {
-    // Le salon des mises à jour Communauté est refusé aux bots (50013) : on le tente à part.
-    const { publicUpdatesChannel, ...reste } = voulu;
     await guild.edit({ ...reste, reason: "REWORK setup" });
     note("maj", "paramètres du serveur (vérification, filtre, notifications, salons système)");
-    if (guild.publicUpdatesChannelId !== publicUpdatesChannel) {
-      try {
-        await guild.edit({ publicUpdatesChannel, reason: "REWORK setup" });
-      } catch {
-        note("manuel", "Paramètres → Communauté → Vue d'ensemble : choisis 🛡️・modération comme salon des mises à jour.");
-      }
-    }
   } else note("inchange", "paramètres du serveur");
+  if (guild.publicUpdatesChannelId !== publicUpdatesChannel) {
+    try {
+      await guild.edit({ publicUpdatesChannel, reason: "REWORK setup" });
+    } catch {
+      note("manuel", "Paramètres → Communauté → Vue d'ensemble : choisis 🛡️・modération comme salon des mises à jour.");
+    }
+  }
   if (guild.mfaLevel !== GuildMFALevel.Elevated)
     note("manuel", "2FA obligatoire pour la modération : Paramètres → Sécurité (réservé au propriétaire, impossible par API).");
 }
@@ -539,6 +539,10 @@ async function nettoyer() {
   const salonsConnus = new Set([...Object.values(ids.channels), ...Object.values(ids.categories)]);
   for (const c of guild.channels.cache.values()) {
     if (salonsConnus.has(c.id) || c.isThread()) continue;
+    if (CONSERVER.salons.some((re) => re.test(c.name))) {
+      note("inchange", `salon ${c.name} (protégé, voir CONSERVER)`);
+      continue;
+    }
     try {
       await c.delete("REWORK setup --prune");
       note("supprime", `salon ${c.name}`);
@@ -549,6 +553,10 @@ async function nettoyer() {
   const rolesConnus = new Set(Object.values(ids.roles));
   for (const r of guild.roles.cache.values()) {
     if (rolesConnus.has(r.id) || r.managed || r.id === guild.id || !r.editable) continue;
+    if (CONSERVER.roles.some((re) => re.test(r.name))) {
+      note("inchange", `rôle ${r.name} (protégé, voir CONSERVER)`);
+      continue;
+    }
     await r.delete("REWORK setup --prune");
     note("supprime", `rôle ${r.name}`);
   }

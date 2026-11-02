@@ -23,6 +23,13 @@ Il n'y a pas de bot allumé en permanence. Les scripts se connectent, agissent, 
 - `generated/ids.json` : IDs des salons et des rôles créés. Il ne contient aucun secret et il est commité.
 - `.env` : `DISCORD_TOKEN` et `DISCORD_GUILD_ID`. Ce fichier est **ignoré par git** et ne doit jamais être commité ni affiché.
 
+## Sécurité : Wick
+
+La protection anti-raid et anti-nuke est assurée par **Wick**, connecté 24 h/24, car le bot REWORK ne reste jamais allumé.
+- Le rôle Wick doit rester **tout en haut** de la liste des rôles.
+- Le bot REWORK est en **liste blanche** dans Wick. Sans ça, Wick prendrait `discord:setup` pour une attaque.
+- `--prune` ne supprime jamais les rôles et les salons de Wick (quarantaine, vérification, logs) : voir `CONSERVER` dans `config/server.ts`. Ajoute un motif à cette liste si un autre bot crée ses propres rôles.
+
 ## Ajouter un salon plus tard
 
 1. Dans `config/server.ts`, ajoute une entrée dans la bonne catégorie avec une **clé unique**. Exemple :
