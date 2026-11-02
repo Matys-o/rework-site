@@ -1,0 +1,80 @@
+# Marque du jour + film du jour sur le serveur Discord REWORK, chaque matin à 9 h (heure de Paris).
+#
+# Changement d'heure : GitHub ne connaît que l'UTC. On lance donc à 07:00 ET 08:00 UTC ;
+# le script vérifie l'heure à Paris et ne publie qu'une fois par jour, à partir de 9 h :
+#   heure d'été  (UTC+2) : 07:00 UTC = 9 h → publie ; 08:00 UTC = 10 h → déjà fait, rien.
+#   heure d'hiver (UTC+1) : 07:00 UTC = 8 h → trop tôt, rien ; 08:00 UTC = 9 h → publie.
+# (GitHub peut retarder un cron de quelques minutes : le message part donc entre 9 h et ~9 h 30.)
+#
+# Secrets requis (Settings → Secrets and variables → Actions) : DISCORD_TOKEN, DISCORD_GUILD_ID.
+name: Discord — du jour
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+    inputs:
+      quoi:
+        description: "Que publier ?"
+        type: choice
+        options: [les deux, marque, film]
+        default: les deux
+      force:
+        description: "Republier même si c'est déjà fait aujourd'hui"
+        type: boolean
+        default: false
+
+concurrency:
+  group: discord-etat # un seul workflow Discord à la fois : pas de conflit sur state/posted.json
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # commit de discord/state/posted.json
+    env:
+      DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+      DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+      OPTIONS: ${{ github.event_name == 'workflow_dispatch' && '--now' || '' }} ${{ inputs.force && '--force' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: discord/package-lock.json
+
+      - run: npm ci --prefix discord
+
+      - name: Marque du jour
+        id: marque
+        if: inputs.quoi != 'film'
+        run: npm run discord:daily -- $OPTIONS
+
+      - name: Film du jour
+        id: film
+        if: success() || failure()
+        continue-on-error: true
+        run: |
+          if [ "${{ inputs.quoi }}" = "marque" ]; then exit 0; fi
+          npm run discord:daily -- --pool=film $OPTIONS
+
+      # Toujours exécuté : même en cas d'erreur, l'historique (entrées écartées) est sauvegardé
+      - name: Enregistrer l'historique
+        if: always()
+        env:
+          MARQUE: ${{ steps.marque.outputs.nom }}
+          FILM: ${{ steps.film.outputs.nom }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discord/state/posted.json
+          if git diff --cached --quiet; then echo "Historique inchangé."; exit 0; fi
+          MSG="chore(discord): marque du jour ${MARQUE:-—}"
+          if [ -n "$FILM" ]; then MSG="$MSG · film du jour $FILM"; fi
+          git commit -m "$MSG"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

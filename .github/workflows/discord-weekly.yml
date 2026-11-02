@@ -1,0 +1,55 @@
+# Trio de la semaine (les 3 recos du site) sur le serveur Discord REWORK, chaque lundi à 9 h 05 (heure de Paris).
+# Même astuce que discord-daily.yml pour le changement d'heure : deux crons UTC, le script vérifie l'heure à Paris
+# et ne publie jamais deux fois la même semaine.
+name: Discord — trio de la semaine
+
+on:
+  schedule:
+    - cron: "5 7 * * 1"
+    - cron: "5 8 * * 1"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Republier même si le trio de la semaine est déjà parti"
+        type: boolean
+        default: false
+
+concurrency:
+  group: discord-etat
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+      DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: discord/package-lock.json
+
+      - run: npm ci --prefix discord
+
+      - name: Trio de la semaine
+        id: trio
+        run: npm run discord:weekly -- ${{ github.event_name == 'workflow_dispatch' && '--now' || '' }} ${{ inputs.force && '--force' || '' }}
+
+      - name: Enregistrer l'historique
+        if: always()
+        env:
+          TITRE: ${{ steps.trio.outputs.nom }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discord/state/posted.json
+          if git diff --cached --quiet; then echo "Historique inchangé."; exit 0; fi
+          git commit -m "chore(discord): trio de la semaine ${TITRE:-}"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

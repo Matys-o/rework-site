@@ -5,6 +5,10 @@ name: Déploiement
 on:
   push:
     branches: [main]
+    # Le serveur Discord (dossier discord/ et ses workflows) ne demande pas de redéployer le site
+    paths-ignore:
+      - "discord/**"
+      - ".github/workflows/discord-*.yml"
   # Chaque lundi 00:10 UTC : reconstruction pour le trio de la semaine (page /trios/AAAA-Wnn prérendue, sitemap à jour)
   schedule:
     - cron: "10 0 * * 1"
