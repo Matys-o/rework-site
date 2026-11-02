@@ -9,3 +9,9 @@ dist-apres/
 Thumbs.db
 !.env.example
 dist-lettre/
+
+# Discord — secrets et dépendances du dossier discord/
+discord/.env
+discord/.env.*
+!discord/.env.example
+discord/node_modules/

@@ -1,0 +1,24 @@
+{
+  "name": "rework-discord",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Serveur Discord REWORK : construction du serveur et publications automatiques (marque du jour, film du jour, trio de la semaine).",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "setup": "tsx scripts/setup.ts",
+    "daily": "tsx scripts/daily-brand.ts",
+    "weekly": "tsx scripts/weekly-recos.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "discord.js": "^14.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
