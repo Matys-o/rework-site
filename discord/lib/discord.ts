@@ -7,9 +7,27 @@ export async function connecter(): Promise<{ client: Client; guild: Guild }> {
   const token = exiger("DISCORD_TOKEN");
   const guildId = exiger("DISCORD_GUILD_ID");
   const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-  await client.login(token);
-  const guild = await client.guilds.fetch({ guild: guildId, force: true });
-  return { client, guild };
+  const delai = setTimeout(() => {
+    console.error("\n✖ Connexion à Discord impossible après 30 s (réseau ou token ?).");
+    process.exit(1);
+  }, 30_000);
+  try {
+    await client.login(token);
+    const guild = await client.guilds.fetch({ guild: guildId, force: true }).catch((e) => {
+      if (e?.code === 10004 || e?.code === 50001)
+        throw new Error(
+          `Le bot n'a pas accès au serveur ${guildId}. Vérifie DISCORD_GUILD_ID (clic droit sur le serveur → Copier l'identifiant) ` +
+            `et invite le bot avec le lien OAuth2 du README.`,
+        );
+      throw e;
+    });
+    return { client, guild };
+  } catch (e) {
+    await client.destroy();
+    throw e;
+  } finally {
+    clearTimeout(delai);
+  }
 }
 
 /** Salon texte/annonces par clé de config, ou erreur claire */
