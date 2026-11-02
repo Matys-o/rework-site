@@ -34,6 +34,11 @@ const SECTIONS = [
     texte:
       "Tant que tu restes inscrit·e. Après ta désinscription, l'adresse ne reste que sur la liste de blocage de Brevo, pour qu'on ne t'écrive plus jamais.",
   },
+  {
+    titre: "Mesure d'audience",
+    texte:
+      "Le site compte ses visites avec Umami, sans cookies : ni ton adresse IP ni rien qui permette de t'identifier n'est conservé. On voit seulement des totaux : les pages lues, le pays, le type d'appareil, et le site d'où l'on arrive.",
+  },
 ];
 
 /** Gabarit commun aux deux pages courtes de la lettre */
