@@ -35,7 +35,7 @@ Pour renommer un salon, change son `name` et garde sa `key`.
 ## Lien d'invitation du bot
 
 ```
-https://discord.com/oauth2/authorize?client_id=APP_ID&scope=bot+applications.commands&permissions=2816175999646321
+https://discord.com/oauth2/authorize?client_id=APP_ID&scope=bot+applications.commands&permissions=2816176001646321
 ```
 
 Le bot n'est jamais administrateur. Il reçoit seulement les permissions qu'il doit pouvoir régler sur les rôles et les salons, parce que Discord interdit à un bot d'accorder ou de refuser une permission qu'il n'a pas.

@@ -24,7 +24,7 @@ export const MOTS_INTERDITS = [
   "connard", "connards", "connasse", "connasses",
   "salope", "salopes", "salaud",
   "enculé", "encule", "enculés", "enculer",
-  "fdp", "fils de pute", "fils de p*te",
+  "fdp", "fils de pute",
   "ntm", "nique ta mère", "nique ta mere", "nique ta race",
   "pute", "putes",
   "batard", "bâtard", "bâtards", "batards",

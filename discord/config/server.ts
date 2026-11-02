@@ -82,6 +82,7 @@ export const ROLES: RoleDef[] = [
       ...PERMS_MEMBRE,
       P.ManageMessages,
       P.ManageThreads,
+      P.PinMessages,
       P.ModerateMembers, // exclure temporairement
       P.CreateInstantInvite,
       P.SendPolls,
@@ -135,6 +136,7 @@ export const GEREES_EVERYONE = [
   P.CreateInstantInvite,
   P.SendTTSMessages,
   P.ManageMessages,
+  P.PinMessages,
   P.ManageThreads,
   P.Connect,
   P.Speak,
@@ -157,7 +159,7 @@ export const LECTURE_SEULE: Surcharge[] = [
   { cible: "everyone", deny: ECRIRE },
   { cible: "fondateur", allow: ECRIRE_STAFF },
   { cible: "moderation", allow: ECRIRE_STAFF },
-  { cible: "bot", allow: [...ECRIRE_STAFF, P.ManageMessages, P.ManageThreads] },
+  { cible: "bot", allow: [...ECRIRE_STAFF, P.ManageMessages, P.PinMessages, P.ManageThreads] },
 ];
 
 /** Lecture seule, mais les membres peuvent répondre dans les fils ouverts par le bot (« On en parle ? 💬 ») */
