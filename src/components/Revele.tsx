@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "motion/react";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { cn } from "../lib/cn";
 import { EASE_REVELE } from "../lib/mouvement";
 
@@ -14,6 +14,8 @@ type TitreReveleProps = {
   className?: string;
   /** Délai avant la première lettre, en secondes */
   delai?: number;
+  /** false pour un nom propre (marque) : la traduction du navigateur ne le touche pas */
+  traduire?: boolean;
 };
 
 /**
@@ -21,14 +23,30 @@ type TitreReveleProps = {
  * Un masque par mot pour garder les retours à la ligne naturels.
  * Le texte complet reste lisible par les lecteurs d'écran.
  */
-export function TitreRevele({ texte, className, delai = 0 }: TitreReveleProps) {
+export function TitreRevele({ texte, className, delai = 0, traduire = true }: TitreReveleProps) {
   const reduit = useReducedMotion();
-  if (reduit) return <span className={className}>{texte}</span>;
+  // Cascade terminée → le titre redevient un seul nœud texte : la traduction du navigateur traduit la phrase,
+  // pas des lettres isolées (et le copier-coller, la recherche dans la page retrouvent le mot entier).
+  const [fini, setFini] = useState(false);
+  useEffect(() => {
+    if (reduit) return;
+    const minuteur = window.setTimeout(() => setFini(true), (delai + dureeCascade(texte) + DUREE) * 1000 + 100);
+    return () => clearTimeout(minuteur);
+  }, [reduit, delai, texte]);
+
+  const langue = traduire ? undefined : "no";
+  if (reduit || fini)
+    return (
+      <span className={className} translate={langue}>
+        {texte}
+      </span>
+    );
 
   let rang = 0;
   const mots = texte.split(" ");
   return (
-    <span className={className} aria-label={texte} role="text">
+    // translate="no" pendant la cascade : inutile de traduire des lettres une à une, la version finale le sera
+    <span className={className} aria-label={texte} role="text" translate="no">
       {mots.map((mot, i) => (
         <Fragment key={i}>
           {/* Masque élargi par du padding, compensé par une marge négative (mise en page inchangée) :
@@ -55,11 +73,18 @@ export function TitreRevele({ texte, className, delai = 0 }: TitreReveleProps) {
 }
 
 /** Le mot en Instrument Serif : arrive après le titre, d'un léger flou au net */
-export function SerifRevele({ texte, className, delai = 0.2 }: TitreReveleProps) {
+export function SerifRevele({ texte, className, delai = 0.2, traduire = true }: TitreReveleProps) {
   const reduit = useReducedMotion();
-  if (reduit) return <span className={className}>{texte}</span>;
+  const langue = traduire ? undefined : "no";
+  if (reduit)
+    return (
+      <span className={className} translate={langue}>
+        {texte}
+      </span>
+    );
   return (
     <motion.span
+      translate={langue}
       className={cn("will-change-[opacity,transform,filter]", className)}
       initial={{ opacity: 0, y: "0.12em", filter: "blur(10px)" }}
       animate={{ opacity: 1, y: "0em", filter: "blur(0px)" }}

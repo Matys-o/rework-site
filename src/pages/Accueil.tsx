@@ -282,14 +282,15 @@ export default function Accueil() {
         <section id="manifeste" className="scroll-mt-28 px-3 pt-[51px] md:px-6 md:pt-[112px]">
           <div
             ref={manifesteRef}
-            className="relative isolate mx-auto h-[400px] max-w-[1392px] overflow-hidden rounded-[32px] bg-encre text-papier md:h-[600px] md:rounded-[48px]"
+            // min-h et non h : un texte plus long (traduction, police de secours) agrandit le bloc au lieu d'être rogné
+            className="relative isolate mx-auto flex min-h-[400px] max-w-[1392px] flex-col overflow-hidden rounded-[32px] bg-encre text-papier md:min-h-[600px] md:rounded-[48px]"
           >
             <motion.div aria-hidden className="absolute inset-0 -z-10" style={{ y: yAurasManifeste }}>
               <Aura couleur="var(--color-signal)" className="-top-[120px] left-[140px] size-[360px] md:-top-[180px] md:right-[-48px] md:left-auto md:size-[620px]" />
               <Aura couleur="var(--color-aura-mode)" className="top-[300px] -left-[160px] hidden h-[520px] w-[560px] md:block" />
             </motion.div>
 
-            <Apparition className="flex h-full flex-col px-6 pt-8 pb-[27px] md:px-14 md:pt-16 md:pb-[77px]">
+            <Apparition className="flex flex-1 flex-col px-6 pt-8 pb-[27px] md:px-14 md:pt-16 md:pb-[77px]">
               <p className="t-cote-s md:t-cote-m text-signal">
                 rework /ri.wɜːrk/<span className="hidden md:inline"> — verbe</span>
               </p>

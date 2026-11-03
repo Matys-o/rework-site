@@ -4,6 +4,7 @@ import { cn } from "../lib/cn";
 export function Logo({ className, ton = "encre" }: { className?: string; ton?: "encre" | "papier" }) {
   return (
     <span
+      translate="no"
       className={cn(
         "font-display font-extrabold leading-none tracking-[-0.06em] [font-variation-settings:'opsz'_96]",
         ton === "encre" ? "text-encre" : "text-papier",

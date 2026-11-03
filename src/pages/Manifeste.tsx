@@ -62,7 +62,7 @@ export default function Manifeste() {
             {PRINCIPES.map((p, i) => (
               <Apparition as="li" rang={i} key={p.numero} className="relative isolate">
                 <Aura couleur={p.aura} flou="douce" className="top-[60px] left-10 -z-10 size-[200px] md:size-[240px]" />
-                <article className="verre flex h-[320px] flex-col rounded-[32px] p-[27px] md:h-[400px]">
+                <article className="verre flex h-full min-h-[320px] flex-col rounded-[32px] p-[27px] md:min-h-[400px]">
                   <p className="t-cote-m text-signal">{p.numero}</p>
                   <h2 className="t-titre-l mt-auto">{p.titre}</h2>
                   <p className="t-texte-s mt-5 max-w-[250px]">{p.texte}</p>

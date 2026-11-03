@@ -57,6 +57,7 @@ export function LigneIndex({ marque }: { marque: Marque }) {
           t,
           "group-hover:translate-x-4",
         )}
+        translate={marque.domaine === "film" ? undefined : "no"}
       >
         {marque.nom}
       </span>

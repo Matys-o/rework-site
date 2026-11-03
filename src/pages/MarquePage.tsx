@@ -62,7 +62,9 @@ function Voisin({ marque, sens }: { marque: Marque; sens: "precedent" | "suivant
       <span className="t-cote-m shrink-0 whitespace-pre text-graphite transition-colors duration-240 ease-rw group-hover:text-signal">
         {suivant ? `${marque.cote}  →` : `←  ${marque.cote}`}
       </span>
-      <span className="t-titre-m tronque min-w-0 max-md:text-[22px]">{marque.nom}</span>
+      <span className="t-titre-m tronque min-w-0 max-md:text-[22px]" translate={marque.domaine === "film" ? undefined : "no"}>
+        {marque.nom}
+      </span>
     </a>
   );
 }
@@ -134,7 +136,7 @@ export default function MarquePage() {
                   "lg:max-w-[calc(100%_-_240px)] lg:text-[length:min(260px,calc((min(100vw,1440px)_-_2*var(--marge)_-_296px)/var(--k)))]",
                 )}
               >
-                <TitreRevele texte={titre} />
+                <TitreRevele texte={titre} traduire={!film} />
               </motion.h1>
               <p className="mt-4 font-serif text-[clamp(30px,9vw,36px)] leading-none tracking-[-0.01em] text-balance italic md:t-serif-l md:mt-1.5 lg:max-w-[calc(100%_-_240px)]">
                 <SerifRevele texte={sousTitre} delai={dureeCascade(titre) + 0.2} className="inline-block" />

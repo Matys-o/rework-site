@@ -50,7 +50,8 @@ export function Bouton({ type = "encre", href, externe = false, onClick, classNa
     : {};
 
   const classes = cn(
-    "group relative inline-flex items-center gap-2.5 rounded-pill py-[15px] pr-5 pl-6 text-[15px] leading-[1.5] font-semibold whitespace-nowrap",
+    // Une ligne dès sm ; en mobile, un libellé trop long (traduction) passe à la ligne au lieu de déborder de l'écran
+    "group relative inline-flex max-w-full items-center gap-2.5 rounded-pill py-[15px] pr-5 pl-6 text-left text-[15px] leading-[1.5] font-semibold sm:whitespace-nowrap",
     "transition-[background-color,color] duration-240 ease-rw",
     // Ombre Levée en pseudo-élément : seule son opacité varie
     type !== "verre" &&

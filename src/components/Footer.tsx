@@ -241,7 +241,9 @@ export function Footer() {
       </motion.div>
 
       <div className="mx-auto max-w-[1440px] px-(--marge) pt-9 pb-6 md:px-16 md:pt-[72px] md:pb-8">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,520px)_1fr] lg:gap-20">
+        {/* grid-cols-1 (= minmax(0, 1fr)) : sans colonne explicite, la piste prenait la largeur naturelle
+            du champ e-mail et le bloc débordait de l'écran en mobile (bouton « S'inscrire » rogné) */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,520px)_1fr] lg:gap-20">
           <div id="lettre" className="scroll-mt-24">
             <p className="t-cote-m text-signal">/ la lettre de rework°</p>
             <h2 className="t-titre-m md:t-titre-l mt-2">

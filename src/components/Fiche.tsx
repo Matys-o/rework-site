@@ -44,11 +44,13 @@ type FicheDossierProps = {
   href?: string;
   /** Nom de View Transition : la couverture devient l'image hero de la page marque */
   nomTransition?: string;
+  /** Le titre est un nom de marque : la traduction du navigateur ne le touche pas */
+  nomPropre?: boolean;
   className?: string;
 };
 
 // Fiche (dossier à onglet) — survol : levée −8 px, ombre Levée, aura dilatée, flèche ↗ sur rouge
-export function FicheDossier({ onglet, domaine, meta, titre, description, initiale, image, video, pastille, href, nomTransition, className }: FicheDossierProps) {
+export function FicheDossier({ onglet, domaine, meta, titre, description, initiale, image, video, pastille, href, nomTransition, nomPropre, className }: FicheDossierProps) {
   const Racine = href ? "a" : "article";
   // Survol : l'aura suit le curseur, tilt 3D (max 6°), reflet lumineux
   const { handlers, suivi, tilt, reflet, actif } = useCarteInteractive({ amplitudeAura: 0.45 });
@@ -109,7 +111,11 @@ export function FicheDossier({ onglet, domaine, meta, titre, description, initia
           <div className="mt-1.5 flex items-start justify-between gap-2">
             {/* Taille suivant la largeur de la fiche — à 400 px : 40 px, 30 px pour les titres longs (Teenage Engineering),
                 24 px au-delà de 30 caractères (titres de films). Jamais coupé : un titre trop long passe à la ligne. */}
-            <h3 className="t-titre-l min-w-0 pb-[0.06em]" style={{ fontSize: tailleTitreFiche(titre) }}>
+            <h3
+              className="t-titre-l min-w-0 pb-[0.06em]"
+              style={{ fontSize: tailleTitreFiche(titre) }}
+              translate={nomPropre ? "no" : undefined}
+            >
               {titre}
             </h3>
             <span
@@ -155,6 +161,7 @@ export function Fiche({ marque, className }: { marque: Marque; className?: strin
       video={marque.video}
       pastille={marque.etiquette}
       nomTransition={`couverture-${marque.slug}`}
+      nomPropre={marque.domaine !== "film"}
       className={className}
     />
   );
