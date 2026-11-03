@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 1,
+    "total": 2,
     "cycle": 1,
     "publiees": [
       {
@@ -9,6 +9,13 @@
         "nom": "Yohji Yamamoto",
         "date": "2026-11-02",
         "message": "1566947136736722946"
+      },
+      {
+        "id": 208,
+        "slug": "akai",
+        "nom": "Akai",
+        "date": "2026-11-03",
+        "message": "1567187851454718005"
       }
     ],
     "ignorees": [
@@ -22,7 +29,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 1,
+    "total": 2,
     "cycle": 1,
     "publiees": [
       {
@@ -31,6 +38,13 @@
         "nom": "Yi Yi",
         "date": "2026-11-02",
         "message": "1566947153258225735"
+      },
+      {
+        "id": 300,
+        "slug": "vivre",
+        "nom": "Vivre",
+        "date": "2026-11-03",
+        "message": "1567187868063899702"
       }
     ],
     "ignorees": [],
