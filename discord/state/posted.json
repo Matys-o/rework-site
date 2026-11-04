@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 2,
+    "total": 3,
     "cycle": 1,
     "publiees": [
       {
@@ -16,6 +16,13 @@
         "nom": "Akai",
         "date": "2026-11-03",
         "message": "1567187851454718005"
+      },
+      {
+        "id": 27,
+        "slug": "goldwin",
+        "nom": "Goldwin",
+        "date": "2026-11-04",
+        "message": "1567553442988433530"
       }
     ],
     "ignorees": [
@@ -29,7 +36,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 2,
+    "total": 3,
     "cycle": 1,
     "publiees": [
       {
@@ -45,6 +52,13 @@
         "nom": "Vivre",
         "date": "2026-11-03",
         "message": "1567187868063899702"
+      },
+      {
+        "id": 331,
+        "slug": "la-garconniere",
+        "nom": "La Garçonnière",
+        "date": "2026-11-04",
+        "message": "1567553458611945473"
       }
     ],
     "ignorees": [],
