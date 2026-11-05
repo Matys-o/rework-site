@@ -131,7 +131,7 @@ export default function Accueil() {
                   valeur={requete}
                   onChange={setRequete}
                   onSubmit={() =>
-                    window.location.assign(requete.trim() ? `${LIENS.index}?q=${encodeURIComponent(requete.trim())}` : LIENS.index)
+                    window.location.assign(requete.trim() ? `${LIENS.index}?q=${encodeURIComponent(requete.trim())}#resultats` : LIENS.index)
                   }
                 />
               </div>
