@@ -115,7 +115,7 @@ export default function MarquePage() {
               href={LIENS.index}
               className="verre-pill t-cote-m inline-flex h-11 items-center rounded-pill pr-[15px] pl-[15px] transition-colors duration-240 ease-rw hover:bg-blanc md:pr-[18px] md:pl-4"
             >
-              ← <span className="ml-1.5 hidden md:inline">retour à l’</span>index
+              ← <span className="ml-1.5">Toutes les marques</span>
             </a>
 
             <div className="relative">
@@ -230,7 +230,7 @@ export default function MarquePage() {
         <section className="pt-10 md:pt-[120px]">
           <Conteneur className="grid gap-y-4 md:grid-cols-12 md:gap-x-5">
             <div className="md:col-span-6">
-              <p className="t-cote-s md:t-cote-m text-signal">/ 01 — {film ? "le film" : "la marque"}</p>
+              <p className="t-cote-s md:t-cote-m text-signal">/ {film ? "Le film" : "La marque"}</p>
               <h2 className="mt-2.5 md:mt-[13px]">
                 <span className="t-titre-l md:t-display-l md:-ml-2 md:block">{marque.origine || domaine.nom}{marque.annee ? "," : "."}</span>{" "}
                 {marque.annee > 0 && <span className="t-titre-l md:t-serif-l md:mt-1.5 md:block">{marque.annee}.</span>}
@@ -250,7 +250,7 @@ export default function MarquePage() {
         {/* ── À lire ensuite ── */}
         <section className="hidden pt-20 md:block">
           <Conteneur>
-            <p className="t-cote-m text-signal">/ à lire ensuite</p>
+            <p className="t-cote-m text-signal">/ Dans le même univers</p>
             <ul className="mt-[23px] grid justify-items-center gap-x-10 gap-y-[52px] md:grid-cols-2 xl:grid-cols-3">
               {aLireEnsuite(marque).map((m, i) => (
                 <Apparition as="li" rang={i} key={m.slug} className="w-full max-w-[400px]">
@@ -284,8 +284,8 @@ function Introuvable() {
       <main className="overflow-x-clip">
         <Conteneur className="flex min-h-[70vh] flex-col items-start justify-center gap-8 pt-32 pb-20">
           <p className="t-cote-m text-signal">/ fiche introuvable</p>
-          <h1 className="t-display-l">Pas dans l'archive.</h1>
-          <p className="t-serif-m">Cette entrée n'a pas (encore) de dossier.</p>
+          <h1 className="t-display-l">Fiche introuvable.</h1>
+          <p className="t-serif-m">Cette entrée n'existe pas ou a été retirée.</p>
           <Bouton type="encre" href={LIENS.index}>
             Retour à l'index
           </Bouton>

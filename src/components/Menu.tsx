@@ -119,7 +119,7 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
 
           <div className="flex flex-col lg:pt-[30px]">
             <div {...entree(4)}>
-              <p className="t-cote-m hidden lg:block">/ domaines</p>
+              <p className="t-cote-m hidden lg:block">/ univers</p>
               <ul className="flex max-w-[300px] flex-wrap gap-x-[11px] gap-y-3 lg:mt-5 lg:flex-col lg:items-start lg:gap-4">
                 {Object.values(DOMAINES).map((d) => (
                   <li key={d.id}>
@@ -135,14 +135,14 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
                 href={LIENS.hasard}
                 className="t-serif-s mt-2 inline-block text-encre transition-colors duration-240 ease-rw hover:text-signal"
               >
-                Ouvrir une fiche au hasard →
+                Une marque au hasard →
               </a>
               <a
                 href={LIENS.trio}
                 onClick={onFermer}
                 className="t-serif-s mt-2 block text-encre transition-colors duration-240 ease-rw hover:text-signal"
               >
-                Le trio de la semaine →
+                Le trio du jour →
               </a>
             </div>
 

@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "react-router";
-import { AuraAnimee } from "../components/Aura";
 import { Bouton } from "../components/Bouton";
-import { Compteur } from "../components/Compteur";
-import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { Fiche } from "../components/Fiche";
 import { Filtre } from "../components/Filtre";
 import { Footer } from "../components/Footer";
@@ -18,6 +15,7 @@ import { cn } from "../lib/cn";
 import { metaIndex } from "../lib/meta";
 import { EASE_REVELE, defilerVers } from "../lib/mouvement";
 import { useMeta } from "../lib/useMeta";
+import { EnTetePage } from "../components/EnTetePage";
 
 const PAR_PAGE = 24;
 
@@ -37,6 +35,13 @@ const ORDRE_TRIS_FILMS: Tri[] = ["rang", "recent", "nom", "annee"];
 const normaliser = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 
 const estDomaine = (v: string | null): v is DomaineId => !!v && v in DOMAINES;
+
+/** « 446 marques et films », « 78 films », « 150 marques · Mode » */
+function titreIndex(domaine: DomaineId | null) {
+  if (!domaine) return `${TOTAL_ENTREES} marques et films`;
+  const d = DOMAINES[domaine];
+  return domaine === "film" ? `${d.entrees} films` : `${d.entrees} marques · ${d.nom}`;
+}
 
 export default function Index() {
   const [params, setParams] = useSearchParams();
@@ -111,25 +116,11 @@ export default function Index() {
 
       <main className="overflow-x-clip">
         {/* ── En-tête ── */}
-        <section className="relative isolate">
-          <AuraAnimee className="absolute inset-x-0 -top-[300px] h-[680px] -z-10 md:-top-[420px] md:h-[900px]">
-            <div aria-hidden className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-papier/0 to-papier" />
-          </AuraAnimee>
-
-          <Conteneur className="pt-[100px] md:pt-[140px]">
-            <p className="t-cote-s md:t-cote-m">rework° / index</p>
-
-            <div className="mt-2 flex flex-col gap-6 md:mt-[17px] lg:flex-row lg:items-start lg:justify-between">
-              <h1 className="flex flex-wrap items-baseline gap-x-6">
-                <TitreRevele texte="l'index" className="t-display-xl -ml-1.5 md:-ml-2" />
-                <SerifRevele texte="classé, pas empilé." delai={dureeCascade("l'index") + 0.2} className="t-serif-m md:t-serif-l inline-block text-signal" />
-              </h1>
-              <p className="flex items-baseline gap-3 lg:mt-[30px] lg:flex-col lg:items-end lg:gap-1.5">
-                <Compteur valeur={TOTAL_ENTREES} className="t-titre-l lg:t-display-l" />
-                <span className="t-cote-s md:t-cote-m">entrées dans l’archive</span>
-              </p>
-            </div>
-
+        <EnTetePage
+          pastille="Mis à jour chaque semaine"
+          titre={titreIndex(domaine)}
+          texte="Cherchez par nom, ville ou catégorie, ou choisissez un univers."
+        >
             {/* Recherche · vue · tri */}
             {/* Recherche et commandes sur une ligne dès lg ; empilées en dessous (sinon « Trier » déborde vers 768 px) */}
             <div className="mt-8 flex flex-col gap-4 md:mt-[60px] lg:flex-row lg:items-center lg:justify-between">
@@ -192,15 +183,14 @@ export default function Index() {
                 </li>
               ))}
             </ul>
-          </Conteneur>
-        </section>
+        </EnTetePage>
 
         {/* ── Résultats ── */}
         <section ref={resultatsRef} id="resultats" aria-live="polite" className="pt-6 md:pt-12">
           <Conteneur>
             {resultats.length === 0 ? (
               <div className="flex flex-col items-start gap-6 py-16 md:py-24">
-                <p className="t-serif-m md:t-serif-l">Rien dans l'archive{q && ` pour « ${q} »`}.</p>
+                <p className="t-serif-m md:t-serif-l">Aucun résultat{q && ` pour « ${q} »`}.</p>
                 <Bouton
                   type="verre"
                   onClick={() => {
@@ -232,7 +222,7 @@ export default function Index() {
               </ul>
             ) : (
               <div>
-                <p className="t-cote-s md:t-cote-m text-signal">/ vue liste — même archive, autre lecture</p>
+                <p className="t-cote-s md:t-cote-m text-signal">/ vue liste</p>
                 <div className="mt-6 md:mt-9">
                   <EnTeteIndex />
                 </div>

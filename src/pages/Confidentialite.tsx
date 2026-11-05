@@ -1,10 +1,9 @@
 import type { ReactNode } from "react";
 import { Apparition } from "../components/Apparition";
-import { AuraAnimee } from "../components/Aura";
+import { EnTetePage } from "../components/EnTetePage";
 import { Footer } from "../components/Footer";
 import { Conteneur } from "../components/Grille";
 import { Nav } from "../components/Nav";
-import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { metaConfidentialite, metaInscriptionConfirmee } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
 import { Bouton } from "../components/Bouton";
@@ -17,27 +16,27 @@ const SECTIONS = [
   {
     titre: "Ce qu'on garde",
     texte:
-      "Ton adresse email. Rien d'autre : pas de nom, pas de profil, pas de revente, pas de publicité.",
+      "Votre adresse e-mail. Rien d'autre : pas de nom, pas de profil, pas de revente, pas de publicité.",
   },
   {
     titre: "À quoi elle sert",
     texte:
-      "À t'envoyer la lettre de rework°, une fois par semaine : le trio de la semaine et les nouvelles entrées de l'archive. Et, une seule fois, l'email qui confirme ton inscription.",
+      "À vous envoyer la lettre de rework°, une fois par semaine : les trios de la semaine et les nouvelles entrées. Et, une seule fois, l'e-mail qui confirme votre inscription.",
   },
   {
     titre: "Où elle est",
     texte:
-      "Chez Brevo, le service qui envoie la lettre, hébergé dans l'Union européenne. Comme la plupart des lettres, Brevo indique si elle a été ouverte et quels liens ont été cliqués : ça nous sert à savoir ce qui intéresse, jamais à te cibler.",
+      "Chez Brevo, le service qui envoie la lettre, hébergé dans l'Union européenne. Comme la plupart des lettres, Brevo indique si elle a été ouverte et quels liens ont été cliqués : ça nous sert à savoir ce qui intéresse, jamais à vous cibler.",
   },
   {
     titre: "Combien de temps",
     texte:
-      "Tant que tu restes inscrit·e. Après ta désinscription, l'adresse ne reste que sur la liste de blocage de Brevo, pour qu'on ne t'écrive plus jamais.",
+      "Tant que vous restez inscrit·e. Après votre désinscription, l'adresse ne reste que sur la liste de blocage de Brevo, pour qu'on ne vous écrive plus jamais.",
   },
   {
     titre: "Mesure d'audience",
     texte:
-      "Le site compte ses visites avec Umami, sans cookies : ni ton adresse IP ni rien qui permette de t'identifier n'est conservé. On voit seulement des totaux : les pages lues, le pays, le type d'appareil, et le site d'où l'on arrive.",
+      "Le site compte ses visites avec Umami, sans cookies : ni votre adresse IP ni rien qui permette de vous identifier n'est conservé. On voit seulement des totaux : les pages lues, le pays, le type d'appareil, et le site d'où l'on arrive.",
   },
 ];
 
@@ -57,28 +56,7 @@ function PageCourte({
     <>
       <Nav />
       <main className="overflow-x-clip">
-        <section className="relative isolate">
-          <AuraAnimee className="absolute inset-x-0 -top-[300px] -z-10 h-[680px] md:-top-[420px] md:h-[900px]">
-            <div
-              aria-hidden
-              className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-papier/0 to-papier"
-            />
-          </AuraAnimee>
-          <Conteneur className="pt-[100px] md:pt-[140px]">
-            <p className="t-cote-s md:t-cote-m">{cote}</p>
-            <h1 className="mt-2 md:mt-[17px]">
-              <TitreRevele
-                texte={titre}
-                className="t-display-l -ml-1 block md:-ml-2"
-              />
-              <SerifRevele
-                texte={sousTitre}
-                delai={dureeCascade(titre) + 0.2}
-                className="t-serif-m md:t-serif-l mt-2 block text-signal md:mt-3"
-              />
-            </h1>
-          </Conteneur>
-        </section>
+        <EnTetePage pastille={cote} titre={titre} texte={sousTitre} />
         <Conteneur className="pt-12 md:pt-20">{children}</Conteneur>
         <div className="h-16 md:h-24" />
       </main>
@@ -92,9 +70,9 @@ export default function Confidentialite() {
   useMeta(META);
   return (
     <PageCourte
-      cote="rework° / confidentialité"
-      titre="ton email, rien d'autre."
-      sousTitre="ce que devient ton adresse."
+      cote="Confidentialité"
+      titre="Votre e-mail, rien d'autre."
+      sousTitre="Ce que devient l'adresse laissée pour recevoir la lettre."
     >
       <div className="grid max-w-[760px] gap-10 md:gap-14">
         {SECTIONS.map((s) => (
@@ -111,8 +89,7 @@ export default function Confidentialite() {
           </h2>
           <p className="t-texte-m md:t-texte-l mt-3 text-carbone">
             Un clic sur « Se désinscrire », en bas de chaque lettre, et c'est
-            fait, sans justification. Pour consulter, corriger ou supprimer ton
-            adresse (RGPD), réponds simplement à une lettre : on s'en occupe à
+            fait, sans justification. Pour consulter, corriger ou supprimer votre adresse (RGPD), répondez simplement à une lettre : on s'en occupe à
             la main.
           </p>
         </Apparition>
@@ -126,19 +103,17 @@ export function InscriptionConfirmee() {
   useMeta(META_CONFIRMEE);
   return (
     <PageCourte
-      cote="rework° / la lettre"
-      titre="c'est confirmé."
-      sousTitre="rendez-vous lundi."
+      cote="La lettre"
+      titre="C'est confirmé."
+      sousTitre="Rendez-vous lundi."
     >
       <p className="t-texte-m md:t-texte-l max-w-[640px] text-carbone">
-        La lettre arrive chaque lundi : le trio de la semaine, et ce qui vient
-        d'entrer dans l'archive. En attendant, le trio de cette semaine est déjà
-        en ligne.
+        La lettre arrive chaque lundi : les trios de la semaine et les nouvelles entrées. En attendant, le trio du jour est déjà en ligne.
       </p>
       <div className="mt-8 flex flex-wrap gap-3 md:mt-10">
-        <Bouton href={LIENS.trio}>Le trio de la semaine</Bouton>
+        <Bouton href={LIENS.trio}>Le trio du jour</Bouton>
         <Bouton type="verre" href={LIENS.index}>
-          Explorer l'archive
+          Voir toutes les marques
         </Bouton>
       </div>
     </PageCourte>

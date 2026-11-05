@@ -112,7 +112,7 @@ export default function Accueil() {
                 {Object.keys(DOMAINES).length} univers
               </h2>
               <p className="t-texte-m mt-1 text-graphite">
-                Choisis par où commencer.
+                Choisissez par où commencer.
               </p>
             </Apparition>
             <ul className={RANGEE}>
