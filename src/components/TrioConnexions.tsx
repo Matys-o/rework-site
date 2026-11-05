@@ -26,7 +26,7 @@ const FIL = "border-encre/45 border-dashed";
 
 /**
  * Trio — film → marque → marque, reliés par deux phrases.
- * Desktop (lg) : 3 fiches côte à côte, fil horizontal dessous. Mobile / tablette : fiches empilées, fil vertical.
+ * Desktop (lg) : 3 fiches côte à côte, fil horizontal et phrases au-dessus. Mobile / tablette : fiches empilées, fil vertical.
  * Auras : une par entrée, à la couleur de son domaine, qui se mélangent derrière les fiches.
  */
 export function TrioConnexions({ trio }: { trio: Trio }) {
@@ -38,6 +38,37 @@ export function TrioConnexions({ trio }: { trio: Trio }) {
         <Aura couleur={DOMAINES[a.domaine].couleur} className="top-[2%] left-0 aspect-square w-[55%] max-w-[700px] opacity-80" />
         <Aura couleur={DOMAINES[b.domaine].couleur} className="top-[34%] left-[24%] aspect-square w-[55%] max-w-[700px] opacity-80 lg:top-[8%]" />
         <Aura couleur={DOMAINES[c.domaine].couleur} className="top-[66%] right-0 aspect-square w-[55%] max-w-[700px] opacity-80 lg:top-[2%]" />
+      </div>
+
+      {/* Desktop : phrases au-dessus des fiches — fil horizontal, branches qui descendent vers chaque fiche (centres de colonne) */}
+      <div className="relative mb-2 hidden h-[150px] lg:block">
+        {[0, 1, 2].map((i) => (
+          <span
+            key={i}
+            aria-hidden
+            className="absolute bottom-0"
+            style={{ left: `calc((100% - 2 * var(--g)) / 6 * ${2 * i + 1} + var(--g) * ${i})` }}
+          >
+            <span className="absolute -bottom-1 -left-[3.5px] size-[7px] rounded-full bg-signal" />
+            <span className={cn("absolute bottom-0 left-0 h-[72px] border-l-[1.5px]", FIL)} />
+          </span>
+        ))}
+        <span
+          aria-hidden
+          className={cn("absolute bottom-[72px] border-t-[1.5px]", FIL)}
+          style={{ left: "calc((100% - 2 * var(--g)) / 6)", right: "calc((100% - 2 * var(--g)) / 6)" }}
+        />
+        {[0, 1].map((i) => (
+          <Liaison
+            key={i}
+            de={trio.items[i].cote}
+            vers={trio.items[i + 1].cote}
+            texte={trio.liens[i]}
+            className="absolute bottom-[72px] w-[min(320px,30%)] -translate-x-1/2 translate-y-1/2"
+            // Milieu de la gouttière entre deux fiches
+            style={{ left: `calc((100% - 2 * var(--g)) / 3 * ${i + 1} + var(--g) * ${i + 0.5})` }}
+          />
+        ))}
       </div>
 
       <ol className="grid justify-items-center gap-x-(--g) lg:grid-cols-3">
@@ -57,36 +88,6 @@ export function TrioConnexions({ trio }: { trio: Trio }) {
         ))}
       </ol>
 
-      {/* Desktop : branches sous chaque fiche (centres de colonne), fil horizontal, phrases au milieu des gouttières */}
-      <div className="relative mt-2 hidden h-[150px] lg:block">
-        {[0, 1, 2].map((i) => (
-          <span
-            key={i}
-            aria-hidden
-            className="absolute top-0"
-            style={{ left: `calc((100% - 2 * var(--g)) / 6 * ${2 * i + 1} + var(--g) * ${i})` }}
-          >
-            <span className="absolute -top-1 -left-[3.5px] size-[7px] rounded-full bg-signal" />
-            <span className={cn("absolute top-0 left-0 h-[72px] border-l-[1.5px]", FIL)} />
-          </span>
-        ))}
-        <span
-          aria-hidden
-          className={cn("absolute top-[72px] border-t-[1.5px]", FIL)}
-          style={{ left: "calc((100% - 2 * var(--g)) / 6)", right: "calc((100% - 2 * var(--g)) / 6)" }}
-        />
-        {[0, 1].map((i) => (
-          <Liaison
-            key={i}
-            de={trio.items[i].cote}
-            vers={trio.items[i + 1].cote}
-            texte={trio.liens[i]}
-            className="absolute top-[72px] w-[min(320px,30%)] -translate-x-1/2 -translate-y-1/2"
-            // Milieu de la gouttière entre deux fiches
-            style={{ left: `calc((100% - 2 * var(--g)) / 3 * ${i + 1} + var(--g) * ${i + 0.5})` }}
-          />
-        ))}
-      </div>
     </div>
   );
 }
