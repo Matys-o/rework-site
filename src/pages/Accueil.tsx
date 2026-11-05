@@ -18,6 +18,7 @@ import { DOMAINES, TOTAL_ENTREES, nouvellesEntrees } from "../data/brands";
 import { trioDeLaSemaine } from "../data/trios";
 import { lienTrio, metaAccueil } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
+import { useIntroFinie } from "../lib/useIntroFinie";
 import { cn } from "../lib/cn";
 import { LIENS } from "../lib/liens";
 import { defilerVers, useFacteurParallax } from "../lib/mouvement";
@@ -45,6 +46,9 @@ function Monogramme({ ton = "encre" }: { ton?: "encre" | "papier" }) {
 
 export default function Accueil() {
   const [requete, setRequete] = useState("");
+  // Les entrées du hero (titre, recherche, bandeau) se rejouent une fois l'intro terminée
+  const introFinie = useIntroFinie();
+  const cleIntro = introFinie ? "apres-intro" : "sous-intro";
   const rechercheRef = useRef<HTMLDivElement>(null);
   const conceptRef = useRef<HTMLElement>(null);
   const heroRef = useRef<HTMLElement>(null);
@@ -106,7 +110,7 @@ export default function Accueil() {
               <p className="hidden md:block">R°{TOTAL_ENTREES} entités — mode · design · tech · digital · film</p>
             </div>
 
-            <h1 className="mt-0 md:mt-[11px]">
+            <h1 key={cleIntro} className="mt-0 md:mt-[11px]">
               <motion.span style={{ y: yArchive }} className="t-display-xxl relative -ml-2 block">
                 <TitreRevele texte="l'archive" />
               </motion.span>
@@ -122,7 +126,7 @@ export default function Accueil() {
             </h1>
 
             <Grille className="mt-11 items-start md:mt-[70px]">
-              <div ref={rechercheRef} className="col-span-4 md:col-span-7">
+              <div key={cleIntro} ref={rechercheRef} className="col-span-4 md:col-span-7">
                 <Recherche
                   valeur={requete}
                   onChange={setRequete}
@@ -167,7 +171,7 @@ export default function Accueil() {
           </motion.div>
 
           <div className="relative mt-[39px] md:mt-[33px]">
-            <Bandeau className="-ml-[60px] w-[calc(100%+120px)] -rotate-2 md:-ml-[100px] md:w-[calc(100%+200px)]" />
+            <Bandeau key={cleIntro} className="-ml-[60px] w-[calc(100%+120px)] -rotate-2 md:-ml-[100px] md:w-[calc(100%+200px)]" />
           </div>
         </section>
 

@@ -1,0 +1,25 @@
+/* rework° — intro. Reprend les tokens du site (encre, papier, signal, auras). */
+.rw-intro{--encre:#0e0e0e;--papier:#eeece7;--signal:#ff3d2e;--paper:1;
+  position:fixed;inset:0;z-index:9999;overflow:hidden;cursor:pointer;color:var(--encre)}
+.rw-intro__paper{position:absolute;inset:0;background:var(--papier);opacity:var(--paper)}
+.rw-intro__abs{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.rw-intro__aura{border-radius:50%;opacity:0;pointer-events:none;mix-blend-mode:multiply}
+.rw-intro__word{font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;font-weight:800;font-variation-settings:'opsz' 96;
+  letter-spacing:-.06em;line-height:1;white-space:nowrap;transform-origin:50% 50%;opacity:0}
+.rw-intro__logo{font-family:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;font-weight:800;font-variation-settings:'opsz' 96;
+  letter-spacing:-.06em;line-height:1;white-space:nowrap;opacity:0}
+.rw-intro__l{display:inline-block;transform-origin:50% 100%}
+.rw-intro__dot{color:var(--signal);transform-origin:50% 50%}
+.rw-intro__tag{font-family:'Instrument Serif',ui-serif,Georgia,serif;font-style:italic;white-space:nowrap;opacity:0}
+.rw-intro__tag em{color:var(--signal)}
+.rw-intro__mono{font-family:'Geist Mono',ui-monospace,SFMono-Regular,monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:pre}
+.rw-intro__idx{font-size:12px}
+.rw-intro__skip{position:absolute;left:50%;transform:translateX(-50%);bottom:28px;z-index:2;
+  font:11px/1 'Geist Mono',ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;
+  padding:10px 16px;border-radius:999px;border:1px solid rgba(14,14,14,.18);background:rgba(255,255,255,.55);color:var(--encre);cursor:pointer;
+  backdrop-filter:blur(10px)}
+.rw-intro__skip:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+/* pendant l'intro : vrai logo caché (l'intro atterrit à sa place) + scroll bloqué */
+html.rework-intro-on{overflow:hidden}
+html.rework-intro-on [data-intro-target]{visibility:hidden}
+@media (max-width:640px){.rw-intro__mono{font-size:10px}}

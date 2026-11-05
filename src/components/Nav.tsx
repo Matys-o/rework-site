@@ -91,7 +91,7 @@ export function Nav({ className, onChercher, surSombre = false }: NavProps) {
             aria-current={pathname === "/" ? "page" : undefined}
             className="-my-2.5 py-2.5"
           >
-            <Logo className="text-[24px] md:text-[30px]" />
+            <Logo className="text-[24px] md:text-[30px]" introTarget />
           </a>
 
           <ul className="hidden items-center gap-9 lg:flex">
