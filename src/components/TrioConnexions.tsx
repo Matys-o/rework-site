@@ -7,13 +7,14 @@ import { Aura } from "./Aura";
 import { Fiche } from "./Fiche";
 
 /** Phrase de liaison posée sur le fil — « R°328 → R°004 » puis la phrase */
-type LiaisonProps = { de: string; vers: string; texte: string; className?: string; style?: CSSProperties };
+type LiaisonProps = { de: string; vers: string; texte: string; suffixe?: boolean; className?: string; style?: CSSProperties };
 
-function Liaison({ de, vers, texte, className, style }: LiaisonProps) {
+function Liaison({ de, vers, texte, suffixe, className, style }: LiaisonProps) {
   return (
     <p className={cn("verre rounded-[18px] bg-papier/70 px-4 py-3 text-left", className)} style={style}>
       <span className="t-cote-s block text-signal">
         {de} → {vers}
+        {suffixe && <>&nbsp;&nbsp;·&nbsp;&nbsp;le lien</>}
       </span>
       <span className="t-texte-s mt-1 block text-carbone">{texte}</span>
     </p>
@@ -29,7 +30,7 @@ const FIL = "border-encre/45 border-dashed";
  * Desktop (lg) : 3 fiches côte à côte, fil horizontal et phrases au-dessus. Mobile / tablette : fiches empilées, fil vertical.
  * Auras : une par entrée, à la couleur de son domaine, qui se mélangent derrière les fiches.
  */
-export function TrioConnexions({ trio }: { trio: Trio }) {
+export function TrioConnexions({ trio, numerote = false }: { trio: Trio; /** Accueil : 01/02/03 sur les onglets, « · le lien » dans les bulles */ numerote?: boolean }) {
   const [a, b, c] = trio.items;
   return (
     // --g : gouttière des fiches, partagée avec le calcul de position du fil desktop
@@ -64,6 +65,7 @@ export function TrioConnexions({ trio }: { trio: Trio }) {
             de={trio.items[i].cote}
             vers={trio.items[i + 1].cote}
             texte={trio.liens[i]}
+            suffixe={numerote}
             className="absolute bottom-[72px] w-[min(320px,30%)] -translate-x-1/2 translate-y-1/2"
             // Milieu de la gouttière entre deux fiches
             style={{ left: `calc((100% - 2 * var(--g)) / 3 * ${i + 1} + var(--g) * ${i + 0.5})` }}
@@ -75,13 +77,13 @@ export function TrioConnexions({ trio }: { trio: Trio }) {
         {trio.items.map((m, i) => (
           <li key={m.slug} className="contents">
             <Apparition rang={i} className="w-full max-w-[400px] justify-self-center">
-              <Fiche marque={m} />
+              <Fiche marque={m} numero={numerote ? String(i + 1).padStart(2, "0") : undefined} />
             </Apparition>
             {/* Mobile / tablette : fil vertical et phrase posée dessus */}
             {i < 2 && (
               <div className="relative flex w-full max-w-[400px] justify-center py-7 lg:hidden">
                 <span aria-hidden className={cn("absolute inset-y-0 left-1/2 border-l-[1.5px]", FIL)} />
-                <Liaison de={m.cote} vers={trio.items[i + 1].cote} texte={trio.liens[i]} className="relative w-full max-w-[340px]" />
+                <Liaison de={m.cote} vers={trio.items[i + 1].cote} texte={trio.liens[i]} suffixe={numerote} className="relative w-full max-w-[340px]" />
               </div>
             )}
           </li>

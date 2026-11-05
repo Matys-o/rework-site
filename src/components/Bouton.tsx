@@ -1,10 +1,15 @@
-import { motion, useMotionValue, useReducedMotion, useSpring } from "motion/react";
+import {
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+} from "motion/react";
 import type { PointerEvent, ReactNode } from "react";
 import { cn } from "../lib/cn";
 import { useEstMobile } from "../lib/mouvement";
 import { FlecheSurvol } from "./Icone";
 
-type BoutonType = "encre" | "signal" | "verre";
+type BoutonType = "encre" | "signal" | "verre" | "contour";
 
 type BoutonProps = {
   type?: BoutonType;
@@ -20,20 +25,38 @@ const STYLES: Record<BoutonType, string> = {
   encre: "bg-encre text-papier hover:bg-signal hover:text-blanc",
   signal: "bg-signal text-encre hover:bg-encre hover:text-blanc",
   verre: "verre-pill text-encre hover:bg-blanc",
+  contour:
+    "border-[1.5px] border-encre text-encre hover:bg-encre hover:text-papier",
 };
 
 const ATTRACTION_MAX = 8; // px
 
 // Bouton — Encre · Signal · Verre. Survol : inversion, ombre Levée, flèche ↗,
 // et effet magnétique : le bouton se laisse attirer par le curseur (max 8 px).
-export function Bouton({ type = "encre", href, externe = false, onClick, className, children }: BoutonProps) {
+export function Bouton({
+  type = "encre",
+  href,
+  externe = false,
+  onClick,
+  className,
+  children,
+}: BoutonProps) {
   const reduit = useReducedMotion();
   const mobile = useEstMobile();
   const actif = !reduit && !mobile;
-  const x = useSpring(useMotionValue(0), { stiffness: 220, damping: 15, mass: 0.4 });
-  const y = useSpring(useMotionValue(0), { stiffness: 220, damping: 15, mass: 0.4 });
+  const x = useSpring(useMotionValue(0), {
+    stiffness: 220,
+    damping: 15,
+    mass: 0.4,
+  });
+  const y = useSpring(useMotionValue(0), {
+    stiffness: 220,
+    damping: 15,
+    mass: 0.4,
+  });
 
-  const borner = (v: number) => Math.max(-ATTRACTION_MAX, Math.min(ATTRACTION_MAX, v));
+  const borner = (v: number) =>
+    Math.max(-ATTRACTION_MAX, Math.min(ATTRACTION_MAX, v));
   const magnetisme = actif
     ? {
         onPointerMove: (e: PointerEvent<HTMLElement>) => {
@@ -67,11 +90,23 @@ export function Bouton({ type = "encre", href, externe = false, onClick, classNa
   );
 
   return href ? (
-    <motion.a href={href} {...(externe && { target: "_blank", rel: "noreferrer" })} className={classes} style={{ x, y }} {...magnetisme}>
+    <motion.a
+      href={href}
+      {...(externe && { target: "_blank", rel: "noreferrer" })}
+      className={classes}
+      style={{ x, y }}
+      {...magnetisme}
+    >
       {contenu}
     </motion.a>
   ) : (
-    <motion.button type="button" onClick={onClick} className={cn(classes, "cursor-pointer")} style={{ x, y }} {...magnetisme}>
+    <motion.button
+      type="button"
+      onClick={onClick}
+      className={cn(classes, "cursor-pointer")}
+      style={{ x, y }}
+      {...magnetisme}
+    >
       {contenu}
     </motion.button>
   );

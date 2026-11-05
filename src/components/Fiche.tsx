@@ -29,6 +29,8 @@ const tailleTitreFiche = (titre: string) =>
 type FicheDossierProps = {
   /** Texte de l'onglet (cote ou année) */
   onglet: string;
+  /** Rang affiché en rouge à droite de l'onglet (« 01 » dans un trio) */
+  numero?: string;
   domaine: Domaine;
   meta: string;
   titre: string;
@@ -50,7 +52,7 @@ type FicheDossierProps = {
 };
 
 // Fiche (dossier à onglet) — survol : levée −8 px, ombre Levée, aura dilatée, flèche ↗ sur rouge
-export function FicheDossier({ onglet, domaine, meta, titre, description, initiale, image, video, pastille, href, nomTransition, nomPropre, className }: FicheDossierProps) {
+export function FicheDossier({ onglet, numero, domaine, meta, titre, description, initiale, image, video, pastille, href, nomTransition, nomPropre, className }: FicheDossierProps) {
   const Racine = href ? "a" : "article";
   // Survol : l'aura suit le curseur, tilt 3D (max 6°), reflet lumineux
   const { handlers, suivi, tilt, reflet, actif } = useCarteInteractive({ amplitudeAura: 0.45 });
@@ -80,6 +82,7 @@ export function FicheDossier({ onglet, domaine, meta, titre, description, initia
 
         <div className="relative flex flex-col px-6 pt-[60px] pb-[42px] text-encre">
           <span className="t-cote-s absolute top-3.5 left-[22px]">{onglet}</span>
+          {numero && <span className="t-cote-s absolute top-3.5 left-[118px] text-signal">{numero}</span>}
 
           <div
             ref={couvertureRef}
@@ -147,12 +150,13 @@ export function RangFilm({ rang }: { rang: number }) {
 }
 
 /** Fiche d'une marque de l'archive → lien vers /marque/:slug */
-export function Fiche({ marque, className }: { marque: Marque; className?: string }) {
+export function Fiche({ marque, numero, className }: { marque: Marque; numero?: string; className?: string }) {
   const domaine = DOMAINES[marque.domaine];
   return (
     <FicheDossier
       href={lienMarque(marque.slug)}
       onglet={marque.cote}
+      numero={numero}
       domaine={domaine}
       meta={metaMarque(marque)}
       titre={marque.nom}

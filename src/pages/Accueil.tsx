@@ -1,280 +1,191 @@
-import { motion, useScroll, useTransform } from "motion/react";
-import { useEffect, useRef, useState } from "react";
-import { Aura, AuraAnimee } from "../components/Aura";
-import { Bandeau } from "../components/Bandeau";
+import { useEffect } from "react";
 import { Apparition } from "../components/Apparition";
 import { Bouton } from "../components/Bouton";
-import { Compteur } from "../components/Compteur";
-import { Domaine } from "../components/Domaine";
-import { Fiche } from "../components/Fiche";
+import { Fiche, FicheDossier } from "../components/Fiche";
 import { Footer } from "../components/Footer";
-import { Conteneur, Grille } from "../components/Grille";
+import { Conteneur } from "../components/Grille";
+import { MurMarques } from "../components/MurMarques";
 import { Nav } from "../components/Nav";
-import { Recherche } from "../components/Recherche";
-import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
-import { Tampon } from "../components/Tampon";
 import { TrioConnexions } from "../components/TrioConnexions";
-import { DOMAINES, TOTAL_ENTREES, nouvellesEntrees } from "../data/brands";
+import {
+  DOMAINES,
+  MARQUES,
+  TOTAL_ENTREES,
+  nouvellesEntrees,
+  type Domaine,
+  type Marque,
+} from "../data/brands";
 import { trioDeLaSemaine } from "../data/trios";
+import { LIENS, lienDomaine } from "../lib/liens";
 import { lienTrio, metaAccueil } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
-import { useIntroFinie } from "../lib/useIntroFinie";
-import { cn } from "../lib/cn";
-import { LIENS } from "../lib/liens";
-import { defilerVers, useFacteurParallax } from "../lib/mouvement";
 
-const NOUVELLES = nouvellesEntrees(3);
-// Calculé au chargement : le trio change de lui-même chaque lundi
-const TRIO = trioDeLaSemaine();
+// Accueil v3 — « le mur de marques » (maquette Figma 1135:902). L'ancien accueil reste dans AccueilV2.tsx.
+
 const META = metaAccueil();
+// Calculé au chargement, même source que la page Trios : lundi, jeudi, samedi
+const TRIO = trioDeLaSemaine();
+const NOUVELLES = nouvellesEntrees(5);
 
-function Cote({ children, className }: { children: string; className?: string }) {
-  return <p className={cn("t-cote-s md:t-cote-m text-signal", className)}>{children}</p>;
-}
+const imageLocale = (m: Marque) =>
+  !!m.image?.startsWith("/images/") && !m.video;
 
-function Signal({ children }: { children: string }) {
-  return <em className="font-serif text-[1.17em] font-normal tracking-[-0.01em] text-signal italic">{children}</em>;
-}
+/** Image d'une tuile univers : l'entrée la plus récente du domaine qui a une photo locale */
+const imageUnivers = (d: Domaine) =>
+  [...MARQUES].reverse().find((m) => m.domaine === d.id && imageLocale(m));
 
-function Monogramme({ ton = "encre" }: { ton?: "encre" | "papier" }) {
-  return (
-    <span className={ton === "encre" ? "text-encre" : "text-papier"}>
-      r<span className="text-signal">°</span>
-    </span>
-  );
-}
+const TITRE_SECTION =
+  "font-display text-[28px] leading-[1.1] font-bold tracking-[-0.02em] [font-variation-settings:'opsz'_14]";
+
+/** Rangée de fiches : défile horizontalement en mobile / tablette, grille de 5 en desktop */
+const RANGEE =
+  "-mx-(--marge) mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-(--marge) px-(--marge) pb-4 [scrollbar-width:none] lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible lg:px-0";
+const CELLULE = "w-[78vw] max-w-[320px] shrink-0 snap-start lg:w-auto lg:max-w-none";
 
 export default function Accueil() {
-  const [requete, setRequete] = useState("");
-  // Les entrées du hero (titre, recherche, bandeau) se rejouent une fois l'intro terminée
-  const introFinie = useIntroFinie();
-  const cleIntro = introFinie ? "apres-intro" : "sous-intro";
-  const rechercheRef = useRef<HTMLDivElement>(null);
-  const conceptRef = useRef<HTMLElement>(null);
-  const heroRef = useRef<HTMLElement>(null);
-  const manifesteRef = useRef<HTMLDivElement>(null);
-  // 0 en mouvement réduit, 0.5 en mobile (parallax réduit de moitié), 1 sinon
-  const facteurParallax = useFacteurParallax();
-  const reduit = facteurParallax === 0;
-
   useMeta(META);
 
-  // Parallax du hero : auras 0.3x, « l'archive » 0.6x, « vivante » 0.8x (+ glisse à gauche), recherche 1x.
-  // Le hero s'estompe (→ 0.3) et rétrécit (→ 0.96) en sortant.
-  const { scrollY } = useScroll();
-  const { scrollYProgress: sortieHero } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
-  const vitesse = (facteur: number) => (v: number) => v * (1 - facteur) * facteurParallax;
-  const yAuras = useTransform(scrollY, vitesse(0.3));
-  const yArchive = useTransform(scrollY, vitesse(0.6));
-  const yVivante = useTransform(scrollY, vitesse(0.8));
-  const xVivante = useTransform(scrollY, (v) => v * -0.12 * facteurParallax);
-  const opaciteHero = useTransform(sortieHero, [0, 1], reduit ? [1, 1] : [1, 0.3]);
-  const echelleHero = useTransform(sortieHero, [0, 1], reduit ? [1, 1] : [1, 0.96]);
-
-  // Bandeau manifeste : ses auras montent plus lentement
-  const { scrollYProgress: passageManifeste } = useScroll({ target: manifesteRef, offset: ["start end", "end start"] });
-  const yAurasManifeste = useTransform(passageManifeste, [0, 1], [-140 * facteurParallax, 140 * facteurParallax]);
-
-  // Arrivée depuis une autre page sur /#domaines, /#manifeste… : la section n'existe qu'après le rendu
+  // Arrivée depuis une autre page sur /#domaines, /#trio… : la section n'existe qu'après le rendu
   useEffect(() => {
     const id = window.location.hash.slice(1);
-    if (id) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView());
+    if (id)
+      requestAnimationFrame(() =>
+        document.getElementById(id)?.scrollIntoView(),
+      );
   }, []);
-
-  const allerARecherche = () => {
-    defilerVers(rechercheRef.current, -window.innerHeight / 3);
-    rechercheRef.current?.querySelector("input")?.focus({ preventScroll: true });
-  };
 
   return (
     <>
-      <Nav onChercher={allerARecherche} />
+      <Nav flou />
 
       <main className="overflow-x-clip">
-        {/* ── Couverture ── */}
-        <section ref={heroRef} className="relative isolate">
-          {/* Aura signal sous le titre : ne repasse jamais derrière « vivante » (rouge sur rouge) */}
-          <AuraAnimee
-            className="absolute inset-x-0 top-0 bottom-[37px] -z-10 md:bottom-[62px]"
-            parallaxY={yAuras}
-            signal="top-[60%] left-[60%] aspect-square w-[22%] max-w-[320px]"
-          />
-
-          <motion.div style={{ opacity: opaciteHero, scale: echelleHero }} className="origin-top will-change-transform">
-          <Conteneur className="pt-[100px] md:pt-[140px]">
-            <div className="t-cote-s md:t-cote-m flex justify-between text-encre">
-              <p>
-                <span className="md:hidden">R°{TOTAL_ENTREES} entités — v.3.0</span>
-                <span className="hidden md:inline">Base de données v.3.0</span>
-              </p>
-              <p className="hidden md:block">R°{TOTAL_ENTREES} entités — mode · design · tech · digital · film</p>
-            </div>
-
-            <h1 key={cleIntro} className="mt-0 md:mt-[11px]">
-              <motion.span style={{ y: yArchive }} className="t-display-xxl relative -ml-2 block">
-                <TitreRevele texte="l'archive" />
-              </motion.span>
-              <motion.span
-                style={{ y: yVivante, x: xVivante }}
-                className="t-serif-xl relative mt-2 block pl-[37%] text-signal [text-shadow:0_0_24px_rgba(255,240,235,.9),0_0_48px_rgba(255,240,235,.6)] min-[900px]:-mt-[0.41em] min-[900px]:pl-[50%]"
-              >
-                <SerifRevele texte="vivante" delai={dureeCascade("l'archive") + 0.2} className="inline-block" />
-              </motion.span>
-              <span className="mt-[34px] block max-w-[330px] font-display text-[clamp(32px,10vw,40px)] leading-none font-bold tracking-[-0.02em] [font-variation-settings:'opsz'_14] md:mt-[29px] md:max-w-none md:text-[clamp(48px,5vw,64px)] md:leading-[0.95] md:font-extrabold md:tracking-[-0.03em]">
-                <TitreRevele texte="de la culture contemporaine." delai={0.35} />
-              </span>
+        {/* ── Le mur de marques ── le panneau est lu en premier ; le mur, décoratif, est posé derrière */}
+        <section className="relative isolate flex justify-center overflow-hidden px-4 pt-[92px] pb-[150px] sm:pt-[150px] lg:min-h-[940px] lg:pt-[220px] lg:pb-[230px]">
+          <div className="verre relative flex w-full flex-col items-center rounded-[28px] bg-blanc/78! px-5 pt-7 pb-6 text-center sm:w-[80%] md:rounded-[36px] md:px-10 md:pt-[43px] md:pb-[38px] lg:w-[800px]">
+            <p className="t-cote-s flex items-center gap-2 rounded-pill bg-blanc px-3.5 py-2">
+              <span aria-hidden className="size-2.5 rounded-full bg-signal" />
+              Mis à jour chaque semaine
+            </p>
+            <h1 className="mt-5 max-w-[720px] font-display text-[clamp(40px,11vw,68px)] leading-[0.92] font-extrabold tracking-[-0.05em] [font-variation-settings:'opsz'_96] md:mt-[22px]">
+              {TOTAL_ENTREES} marques et films{" "}
+              <br className="hidden sm:block" />à découvrir.
             </h1>
-
-            <Grille className="mt-11 items-start md:mt-[70px]">
-              <div key={cleIntro} ref={rechercheRef} className="col-span-4 md:col-span-7">
-                <Recherche
-                  valeur={requete}
-                  onChange={setRequete}
-                  onSubmit={() =>
-                    window.location.assign(requete.trim() ? `${LIENS.index}?q=${encodeURIComponent(requete.trim())}#resultats` : LIENS.index)
-                  }
-                />
-              </div>
-              <p className="t-texte-m hidden pt-2 text-carbone md:col-span-4 md:col-start-8 md:block lg:col-span-3 lg:col-start-8">
-                Le répertoire sélectif de la culture contemporaine. {TOTAL_ENTREES} entités classées par domaine et par
-                esthétique — pas empilées.
-              </p>
-              <div className="hidden -mt-11 justify-self-end text-encre lg:col-span-2 lg:col-start-11 lg:block">
-                <Tampon texte={`R°${TOTAL_ENTREES} entités · éd. 3.0 · Paris · `} centre={<Monogramme />} />
-              </div>
-            </Grille>
-
-            <div className="mt-5 flex items-center justify-between md:mt-[76px]">
-              <ul className="flex flex-wrap gap-2 md:gap-3">
-                {[
-                  { n: TOTAL_ENTREES, label: "entités" },
-                  { n: Object.keys(DOMAINES).length, label: "domaines" },
-                  { n: 1, label: "signal" },
-                ].map((s) => (
-                  <li
-                    key={s.label}
-                    className="verre-pill t-cote-s md:t-cote-m flex h-9 items-center gap-[0.5em] rounded-pill px-3 md:h-12 md:px-5"
-                  >
-                    <Compteur valeur={s.n} /> {s.label}
-                  </li>
-                ))}
-              </ul>
-              <button
-                type="button"
-                onClick={() => defilerVers(conceptRef.current)}
-                className="t-cote-m group -my-3.5 hidden cursor-pointer items-center gap-1.5 py-3.5 md:flex"
+            <p className="mt-5 max-w-[620px] text-[17px] leading-[1.5] md:mt-6 md:text-[20px]">
+              Vous cherchez une marque ? Elle est ici.
+            </p>
+            <div className="mt-8 flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center md:mt-10">
+              <Bouton
+                type="encre"
+                href={LIENS.index}
+                className="justify-center"
               >
-                défiler <span className="transition-transform duration-240 ease-rw group-hover:translate-y-1">↓</span>
-              </button>
+                Voir toutes les marques
+              </Bouton>
+              <Bouton
+                type="contour"
+                href={LIENS.hasard}
+                className="justify-center"
+              >
+                Une marque au hasard
+              </Bouton>
             </div>
-          </Conteneur>
-          </motion.div>
+            <p className="t-cote-s mt-5 text-graphite">
+              Gratuit · sans inscription
+            </p>
+          </div>
 
-          <div className="relative mt-[39px] md:mt-[33px]">
-            <Bandeau key={cleIntro} className="-ml-[60px] w-[calc(100%+120px)] -rotate-2 md:-ml-[100px] md:w-[calc(100%+200px)]" />
+          <div className="absolute inset-0 -z-10">
+            <MurMarques className="absolute inset-0" />
+            {/* Voile papier : transition douce vers la suite de la page */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-linear-to-b from-papier/15 via-papier/35 via-75% to-papier"
+            />
           </div>
         </section>
 
-        {/* ── Le trio de la semaine ── */}
-        <section id="trio" className="scroll-mt-28 pt-[76px] md:pt-[126px]">
+        {/* ── Les 5 univers ── */}
+        <section id="domaines" className="scroll-mt-28 pt-6 md:pt-[60px]">
           <Conteneur>
             <Apparition>
-              <Cote>{`/ le trio du ${TRIO.jour} — semaine ${TRIO.numero}`}</Cote>
-              <div className="mt-[7px] flex flex-col gap-6 md:mt-[13px] lg:flex-row lg:items-end lg:justify-between">
-                <h2>
-                  <a href={lienTrio(TRIO)} className="transition-colors duration-240 ease-rw hover:text-signal">
-                    <span className="t-titre-l md:t-display-l block md:-ml-2">{TRIO.titre}</span>
-                  </a>
-                  <span className="t-serif-m md:t-serif-l mt-1.5 block md:mt-[11px] md:pl-[12%]">{TRIO.intro}</span>
-                </h2>
-                <div className="shrink-0 lg:mb-2">
-                  <Bouton type="verre" href={LIENS.trios}>
-                    Tous les trios
-                  </Bouton>
-                </div>
-              </div>
-            </Apparition>
-            <div className="mt-10 md:mt-16">
-              <TrioConnexions trio={TRIO} />
-            </div>
-          </Conteneur>
-        </section>
-
-        {/* ── 01 — Le concept ── */}
-        <section ref={conceptRef} id="concept" className="scroll-mt-28 pt-[76px] md:pt-[126px]">
-          <Conteneur>
-            <Apparition>
-              <Cote>/ 01 — le concept</Cote>
-            </Apparition>
-            <Apparition rang={1}>
-            <Grille className="mt-[17px] md:mt-[23px]">
-              <p className="col-span-4 font-display text-[30px] leading-[1.05] font-bold tracking-[-0.015em] [font-variation-settings:'opsz'_14] md:col-span-10 md:text-[clamp(40px,4vw,58px)] md:leading-[0.95] md:font-extrabold md:tracking-[-0.03em]">
-                Rework n'est pas une base de données. C'est une <Signal>archive vivante</Signal>, au croisement de la
-                mode, du design, de la tech, du digital et du cinéma<span className="hidden md:inline"> — une lecture curatée de ce qui compte</span>
-                . Pas de bruit. <Signal>Juste le signal.</Signal>
+              <h2 className={TITRE_SECTION}>
+                {Object.keys(DOMAINES).length} univers
+              </h2>
+              <p className="t-texte-m mt-1 text-graphite">
+                Choisis par où commencer.
               </p>
-            </Grille>
             </Apparition>
-            <Apparition rang={2} className="mt-6 flex items-end justify-between md:mt-[60px]">
-              <div className="flex flex-col items-start gap-[11px] md:flex-row md:gap-6">
-                <Bouton type="encre" href={LIENS.index}>
-                  Explorer l'archive
-                </Bouton>
-                <Bouton type="verre" href={LIENS.manifeste}>
-                  Lire le manifeste
-                </Bouton>
-              </div>
-              <div className="mr-[-25px] -mt-[120px] hidden text-signal lg:block">
-                <Tampon texte="Archive vivante · pas de bruit · " centre="R°" taille={210} />
-              </div>
-            </Apparition>
-          </Conteneur>
-        </section>
-
-        {/* ── 02 — Domaines ── */}
-        <section id="domaines" className="scroll-mt-28 pt-[57px] md:pt-[127px]">
-          <Conteneur>
-            <Apparition>
-            <Cote>/ 02 — domaines</Cote>
-            <h2 className="mt-[7px] md:mt-[13px]">
-              <span className="t-titre-l md:t-display-l block md:-ml-2">Cinq lectures</span>
-              <span className="mt-0.5 block font-serif text-[36px] leading-none tracking-[-0.01em] italic md:t-serif-l md:mt-[11px] md:pl-[43.75%]">
-                de la culture actuelle.
-              </span>
-            </h2>
-            </Apparition>
-            {/* 5 domaines : 1 colonne (mobile) · 2 + 2 + 1 large (tablette) · 3 + 2 (desktop) */}
-            <ul className="mt-7 grid grid-cols-1 gap-3.5 sm:grid-cols-2 md:gap-5 xl:grid-cols-6">
-              {Object.values(DOMAINES).map((d, i) => (
-                <Apparition as="li" rang={i} key={d.id} className={cn(i < 3 ? "xl:col-span-2" : "xl:col-span-3", i === 4 && "sm:col-span-2 xl:col-span-3")}>
-                  <Domaine domaine={d} compte={d.entrees} />
-                </Apparition>
-              ))}
+            <ul className={RANGEE}>
+              {Object.values(DOMAINES).map((d, i) => {
+                const image = imageUnivers(d);
+                return (
+                  <Apparition as="li" rang={i} key={d.id} className={CELLULE}>
+                    <FicheDossier
+                      href={lienDomaine(d.id)}
+                      onglet={d.numero}
+                      domaine={d}
+                      meta={`${d.entrees} entrées`}
+                      titre={d.id === "film" ? "Films" : d.nom}
+                      description={d.description}
+                      image={image?.image}
+                    />
+                  </Apparition>
+                );
+              })}
             </ul>
           </Conteneur>
         </section>
 
-        {/* ── 03 — Nouvelles entrées ── */}
-        <section id="nouvelles" className="scroll-mt-28 pt-[41px] md:pt-[110px]">
+        {/* ── Le trio du jour ── */}
+        <section id="trio" className="scroll-mt-28 pt-[90px] md:pt-[180px]">
           <Conteneur>
             <Apparition>
-            <Cote>/ 03 — nouvelles entrées</Cote>
-            <div className="mt-[7px] flex items-end justify-between gap-6 md:mt-[13px]">
-              <h2>
-                <span className="block font-display text-[clamp(30px,9.4vw,36px)] leading-none font-bold tracking-[-0.02em] [font-variation-settings:'opsz'_14] md:hidden">
-                  Ce qui vient d'entrer.
+              <p className="t-cote-s md:t-cote-m text-signal">{`/ Le trio du jour — ${TRIO.jour} · semaine ${TRIO.numero}`}</p>
+              <h2 className="mt-2">
+                <a
+                  href={lienTrio(TRIO)}
+                  className="transition-colors duration-240 ease-rw hover:text-signal"
+                >
+                  <span className="block font-display text-[clamp(40px,6vw,84px)] leading-none font-extrabold tracking-[-0.05em] [font-variation-settings:'opsz'_96] md:-ml-1">
+                    {TRIO.titre}
+                  </span>
+                </a>
+                <span className="mt-2 block font-serif text-[clamp(28px,3.2vw,46px)] leading-none tracking-[-0.02em] italic">
+                  {TRIO.intro}
                 </span>
-                <span className="t-display-l -ml-2 hidden md:block">Ce qui vient d'entrer</span>
-                <span className="t-serif-l mt-1.5 hidden md:block">dans l'archive.</span>
               </h2>
-              <div className="mb-1 hidden md:block">
-                <Bouton type="verre" href={LIENS.index}>{`Tout l’index (${TOTAL_ENTREES})`}</Bouton>
+              <div className="mt-5 flex flex-col items-start gap-5 lg:flex-row lg:items-end lg:justify-between">
+                <p className="max-w-[720px] text-[16px] leading-[1.5] text-graphite md:text-[18px]">
+                  Le trio, c'est quoi ? Trois fois par semaine, on relie un film
+                  à deux marques. Les bulles au-dessus des cartes expliquent le
+                  lien entre chaque entrée.
+                </p>
+                <Bouton type="verre" href={LIENS.trios} className="shrink-0">
+                  Tous les trios
+                </Bouton>
               </div>
-            </div>
             </Apparition>
-            <ul className="mt-[26px] grid justify-items-center gap-y-[30px] md:mt-16 md:grid-cols-2 md:gap-x-10 xl:grid-cols-3">
+            <div className="mt-10 md:mt-12">
+              <TrioConnexions trio={TRIO} numerote />
+            </div>
+          </Conteneur>
+        </section>
+
+        {/* ── Ajoutées cette semaine ── */}
+        <section id="nouvelles" className="scroll-mt-28 pt-[70px] md:pt-[90px]">
+          <Conteneur>
+            <Apparition className="flex items-end justify-between gap-4">
+              <h2 className={TITRE_SECTION}>Ajoutées cette semaine</h2>
+              <a
+                href={LIENS.index}
+                className="shrink-0 text-[15px] font-medium transition-colors duration-240 ease-rw hover:text-signal"
+              >
+                Voir les {TOTAL_ENTREES} →
+              </a>
+            </Apparition>
+            <ul className={RANGEE}>
               {NOUVELLES.map((m, i) => (
-                <Apparition as="li" rang={i} key={m.slug} className={cn("w-full max-w-[400px]", i === 1 && "xl:mt-[60px]", i === 2 && "max-md:hidden")}>
+                <Apparition as="li" rang={i} key={m.slug} className={CELLULE}>
                   <Fiche marque={m} />
                 </Apparition>
               ))}
@@ -282,38 +193,7 @@ export default function Accueil() {
           </Conteneur>
         </section>
 
-        {/* ── Manifeste ── */}
-        <section id="manifeste" className="scroll-mt-28 px-3 pt-[51px] md:px-6 md:pt-[112px]">
-          <div
-            ref={manifesteRef}
-            // min-h et non h : un texte plus long (traduction, police de secours) agrandit le bloc au lieu d'être rogné
-            className="relative isolate mx-auto flex min-h-[400px] max-w-[1392px] flex-col overflow-hidden rounded-[32px] bg-encre text-papier md:min-h-[600px] md:rounded-[48px]"
-          >
-            <motion.div aria-hidden className="absolute inset-0 -z-10" style={{ y: yAurasManifeste }}>
-              <Aura couleur="var(--color-signal)" className="-top-[120px] left-[140px] size-[360px] md:-top-[180px] md:right-[-48px] md:left-auto md:size-[620px]" />
-              <Aura couleur="var(--color-aura-mode)" className="top-[300px] -left-[160px] hidden h-[520px] w-[560px] md:block" />
-            </motion.div>
-
-            <Apparition className="flex flex-1 flex-col px-6 pt-8 pb-[27px] md:px-14 md:pt-16 md:pb-[77px]">
-              <p className="t-cote-s md:t-cote-m text-signal">
-                rework /ri.wɜːrk/<span className="hidden md:inline"> — verbe</span>
-              </p>
-              <p className="mt-5 max-w-[310px] font-serif text-[40px] leading-none tracking-[-0.01em] italic md:t-serif-l md:mt-8 md:max-w-[1000px]">
-                reprendre, affiner, republier ce qui mérite d’être vu.
-              </p>
-              <div className="mt-auto flex items-end justify-between">
-                <Bouton type="signal" href={LIENS.manifeste}>
-                  Lire le manifeste
-                </Bouton>
-                <div className="-mb-[22px] hidden text-papier lg:block">
-                  <Tampon texte="Rework archive · Paris · éd. 3.0 · " centre={<Monogramme ton="papier" />} taille={210} />
-                </div>
-              </div>
-            </Apparition>
-          </div>
-        </section>
-
-        <div className="h-10 md:h-20" />
+        <div className="h-20 md:h-28" />
       </main>
 
       <Footer />

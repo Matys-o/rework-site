@@ -2,18 +2,20 @@ import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion
 import { useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { cn } from "../lib/cn";
-import { LIENS } from "../lib/liens";
+import { LIENS, lienDomaine } from "../lib/liens";
 import { EASE_REVELE, navigation } from "../lib/mouvement";
 import { Icone } from "./Icone";
 import { Lien } from "./Lien";
 import { Logo } from "./Logo";
 import { Menu } from "./Menu";
 
+// Libellés simples ; les routes ne changent pas (Films = l'index filtré sur les films)
+const filmsActif = (s: string) => new URLSearchParams(s).get("domaine") === "film";
 const ENTREES = [
-  { label: "Index", href: LIENS.index, actif: (p: string) => p === "/index" || p.startsWith("/marque/") },
-  { label: "Domaines", href: LIENS.domaines, actif: () => false },
-  { label: "Manifeste", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
-  { label: "Contact", href: LIENS.contact, actif: () => false },
+  { label: "Marques", href: LIENS.index, actif: (p: string, s: string) => (p === "/index" && !filmsActif(s)) || p.startsWith("/marque/") },
+  { label: "Films", href: lienDomaine("film"), actif: (p: string, s: string) => p === "/index" && filmsActif(s) },
+  { label: "Trios", href: LIENS.trios, actif: (p: string) => p.startsWith("/trios") },
+  { label: "À propos", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
 ];
 
 type NavProps = {
@@ -22,11 +24,13 @@ type NavProps = {
   onChercher?: () => void;
   /** Page sombre : le verre est épaissi pour garder le logo lisible */
   surSombre?: boolean;
+  /** Verre très flou (accueil : la nav passe au-dessus du mur d'images) */
+  flou?: boolean;
 };
 
 // Nav — verre pill, toujours flottante (fixe au scroll). Le bouton ≡ ouvre le menu plein écran. ⌘K / Ctrl+K = chercher.
-export function Nav({ className, onChercher, surSombre = false }: NavProps) {
-  const { pathname } = useLocation();
+export function Nav({ className, onChercher, surSombre = false, flou = false }: NavProps) {
+  const { pathname, search } = useLocation();
   const [menuOuvert, setMenuOuvert] = useState(false);
   const fermerMenu = useCallback(() => setMenuOuvert(false), []);
 
@@ -65,15 +69,18 @@ export function Nav({ className, onChercher, surSombre = false }: NavProps) {
     <>
       <motion.header
         className={cn("fixed inset-x-4 top-4 z-50 mx-auto max-w-[1280px] md:top-6", className)}
-        style={{ viewTransitionName: "nav" }}
         initial={false}
         animate={{ y: visible ? 0 : "-140%" }}
         transition={{ duration: 0.45, ease: EASE_REVELE }}
       >
+        {/* view-transition-name sur la pastille et non sur le header : posé sur un parent, il isole le fond
+            et le backdrop-filter du verre ne floute plus rien */}
         <nav
+          style={{ viewTransitionName: "nav" }}
           className={cn(
             "verre-pill relative flex h-[60px] items-center justify-between rounded-pill pr-[7px] pl-[19px] md:h-[76px] md:pr-3 md:pl-[30px]",
             surSombre && "bg-papier/90!",
+            flou && "bg-papier/40! [-webkit-backdrop-filter:blur(28px)_saturate(160%)]! [backdrop-filter:blur(28px)_saturate(160%)]!",
           )}
         >
           {/* Verre plus opaque après 100 px : un voile dont seule l'opacité varie */}
@@ -97,7 +104,7 @@ export function Nav({ className, onChercher, surSombre = false }: NavProps) {
           <ul className="hidden items-center gap-9 lg:flex">
             {ENTREES.map((l) => (
               <li key={l.label}>
-                <Lien href={l.href} actif={l.actif(pathname)}>
+                <Lien href={l.href} actif={l.actif(pathname, search)}>
                   {l.label}
                 </Lien>
               </li>
