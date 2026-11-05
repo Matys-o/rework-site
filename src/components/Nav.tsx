@@ -24,12 +24,12 @@ type NavProps = {
   onChercher?: () => void;
   /** Page sombre : le verre est épaissi pour garder le logo lisible */
   surSombre?: boolean;
-  /** Verre opaque dès le haut de page (accueil : la nav passe au-dessus du mur d'images) */
-  opaque?: boolean;
+  /** Verre très flou (accueil : la nav passe au-dessus du mur d'images) */
+  flou?: boolean;
 };
 
 // Nav — verre pill, toujours flottante (fixe au scroll). Le bouton ≡ ouvre le menu plein écran. ⌘K / Ctrl+K = chercher.
-export function Nav({ className, onChercher, surSombre = false, opaque: opaqueForce = false }: NavProps) {
+export function Nav({ className, onChercher, surSombre = false, flou = false }: NavProps) {
   const { pathname, search } = useLocation();
   const [menuOuvert, setMenuOuvert] = useState(false);
   const fermerMenu = useCallback(() => setMenuOuvert(false), []);
@@ -69,15 +69,18 @@ export function Nav({ className, onChercher, surSombre = false, opaque: opaqueFo
     <>
       <motion.header
         className={cn("fixed inset-x-4 top-4 z-50 mx-auto max-w-[1280px] md:top-6", className)}
-        style={{ viewTransitionName: "nav" }}
         initial={false}
         animate={{ y: visible ? 0 : "-140%" }}
         transition={{ duration: 0.45, ease: EASE_REVELE }}
       >
+        {/* view-transition-name sur la pastille et non sur le header : posé sur un parent, il isole le fond
+            et le backdrop-filter du verre ne floute plus rien */}
         <nav
+          style={{ viewTransitionName: "nav" }}
           className={cn(
             "verre-pill relative flex h-[60px] items-center justify-between rounded-pill pr-[7px] pl-[19px] md:h-[76px] md:pr-3 md:pl-[30px]",
             surSombre && "bg-papier/90!",
+            flou && "bg-papier/40! [-webkit-backdrop-filter:blur(28px)_saturate(160%)]! [backdrop-filter:blur(28px)_saturate(160%)]!",
           )}
         >
           {/* Verre plus opaque après 100 px : un voile dont seule l'opacité varie */}
@@ -85,7 +88,7 @@ export function Nav({ className, onChercher, surSombre = false, opaque: opaqueFo
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-10 rounded-pill bg-papier/80"
             initial={false}
-            animate={{ opacity: opaque || opaqueForce ? 1 : 0 }}
+            animate={{ opacity: opaque ? 1 : 0 }}
             transition={{ duration: 0.3 }}
           />
           {/* py + marge négative : zone tactile de 44 px sans changer la mise en page */}

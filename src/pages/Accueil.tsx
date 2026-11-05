@@ -56,7 +56,7 @@ export default function Accueil() {
 
   return (
     <>
-      <Nav opaque />
+      <Nav flou />
 
       <main className="overflow-x-clip">
         {/* ── Le mur de marques ── le panneau est lu en premier ; le mur, décoratif, est posé derrière */}
