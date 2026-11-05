@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 3,
+    "total": 4,
     "cycle": 1,
     "publiees": [
       {
@@ -23,6 +23,13 @@
         "nom": "Goldwin",
         "date": "2026-11-04",
         "message": "1567553442988433530"
+      },
+      {
+        "id": 123,
+        "slug": "string-furniture",
+        "nom": "String Furniture",
+        "date": "2026-11-05",
+        "message": "1567916990239215667"
       }
     ],
     "ignorees": [
@@ -31,12 +38,18 @@
         "slug": "craft",
         "date": "2026-11-02",
         "raison": "image inaccessible (https://cdn.cosmos.so/craft-docs.jpg)"
+      },
+      {
+        "id": 274,
+        "slug": "mozilla",
+        "date": "2026-11-05",
+        "raison": "image inaccessible (https://cdn.cosmos.so/mozilla-dino.jpg)"
       }
     ],
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 3,
+    "total": 4,
     "cycle": 1,
     "publiees": [
       {
@@ -59,6 +72,13 @@
         "nom": "La Garçonnière",
         "date": "2026-11-04",
         "message": "1567553458611945473"
+      },
+      {
+        "id": 314,
+        "slug": "soy-cuba",
+        "nom": "Soy Cuba",
+        "date": "2026-11-05",
+        "message": "1567917025068580966"
       }
     ],
     "ignorees": [],
