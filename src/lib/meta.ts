@@ -173,7 +173,7 @@ export function metaFiche(m: Marque): Meta {
   const film = m.domaine === "film";
   const titre = `${m.nom} — ${d.nom}${m.annee ? `, ${m.annee}` : ""} | ${NOM_SITE}`;
   const contexte = film
-    ? `Film de ${m.realisation}${m.origine ? ` (${m.origine}` : " ("}${m.annee ? `, ${m.annee})` : ")"}, n°${m.rang} du top Letterboxd.`
+    ? `Film de ${m.realisation}${m.origine ? ` (${m.origine}` : " ("}${m.annee ? `, ${m.annee})` : ")"}${m.rang ? `, n°${m.rang} du top Letterboxd` : ""}.`
     : `${m.nom} : ${[d.nom.toLowerCase(), m.etiquette.toLowerCase(), m.origine].filter(Boolean).join(", ")}${m.annee ? `, depuis ${m.annee}` : ""}.`;
   const cote = `Fiche ${m.cote} de l'archive Rework.`;
   const description = m.description

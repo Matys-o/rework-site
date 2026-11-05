@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./IntroRework.css";
+import { TOTAL_ENTREES } from "../../data/brands";
 
 /*
   rework° — intro animée à l'ouverture du site.
@@ -196,7 +197,7 @@ export default function IntroRework() {
         rt.current!,
         "text",
         "R°" +
-          String(Math.round(eOut(prog(t, 0.05, 1.5)) * 335)).padStart(3, "0") +
+          String(Math.round(eOut(prog(t, 0.05, 1.5)) * TOTAL_ENTREES)).padStart(3, "0") +
           " ENTITÉS",
       );
       set(lb.current!, "text", typed("ARCHIVE VIVANTE", prog(t, 0.1, 0.45)));
