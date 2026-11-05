@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Apparition } from "../components/Apparition";
 import { Bouton } from "../components/Bouton";
+import { Fiche, FicheDossier } from "../components/Fiche";
 import { Footer } from "../components/Footer";
 import { Conteneur } from "../components/Grille";
 import { MurMarques } from "../components/MurMarques";
@@ -15,8 +16,7 @@ import {
   type Marque,
 } from "../data/brands";
 import { trioDeLaSemaine } from "../data/trios";
-import { cn } from "../lib/cn";
-import { LIENS, lienDomaine, lienMarque } from "../lib/liens";
+import { LIENS, lienDomaine } from "../lib/liens";
 import { lienTrio, metaAccueil } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
 
@@ -34,70 +34,13 @@ const imageLocale = (m: Marque) =>
 const imageUnivers = (d: Domaine) =>
   [...MARQUES].reverse().find((m) => m.domaine === d.id && imageLocale(m));
 
-/** Secours sans image (Digital dans la maquette) : 5 noms réels du domaine */
-const nomsUnivers = (d: Domaine) =>
-  MARQUES.filter((m) => m.domaine === d.id)
-    .slice(0, 5)
-    .map((m) => m.nom);
-
 const TITRE_SECTION =
   "font-display text-[28px] leading-[1.1] font-bold tracking-[-0.02em] [font-variation-settings:'opsz'_14]";
 
-function TuileUnivers({
-  domaine,
-  large,
-}: {
-  domaine: Domaine;
-  large: boolean;
-}) {
-  const image = imageUnivers(domaine);
-  return (
-    <a
-      href={lienDomaine(domaine.id)}
-      className="group flex h-full flex-col rounded-[22px] p-3 transition-transform duration-240 ease-rw hover:-translate-y-1"
-      style={{ backgroundColor: domaine.couleur }}
-    >
-      <div
-        className={cn(
-          "relative overflow-hidden rounded-[14px] bg-blanc/45",
-          large ? "aspect-[16/7] md:aspect-[216/190]" : "aspect-[216/190]",
-        )}
-      >
-        {image ? (
-          <img
-            src={image.image}
-            alt=""
-            width={216}
-            height={190}
-            loading="lazy"
-            decoding="async"
-            className="absolute inset-0 size-full object-cover transition-transform duration-500 ease-rw group-hover:scale-[1.04]"
-          />
-        ) : (
-          <ul className="px-4 pt-3.5 font-display text-[26px] leading-[1.05] font-extrabold tracking-[-0.04em] [font-variation-settings:'opsz'_96]">
-            {nomsUnivers(domaine).map((n) => (
-              <li key={n} translate="no">
-                {n}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-      <h3 className="mt-3 px-1.5 font-display text-[clamp(30px,3vw,40px)] leading-none font-extrabold tracking-[-0.05em] [font-variation-settings:'opsz'_96]">
-        {domaine.id === "film" ? "Films" : domaine.nom}
-      </h3>
-      <p className="mt-auto flex items-center justify-between px-2 pt-3 pb-1">
-        <span className="t-cote-s">{domaine.entrees} entrées</span>
-        <span
-          aria-hidden
-          className="text-[22px] leading-none font-medium transition-transform duration-240 ease-rw group-hover:translate-x-1"
-        >
-          →
-        </span>
-      </p>
-    </a>
-  );
-}
+/** Rangée de fiches : défile horizontalement en mobile / tablette, grille de 5 en desktop */
+const RANGEE =
+  "-mx-(--marge) mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-(--marge) px-(--marge) pb-4 [scrollbar-width:none] lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible lg:px-0";
+const CELLULE = "w-[78vw] max-w-[320px] shrink-0 snap-start lg:w-auto lg:max-w-none";
 
 export default function Accueil() {
   useMeta(META);
@@ -114,6 +57,11 @@ export default function Accueil() {
   return (
     <>
       <Nav />
+      {/* Flou sur les 8 % du haut de l'écran : la nav reste lisible au-dessus du mur d'images */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-x-0 top-0 z-40 h-[8vh] backdrop-blur-[10px] [mask-image:linear-gradient(to_bottom,black_60%,transparent)]"
+      />
 
       <main className="overflow-x-clip">
         {/* ── Le mur de marques ── le panneau est lu en premier ; le mur, décoratif, est posé derrière */}
@@ -128,8 +76,7 @@ export default function Accueil() {
               <br className="hidden sm:block" />à découvrir.
             </h1>
             <p className="mt-5 max-w-[620px] text-[17px] leading-[1.5] md:mt-6 md:text-[20px]">
-              Mode, design, tech, digital et cinéma. Pour chaque marque : ce
-              qu'elle fait, d'où elle vient, et le lien vers son site.
+              Vous cherchez une marque ? Elle est ici.
             </p>
             <div className="mt-8 flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center md:mt-10">
               <Bouton
@@ -173,17 +120,23 @@ export default function Accueil() {
                 Choisis par où commencer.
               </p>
             </Apparition>
-            <ul className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-5 md:gap-5">
-              {Object.values(DOMAINES).map((d, i) => (
-                <Apparition
-                  as="li"
-                  rang={i}
-                  key={d.id}
-                  className={cn(d.id === "film" && "col-span-2 md:col-span-1")}
-                >
-                  <TuileUnivers domaine={d} large={d.id === "film"} />
-                </Apparition>
-              ))}
+            <ul className={RANGEE}>
+              {Object.values(DOMAINES).map((d, i) => {
+                const image = imageUnivers(d);
+                return (
+                  <Apparition as="li" rang={i} key={d.id} className={CELLULE}>
+                    <FicheDossier
+                      href={lienDomaine(d.id)}
+                      onglet={d.numero}
+                      domaine={d}
+                      meta={`${d.entrees} entrées`}
+                      titre={d.id === "film" ? "Films" : d.nom}
+                      description={d.description}
+                      image={image?.image}
+                    />
+                  </Apparition>
+                );
+              })}
             </ul>
           </Conteneur>
         </section>
@@ -235,44 +188,10 @@ export default function Accueil() {
                 Voir les {TOTAL_ENTREES} →
               </a>
             </Apparition>
-            {/* Mobile : rangée qui défile horizontalement */}
-            <ul className="-mx-(--marge) mt-5 flex snap-x snap-mandatory gap-3 overflow-x-auto px-(--marge) pb-2 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-5 md:gap-5 md:overflow-visible md:px-0">
+            <ul className={RANGEE}>
               {NOUVELLES.map((m, i) => (
-                <Apparition
-                  as="li"
-                  rang={i}
-                  key={m.slug}
-                  className="w-[44vw] max-w-[240px] shrink-0 snap-start md:w-auto md:max-w-none"
-                >
-                  <a href={lienMarque(m.slug)} className="group block">
-                    <div className="relative aspect-[240/250] overflow-hidden rounded-[16px] bg-brume">
-                      {imageLocale(m) && (
-                        <img
-                          src={m.image}
-                          alt=""
-                          width={240}
-                          height={250}
-                          loading="lazy"
-                          decoding="async"
-                          className="absolute inset-0 size-full object-cover transition-transform duration-500 ease-rw group-hover:scale-[1.04]"
-                        />
-                      )}
-                    </div>
-                    <p
-                      className="mt-3 truncate text-[17px] leading-[1.3] font-semibold"
-                      translate={m.domaine === "film" ? undefined : "no"}
-                    >
-                      {m.nom}
-                    </p>
-                    <p className="t-cote-s mt-1 truncate text-graphite">
-                      {[
-                        DOMAINES[m.domaine].nom,
-                        m.domaine === "film" ? m.realisation : m.origine,
-                      ]
-                        .filter(Boolean)
-                        .join(" · ")}
-                    </p>
-                  </a>
+                <Apparition as="li" rang={i} key={m.slug} className={CELLULE}>
+                  <Fiche marque={m} />
                 </Apparition>
               ))}
             </ul>
