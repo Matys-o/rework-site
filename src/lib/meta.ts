@@ -8,7 +8,7 @@ import {
   type DomaineId,
   type Marque,
 } from "../data/brands";
-import { TRIOS, semaineIso, type Trio } from "../data/trios";
+import { triosPublies, type Trio } from "../data/trios";
 import { lienMarque } from "./liens";
 import {
   IMAGE_PARTAGE,
@@ -101,7 +101,7 @@ export function metaAccueil(): Meta {
     titre: "rework° — archive vivante de la culture contemporaine",
     description: ajuster(
       `${TOTAL_ENTREES} entités sélectionnées en ${LISTE_DOMAINES}. Pas de bruit, juste le signal.`,
-      "Une archive vivante, et chaque semaine un trio : un film, deux marques, un fil commun.",
+      "Une archive vivante, et trois trios par semaine : un film, deux marques, un fil commun.",
     ),
     chemin: "/",
     jsonLd: [
@@ -249,12 +249,12 @@ export function metaTrios(): Meta {
   return base({
     titre: `Les trios — un fil, trois entrées | ${NOM_SITE}`,
     description: ajuster(
-      "Chaque semaine, Rework relie un film, une marque et une autre marque par un fil commun : une esthétique, une matière, une époque, une idée.",
+      "Trois fois par semaine, le lundi, le jeudi et le samedi, Rework relie un film, une marque et une autre marque par un fil commun : une esthétique, une matière, une époque, une idée.",
       "L'archive des trios.",
     ),
     chemin: "/trios",
     resume:
-      "Chaque semaine, un film, une marque, puis une autre marque, reliés par un fil commun.",
+      "Le lundi, le jeudi et le samedi : un film, une marque, puis une autre marque, reliés par un fil commun.",
   });
 }
 
@@ -281,17 +281,17 @@ export function metaInscriptionConfirmee(): Meta {
   });
 }
 
-export const lienTrio = (t: Trio) => `/trios/${t.semaine}`;
+export const lienTrio = (t: Trio) => `/trios/${t.id}`;
 
 export function metaTrio(t: Trio): Meta {
   const [a, b, c] = t.items;
-  const titre = `${t.titre} — trio de la semaine ${t.numero} | ${NOM_SITE}`;
+  const titre = `${t.titre} — trio du ${t.jour}, semaine ${t.numero} | ${NOM_SITE}`;
   const image = aImagePartage(a) ? imagePartageFiche(a) : IMAGE_PARTAGE;
   return base({
     titre,
     description: ajuster(
       `${t.intro} ${a.nom} → ${b.nom} → ${c.nom}.`,
-      `Le trio de la semaine ${t.numero} sur Rework : un film, deux marques, un fil commun.`,
+      `Le trio du ${t.jour}, semaine ${t.numero}, sur Rework : un film, deux marques, un fil commun.`,
     ),
     chemin: lienTrio(t),
     image,
@@ -369,7 +369,7 @@ export type RoutePrerendue = { chemin: string; meta: Meta };
 
 /** Toutes les routes à prérendre au build (trios : seulement ceux déjà publiés à la date du build) */
 export function routesPrerendues(date = new Date()): RoutePrerendue[] {
-  const publies = TRIOS.filter((t) => t.semaine <= semaineIso(date));
+  const publies = triosPublies(date);
   return [
     { chemin: "/", meta: metaAccueil() },
     { chemin: "/index", meta: metaIndex() },
