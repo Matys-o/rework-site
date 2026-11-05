@@ -4343,5 +4343,18 @@
     "url": "https://www.raycast.com",
     "addedAt": "2026-11-05",
     "imgSource": "https://fr.pinterest.com/pin/363313894954541311/"
+  },
+  {
+    "id": 419,
+    "name": "Artifice",
+    "type": "fashion",
+    "cat": "Tapisserie",
+    "origin": "France",
+    "year": "2023",
+    "img": "/images/brands/artifice.webp",
+    "description": "Le streetwear tissé en tapisserie. Des pièces jacquard entre vêtement et œuvre, squelettes et dégradés pixelisés dans la trame.",
+    "url": "https://www.artifice.store",
+    "addedAt": "2026-11-05",
+    "imgSource": "https://www.artifice.store/cdn/shop/files/sweater_wearable_art_curly_knit_fabric.jpg"
   }
 ]
