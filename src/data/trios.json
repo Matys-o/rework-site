@@ -20,6 +20,28 @@
     "intro": "Des cadres fixes, des lignes droites, rien de trop."
   },
   {
+    "semaine": "2026-W45",
+    "jour": "jeudi",
+    "titre": "La veste de la nuit",
+    "items": [423, 368, 82],
+    "intro": "Une ville la nuit, et des vêtements nés pour l'armée.",
+    "liens": [
+      "Dans Taxi Driver, Travis Bickle arpente New York en veste militaire M-65 ; Schott NYC habille la ville de vestes nées pour l'armée et la moto depuis 1913.",
+      "Reproduction of Found prolonge l'idée côté pieds : des baskets d'entraînement militaires refaites à l'identique."
+    ]
+  },
+  {
+    "semaine": "2026-W45",
+    "jour": "samedi",
+    "titre": "Noir et blanc, sans un mot de trop",
+    "items": [422, 23, 41],
+    "intro": "Un costume noir, une chemise blanche, et rien d'autre.",
+    "liens": [
+      "Vincent et Jules traversent Pulp Fiction en costume noir et chemise blanche, l'uniforme minimal par excellence ; Jil Sander a fait de cette épure une signature.",
+      "Chez Comme des Garçons, Rei Kawakubo pousse le noir plus loin, jusqu'à en faire une manière de penser."
+    ]
+  },
+  {
     "semaine": "2026-W46",
     "titre": "Le rythme sous les doigts",
     "items": [334, 208, 188],
@@ -28,6 +50,28 @@
       "Avec la SL-1200, Technics a fourni l'autre outil du genre : la platine devenue instrument."
     ],
     "intro": "Le tempo comme discipline, de la batterie aux machines."
+  },
+  {
+    "semaine": "2026-W46",
+    "jour": "jeudi",
+    "titre": "Le futur en néon",
+    "items": [429, 379, 407],
+    "intro": "Des écrans, des circuits, et une ville qui brille trop fort.",
+    "liens": [
+      "Akira dessine un Neo-Tokyo saturé de néons et d'écrans ; Cav Empt, né à Tokyo, imprime cette même esthétique de signal brouillé sur ses vêtements.",
+      "Nothing pousse l'idée jusqu'à l'objet : un téléphone transparent qui montre ses entrailles et s'allume de lignes de lumière."
+    ]
+  },
+  {
+    "semaine": "2026-W46",
+    "jour": "samedi",
+    "titre": "La forêt à défendre",
+    "items": [428, 370, 57],
+    "intro": "La forêt, ceux qui l'abîment, et ceux qui la protègent.",
+    "liens": [
+      "Princesse Mononoké oppose la forge des hommes à la forêt des dieux ; Patagonia a fait de la défense des lieux sauvages une raison d'être, jusqu'à céder l'entreprise à la cause en 2022.",
+      "Snow Peak, née au Japon, donne de quoi y dormir : du matériel de camping pensé pour durer toute une vie."
+    ]
   },
   {
     "semaine": "2026-W47",
@@ -40,6 +84,28 @@
     "intro": "La banlieue, Paris, et un vêtement qui vient de la rue."
   },
   {
+    "semaine": "2026-W47",
+    "jour": "jeudi",
+    "titre": "La robe et le couloir",
+    "items": [420, 347, 103],
+    "intro": "Des robes ajustées, des couloirs étroits, une lumière qui retient tout.",
+    "liens": [
+      "Maggie Cheung change de qipao presque à chaque scène d'In the Mood for Love ; Simone Rocha, fille du créateur hongkongais John Rocha, mêle la même retenue et le même romantisme.",
+      "La lumière chaude des couloirs devient objet chez Flos : des lampes qui sculptent l'ombre autant que la lumière."
+    ]
+  },
+  {
+    "semaine": "2026-W47",
+    "jour": "samedi",
+    "titre": "Coder la nuit",
+    "items": [442, 285, 414],
+    "intro": "Un dortoir, un écran, et l'envie d'aller plus vite que tout le monde.",
+    "liens": [
+      "The Social Network raconte un site codé en une nuit dans un dortoir de Harvard ; Vercel promet la même vitesse : du code au site en ligne en quelques secondes.",
+      "Linear applique cette obsession de la vitesse aux équipes : un outil de suivi rapide comme une ligne de commande."
+    ]
+  },
+  {
     "semaine": "2026-W48",
     "titre": "Sable, grain, matière",
     "items": [321, 102, 129],
@@ -48,6 +114,28 @@
       "101 Copenhagen prolonge cette attention à la surface, en céramiques texturées entre Japon et Scandinavie."
     ],
     "intro": "Une dune, du bois brut, de la céramique : la texture avant la forme."
+  },
+  {
+    "semaine": "2026-W48",
+    "jour": "jeudi",
+    "titre": "Hong Kong derrière des lunettes noires",
+    "items": [432, 91, 408],
+    "intro": "Une ville qui file, des images qui tremblent, des lunettes qui ne tombent jamais.",
+    "liens": [
+      "Dans Chungking Express, Brigitte Lin traverse Hong Kong en trench, perruque blonde et lunettes noires, de jour comme de nuit ; Gentle Monster fait de la lunette noire un objet de mise en scène.",
+      "Fujifilm garde le grain de la pellicule dans ses appareils, comme les images tremblées tournées par Christopher Doyle."
+    ]
+  },
+  {
+    "semaine": "2026-W48",
+    "jour": "samedi",
+    "titre": "Savon et cuir rouge",
+    "items": [430, 115, 364],
+    "intro": "Contre la consommation, avec du savon et des semelles épaisses.",
+    "liens": [
+      "Dans Fight Club, Tyler Durden fabrique et vend du savon ; Aesop a bâti tout un univers autour de ce geste simple, en flacons ambrés.",
+      "Pour l'esprit frondeur, Dr. Martens chausse les rebelles depuis 1960."
+    ]
   },
   {
     "semaine": "2026-W49",
@@ -60,6 +148,28 @@
     "intro": "Partir loin, avec des objets dessinés par des ingénieurs."
   },
   {
+    "semaine": "2026-W49",
+    "jour": "jeudi",
+    "titre": "L'odyssée en blanc",
+    "items": [421, 350, 164],
+    "intro": "Le futur tel qu'on l'imaginait dans les années 1960 : blanc, rond, éclatant.",
+    "liens": [
+      "2001 : l'Odyssée de l'espace imagine des stations spatiales blanches et immaculées ; Courrèges a habillé la même conquête de l'espace, en blanc et en vinyle, dès 1964.",
+      "Verpan réédite les formes de Verner Panton, rondes et colorées comme le futur vu de 1968."
+    ]
+  },
+  {
+    "semaine": "2026-W49",
+    "jour": "samedi",
+    "titre": "Ce qui se transmet",
+    "items": [303, 338, 110],
+    "intro": "Une famille, un savoir-faire, et l'Italie en héritage.",
+    "liens": [
+      "Le Parrain raconte une famille et ce qu'elle se transmet ; Bottega Veneta, à Vicence, transmet un savoir-faire de cuir tressé, l'intrecciato.",
+      "Cassina fait de même avec le mobilier : les modèles des grands maîtres, fabriqués en Italie depuis 1927."
+    ]
+  },
+  {
     "semaine": "2026-W50",
     "titre": "Peindre à la lumière",
     "items": [333, 118, 119],
@@ -68,6 +178,28 @@
       "Artemide cherche la même chose par la technique : une lumière à l'échelle humaine."
     ],
     "intro": "Une peintre, une lampe, un atelier : la lumière comme outil."
+  },
+  {
+    "semaine": "2026-W50",
+    "jour": "jeudi",
+    "titre": "Rose mohair et jean du Texas",
+    "items": [431, 20, 367],
+    "intro": "Le désert, un pull rose, et l'Amérique en denim.",
+    "liens": [
+      "Dans Paris, Texas, Nastassja Kinski porte un pull en mohair rose devenu culte ; Acne Studios a fait du rose poudré et du mohair deux de ses signatures.",
+      "Le Texas de Wim Wenders est fait de routes et de denim : Levi's a inventé le jean en 1873."
+    ]
+  },
+  {
+    "semaine": "2026-W50",
+    "jour": "samedi",
+    "titre": "Les petits riens du quotidien",
+    "items": [435, 191, 399],
+    "intro": "Une routine, un appareil photo de poche, des objets sans marque.",
+    "liens": [
+      "Dans Perfect Days, Hirayama photographie les arbres chaque jour avec un petit appareil Olympus argentique ; Olympus a mis la photographie dans toutes les poches.",
+      "Muji partage la même philosophie du quotidien : des objets sans marque, juste ce qu'il faut."
+    ]
   },
   {
     "semaine": "2026-W51",
@@ -80,6 +212,28 @@
     "intro": "Le travail lent, transmis d'une main à l'autre."
   },
   {
+    "semaine": "2026-W51",
+    "jour": "jeudi",
+    "titre": "La longue marche",
+    "items": [296, 28, 5],
+    "intro": "Des montagnes, des marais, et des mois à pied.",
+    "liens": [
+      "Le Retour du roi clôt une marche de plusieurs mois à travers montagnes et marais ; And Wander dessine des vêtements de randonnée aussi précis qu'élégants.",
+      "Salomon, né à Annecy, chausse ceux qui vont loin à pied, du sentier à la ville."
+    ]
+  },
+  {
+    "semaine": "2026-W51",
+    "jour": "samedi",
+    "titre": "L'Ouest rejoué au Japon",
+    "items": [301, 345, 59],
+    "intro": "Le western, vu depuis l'autre bout du monde.",
+    "liens": [
+      "Le Bon, la Brute et le Truand a fixé l'image du western : poncho, poussière et regards plissés ; Kapital, à Kojima, rejoue cette Amérique de l'Ouest avec des techniques japonaises.",
+      "Engineered Garments, label japonais installé à New York, en tire un vestiaire de travail aux proportions libres."
+    ]
+  },
+  {
     "semaine": "2026-W52",
     "titre": "La maison d'architecte",
     "items": [302, 125, 178],
@@ -88,6 +242,28 @@
       "Bulthaup aborde la cuisine de la même façon : comme une pièce d'architecture."
     ],
     "intro": "Une maison pensée par un architecte, et ce qu'on y installe."
+  },
+  {
+    "semaine": "2026-W52",
+    "jour": "jeudi",
+    "titre": "Noël sous la neige",
+    "items": [322, 369, 116],
+    "intro": "Une nuit de Noël, une veste cirée, un fauteuil où se lover.",
+    "liens": [
+      "La vie est belle se déroule une nuit de Noël sous la neige de Bedford Falls ; Barbour habille l'hiver depuis 1894 de vestes cirées faites pour durer.",
+      "Chez Fritz Hansen, l'Egg d'Arne Jacobsen offre le même refuge : un fauteuil enveloppant, dessiné en 1958."
+    ]
+  },
+  {
+    "semaine": "2026-W52",
+    "jour": "samedi",
+    "titre": "Le rituel du bain",
+    "items": [329, 176, 167],
+    "intro": "L'eau chaude, le bois, et le temps de ne rien faire.",
+    "liens": [
+      "Le Voyage de Chihiro se passe dans des bains publics pour esprits ; Agape dessine la salle de bain comme une pièce à part entière.",
+      "Time & Style, à Tokyo, prolonge ce calme avec du mobilier japonais en bois massif."
+    ]
   },
   {
     "semaine": "2026-W53",
@@ -100,6 +276,28 @@
     "intro": "Une cabine de projection, une plateforme, une archive : là où vivent les films."
   },
   {
+    "semaine": "2026-W53",
+    "jour": "jeudi",
+    "titre": "La dernière nuit de l’année",
+    "items": [316, 69, 209],
+    "intro": "Entrer par les cuisines, finir sur la piste.",
+    "liens": [
+      "Dans Les Affranchis, Henry Hill entre au Copacabana par les cuisines, en un seul plan-séquence devenu légendaire ; Casablanca habille ces nuits-là de soie et de couleurs, entre club et palace.",
+      "Pioneer DJ équipe les cabines de la plupart des clubs du monde : la nuit commence souvent sur ses platines."
+    ]
+  },
+  {
+    "semaine": "2026-W53",
+    "jour": "samedi",
+    "titre": "Des souvenirs d'été",
+    "items": [434, 352, 190],
+    "intro": "Des vacances au soleil, un polo, et un caméscope qui tourne.",
+    "liens": [
+      "Aftersun revient sur des vacances en Turquie, à la fin des années 1990, filmées au caméscope ; Lacoste habille ces étés-là depuis le polo de René Lacoste, en 1933.",
+      "Canon a fait de ses caméscopes et de ses compacts les témoins de nos souvenirs de famille."
+    ]
+  },
+  {
     "semaine": "2027-W01",
     "titre": "L'uniforme et le combat",
     "items": [291, 53, 55],
@@ -110,6 +308,28 @@
     "intro": "Se préparer, s'équiper, et ce que l'uniforme raconte."
   },
   {
+    "semaine": "2027-W01",
+    "jour": "jeudi",
+    "titre": "La part d’ombre",
+    "items": [424, 24, 128],
+    "intro": "Ce qui se cache dans les recoins, du motel à la salle de bain.",
+    "liens": [
+      "Psychose a fait d'une douche de motel la scène la plus étudiée du cinéma ; Rick Owens cultive la même part d'ombre, en drapés noirs et silhouettes inquiétantes.",
+      "Vipp est née d'une poubelle à pédale dessinée en 1939 pour un salon de coiffure : le design jusque dans les recoins du quotidien."
+    ]
+  },
+  {
+    "semaine": "2027-W01",
+    "jour": "samedi",
+    "titre": "Paris à hauteur d'enfant",
+    "items": [427, 25, 70],
+    "intro": "Les rues de Paris, des basiques, et un sourire en coin.",
+    "liens": [
+      "Les Quatre Cents Coups suit Antoine Doinel dans les rues de Paris, à hauteur d'enfant ; A.P.C. habille cette même ville de basiques sans esbroufe depuis 1987.",
+      "Ami Paris prolonge l'idée d'un vestiaire parisien simple et souriant."
+    ]
+  },
+  {
     "semaine": "2027-W02",
     "titre": "La ville en béton",
     "items": [308, 54, 46],
@@ -118,5 +338,27 @@
       "A-COLD-WALL* pousse cette ville jusqu'au vêtement : béton, symétrie, brutalisme."
     ],
     "intro": "Une ville sombre, de nuit, et des vêtements qui lui ressemblent."
+  },
+  {
+    "semaine": "2027-W02",
+    "jour": "jeudi",
+    "titre": "Le rêve de Los Angeles",
+    "items": [425, 378, 63],
+    "intro": "Los Angeles, entre le rêve et le cauchemar.",
+    "liens": [
+      "Mulholland Drive fait de Los Angeles un rêve qui tourne au cauchemar ; Online Ceramics, née à Los Angeles, imprime ses t-shirts de visions psychédéliques.",
+      "Fear of God, autre label de la ville, en donne la version calme : volumes amples et tons sable."
+    ]
+  },
+  {
+    "semaine": "2027-W02",
+    "jour": "samedi",
+    "titre": "Entrer dans la Zone",
+    "items": [419, 15, 32],
+    "intro": "Un territoire interdit, et ce qu'il faut pour y avancer.",
+    "liens": [
+      "Dans Stalker, trois hommes avancent pas à pas dans la Zone, un territoire interdit où tout peut changer ; Stone Island est née de la recherche sur les tissus, les teintures et les traitements expérimentaux.",
+      "Nike ACG équipe ceux qui partent hors des sentiers, avec des pièces pensées pour le terrain."
+    ]
   }
 ]

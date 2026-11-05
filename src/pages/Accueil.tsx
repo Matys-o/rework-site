@@ -179,7 +179,7 @@ export default function Accueil() {
         <section id="trio" className="scroll-mt-28 pt-[76px] md:pt-[126px]">
           <Conteneur>
             <Apparition>
-              <Cote>{`/ le trio de la semaine — semaine ${TRIO.numero}`}</Cote>
+              <Cote>{`/ le trio du ${TRIO.jour} — semaine ${TRIO.numero}`}</Cote>
               <div className="mt-[7px] flex flex-col gap-6 md:mt-[13px] lg:flex-row lg:items-end lg:justify-between">
                 <h2>
                   <a href={lienTrio(TRIO)} className="transition-colors duration-240 ease-rw hover:text-signal">

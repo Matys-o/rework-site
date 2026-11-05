@@ -9,9 +9,11 @@ on:
     paths-ignore:
       - "discord/**"
       - ".github/workflows/discord-*.yml"
-  # Chaque lundi 00:10 UTC : reconstruction pour le trio de la semaine (page /trios/AAAA-Wnn prérendue, sitemap à jour)
+  # Lundi, jeudi et samedi 00:10 UTC : reconstruction pour le nouveau trio (page /trios/AAAA-Wnn prérendue, sitemap à jour)
   schedule:
     - cron: "10 0 * * 1"
+    - cron: "10 0 * * 4"
+    - cron: "10 0 * * 6"
   workflow_dispatch:
     inputs:
       lettre:
@@ -51,7 +53,7 @@ jobs:
       # Le lundi, une fois le site en ligne (images de la lettre comprises) : campagne Brevo en BROUILLON + test.
       # Jamais d'envoi à la liste : l'envoi se fait à la main depuis Brevo, après relecture.
       - name: Lettre — brouillon Brevo et test
-        if: success() && (github.event_name == 'schedule' || inputs.lettre)
+        if: success() && ((github.event_name == 'schedule' && github.event.schedule == '10 0 * * 1') || inputs.lettre)
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}

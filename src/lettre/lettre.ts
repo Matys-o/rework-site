@@ -58,7 +58,8 @@ function construire(trio: Trio, i: number): Lettre {
 }
 
 /** Toutes les lettres, de la n°1 à la dernière écrite */
-export const LETTRES: Lettre[] = TRIOS.map(construire);
+// Une lettre par semaine : celle du trio du lundi (les trios du jeudi et du samedi vivent sur le site)
+export const LETTRES: Lettre[] = TRIOS.filter((t) => t.jour === "lundi").map(construire);
 
 /** Lettres dont la semaine a commencé (semaine en cours comprise), de la plus ancienne à la plus récente */
 export const lettresPubliees = (date = new Date()) =>

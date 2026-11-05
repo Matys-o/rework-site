@@ -7,7 +7,7 @@ import { Conteneur } from "../components/Grille";
 import { Nav } from "../components/Nav";
 import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { TrioConnexions } from "../components/TrioConnexions";
-import { semaineIso, triosAVenir, triosPublies, type Trio } from "../data/trios";
+import { triosAVenir, triosPublies, type Trio } from "../data/trios";
 import { LIENS } from "../lib/liens";
 import { lienTrio, metaTrio, metaTrios } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
@@ -19,8 +19,8 @@ function EnTeteTrio({ trio, grand, courant }: { trio: Trio; grand: boolean; cour
   return (
     <>
       <p className="t-cote-s md:t-cote-m text-signal">
-        {`/ semaine ${trio.numero} · ${trio.annee}`}
-        {courant && " — cette semaine"}
+        {`/ ${trio.jour} · semaine ${trio.numero} · ${trio.annee}`}
+        {courant && " — en ce moment"}
       </p>
       <h2 className="mt-[7px] md:mt-[13px]">
         <a href={lienTrio(trio)} className="transition-colors duration-240 ease-rw hover:text-signal">
@@ -32,10 +32,10 @@ function EnTeteTrio({ trio, grand, courant }: { trio: Trio; grand: boolean; cour
   );
 }
 
-/** /trios/2026-W44 — page d'un trio (partageable, avec ses propres métadonnées) ; les semaines à venir ne sont pas accessibles */
+/** /trios/2026-W44, /trios/2026-W45-jeudi — page d'un trio (partageable, avec ses propres métadonnées) ; les trios à venir ne sont pas accessibles */
 export function TrioPage() {
   const { semaine } = useParams();
-  const trio = triosPublies().find((t) => t.semaine.toLowerCase() === semaine?.toLowerCase());
+  const trio = triosPublies().find((t) => t.id.toLowerCase() === semaine?.toLowerCase());
   useMeta(trio ? metaTrio(trio) : null);
   if (!trio) return <Navigate to={LIENS.trios} replace />;
 
@@ -52,7 +52,7 @@ export function TrioPage() {
               ← <span className="ml-1.5">tous les trios</span>
             </a>
             <p className="t-cote-s md:t-cote-m mt-7 text-signal md:mt-12">
-              {`/ le trio de la semaine — semaine ${trio.numero} · ${trio.annee}`}
+              {`/ le trio du ${trio.jour} — semaine ${trio.numero} · ${trio.annee}`}
             </p>
             <h1 className="mt-2 md:mt-[13px]">
               <TitreRevele texte={trio.titre} className="t-display-l block md:-ml-2" />
@@ -79,7 +79,7 @@ export function TrioPage() {
 export default function Trios() {
   const publies = triosPublies();
   const aVenir = triosAVenir();
-  const courante = semaineIso();
+  const courant = publies[0]?.id;
 
   useMeta(META_TRIOS);
 
@@ -104,17 +104,17 @@ export default function Trios() {
               />
             </h1>
             <p className="t-texte-m md:t-texte-l mt-6 max-w-[640px] text-carbone md:mt-8">
-              Chaque semaine, un film, une marque, puis une autre marque, reliés par un fil commun : une esthétique, une
+              Le lundi, le jeudi et le samedi, un film, une marque, puis une autre marque, reliés par un fil commun : une esthétique, une
               matière, une époque, une idée.
             </p>
           </Conteneur>
         </section>
 
         {publies.map((trio, i) => (
-          <section key={trio.semaine} id={trio.semaine} className="scroll-mt-28 pt-16 md:pt-[120px]">
+          <section key={trio.id} id={trio.id} className="scroll-mt-28 pt-16 md:pt-[120px]">
             <Conteneur>
               <Apparition>
-                <EnTeteTrio trio={trio} grand={i === 0} courant={trio.semaine === courante} />
+                <EnTeteTrio trio={trio} grand={i === 0} courant={trio.id === courant} />
               </Apparition>
               <div className="mt-10 md:mt-14">
                 <TrioConnexions trio={trio} />
@@ -126,7 +126,7 @@ export default function Trios() {
         {aVenir > 0 && (
           <Conteneur className="pt-16 md:pt-24">
             <p className="t-cote-m text-graphite">
-              {aVenir} {aVenir > 1 ? "trios à venir" : "trio à venir"} — un par semaine, chaque lundi.
+              {aVenir} {aVenir > 1 ? "trios à venir" : "trio à venir"} — trois par semaine : le lundi, le jeudi et le samedi.
             </p>
           </Conteneur>
         )}

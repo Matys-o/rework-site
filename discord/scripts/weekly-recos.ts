@@ -19,7 +19,7 @@ lancer(async () => {
   const jour = a.date ?? maintenant.date;
   const semaine = semaineDe(jour);
 
-  const trio = TRIOS.find((t) => t.semaine === semaine);
+  const trio = TRIOS.find((t) => t.semaine === semaine && t.jour === "lundi");
   if (!trio) {
     const msg = `Aucun trio écrit pour la semaine ${semaine} dans src/data/trios.json.`;
     if (a.dryRun) return console.log(`⚠️ ${msg}`);

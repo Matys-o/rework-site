@@ -89,7 +89,7 @@ export function messageEntree(
 
 /** Message « trio de la semaine » : un embed par entrée, dans un seul message */
 export function messageTrio(t: Trio, rolesMentionnes: string[]): MessageCreateOptions {
-  const url = `${SITE}/trios/${t.semaine}?utm_source=discord&utm_medium=trio-de-la-semaine`;
+  const url = `${SITE}/trios/${t.id}?utm_source=discord&utm_medium=trio-de-la-semaine`;
   const embeds = t.items.map((m, i) => {
     const e = new EmbedBuilder()
       .setColor(COULEURS.domaine[m.domaine])
