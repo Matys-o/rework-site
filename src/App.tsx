@@ -8,6 +8,7 @@ import {
 } from "react-router";
 import { Defilement } from "./components/Defilement";
 import { FpsMetre } from "./components/FpsMetre";
+import IntroRework from "./components/IntroRework/IntroRework";
 import { Navigation } from "./components/Navigation";
 import Accueil from "./pages/Accueil";
 import Composants from "./pages/Composants";
@@ -47,6 +48,8 @@ export default function App() {
         <Navigation />
         <Pages />
         <FpsMetre />
+        {/* Intro animée : une seule fois, hors des routes */}
+        <IntroRework />
       </MotionConfig>
     </BrowserRouter>
   );

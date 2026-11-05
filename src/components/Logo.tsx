@@ -1,10 +1,11 @@
 import { cn } from "../lib/cn";
 
 // Logotype — Bricolage Grotesque ExtraBold, approche −6 %, le ° en rouge signal
-export function Logo({ className, ton = "encre" }: { className?: string; ton?: "encre" | "papier" }) {
+export function Logo({ className, ton = "encre", introTarget = false }: { className?: string; ton?: "encre" | "papier"; introTarget?: boolean }) {
   return (
     <span
       translate="no"
+      data-intro-target={introTarget ? "" : undefined}
       className={cn(
         "font-display font-extrabold leading-none tracking-[-0.06em] [font-variation-settings:'opsz'_96]",
         ton === "encre" ? "text-encre" : "text-papier",
