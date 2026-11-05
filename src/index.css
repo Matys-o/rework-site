@@ -90,3 +90,32 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* ── Mur de marques (accueil) ─────────────────────────── */
+/* Piste dupliquée : translateY 0 → −50 % = une boucle sans couture. Seulement transform et opacity. */
+@keyframes mur-monte { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+@keyframes mur-descend { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+@keyframes mur-arrivee { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+.mur-colonne { opacity: 0; }
+.mur-colonne-arrivee { animation: mur-arrivee 0.9s var(--ease-rw) both; }
+.mur-piste { will-change: transform; animation: mur-monte linear infinite; }
+.mur-piste-descend { animation-name: mur-descend; }
+.mur[data-pause] .mur-piste { animation-play-state: paused; }
+
+.mur-carte { transition: transform 0.4s var(--ease-rw), opacity 0.4s var(--ease-rw), box-shadow 0.4s var(--ease-rw); }
+.mur-cartouche { opacity: 0; transform: translateY(6px); transition: opacity 0.3s var(--ease-rw), transform 0.3s var(--ease-rw); }
+
+@media (hover: hover) {
+  .mur-colonne:hover .mur-piste { animation-play-state: paused; }
+  .mur:has(.mur-carte:hover) .mur-carte:not(:hover) { opacity: 0.55; }
+  .mur-carte:hover { transform: scale(1.04); box-shadow: 0 18px 40px rgb(13 13 10 / 0.18); z-index: 1; }
+  .mur-carte:hover .mur-cartouche, .mur-carte:focus-visible .mur-cartouche { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mur-colonne { opacity: 1; }
+  .mur-colonne-arrivee, .mur-piste { animation: none; }
+  .mur-carte:hover { transform: none; box-shadow: none; }
+  .mur-cartouche { transform: none; }
+}

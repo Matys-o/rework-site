@@ -2,18 +2,20 @@ import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion
 import { useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { cn } from "../lib/cn";
-import { LIENS } from "../lib/liens";
+import { LIENS, lienDomaine } from "../lib/liens";
 import { EASE_REVELE, navigation } from "../lib/mouvement";
 import { Icone } from "./Icone";
 import { Lien } from "./Lien";
 import { Logo } from "./Logo";
 import { Menu } from "./Menu";
 
+// Libellés simples ; les routes ne changent pas (Films = l'index filtré sur les films)
+const filmsActif = (s: string) => new URLSearchParams(s).get("domaine") === "film";
 const ENTREES = [
-  { label: "Index", href: LIENS.index, actif: (p: string) => p === "/index" || p.startsWith("/marque/") },
-  { label: "Domaines", href: LIENS.domaines, actif: () => false },
-  { label: "Manifeste", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
-  { label: "Contact", href: LIENS.contact, actif: () => false },
+  { label: "Marques", href: LIENS.index, actif: (p: string, s: string) => (p === "/index" && !filmsActif(s)) || p.startsWith("/marque/") },
+  { label: "Films", href: lienDomaine("film"), actif: (p: string, s: string) => p === "/index" && filmsActif(s) },
+  { label: "Trios", href: LIENS.trios, actif: (p: string) => p.startsWith("/trios") },
+  { label: "À propos", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
 ];
 
 type NavProps = {
@@ -26,7 +28,7 @@ type NavProps = {
 
 // Nav — verre pill, toujours flottante (fixe au scroll). Le bouton ≡ ouvre le menu plein écran. ⌘K / Ctrl+K = chercher.
 export function Nav({ className, onChercher, surSombre = false }: NavProps) {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   const [menuOuvert, setMenuOuvert] = useState(false);
   const fermerMenu = useCallback(() => setMenuOuvert(false), []);
 
@@ -97,7 +99,7 @@ export function Nav({ className, onChercher, surSombre = false }: NavProps) {
           <ul className="hidden items-center gap-9 lg:flex">
             {ENTREES.map((l) => (
               <li key={l.label}>
-                <Lien href={l.href} actif={l.actif(pathname)}>
+                <Lien href={l.href} actif={l.actif(pathname, search)}>
                   {l.label}
                 </Lien>
               </li>

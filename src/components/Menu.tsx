@@ -9,10 +9,10 @@ import { Icone } from "./Icone";
 import { Logo } from "./Logo";
 
 const ENTREES = [
-  { label: "Index", href: LIENS.index, compteur: String(TOTAL_ENTREES) },
-  { label: "Domaines", href: LIENS.domaines, compteur: String(Object.keys(DOMAINES).length).padStart(2, "0") },
-  { label: "Manifeste", href: LIENS.manifeste, compteur: "—" },
-  { label: "Contact", href: LIENS.contact, compteur: "@" },
+  { label: "Marques", href: LIENS.index, compteur: String(TOTAL_ENTREES) },
+  { label: "Films", href: lienDomaine("film"), compteur: String(DOMAINES.film.entrees) },
+  { label: "Trios", href: LIENS.trios, compteur: "×3" },
+  { label: "À propos", href: LIENS.manifeste, compteur: "—" },
 ];
 
 type MenuProps = {
