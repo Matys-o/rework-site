@@ -42,6 +42,7 @@ export default function Index() {
   const [params, setParams] = useSearchParams();
   const [limite, setLimite] = useState(PAR_PAGE);
   const rechercheRef = useRef<HTMLDivElement>(null);
+  const resultatsRef = useRef<HTMLElement>(null);
 
   // L'état vit dans l'URL : /index?domaine=mode&q=leica&vue=liste&tri=nom — partageable, et le menu peut y pointer
   // La saisie reste locale (réactive à chaque frappe) ; l'URL suit, sans perdre de caractères
@@ -89,7 +90,15 @@ export default function Index() {
   // Arrivée via « Chercher » / ⌘K depuis une autre page : /index#recherche
   useEffect(() => {
     if (window.location.hash === "#recherche") rechercheRef.current?.querySelector("input")?.focus();
+    // Arrivée depuis la recherche de l'accueil (Entrée) : on descend jusqu'aux résultats
+    if (window.location.hash === "#resultats") requestAnimationFrame(() => voirResultats());
   }, []);
+
+  /** Entrée dans la recherche : défilement doux jusqu'aux résultats (le clavier mobile se referme) */
+  const voirResultats = () => {
+    rechercheRef.current?.querySelector("input")?.blur();
+    defilerVers(resultatsRef.current, -110);
+  };
 
   const allerARecherche = () => {
     defilerVers(rechercheRef.current, -window.innerHeight / 3);
@@ -125,7 +134,7 @@ export default function Index() {
             {/* Recherche et commandes sur une ligne dès lg ; empilées en dessous (sinon « Trier » déborde vers 768 px) */}
             <div className="mt-8 flex flex-col gap-4 md:mt-[60px] lg:flex-row lg:items-center lg:justify-between">
               <div ref={rechercheRef} className="w-full lg:max-w-[720px] lg:flex-1">
-                <Recherche valeur={q} onChange={setQ} />
+                <Recherche valeur={q} onChange={setQ} onSubmit={voirResultats} />
               </div>
               <div className="flex items-center justify-between gap-6 lg:justify-end lg:gap-[59px]">
                 <div role="group" aria-label="Affichage" className="verre-pill flex rounded-pill p-[5px]">
@@ -187,7 +196,7 @@ export default function Index() {
         </section>
 
         {/* ── Résultats ── */}
-        <section aria-live="polite" className="pt-6 md:pt-12">
+        <section ref={resultatsRef} id="resultats" aria-live="polite" className="pt-6 md:pt-12">
           <Conteneur>
             {resultats.length === 0 ? (
               <div className="flex flex-col items-start gap-6 py-16 md:py-24">
