@@ -56,12 +56,7 @@ export default function Accueil() {
 
   return (
     <>
-      <Nav />
-      {/* Flou sur les 8 % du haut de l'écran : la nav reste lisible au-dessus du mur d'images */}
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-x-0 top-0 z-40 h-[8vh] backdrop-blur-[10px] [mask-image:linear-gradient(to_bottom,black_60%,transparent)]"
-      />
+      <Nav opaque />
 
       <main className="overflow-x-clip">
         {/* ── Le mur de marques ── le panneau est lu en premier ; le mur, décoratif, est posé derrière */}

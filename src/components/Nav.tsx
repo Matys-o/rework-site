@@ -24,10 +24,12 @@ type NavProps = {
   onChercher?: () => void;
   /** Page sombre : le verre est épaissi pour garder le logo lisible */
   surSombre?: boolean;
+  /** Verre opaque dès le haut de page (accueil : la nav passe au-dessus du mur d'images) */
+  opaque?: boolean;
 };
 
 // Nav — verre pill, toujours flottante (fixe au scroll). Le bouton ≡ ouvre le menu plein écran. ⌘K / Ctrl+K = chercher.
-export function Nav({ className, onChercher, surSombre = false }: NavProps) {
+export function Nav({ className, onChercher, surSombre = false, opaque: opaqueForce = false }: NavProps) {
   const { pathname, search } = useLocation();
   const [menuOuvert, setMenuOuvert] = useState(false);
   const fermerMenu = useCallback(() => setMenuOuvert(false), []);
@@ -83,7 +85,7 @@ export function Nav({ className, onChercher, surSombre = false }: NavProps) {
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-10 rounded-pill bg-papier/80"
             initial={false}
-            animate={{ opacity: opaque ? 1 : 0 }}
+            animate={{ opacity: opaque || opaqueForce ? 1 : 0 }}
             transition={{ duration: 0.3 }}
           />
           {/* py + marge négative : zone tactile de 44 px sans changer la mise en page */}
