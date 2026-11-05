@@ -1,4 +1,4 @@
-// Couche de données unique : les 285 marques de l'archive, extraites de la sauvegarde Supabase (table public.brands),
+// Couche de données unique : les marques de l'archive, extraites de la sauvegarde Supabase (table public.brands),
 // suivies des 50 films du top Letterboxd (films.json, même format + rank, director, originalTitle).
 // Données statiques — aucune connexion à Supabase au runtime.
 import BRUT from "./brands.json";
