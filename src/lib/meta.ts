@@ -5,6 +5,7 @@ import {
   DOMAINES,
   MARQUES,
   TOTAL_ENTREES,
+  TOTAL_MARQUES,
   type DomaineId,
   type Marque,
 } from "../data/brands";
@@ -132,7 +133,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
   const d = domaine ? DOMAINES[domaine] : null;
   const titre = d
     ? `${d.nom} — ${d.entrees} entrées | ${NOM_SITE}`
-    : `Toutes les marques — ${TOTAL_ENTREES} marques et films | ${NOM_SITE}`;
+    : `Toutes les marques — ${TOTAL_MARQUES} marques | ${NOM_SITE}`;
   const description = d
     ? ajuster(
         `${d.nom} : ${d.entrees} entrées sur Rework. ${d.description}`,
@@ -141,7 +142,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
           : "Cherchez par nom, ville ou catégorie, triez par date d'ajout ou par nom.",
       )
     : ajuster(
-        `Les ${TOTAL_ENTREES} marques et films de Rework : ${LISTE_DOMAINES}.`,
+        `Les ${TOTAL_MARQUES} marques de Rework : mode, design, tech et digital. Les films ont leur propre page.`,
         "Cherchez par nom, ville ou catégorie, ou choisissez un univers.",
       );
   const chemin = d ? `/index?domaine=${d.id}` : "/index";
@@ -160,7 +161,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
         isPartOf: { "@type": "WebSite", name: NOM_SITE, url: `${SITE_URL}/` },
         mainEntity: {
           "@type": "ItemList",
-          numberOfItems: d ? d.entrees : TOTAL_ENTREES,
+          numberOfItems: d ? d.entrees : TOTAL_MARQUES,
         },
       },
     ],

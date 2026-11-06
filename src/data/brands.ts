@@ -127,6 +127,9 @@ export const TOTAL_ENTREES = MARQUES.length;
 export const compterParDomaine = (id: DomaineId) =>
   MARQUES.filter((m) => m.domaine === id).length;
 
+/** Marques seules (sans les films) — la page Marques ; les films ont leur page (/index?domaine=film) */
+export const TOTAL_MARQUES = TOTAL_ENTREES - compterParDomaine("film");
+
 export const DOMAINES: Record<DomaineId, Domaine> = {
   mode: {
     id: "mode",

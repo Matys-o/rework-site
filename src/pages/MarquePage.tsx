@@ -13,7 +13,7 @@ import { MediaCouverture } from "../components/MediaCouverture";
 import { Tampon } from "../components/Tampon";
 import { DOMAINES, MARQUES, metaMarque, trouverMarque, voisins, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
-import { LIENS, lienMarque } from "../lib/liens";
+import { LIENS, lienDomaine, lienMarque } from "../lib/liens";
 import { metaFiche } from "../lib/meta";
 import { useFacteurParallax } from "../lib/mouvement";
 import { useMeta } from "../lib/useMeta";
@@ -112,10 +112,10 @@ export default function MarquePage() {
 
           <Conteneur className="pt-24 md:pt-32">
             <a
-              href={LIENS.index}
+              href={film ? lienDomaine("film") : LIENS.index}
               className="verre-pill t-cote-m inline-flex h-11 items-center rounded-pill pr-[15px] pl-[15px] transition-colors duration-240 ease-rw hover:bg-blanc md:pr-[18px] md:pl-4"
             >
-              ← <span className="ml-1.5">Toutes les marques</span>
+              ← <span className="ml-1.5">{film ? "Tous les films" : "Toutes les marques"}</span>
             </a>
 
             <div className="relative">

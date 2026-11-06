@@ -10,7 +10,7 @@ import { Icone } from "../components/Icone";
 import { EnTeteIndex, LigneIndex } from "../components/LigneIndex";
 import { Nav } from "../components/Nav";
 import { Recherche } from "../components/Recherche";
-import { DOMAINES, MARQUES, TOTAL_ENTREES, type DomaineId, type Marque } from "../data/brands";
+import { DOMAINES, MARQUES, TOTAL_MARQUES, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
 import { metaIndex } from "../lib/meta";
 import { EASE_REVELE, defilerVers } from "../lib/mouvement";
@@ -38,7 +38,7 @@ const estDomaine = (v: string | null): v is DomaineId => !!v && v in DOMAINES;
 
 /** « 446 marques et films », « 78 films », « 150 marques · Mode » */
 function titreIndex(domaine: DomaineId | null) {
-  if (!domaine) return `${TOTAL_ENTREES} marques et films`;
+  if (!domaine) return `${TOTAL_MARQUES} marques`;
   const d = DOMAINES[domaine];
   return domaine === "film" ? `${d.entrees} films` : `${d.entrees} marques · ${d.nom}`;
 }
@@ -76,7 +76,8 @@ export default function Index() {
 
   const resultats = useMemo(() => {
     const termes = normaliser(q.trim()).split(/\s+/).filter(Boolean);
-    return MARQUES.filter((m) => !domaine || m.domaine === domaine)
+    // Page Marques : tout sauf les films, qui ont leur propre page (?domaine=film)
+    return MARQUES.filter((m) => (domaine ? m.domaine === domaine : m.domaine !== "film"))
       .filter((m) => {
         if (!termes.length) return true;
         const texte = normaliser(
@@ -119,13 +120,22 @@ export default function Index() {
         <EnTetePage
           pastille="Mis à jour chaque semaine"
           titre={titreIndex(domaine)}
-          texte="Cherchez par nom, ville ou catégorie, ou choisissez un univers."
+          texte={
+            domaine === "film"
+              ? "Cherchez par titre, réalisateur ou pays."
+              : "Cherchez par nom, ville ou catégorie, ou choisissez un univers."
+          }
         >
             {/* Recherche · vue · tri */}
             {/* Recherche et commandes sur une ligne dès lg ; empilées en dessous (sinon « Trier » déborde vers 768 px) */}
             <div className="mt-8 flex flex-col gap-4 md:mt-[60px] lg:flex-row lg:items-center lg:justify-between">
               <div ref={rechercheRef} className="w-full lg:max-w-[720px] lg:flex-1">
-                <Recherche valeur={q} onChange={setQ} onSubmit={voirResultats} />
+                <Recherche
+                  valeur={q}
+                  onChange={setQ}
+                  onSubmit={voirResultats}
+                  aide={domaine === "film" ? "Chercher un film, un réalisateur…" : "Chercher une marque, une ville…"}
+                />
               </div>
               <div className="flex items-center justify-between gap-6 lg:justify-end lg:gap-[59px]">
                 <div role="group" aria-label="Affichage" className="verre-pill flex rounded-pill p-[5px]">
@@ -159,18 +169,21 @@ export default function Index() {
             </div>
 
             {/* Filtres par domaine — passent à la ligne (aucun défilement horizontal) */}
-            <ul className="mt-6 flex flex-wrap gap-2 pt-1 pb-4 md:mt-9 md:gap-3">
+            {/* Page Films : pas de filtres d'univers (les films ont leur propre page) */}
+            <ul className={cn("mt-6 flex flex-wrap gap-2 pt-1 pb-4 md:mt-9 md:gap-3", domaine === "film" && "hidden")}>
               <li className="shrink-0">
                 <Filtre
-                  label="Tout"
-                  compte={TOTAL_ENTREES}
+                  label="Toutes"
+                  compte={TOTAL_MARQUES}
                   couleur="var(--color-signal)"
                   ton="blanc"
                   actif={!domaine}
                   onClick={() => majParam("domaine", null)}
                 />
               </li>
-              {Object.values(DOMAINES).map((d) => (
+              {Object.values(DOMAINES)
+                .filter((d) => d.id !== "film")
+                .map((d) => (
                 <li key={d.id} className="shrink-0">
                   <Filtre
                     label={d.nom}

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { DOMAINES, TOTAL_ENTREES } from "../data/brands";
+import { DOMAINES, TOTAL_ENTREES, TOTAL_MARQUES } from "../data/brands";
 import { cn } from "../lib/cn";
 import { LIENS, lienDomaine } from "../lib/liens";
 import { lenis } from "../lib/mouvement";
@@ -9,7 +9,7 @@ import { Icone } from "./Icone";
 import { Logo } from "./Logo";
 
 const ENTREES = [
-  { label: "Marques", href: LIENS.index, compteur: String(TOTAL_ENTREES) },
+  { label: "Marques", href: LIENS.index, compteur: String(TOTAL_MARQUES) },
   { label: "Films", href: lienDomaine("film"), compteur: String(DOMAINES.film.entrees) },
   { label: "Trios", href: LIENS.trios, compteur: "×3" },
   { label: "À propos", href: LIENS.manifeste, compteur: "—" },
