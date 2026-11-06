@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 4,
+    "total": 5,
     "cycle": 1,
     "publiees": [
       {
@@ -30,6 +30,13 @@
         "nom": "String Furniture",
         "date": "2026-11-05",
         "message": "1567916990239215667"
+      },
+      {
+        "id": 420,
+        "slug": "flower-market",
+        "nom": "Flower Market",
+        "date": "2026-11-06",
+        "message": "1568274274303873184"
       }
     ],
     "ignorees": [
@@ -49,7 +56,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 4,
+    "total": 5,
     "cycle": 1,
     "publiees": [
       {
@@ -79,6 +86,13 @@
         "nom": "Soy Cuba",
         "date": "2026-11-05",
         "message": "1567917025068580966"
+      },
+      {
+        "id": 446,
+        "slug": "the-killer",
+        "nom": "The Killer",
+        "date": "2026-11-06",
+        "message": "1568274291982868481"
       }
     ],
     "ignorees": [],
