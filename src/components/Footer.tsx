@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, useState, type FormEvent } from "react";
 import { TOTAL_ENTREES } from "../data/brands";
-import { LIENS as ROUTES } from "../lib/liens";
+import { LIENS as ROUTES, lienDomaine } from "../lib/liens";
 import { useFacteurParallax } from "../lib/mouvement";
 import { Aura } from "./Aura";
 import { Lien } from "./Lien";
@@ -9,12 +9,12 @@ import { Logo } from "./Logo";
 
 const COLONNES = [
   {
-    titre: "Archive",
-    liens: ["Index", "Domaines", "Trios", "Nouvelles entrées", "Au hasard"],
+    titre: "Explorer",
+    liens: ["Marques", "Films", "Trios", "Ajoutées cette semaine", "Au hasard"],
   },
   {
     titre: "Rework",
-    liens: ["La lettre", "Manifeste", "Contact", "Proposer une marque"],
+    liens: ["La lettre", "À propos", "Contact", "Proposer une marque"],
   },
   { titre: "Ailleurs", liens: ["Discord", "Instagram", "Are.na", "Twitter"] },
 ];
@@ -22,19 +22,19 @@ const COLONNES = [
 // Instagram, Are.na, Twitter : pas encore d'URL → affichés sans lien
 const LIENS: Record<string, string> = {
   Discord: ROUTES.discord,
-  Index: ROUTES.index,
-  Domaines: ROUTES.domaines,
+  Marques: ROUTES.index,
+  Films: lienDomaine("film"),
   Trios: ROUTES.trios,
-  "Nouvelles entrées": ROUTES.nouvelles,
+  "Ajoutées cette semaine": ROUTES.nouvelles,
   "Au hasard": ROUTES.hasard,
   "La lettre": ROUTES.lettre,
-  Manifeste: ROUTES.manifeste,
+  "À propos": ROUTES.manifeste,
   Contact: ROUTES.ecrire,
   "Proposer une marque": ROUTES.proposer,
 };
 
 const COLONNES_MOBILE = [
-  ["Index", "Domaines", "Trios", "La lettre", "Manifeste", "Contact"],
+  ["Marques", "Films", "Trios", "La lettre", "À propos", "Contact"],
   ["Discord", "Instagram", "Are.na", "Twitter"],
 ];
 
@@ -73,9 +73,9 @@ type EtatInscription =
   "repos" | "envoi" | "confirmation" | "deja" | "email" | "erreur";
 
 const ERREURS: Partial<Record<EtatInscription, string>> = {
-  email: "Cette adresse ne ressemble pas à un email. Vérifie-la et réessaie.",
+  email: "Cette adresse ne ressemble pas à un e-mail. Vérifiez-la et réessayez.",
   erreur:
-    "L'inscription ne passe pas pour le moment. Réessaie dans quelques minutes.",
+    "L'inscription ne passe pas pour le moment. Réessayez dans quelques minutes.",
 };
 
 // Lettre hebdomadaire : POST /api/subscribe (Pages Function → Brevo, double opt-in). La clé Brevo ne quitte jamais le serveur.
@@ -126,12 +126,10 @@ function Inscription() {
           </p>
         ) : (
           <>
-            <p className="t-titre-s mt-2">Vérifie ta boîte mail.</p>
+            <p className="t-titre-s mt-2">Vérifiez votre boîte mail.</p>
             <p className="t-texte-s md:t-texte-m mt-2 text-papier/80">
               Un email vient de partir vers{" "}
-              <span className="text-papier">{adresse}</span>. Clique sur «
-              Confirmer mon inscription » : sans ce clic, tu ne recevras pas la
-              lettre. Rien reçu ? Regarde dans Promotions ou les spams.
+              <span className="text-papier">{adresse}</span>. Cliquez sur « Confirmer mon inscription » : sans ce clic, vous ne recevrez pas la lettre. Rien reçu ? Regardez dans Promotions ou les spams.
             </p>
           </>
         )}
@@ -160,7 +158,7 @@ function Inscription() {
           type="email"
           required
           autoComplete="email"
-          placeholder="ton@email.com"
+          placeholder="votre@email.com"
           disabled={reussi}
           aria-describedby="newsletter-note"
           onChange={() =>
@@ -189,7 +187,7 @@ function Inscription() {
         </button>
       </form>
       <p id="newsletter-note" className="t-cote-s mt-3 text-papier/60 md:mt-4">
-        Gratuit. Une entrée par semaine. Désinscription en un clic.{" "}
+        Gratuit. Une lettre par semaine. Désinscription en un clic.{" "}
         <a
           href={ROUTES.confidentialite}
           className="underline underline-offset-2 transition-colors duration-240 ease-rw hover:text-papier"
@@ -247,10 +245,10 @@ export function Footer() {
           <div id="lettre" className="scroll-mt-24">
             <p className="t-cote-m text-signal">/ la lettre de rework°</p>
             <h2 className="t-titre-m md:t-titre-l mt-2">
-              Reçois la lettre du lundi.
+              Recevez la lettre du lundi.
             </h2>
             <p className="t-serif-s md:t-serif-m mt-1 md:mt-2">
-              Le trio de la semaine et les nouvelles entrées, dans ta boîte.
+              Les trios de la semaine et les nouvelles entrées, chaque lundi.
             </p>
             <Inscription />
           </div>
@@ -299,7 +297,7 @@ export function Footer() {
           <p>
             © 2026 rework° —{" "}
             <span className="hidden md:inline">
-              archive vivante de la culture contemporaine —{" "}
+              marques et films à découvrir —{" "}
             </span>
             Paris
           </p>

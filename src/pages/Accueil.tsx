@@ -71,7 +71,7 @@ export default function Accueil() {
               <br className="hidden sm:block" />à découvrir.
             </h1>
             <p className="mt-5 max-w-[620px] text-[17px] leading-[1.5] md:mt-6 md:text-[20px]">
-              Vous cherchez une marque ? Elle est ici.
+              Vous cherchez une marque ? Elle est ici.<br />Rework est là pour vous aider à trouver l'inspiration.
             </p>
             <div className="mt-8 flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center md:mt-10">
               <Bouton
@@ -112,7 +112,7 @@ export default function Accueil() {
                 {Object.keys(DOMAINES).length} univers
               </h2>
               <p className="t-texte-m mt-1 text-graphite">
-                Choisis par où commencer.
+                Choisissez par où commencer.
               </p>
             </Apparition>
             <ul className={RANGEE}>

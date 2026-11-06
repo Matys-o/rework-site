@@ -5,6 +5,7 @@ import {
   DOMAINES,
   MARQUES,
   TOTAL_ENTREES,
+  TOTAL_MARQUES,
   type DomaineId,
   type Marque,
 } from "../data/brands";
@@ -39,10 +40,10 @@ const LONGUEUR_MAX = 160;
 
 /** Compléments génériques, du plus long au plus court, pour atteindre 140 caractères sans couper de phrase */
 const COMPLEMENTS = [
-  "Rework, l'archive vivante de la culture contemporaine : pas de bruit, juste le signal.",
-  "Une archive vivante de la culture contemporaine.",
-  "Pas de bruit, juste le signal.",
-  "Archive vivante.",
+  "Rework : des marques et des films à découvrir, mis à jour chaque semaine. Gratuit, sans inscription.",
+  "Marques et films à découvrir, mis à jour chaque semaine.",
+  "Gratuit, sans inscription.",
+  "Mis à jour chaque semaine.",
 ];
 
 /**
@@ -98,10 +99,10 @@ export const imagePartageFiche = (m: Marque) => `/og/fiches/${m.slug}.jpg`;
 
 export function metaAccueil(): Meta {
   return base({
-    titre: "rework° — archive vivante de la culture contemporaine",
+    titre: `rework° — ${TOTAL_ENTREES} marques et films à découvrir`,
     description: ajuster(
-      `${TOTAL_ENTREES} entités sélectionnées en ${LISTE_DOMAINES}. Pas de bruit, juste le signal.`,
-      "Une archive vivante, et trois trios par semaine : un film, deux marques, un fil commun.",
+      `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}. Pour chaque marque : ce qu'elle fait, d'où elle vient, et le lien vers son site.`,
+      "Et trois fois par semaine, un trio : un film relié à deux marques.",
     ),
     chemin: "/",
     jsonLd: [
@@ -112,7 +113,7 @@ export function metaAccueil(): Meta {
         alternateName: "Rework",
         url: `${SITE_URL}/`,
         inLanguage: "fr-FR",
-        description: `Archive vivante de la culture contemporaine : ${TOTAL_ENTREES} entités en ${LISTE_DOMAINES}.`,
+        description: `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}.`,
         publisher: ORGANISATION,
         potentialAction: {
           "@type": "SearchAction",
@@ -124,25 +125,25 @@ export function metaAccueil(): Meta {
         },
       },
     ],
-    resume: `Archive vivante de la culture contemporaine : ${TOTAL_ENTREES} entités en ${LISTE_DOMAINES}.`,
+    resume: `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}.`,
   });
 }
 
 export function metaIndex(domaine?: DomaineId | null): Meta {
   const d = domaine ? DOMAINES[domaine] : null;
   const titre = d
-    ? `L'index · ${d.nom} — ${d.entrees} entités | ${NOM_SITE}`
-    : `L'index — ${TOTAL_ENTREES} entités | ${NOM_SITE}`;
+    ? `${d.nom} — ${d.entrees} entrées | ${NOM_SITE}`
+    : `Toutes les marques — ${TOTAL_MARQUES} marques | ${NOM_SITE}`;
   const description = d
     ? ajuster(
-        `${d.nom} : ${d.entrees} entités de l'archive Rework. ${d.description}`,
+        `${d.nom} : ${d.entrees} entrées sur Rework. ${d.description}`,
         d.id === "film"
           ? "Le top 50 Letterboxd, classé par rang, avec réalisation, pays et année."
-          : "Recherche par nom, ville ou année, tri par date d'entrée ou par nom.",
+          : "Cherchez par nom, ville ou catégorie, triez par date d'ajout ou par nom.",
       )
     : ajuster(
-        `Les ${TOTAL_ENTREES} entités de l'archive Rework, classées par domaine : ${LISTE_DOMAINES}.`,
-        "Recherche par nom, ville ou année, filtres et tri, en grille ou en liste.",
+        `Les ${TOTAL_MARQUES} marques de Rework : mode, design, tech et digital. Les films ont leur propre page.`,
+        "Cherchez par nom, ville ou catégorie, ou choisissez un univers.",
       );
   const chemin = d ? `/index?domaine=${d.id}` : "/index";
   return base({
@@ -160,7 +161,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
         isPartOf: { "@type": "WebSite", name: NOM_SITE, url: `${SITE_URL}/` },
         mainEntity: {
           "@type": "ItemList",
-          numberOfItems: d ? d.entrees : TOTAL_ENTREES,
+          numberOfItems: d ? d.entrees : TOTAL_MARQUES,
         },
       },
     ],
@@ -175,7 +176,7 @@ export function metaFiche(m: Marque): Meta {
   const contexte = film
     ? `Film de ${m.realisation}${m.origine ? ` (${m.origine}` : " ("}${m.annee ? `, ${m.annee})` : ")"}${m.rang ? `, n°${m.rang} du top Letterboxd` : ""}.`
     : `${m.nom} : ${[d.nom.toLowerCase(), m.etiquette.toLowerCase(), m.origine].filter(Boolean).join(", ")}${m.annee ? `, depuis ${m.annee}` : ""}.`;
-  const cote = `Fiche ${m.cote} de l'archive Rework.`;
+  const cote = `Fiche ${m.cote} sur Rework.`;
   const description = m.description
     ? ajuster(m.description, contexte, cote)
     : ajuster(contexte, cote);
@@ -235,26 +236,26 @@ export function metaFiche(m: Marque): Meta {
 
 export function metaManifeste(): Meta {
   return base({
-    titre: `Manifeste — pas de bruit, juste le signal | ${NOM_SITE}`,
+    titre: `À propos — Rework, c'est quoi ? | ${NOM_SITE}`,
     description: ajuster(
-      "Pourquoi Rework existe : curater, contextualiser, ralentir, transmettre. Une archive vivante plutôt qu'un magazine, une nouvelle entrée par semaine.",
+      "Rework, c'est une sélection de marques et de films : mode, design, tech, digital et cinéma. Pour chaque entrée : ce qu'elle fait, d'où elle vient, et son site.",
     ),
     chemin: "/manifeste",
     resume:
-      "Rework n'est pas un magazine, c'est une archive vivante. Curater, contextualiser, ralentir, transmettre.",
+      "Une sélection de marques et de films, mise à jour chaque semaine. Gratuit, sans inscription.",
   });
 }
 
 export function metaTrios(): Meta {
   return base({
-    titre: `Les trios — un fil, trois entrées | ${NOM_SITE}`,
+    titre: `Les trios — un film, deux marques | ${NOM_SITE}`,
     description: ajuster(
-      "Trois fois par semaine, le lundi, le jeudi et le samedi, Rework relie un film, une marque et une autre marque par un fil commun : une esthétique, une matière, une époque, une idée.",
+      "Trois fois par semaine, le lundi, le jeudi et le samedi, Rework relie un film à deux marques, et explique le lien entre chaque entrée.",
       "L'archive des trios.",
     ),
     chemin: "/trios",
     resume:
-      "Le lundi, le jeudi et le samedi : un film, une marque, puis une autre marque, reliés par un fil commun.",
+      "Le lundi, le jeudi et le samedi : un film relié à deux marques.",
   });
 }
 
@@ -262,11 +263,11 @@ export function metaConfidentialite(): Meta {
   return base({
     titre: `Confidentialité — la lettre de rework° | ${NOM_SITE}`,
     description: ajuster(
-      "Ce que Rework garde quand tu t'inscris à la lettre : ton email, rien d'autre. À quoi il sert, où il est hébergé (Brevo, en UE) et comment te désinscrire.",
+      "Ce que Rework garde quand vous vous inscrivez à la lettre : votre e-mail, rien d'autre. À quoi il sert, où il est hébergé (Brevo, en UE) et comment se désinscrire.",
     ),
     chemin: "/confidentialite",
     resume:
-      "Seul ton email est conservé, pour t'envoyer la lettre hebdomadaire. Hébergé chez Brevo, en Union européenne. Désinscription en un clic.",
+      "Seul votre e-mail est conservé, pour vous envoyer la lettre du lundi. Hébergé chez Brevo, en Union européenne. Désinscription en un clic.",
   });
 }
 
@@ -274,7 +275,7 @@ export function metaInscriptionConfirmee(): Meta {
   return base({
     titre: `Inscription confirmée | ${NOM_SITE}`,
     description: ajuster(
-      "C'est confirmé : la lettre de Rework arrivera chaque lundi, avec le trio de la semaine et les nouvelles entrées de l'archive.",
+      "C'est confirmé : la lettre de Rework arrivera chaque lundi, avec les trios de la semaine et les nouvelles entrées.",
     ),
     chemin: "/inscription-confirmee",
     resume: "C'est confirmé : la lettre de Rework arrivera chaque lundi.",
@@ -291,7 +292,7 @@ export function metaTrio(t: Trio): Meta {
     titre,
     description: ajuster(
       `${t.intro} ${a.nom} → ${b.nom} → ${c.nom}.`,
-      `Le trio du ${t.jour}, semaine ${t.numero}, sur Rework : un film, deux marques, un fil commun.`,
+      `Le trio du ${t.jour}, semaine ${t.numero}, sur Rework : un film relié à deux marques.`,
     ),
     chemin: lienTrio(t),
     image,

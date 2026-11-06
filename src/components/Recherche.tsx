@@ -7,11 +7,13 @@ type RechercheProps = {
   valeur: string;
   onChange: (valeur: string) => void;
   onSubmit?: () => void;
+  /** Texte d'aide en desktop (en mobile : « Chercher… ») */
+  aide?: string;
   className?: string;
 };
 
 // Recherche — clic = focus : liseré signal, bouton rouge. 60 px en mobile, 84 px en desktop.
-export function Recherche({ valeur, onChange, onSubmit, className }: RechercheProps) {
+export function Recherche({ valeur, onChange, onSubmit, aide = "Chercher une marque, un film, une ville…", className }: RechercheProps) {
   const id = useId();
   const large = useEcran("(min-width: 768px)");
   return (
@@ -37,7 +39,7 @@ export function Recherche({ valeur, onChange, onSubmit, className }: RecherchePr
         type="search"
         value={valeur}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={large ? "Chercher une marque, un film, une ville…" : "Chercher…"}
+        placeholder={large ? aide : "Chercher…"}
         autoComplete="off"
         className="t-texte-m md:t-texte-l min-w-0 flex-1 truncate bg-transparent text-encre caret-signal outline-none placeholder:text-graphite [&::-webkit-search-cancel-button]:hidden"
       />

@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "react-router";
-import { AuraAnimee } from "../components/Aura";
 import { Bouton } from "../components/Bouton";
-import { Compteur } from "../components/Compteur";
-import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { Fiche } from "../components/Fiche";
 import { Filtre } from "../components/Filtre";
 import { Footer } from "../components/Footer";
@@ -13,11 +10,12 @@ import { Icone } from "../components/Icone";
 import { EnTeteIndex, LigneIndex } from "../components/LigneIndex";
 import { Nav } from "../components/Nav";
 import { Recherche } from "../components/Recherche";
-import { DOMAINES, MARQUES, TOTAL_ENTREES, type DomaineId, type Marque } from "../data/brands";
+import { DOMAINES, MARQUES, TOTAL_MARQUES, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
 import { metaIndex } from "../lib/meta";
 import { EASE_REVELE, defilerVers } from "../lib/mouvement";
 import { useMeta } from "../lib/useMeta";
+import { EnTetePage } from "../components/EnTetePage";
 
 const PAR_PAGE = 24;
 
@@ -37,6 +35,13 @@ const ORDRE_TRIS_FILMS: Tri[] = ["rang", "recent", "nom", "annee"];
 const normaliser = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 
 const estDomaine = (v: string | null): v is DomaineId => !!v && v in DOMAINES;
+
+/** « 446 marques et films », « 78 films », « 150 marques · Mode » */
+function titreIndex(domaine: DomaineId | null) {
+  if (!domaine) return `${TOTAL_MARQUES} marques`;
+  const d = DOMAINES[domaine];
+  return domaine === "film" ? `${d.entrees} films` : `${d.entrees} marques · ${d.nom}`;
+}
 
 export default function Index() {
   const [params, setParams] = useSearchParams();
@@ -71,7 +76,8 @@ export default function Index() {
 
   const resultats = useMemo(() => {
     const termes = normaliser(q.trim()).split(/\s+/).filter(Boolean);
-    return MARQUES.filter((m) => !domaine || m.domaine === domaine)
+    // Page Marques : tout sauf les films, qui ont leur propre page (?domaine=film)
+    return MARQUES.filter((m) => (domaine ? m.domaine === domaine : m.domaine !== "film"))
       .filter((m) => {
         if (!termes.length) return true;
         const texte = normaliser(
@@ -111,30 +117,25 @@ export default function Index() {
 
       <main className="overflow-x-clip">
         {/* ── En-tête ── */}
-        <section className="relative isolate">
-          <AuraAnimee className="absolute inset-x-0 -top-[300px] h-[680px] -z-10 md:-top-[420px] md:h-[900px]">
-            <div aria-hidden className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-papier/0 to-papier" />
-          </AuraAnimee>
-
-          <Conteneur className="pt-[100px] md:pt-[140px]">
-            <p className="t-cote-s md:t-cote-m">rework° / index</p>
-
-            <div className="mt-2 flex flex-col gap-6 md:mt-[17px] lg:flex-row lg:items-start lg:justify-between">
-              <h1 className="flex flex-wrap items-baseline gap-x-6">
-                <TitreRevele texte="l'index" className="t-display-xl -ml-1.5 md:-ml-2" />
-                <SerifRevele texte="classé, pas empilé." delai={dureeCascade("l'index") + 0.2} className="t-serif-m md:t-serif-l inline-block text-signal" />
-              </h1>
-              <p className="flex items-baseline gap-3 lg:mt-[30px] lg:flex-col lg:items-end lg:gap-1.5">
-                <Compteur valeur={TOTAL_ENTREES} className="t-titre-l lg:t-display-l" />
-                <span className="t-cote-s md:t-cote-m">entrées dans l’archive</span>
-              </p>
-            </div>
-
+        <EnTetePage
+          pastille="Mis à jour chaque semaine"
+          titre={titreIndex(domaine)}
+          texte={
+            domaine === "film"
+              ? "Cherchez par titre, réalisateur ou pays."
+              : "Cherchez par nom, ville ou catégorie, ou choisissez un univers."
+          }
+        >
             {/* Recherche · vue · tri */}
             {/* Recherche et commandes sur une ligne dès lg ; empilées en dessous (sinon « Trier » déborde vers 768 px) */}
             <div className="mt-8 flex flex-col gap-4 md:mt-[60px] lg:flex-row lg:items-center lg:justify-between">
               <div ref={rechercheRef} className="w-full lg:max-w-[720px] lg:flex-1">
-                <Recherche valeur={q} onChange={setQ} onSubmit={voirResultats} />
+                <Recherche
+                  valeur={q}
+                  onChange={setQ}
+                  onSubmit={voirResultats}
+                  aide={domaine === "film" ? "Chercher un film, un réalisateur…" : "Chercher une marque, une ville…"}
+                />
               </div>
               <div className="flex items-center justify-between gap-6 lg:justify-end lg:gap-[59px]">
                 <div role="group" aria-label="Affichage" className="verre-pill flex rounded-pill p-[5px]">
@@ -168,18 +169,21 @@ export default function Index() {
             </div>
 
             {/* Filtres par domaine — passent à la ligne (aucun défilement horizontal) */}
-            <ul className="mt-6 flex flex-wrap gap-2 pt-1 pb-4 md:mt-9 md:gap-3">
+            {/* Page Films : pas de filtres d'univers (les films ont leur propre page) */}
+            <ul className={cn("mt-6 flex flex-wrap gap-2 pt-1 pb-4 md:mt-9 md:gap-3", domaine === "film" && "hidden")}>
               <li className="shrink-0">
                 <Filtre
-                  label="Tout"
-                  compte={TOTAL_ENTREES}
+                  label="Toutes"
+                  compte={TOTAL_MARQUES}
                   couleur="var(--color-signal)"
                   ton="blanc"
                   actif={!domaine}
                   onClick={() => majParam("domaine", null)}
                 />
               </li>
-              {Object.values(DOMAINES).map((d) => (
+              {Object.values(DOMAINES)
+                .filter((d) => d.id !== "film")
+                .map((d) => (
                 <li key={d.id} className="shrink-0">
                   <Filtre
                     label={d.nom}
@@ -192,15 +196,14 @@ export default function Index() {
                 </li>
               ))}
             </ul>
-          </Conteneur>
-        </section>
+        </EnTetePage>
 
         {/* ── Résultats ── */}
         <section ref={resultatsRef} id="resultats" aria-live="polite" className="pt-6 md:pt-12">
           <Conteneur>
             {resultats.length === 0 ? (
               <div className="flex flex-col items-start gap-6 py-16 md:py-24">
-                <p className="t-serif-m md:t-serif-l">Rien dans l'archive{q && ` pour « ${q} »`}.</p>
+                <p className="t-serif-m md:t-serif-l">Aucun résultat{q && ` pour « ${q} »`}.</p>
                 <Bouton
                   type="verre"
                   onClick={() => {
@@ -232,7 +235,7 @@ export default function Index() {
               </ul>
             ) : (
               <div>
-                <p className="t-cote-s md:t-cote-m text-signal">/ vue liste — même archive, autre lecture</p>
+                <p className="t-cote-s md:t-cote-m text-signal">/ vue liste</p>
                 <div className="mt-6 md:mt-9">
                   <EnTeteIndex />
                 </div>
