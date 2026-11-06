@@ -4356,5 +4356,18 @@
     "url": "https://www.artifice.store",
     "addedAt": "2026-11-05",
     "imgSource": "https://www.artifice.store/cdn/shop/files/sweater_wearable_art_curly_knit_fabric.jpg"
+  },
+  {
+    "id": 420,
+    "name": "Flower Market",
+    "type": "fashion",
+    "cat": "Broderie",
+    "origin": "France",
+    "year": null,
+    "img": "/images/brands/flower-market.webp",
+    "description": "Les fleurs à l'honneur sur des vêtements d'exception. Hoodies, jeans brodés et ensembles, sortis en drops.",
+    "url": "https://www.flower-market.store",
+    "addedAt": "2026-11-06",
+    "imgSource": "https://www.flower-market.store/cdn/shop/files/DSC07875.jpg"
   }
 ]
