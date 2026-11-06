@@ -68,7 +68,7 @@ export function LigneIndex({ marque }: { marque: Marque }) {
       <span className="t-texte-s hidden text-carbone xl:block">
         {marque.origine}
       </span>
-      <span className="t-cote-m hidden xl:block">{marque.annee}</span>
+      <span className="t-cote-m hidden xl:block">{marque.annee || "—"}</span>
       <span className={cn("grid size-11 place-items-center max-md:col-start-2 max-md:row-span-2 max-md:row-start-1 rounded-pill text-encre transition-colors", t, "group-hover:bg-signal group-hover:text-blanc")}>
         <FlecheSurvol />
       </span>

@@ -2,8 +2,8 @@ import type { DomaineId } from "../data/brands";
 
 // Plan du site — une seule source pour tous les liens (nav, menu, footer, boutons, fiches).
 
-/** Adresse de la rédaction — à renseigner (laissée vide, le client mail s'ouvre sans destinataire) */
-export const EMAIL_REDACTION = "";
+/** Adresse de la rédaction : « Proposer une marque », « Écrire à la rédaction », Contact du footer */
+export const EMAIL_REDACTION = "ouvrardmatys70@gmail.com";
 
 export const LIENS = {
   accueil: "/",
