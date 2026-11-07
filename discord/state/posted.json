@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 5,
+    "total": 6,
     "cycle": 1,
     "publiees": [
       {
@@ -37,6 +37,13 @@
         "nom": "Flower Market",
         "date": "2026-11-06",
         "message": "1568274274303873184"
+      },
+      {
+        "id": 419,
+        "slug": "artifice",
+        "nom": "Artifice",
+        "date": "2026-11-07",
+        "message": "1568620868475682828"
       }
     ],
     "ignorees": [
@@ -56,7 +63,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 5,
+    "total": 6,
     "cycle": 1,
     "publiees": [
       {
@@ -93,6 +100,13 @@
         "nom": "The Killer",
         "date": "2026-11-06",
         "message": "1568274291982868481"
+      },
+      {
+        "id": 445,
+        "slug": "mank",
+        "nom": "Mank",
+        "date": "2026-11-07",
+        "message": "1568620883839426713"
       }
     ],
     "ignorees": [],
