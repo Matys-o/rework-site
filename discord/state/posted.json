@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 6,
+    "total": 7,
     "cycle": 1,
     "publiees": [
       {
@@ -44,6 +44,13 @@
         "nom": "Artifice",
         "date": "2026-11-07",
         "message": "1568620868475682828"
+      },
+      {
+        "id": 418,
+        "slug": "raycast",
+        "nom": "Raycast",
+        "date": "2026-11-08",
+        "message": "1568987887314276495"
       }
     ],
     "ignorees": [
@@ -63,7 +70,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 6,
+    "total": 7,
     "cycle": 1,
     "publiees": [
       {
@@ -107,6 +114,13 @@
         "nom": "Mank",
         "date": "2026-11-07",
         "message": "1568620883839426713"
+      },
+      {
+        "id": 444,
+        "slug": "gone-girl",
+        "nom": "Gone Girl",
+        "date": "2026-11-08",
+        "message": "1568987903084728362"
       }
     ],
     "ignorees": [],
