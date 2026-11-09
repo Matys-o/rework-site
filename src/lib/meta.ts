@@ -74,7 +74,7 @@ const ORGANISATION = {
   logo: absolue("/icons/icon-512.png"),
 };
 
-const base = (
+export const base = (
   m: Omit<
     Meta,
     "image" | "imageAlt" | "imageLargeur" | "imageHauteur" | "type" | "jsonLd"
