@@ -21,6 +21,13 @@ const TRACES = {
     </>
   ),
   liste: <path d="M3 4.5H15M3 9H15M3 13.5H15" />,
+  filtres: (
+    <>
+      <path d="M3 5.25H8.25M12.75 5.25H15M3 12.75H5.25M9.75 12.75H15" />
+      <circle cx="10.5" cy="5.25" r="2.25" />
+      <circle cx="7.5" cy="12.75" r="2.25" />
+    </>
+  ),
 } as const;
 
 export type IconeNom = keyof typeof TRACES;
@@ -51,9 +58,18 @@ export function Icone({ nom, taille = 18, className }: IconeProps) {
 }
 
 /** Flèche → qui devient ↗ au survol du parent `.group` */
-export function FlecheSurvol({ taille = 18, className }: { taille?: number; className?: string }) {
+export function FlecheSurvol({
+  taille = 18,
+  className,
+}: {
+  taille?: number;
+  className?: string;
+}) {
   return (
-    <span className={cn("relative inline-grid shrink-0", className)} style={{ width: taille, height: taille }}>
+    <span
+      className={cn("relative inline-grid shrink-0", className)}
+      style={{ width: taille, height: taille }}
+    >
       <Icone
         nom="fleche"
         taille={taille}
