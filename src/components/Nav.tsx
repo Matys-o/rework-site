@@ -14,6 +14,7 @@ const filmsActif = (s: string) => new URLSearchParams(s).get("domaine") === "fil
 const ENTREES = [
   { label: "Marques", href: LIENS.index, actif: (p: string, s: string) => (p === "/index" && !filmsActif(s)) || p.startsWith("/marque/") },
   { label: "Films", href: lienDomaine("film"), actif: (p: string, s: string) => p === "/index" && filmsActif(s) },
+  { label: "Musique", href: LIENS.musique, actif: (p: string) => p.startsWith("/musique") },
   { label: "Trios", href: LIENS.trios, actif: (p: string) => p.startsWith("/trios") },
   { label: "À propos", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
 ];
