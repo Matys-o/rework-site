@@ -1,0 +1,2615 @@
+[
+  {
+    "id": 488,
+    "slug": "kuko-catharsis",
+    "titre": "CATHARSIS",
+    "type": "album",
+    "artistes": [
+      447
+    ],
+    "annee": 2026,
+    "label": "krach",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Le premier album de KUKO pousse sa hard techno vers le chagrin : des morceaux massifs, traversés de voix et de mélodies qui semblent s'éteindre.",
+    "cover": "/images/music/sorties/kuko-catharsis.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/d3e3ab0459d0544bd2e5e55c3a6072f1/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/1100467562",
+      "apple": "https://music.apple.com/fr/album/catharsis/6780496006"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 489,
+        "raison": "L'EP d'avant l'album : la même noirceur, en format plus court et plus frontal."
+      },
+      {
+        "id": 526,
+        "raison": "Deux disques qui assument la tristesse au milieu des kicks : la hard techno comme exutoire."
+      },
+      {
+        "id": 536,
+        "raison": "Une autre techno rapide et rituelle, plus mystique que mélancolique."
+      }
+    ]
+  },
+  {
+    "id": 489,
+    "slug": "kuko-die-tonight-ep",
+    "titre": "DIE TONIGHT EP",
+    "type": "ep",
+    "artistes": [
+      447
+    ],
+    "annee": 2025,
+    "label": "krach",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Un EP court et noir, qui condense le style KUKO : kicks écrasants, voix lointaine et sensation d'urgence.",
+    "cover": "/images/music/sorties/kuko-die-tonight-ep.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/1f369775dbdf1716e0e11435a7b88821/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/779441711",
+      "apple": "https://music.apple.com/fr/album/die-tonight-ep/1826135627"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 488,
+        "raison": "La suite logique : l'album où KUKO étire ces morceaux en un récit entier."
+      },
+      {
+        "id": 527,
+        "raison": "La même techno de hangar, saturée et cinématique, quelques années plus tôt en France."
+      },
+      {
+        "id": 537,
+        "raison": "Des kicks aussi lourds, une ambiance plus occulte : l'école américaine."
+      }
+    ]
+  },
+  {
+    "id": 490,
+    "slug": "kuko-44010",
+    "titre": "44010",
+    "type": "ep",
+    "artistes": [
+      447
+    ],
+    "annee": 2024,
+    "label": "44-label-group",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Un EP de club sans détour, sorti sur le label 44 : la hard techno de Cologne dans sa version la plus brute.",
+    "cover": "/images/music/sorties/kuko-44010.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/3b21537aa1fb45638e224a3baeb14e83/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/678579201",
+      "apple": "https://music.apple.com/fr/album/44010-ep/1782980484"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 489,
+        "raison": "Un an plus tard, KUKO garde la vitesse et ajoute le chagrin."
+      },
+      {
+        "id": 538,
+        "raison": "Deux sorties courtes pensées pour le club, sans temps mort."
+      },
+      {
+        "id": 531,
+        "raison": "La racine berlinoise : une techno brute, répétitive, qui a ouvert la voie aux tempos actuels."
+      }
+    ]
+  },
+  {
+    "id": 491,
+    "slug": "kuko-voicemail",
+    "titre": "Voicemail",
+    "type": "single",
+    "artistes": [
+      447
+    ],
+    "annee": 2024,
+    "label": "innergate",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Le morceau qui a fait connaître KUKO : une voix de répondeur, une mélodie triste et une hard techno qui monte sans relâche.",
+    "cover": "/images/music/sorties/kuko-voicemail.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/5d5efb10a18bf0ea48430550daf0fc99/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/685391441"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 492,
+        "raison": "Deux visages de la nouvelle hard techno, où la voix compte autant que le kick."
+      },
+      {
+        "id": 488,
+        "raison": "Le single annonçait la couleur de l'album : des appels perdus sur des basses écrasantes."
+      },
+      {
+        "id": 526,
+        "raison": "Même goût pour les mélodies d'après-fête au-dessus d'un rythme martial."
+      }
+    ]
+  },
+  {
+    "id": 492,
+    "slug": "winson-remember-this-face",
+    "titre": "REMEMBER THIS FACE",
+    "type": "single",
+    "artistes": [
+      448
+    ],
+    "annee": 2026,
+    "label": "chrome-print",
+    "genres": [
+      "hard-techno"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "description": "Un single taillé pour les festivals, où la voix tient le premier rôle au-dessus d'une hard techno euphorique.",
+    "cover": "/images/music/sorties/winson-remember-this-face.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/e0cde352a7cf507677ed6186f18873ed/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/997699211"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 493,
+        "raison": "Le disque précédent de WINSON, plus direct, taillé pour les festivals."
+      },
+      {
+        "id": 491,
+        "raison": "La même génération européenne, plus sombre côté Cologne."
+      },
+      {
+        "id": 536,
+        "raison": "Une hard techno de stade elle aussi, mais tournée vers l'occulte."
+      }
+    ]
+  },
+  {
+    "id": 493,
+    "slug": "winson-bass-in-your-face",
+    "titre": "Bass In Your Face",
+    "type": "single",
+    "artistes": [
+      448
+    ],
+    "annee": 2025,
+    "label": "barong-family",
+    "genres": [
+      "hard-techno"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "description": "Un titre direct et puissant, pensé comme un appel au drop.",
+    "cover": "/images/music/sorties/winson-bass-in-your-face.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/72840a5bb110ee7d37783ecd2002e00a/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/801765521"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 494,
+        "raison": "Le point de départ : WINSON y pose déjà son goût pour les basses qui frappent."
+      },
+      {
+        "id": 492,
+        "raison": "Un an après, le même son de festival, avec plus de mélodie."
+      },
+      {
+        "id": 538,
+        "raison": "Deux disques de club à très haut tempo, faits pour les grandes scènes."
+      }
+    ]
+  },
+  {
+    "id": 494,
+    "slug": "winson-kick-selector",
+    "titre": "Kick Selector",
+    "type": "single",
+    "artistes": [
+      448
+    ],
+    "annee": 2024,
+    "label": null,
+    "genres": [
+      "hard-techno"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "description": "Le morceau qui a lancé WINSON au-delà de TikTok, construit avec DJ Jayron : une hard techno simple, frontale et fédératrice.",
+    "cover": "/images/music/sorties/winson-kick-selector.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/56b27b35f60b132dd95063f114472943/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/546217852"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 493,
+        "raison": "La suite directe : des basses encore plus mises en avant."
+      },
+      {
+        "id": 491,
+        "raison": "La même scène, la même année, avec une voix au centre."
+      },
+      {
+        "id": 537,
+        "raison": "Des kicks taillés pour le peak time, côté américain."
+      }
+    ]
+  },
+  {
+    "id": 495,
+    "slug": "tyler-the-creator-chromakopia",
+    "titre": "CHROMAKOPIA",
+    "type": "album",
+    "artistes": [
+      449
+    ],
+    "annee": 2024,
+    "label": "columbia",
+    "genres": [
+      "alternative-hip-hop",
+      "neo-soul"
+    ],
+    "moods": [
+      "experimental",
+      "dreamy",
+      "energetic"
+    ],
+    "description": "Un album masqué, sombre et théâtral, où Tyler règle ses comptes avec l'héritage de ses parents et la peur de vieillir.",
+    "cover": "/images/music/sorties/tyler-the-creator-chromakopia.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/19a7a4edb2016527577dbb8427bdd724/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/662648981",
+      "apple": "https://music.apple.com/fr/album/chromakopia/1789446415"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 496,
+        "raison": "L'album précédent : Tyler en voyageur sûr de lui, avant le retour sur soi de CHROMAKOPIA."
+      },
+      {
+        "id": 506,
+        "raison": "Deux albums-personnages, construits comme des films, avec un récit et un costume."
+      },
+      {
+        "id": 546,
+        "raison": "Un album-concept qui parle d'identité et de famille sans renoncer à l'ambition sonore."
+      }
+    ]
+  },
+  {
+    "id": 496,
+    "slug": "tyler-the-creator-call-me-if-you-get-lost",
+    "titre": "CALL ME IF YOU GET LOST",
+    "type": "album",
+    "artistes": [
+      449
+    ],
+    "annee": 2021,
+    "label": "columbia",
+    "genres": [
+      "alternative-hip-hop",
+      "neo-soul"
+    ],
+    "moods": [
+      "experimental",
+      "dreamy",
+      "energetic"
+    ],
+    "description": "Une mixtape de voyageur, entre rap à l'ancienne et soul de luxe, animée par la voix de DJ Drama.",
+    "cover": "/images/music/sorties/tyler-the-creator-call-me-if-you-get-lost.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/2d740784396546039fe626ac2b92877b/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/239516692"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 495,
+        "raison": "La suite : plus sombre et plus intime, avec la même liberté de production."
+      },
+      {
+        "id": 497,
+        "raison": "Le disque d'avant, où Tyler chante plus qu'il ne rappe."
+      },
+      {
+        "id": 509,
+        "raison": "Le même plaisir du rap technique et de la mixtape assumée, côté français."
+      }
+    ]
+  },
+  {
+    "id": 497,
+    "slug": "tyler-the-creator-igor",
+    "titre": "IGOR",
+    "type": "album",
+    "artistes": [
+      449
+    ],
+    "annee": 2019,
+    "label": "columbia",
+    "genres": [
+      "alternative-hip-hop",
+      "neo-soul"
+    ],
+    "moods": [
+      "experimental",
+      "dreamy",
+      "energetic"
+    ],
+    "description": "Un album d'amour et de rupture, chanté plus que rappé, saturé de synthés et de basses déformées.",
+    "cover": "/images/music/sorties/tyler-the-creator-igor.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/041ab5ceb6fb6ebf9512966835be9e1b/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/97140952"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 498,
+        "raison": "Deux ans plus tôt, Tyler commençait à mêler rap, soul et confidences."
+      },
+      {
+        "id": 544,
+        "raison": "Une même façon de mélanger rupture amoureuse, soul et production déroutante."
+      },
+      {
+        "id": 548,
+        "raison": "Des accords soul, des basses souples : la même chaleur, version danse."
+      }
+    ]
+  },
+  {
+    "id": 498,
+    "slug": "tyler-the-creator-flower-boy",
+    "titre": "Flower Boy",
+    "type": "album",
+    "artistes": [
+      449
+    ],
+    "annee": 2017,
+    "label": "columbia",
+    "genres": [
+      "alternative-hip-hop",
+      "neo-soul"
+    ],
+    "moods": [
+      "experimental",
+      "dreamy",
+      "energetic"
+    ],
+    "description": "Le disque où Tyler devient doux : guitares claires, cordes, accords jazz et confidences lumineuses.",
+    "cover": "/images/music/sorties/tyler-the-creator-flower-boy.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/44730061"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 497,
+        "raison": "La suite : la rupture racontée de bout en bout, plus chantée."
+      },
+      {
+        "id": 545,
+        "raison": "Une soul moderne et ensoleillée qui a ouvert la voie à ce Tyler-là."
+      },
+      {
+        "id": 549,
+        "raison": "Un autre rap introspectif, aux arrangements luxuriants."
+      }
+    ]
+  },
+  {
+    "id": 499,
+    "slug": "ajna-antidote",
+    "titre": "Antidote",
+    "type": "album",
+    "artistes": [
+      450
+    ],
+    "annee": 2026,
+    "label": "antarch",
+    "genres": [
+      "cloud-rap",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Le premier vrai long format d'Ajna : un rap nocturne et mélodique, attendu après plus d'un an d'extraits.",
+    "cover": "/images/music/sorties/ajna-antidote.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/baded4c8272ddf3e8d46f7292a40a8fc/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/1006346161"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 500,
+        "raison": "Le disque d'avant : Ajna y posait déjà son rap aérien et ses refrains en suspension."
+      },
+      {
+        "id": 513,
+        "raison": "Le même rap nuageux et mélancolique, où la voix flotte au-dessus des productions."
+      },
+      {
+        "id": 506,
+        "raison": "Des ambiances nocturnes et soignées, le rap français version cinéma."
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "slug": "ajna-goldmaker",
+    "titre": "GOLDMAKER",
+    "type": "ep",
+    "artistes": [
+      450
+    ],
+    "annee": 2024,
+    "label": "antarch",
+    "genres": [
+      "cloud-rap",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Un EP plus sombre, où Ajna affine ses mélodies et sa direction artistique.",
+    "cover": "/images/music/sorties/ajna-goldmaker.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/1f25bdcdabddafe749d90fdc705648f8/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/650538021"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 499,
+        "raison": "La suite : plus d'assurance, les mêmes ambiances brumeuses."
+      },
+      {
+        "id": 501,
+        "raison": "Le disque d'avant, plus brut et plus souterrain."
+      },
+      {
+        "id": 550,
+        "raison": "Le cloud rap suédois, une influence évidente : des voix filtrées, une mélancolie douce."
+      }
+    ]
+  },
+  {
+    "id": 501,
+    "slug": "ajna-boys-basement",
+    "titre": "Boys & Basement",
+    "type": "album",
+    "artistes": [
+      450
+    ],
+    "annee": 2023,
+    "label": "antarch",
+    "genres": [
+      "cloud-rap",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Un projet de sous-sol au sens propre : un rap embrumé, fait entre amis, qui pose les bases de son univers.",
+    "cover": "/images/music/sorties/ajna-boys-basement.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/4f42718fd7bc5a937a6cef7563f0057c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/516413042"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 500,
+        "raison": "Un an après : Ajna polit son son sans perdre son côté souterrain."
+      },
+      {
+        "id": 507,
+        "raison": "Un rap français sombre et travaillé, où chaque production installe une atmosphère."
+      },
+      {
+        "id": 514,
+        "raison": "La référence du rap planant en France, celle que toute une génération a écoutée."
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "slug": "cielbleu-gosse-coureur",
+    "titre": "GOSSE COUREUR",
+    "type": "album",
+    "artistes": [
+      451
+    ],
+    "annee": 2026,
+    "label": "naive",
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Le premier album de Cielbleu chez Naive : un disque de souvenirs d'enfance et de course après le temps, entre soul et rap.",
+    "cover": "/images/music/sorties/cielbleu-gosse-coureur.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/8b74df0d8b1042c6ad683f365087db74/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/914963151",
+      "apple": "https://music.apple.com/fr/album/gosse-coureur/1875959757"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 504,
+        "raison": "Le projet d'avant : Cielbleu y trouvait déjà ce ton doux-amer."
+      },
+      {
+        "id": 510,
+        "raison": "Un rap de quartier raconté avec tendresse, comme un album de souvenirs."
+      },
+      {
+        "id": 544,
+        "raison": "Une même pudeur, des productions qui laissent respirer la voix."
+      }
+    ]
+  },
+  {
+    "id": 503,
+    "slug": "cielbleu-fin-de-service",
+    "titre": "Fin de service",
+    "type": "ep",
+    "artistes": [
+      451
+    ],
+    "annee": 2024,
+    "label": "etincelle",
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Un EP court, comme une fin de journée : des morceaux posés, écrits au plus près du quotidien.",
+    "cover": "/images/music/sorties/cielbleu-fin-de-service.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/dca54d8d61c2e6eb8a156170855e897c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/664609931"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 502,
+        "raison": "Le projet suivant, plus ample, où Cielbleu s'ouvre davantage."
+      },
+      {
+        "id": 512,
+        "raison": "Le rap introspectif et nuageux de Népal, une influence assumée de cette scène."
+      },
+      {
+        "id": 511,
+        "raison": "Des samples chaleureux et un rap posé, sans esbroufe."
+      }
+    ]
+  },
+  {
+    "id": 504,
+    "slug": "cielbleu-janvier-jtm-quand-meme",
+    "titre": "Janvier jtm quand même",
+    "type": "album",
+    "artistes": [
+      451
+    ],
+    "annee": 2024,
+    "label": "etincelle",
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Un projet d'hiver, doux et mélancolique, où les accords jazz accompagnent des textes très imagés.",
+    "cover": "/images/music/sorties/cielbleu-janvier-jtm-quand-meme.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/22fb791b23eee1b72783ed3b4807a497/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/586329012"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 505,
+        "raison": "Le premier projet : la même voix, encore plus intime."
+      },
+      {
+        "id": 510,
+        "raison": "Un rap qui raconte sa ville avec affection."
+      },
+      {
+        "id": 545,
+        "raison": "La même douceur mélancolique, entre soul et confession."
+      }
+    ]
+  },
+  {
+    "id": 505,
+    "slug": "cielbleu-par-les-yeux",
+    "titre": "Par les yeux",
+    "type": "album",
+    "artistes": [
+      451
+    ],
+    "annee": 2023,
+    "label": "etincelle",
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Les débuts de Cielbleu, déjà fidèle à son spleen tranquille et à ses instrus soul.",
+    "cover": "/images/music/sorties/cielbleu-par-les-yeux.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/2bb75dc00c5a6d4105bbda80f84144d8/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/506226491"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 504,
+        "raison": "La suite directe, plus assurée, toujours aussi douce."
+      },
+      {
+        "id": 512,
+        "raison": "Un rap brumeux et introspectif, l'un des modèles de cette génération."
+      },
+      {
+        "id": 510,
+        "raison": "Une même écriture simple et sincère."
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "slug": "laylow-l-etrange-histoire-de-mr-anderson",
+    "titre": "L'Étrange Histoire de Mr.Anderson",
+    "type": "album",
+    "artistes": [
+      452
+    ],
+    "annee": 2021,
+    "label": "digitalmundo",
+    "genres": [
+      "alternative-hip-hop",
+      "cloud-rap"
+    ],
+    "moods": [
+      "dark",
+      "atmospheric"
+    ],
+    "description": "Un album-film où Laylow suit un personnage à travers une ville imaginaire, entre rap, chanson et science-fiction.",
+    "cover": "/images/music/sorties/laylow-l-etrange-histoire-de-mr-anderson.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/f968eb506868df5736521217bb87ccc7/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/242115042"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 507,
+        "raison": "L'album d'avant, plus froid et plus numérique : le monde virtuel avant le film noir."
+      },
+      {
+        "id": 495,
+        "raison": "Deux albums-personnages pensés comme des films."
+      },
+      {
+        "id": 513,
+        "raison": "La même ambition de son et d'image dans le rap français."
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "slug": "laylow-trinity",
+    "titre": "TRINITY",
+    "type": "album",
+    "artistes": [
+      452
+    ],
+    "annee": 2020,
+    "label": "digitalmundo",
+    "genres": [
+      "alternative-hip-hop",
+      "cloud-rap"
+    ],
+    "moods": [
+      "dark",
+      "atmospheric"
+    ],
+    "description": "Le premier album de Laylow, plongée dans un monde virtuel aux sons froids et aux voix trafiquées.",
+    "cover": "/images/music/sorties/laylow-trinity.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/6cebb13caf6dae96d49f35d856a34226/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/132530842"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 506,
+        "raison": "La suite : l'histoire continue, en version film noir."
+      },
+      {
+        "id": 514,
+        "raison": "Le rap planant qui a préparé le terrain à TRINITY."
+      },
+      {
+        "id": 501,
+        "raison": "Une relève qui reprend ces ambiances sombres et numériques."
+      }
+    ]
+  },
+  {
+    "id": 508,
+    "slug": "freeze-corleone-lmf",
+    "titre": "LMF",
+    "type": "album",
+    "artistes": [
+      453
+    ],
+    "annee": 2020,
+    "label": null,
+    "genres": [
+      "underground-rap",
+      "drill"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "description": "Un album dense, sombre et chargé de références, qui a imposé Freeze Corleone hors des circuits habituels.",
+    "cover": "/images/music/sorties/freeze-corleone-lmf.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/b1992b21b96b9ba7b10af14ad49d842d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/168366422"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 509,
+        "raison": "La même exigence technique, l'autre grand rappeur de l'école parisienne."
+      },
+      {
+        "id": 512,
+        "raison": "La même année, un autre rap français dense et sans concession, plus brumeux."
+      },
+      {
+        "id": 547,
+        "raison": "Un rap sombre sur des boucles poussiéreuses, sans refrain facile."
+      }
+    ]
+  },
+  {
+    "id": 509,
+    "slug": "alpha-wann-une-main-lave-l-autre",
+    "titre": "UNE MAIN LAVE L'AUTRE",
+    "type": "album",
+    "artistes": [
+      454
+    ],
+    "annee": 2018,
+    "label": "don-dada-records",
+    "genres": [
+      "boom-bap",
+      "underground-rap"
+    ],
+    "moods": [
+      "energetic"
+    ],
+    "description": "Le premier album solo d'Alpha Wann, démonstration de technique sur des instrus qui cognent.",
+    "cover": "/images/music/sorties/alpha-wann-une-main-lave-l-autre.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/a7bac94fea24e918b383eee57fa97caa/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/552829992"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 510,
+        "raison": "Le même cercle d'amis rappeurs, la même passion pour la rime."
+      },
+      {
+        "id": 508,
+        "raison": "Une technique tout aussi impressionnante, dans un registre plus sombre."
+      },
+      {
+        "id": 511,
+        "raison": "Un rap à l'ancienne, précis et sans gras."
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "slug": "jazzy-bazz-p-town",
+    "titre": "P-Town",
+    "type": "album",
+    "artistes": [
+      455
+    ],
+    "annee": 2016,
+    "label": null,
+    "genres": [
+      "jazz-rap",
+      "boom-bap"
+    ],
+    "moods": [
+      "melancholic",
+      "chill"
+    ],
+    "description": "Un album dédié à Paris, ses quartiers et ses nuits, porté par des productions jazz et un boom bap élégant.",
+    "cover": "/images/music/sorties/jazzy-bazz-p-town.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/b623d0b3a411d9db9a3520efa205d901/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/57644492"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 509,
+        "raison": "Un camarade de rimes : le même goût du texte travaillé."
+      },
+      {
+        "id": 511,
+        "raison": "Un rap parisien chaleureux, construit sur des samples soul."
+      },
+      {
+        "id": 504,
+        "raison": "Une relève qui raconte elle aussi sa ville avec tendresse."
+      }
+    ]
+  },
+  {
+    "id": 511,
+    "slug": "prince-waly-moussa",
+    "titre": "Moussa",
+    "type": "album",
+    "artistes": [
+      456
+    ],
+    "annee": 2019,
+    "label": null,
+    "genres": [
+      "boom-bap"
+    ],
+    "moods": [
+      "chill",
+      "melancholic"
+    ],
+    "description": "Un album nostalgique et lumineux, rempli de samples soul et de souvenirs de jeunesse à Montreuil.",
+    "cover": "/images/music/sorties/prince-waly-moussa.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/d13f759d5f7851eb6b85998d0cc2e731/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/349664907"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 510,
+        "raison": "Le même rap parisien soigné, entre mélancolie et fierté."
+      },
+      {
+        "id": 512,
+        "raison": "Un rap introspectif aux productions vaporeuses."
+      },
+      {
+        "id": 509,
+        "raison": "Le même attachement au rap à texte."
+      }
+    ]
+  },
+  {
+    "id": 512,
+    "slug": "nepal-adios-bahamas",
+    "titre": "Adios Bahamas",
+    "type": "album",
+    "artistes": [
+      457
+    ],
+    "annee": 2020,
+    "label": "triple-4-gear",
+    "genres": [
+      "underground-rap",
+      "jazz-rap"
+    ],
+    "moods": [
+      "melancholic",
+      "atmospheric"
+    ],
+    "description": "Le seul album de Népal, sorti peu après sa disparition : un disque brumeux, calme et bouleversant.",
+    "cover": "/images/music/sorties/nepal-adios-bahamas.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/ca7a7ec518e3f151b04a36ed53dc2919/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/120441792"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 508,
+        "raison": "La même année, l'autre visage du rap français exigeant."
+      },
+      {
+        "id": 547,
+        "raison": "Le même rap introspectif, aux boucles cotonneuses et à la voix basse."
+      },
+      {
+        "id": 505,
+        "raison": "Une relève qui reprend ce ton brumeux."
+      }
+    ]
+  },
+  {
+    "id": 513,
+    "slug": "pnl-deux-freres",
+    "titre": "Deux frères",
+    "type": "album",
+    "artistes": [
+      458
+    ],
+    "annee": 2019,
+    "label": "qlf-records",
+    "genres": [
+      "cloud-rap"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "L'album de la consécration pour PNL, planant et fraternel, accompagné de clips tournés aux quatre coins du monde.",
+    "cover": "/images/music/sorties/pnl-deux-freres.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/6e14fef7ed2c5684a36badd00b693036/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/116180752"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 514,
+        "raison": "L'album qui a tout lancé : le même rap planant, trois ans plus tôt."
+      },
+      {
+        "id": 506,
+        "raison": "Une même ambition cinématographique dans le rap français."
+      },
+      {
+        "id": 499,
+        "raison": "La relève du rap nuageux."
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "slug": "pnl-dans-la-legende",
+    "titre": "Dans la légende",
+    "type": "album",
+    "artistes": [
+      458
+    ],
+    "annee": 2016,
+    "label": "qlf-records",
+    "genres": [
+      "cloud-rap"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Le disque qui a fait basculer PNL vers le grand public, sans rien céder de leur univers mélancolique.",
+    "cover": "/images/music/sorties/pnl-dans-la-legende.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/3722b6f876813ecf4bdf75443bf02da1/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/113275592"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 513,
+        "raison": "La suite : plus ample, plus triste, la consécration."
+      },
+      {
+        "id": 507,
+        "raison": "Le rap français atmosphérique, version futuriste."
+      },
+      {
+        "id": 550,
+        "raison": "Le cloud rap suédois de la même année, cousin éloigné."
+      }
+    ]
+  },
+  {
+    "id": 515,
+    "slug": "lomepal-jeannine",
+    "titre": "Jeannine",
+    "type": "album",
+    "artistes": [
+      459
+    ],
+    "annee": 2018,
+    "label": "pineale",
+    "genres": [
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "energetic"
+    ],
+    "description": "Un album sur la folie et la famille, nommé d'après sa grand-mère, entre rap, rock et chanson.",
+    "cover": "/images/music/sorties/lomepal-jeannine.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/a3fe9416859bed917f91aaa720aab1a5/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/78191942"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 516,
+        "raison": "Le premier album, plus énergique et plus insouciant."
+      },
+      {
+        "id": 517,
+        "raison": "Deux albums qui ont fait entrer l'introspection dans le rap français grand public."
+      },
+      {
+        "id": 530,
+        "raison": "Une même pop française qui parle de soi sans détour."
+      }
+    ]
+  },
+  {
+    "id": 516,
+    "slug": "lomepal-flip",
+    "titre": "FLIP",
+    "type": "album",
+    "artistes": [
+      459
+    ],
+    "annee": 2017,
+    "label": "pineale",
+    "genres": [
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "energetic"
+    ],
+    "description": "Le premier album de Lomepal, plein d'énergie, où il raconte le skate, l'amour et le doute.",
+    "cover": "/images/music/sorties/lomepal-flip.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/9f445e8b1e26b075a68f26e6c3c227b6/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/65413892"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 515,
+        "raison": "Le second album, plus sombre et plus familial."
+      },
+      {
+        "id": 509,
+        "raison": "Le même rap technique et décomplexé de la fin des années 2010."
+      },
+      {
+        "id": 506,
+        "raison": "Une autre façon de mêler rap et récit personnel."
+      }
+    ]
+  },
+  {
+    "id": 517,
+    "slug": "damso-ipseite",
+    "titre": "Ipséité",
+    "type": "album",
+    "artistes": [
+      460
+    ],
+    "annee": 2017,
+    "label": null,
+    "genres": [
+      "trap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "description": "Un album introspectif où Damso alterne l'ombre et la tendresse, avec des refrains devenus des classiques.",
+    "cover": "/images/music/sorties/damso-ipseite.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/79ba3cd515942d1dc62f49f859a374fd/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/40687031"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 518,
+        "raison": "Deux rappeurs belges qui ont imposé leur son en France à la même époque."
+      },
+      {
+        "id": 515,
+        "raison": "Le même rap introspectif devenu grand public."
+      },
+      {
+        "id": 508,
+        "raison": "Une écriture tout aussi dense et sombre."
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "slug": "hamza-paradise",
+    "titre": "Paradise",
+    "type": "album",
+    "artistes": [
+      461
+    ],
+    "annee": 2019,
+    "label": null,
+    "genres": [
+      "trap",
+      "alternative-rnb"
+    ],
+    "moods": [
+      "chill",
+      "dreamy"
+    ],
+    "description": "Le premier album d'Hamza, sucré et langoureux, entre trap, R&B et dancehall.",
+    "cover": "/images/music/sorties/hamza-paradise.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/64eef4026816d404a6b1217fb773d52d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/88631082",
+      "apple": "https://music.apple.com/fr/album/paradise-ep/6805697590"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 517,
+        "raison": "Bruxelles, la même génération, un rap plus noir."
+      },
+      {
+        "id": 544,
+        "raison": "La même voix chantée, sensuelle et mélancolique."
+      },
+      {
+        "id": 513,
+        "raison": "Le même rap mélodique et nocturne."
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "slug": "justice-hyperdrama",
+    "titre": "Hyperdrama",
+    "type": "album",
+    "artistes": [
+      462
+    ],
+    "annee": 2024,
+    "label": "ed-banger",
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "description": "Le retour de Justice : un disque plus sombre et plus disco, avec des voix et des invités qui élargissent leur son.",
+    "cover": "/images/music/sorties/justice-hyperdrama.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/488973700496ca712df8899028883682/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/526138472",
+      "apple": "https://music.apple.com/fr/album/hyperdrama/1724935208"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 520,
+        "raison": "Le premier album, plus saturé : l'électro rock qui a fait connaître Justice."
+      },
+      {
+        "id": 521,
+        "raison": "La French Touch disco et funk dont Hyperdrama est l'héritier."
+      },
+      {
+        "id": 524,
+        "raison": "Des synthés rétro et une ambiance de film des années 80."
+      }
+    ]
+  },
+  {
+    "id": 520,
+    "slug": "justice-cross",
+    "titre": "†",
+    "type": "album",
+    "artistes": [
+      462
+    ],
+    "annee": 2007,
+    "label": "ed-banger",
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "description": "Le premier album de Justice, connu sous le nom de sa croix : un électro saturé et grandiose qui a défini le son Ed Banger.",
+    "cover": "/images/music/sorties/justice-cross.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/d779ba5bc3bb32475a78909d97cf8964/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/940424"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 519,
+        "raison": "Dix-sept ans plus tard, le même duo, plus disco."
+      },
+      {
+        "id": 524,
+        "raison": "La même électro française aux synthés saturés, à la même époque."
+      },
+      {
+        "id": 522,
+        "raison": "Le premier Daft Punk, aussi brut et aussi français."
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "slug": "daft-punk-discovery",
+    "titre": "Discovery",
+    "type": "album",
+    "artistes": [
+      463
+    ],
+    "annee": 2001,
+    "label": null,
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "energetic"
+    ],
+    "description": "L'album qui a fait danser la planète : disco robotique, samples filtrés et mélodies devenues universelles.",
+    "cover": "/images/music/sorties/daft-punk-discovery.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/5718f7c81c27e0b2417e2a4c45224f8a/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/302127",
+      "apple": "https://music.apple.com/fr/album/discovery/697194953"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 522,
+        "raison": "Le premier album, plus brut et plus house."
+      },
+      {
+        "id": 519,
+        "raison": "La relève de la French Touch, toujours aussi disco."
+      },
+      {
+        "id": 523,
+        "raison": "L'autre grand album français de cette époque, en version douce et planante."
+      }
+    ]
+  },
+  {
+    "id": 522,
+    "slug": "daft-punk-homework",
+    "titre": "Homework",
+    "type": "album",
+    "artistes": [
+      463
+    ],
+    "annee": 1997,
+    "label": null,
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "energetic"
+    ],
+    "description": "Le premier album de Daft Punk, house brute et filtrée, qui a lancé la French Touch.",
+    "cover": "/images/music/sorties/daft-punk-homework.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/b870579c8650cd59b1cce656dde2ef17/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/301775",
+      "apple": "https://music.apple.com/fr/album/homework-25th-anniversary-edition/1609438391"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 521,
+        "raison": "La suite : plus pop, plus disco, le grand public."
+      },
+      {
+        "id": 525,
+        "raison": "La même année, l'autre visage de la house française."
+      },
+      {
+        "id": 520,
+        "raison": "La génération suivante, plus rock, qui doit tout à ce disque."
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "slug": "air-moon-safari",
+    "titre": "Moon Safari",
+    "type": "album",
+    "artistes": [
+      464
+    ],
+    "annee": 1998,
+    "label": "parlophone",
+    "genres": [
+      "french-touch",
+      "ambient"
+    ],
+    "moods": [
+      "dreamy",
+      "chill"
+    ],
+    "description": "Un album doux et rêveur, devenu un classique de l'électronique française pour sa pop spatiale et ses synthés vintage.",
+    "cover": "/images/music/sorties/air-moon-safari.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/1ccd5dc034bd7ad4f59ab540378ae1f5/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/302924"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 521,
+        "raison": "L'autre grand album français de cette époque, plus dansant."
+      },
+      {
+        "id": 551,
+        "raison": "La même douceur rêveuse, côté guitares."
+      },
+      {
+        "id": 542,
+        "raison": "Une électronique chaleureuse et contemplative."
+      }
+    ]
+  },
+  {
+    "id": 524,
+    "slug": "kavinsky-outrun",
+    "titre": "OutRun",
+    "type": "album",
+    "artistes": [
+      465
+    ],
+    "annee": 2013,
+    "label": null,
+    "genres": [
+      "french-touch"
+    ],
+    "moods": [
+      "dark",
+      "energetic"
+    ],
+    "description": "L'album d'un personnage fictif lancé à pleine vitesse dans la nuit, entre synthés des années 80 et rock électronique.",
+    "cover": "/images/music/sorties/kavinsky-outrun.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/e57b7aba14f763eb61ac2ff495288d04/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/6358418"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 520,
+        "raison": "La même électro française aux synthés saturés."
+      },
+      {
+        "id": 521,
+        "raison": "Une French Touch tournée vers le passé et la pop."
+      },
+      {
+        "id": 506,
+        "raison": "Une autre bande-son de film imaginaire, côté rap."
+      }
+    ]
+  },
+  {
+    "id": 525,
+    "slug": "laurent-garnier-crispy-bacon",
+    "titre": "Crispy Bacon",
+    "type": "ep",
+    "artistes": [
+      466
+    ],
+    "annee": 1997,
+    "label": "f-communications",
+    "genres": [
+      "techno",
+      "house"
+    ],
+    "moods": [
+      "hypnotic",
+      "energetic"
+    ],
+    "description": "Un classique de la techno française : un morceau tendu et répétitif, joué dans les clubs du monde entier.",
+    "cover": "/images/music/sorties/laurent-garnier-crispy-bacon.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/06509886dbe0d470ba1a302074dc6617/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/369996",
+      "apple": "https://music.apple.com/fr/album/crispy-bacon-ep/138728083"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 522,
+        "raison": "La même année, la house française à ses débuts."
+      },
+      {
+        "id": 531,
+        "raison": "La techno berlinoise brute, une génération plus tard."
+      },
+      {
+        "id": 533,
+        "raison": "Une techno européenne sombre et hypnotique."
+      }
+    ]
+  },
+  {
+    "id": 526,
+    "slug": "i-hate-models-forever-melancholia",
+    "titre": "Forever Melancholia",
+    "type": "ep",
+    "artistes": [
+      467
+    ],
+    "annee": 2024,
+    "label": "disco-inferno",
+    "genres": [
+      "industrial-techno",
+      "hard-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic",
+      "aggressive"
+    ],
+    "description": "Un EP où I Hate Models assume pleinement la mélancolie dans la techno industrielle.",
+    "cover": "/images/music/sorties/i-hate-models-forever-melancholia.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/e2bb6c6499e7a43e57763c79302c2713/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/675651001",
+      "apple": "https://music.apple.com/fr/album/forever-melancholia/1781893771"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 488,
+        "raison": "La même tristesse noyée dans les kicks, côté Cologne."
+      },
+      {
+        "id": 535,
+        "raison": "Une techno industrielle et dure, la référence du genre."
+      },
+      {
+        "id": 536,
+        "raison": "Une hard techno de grande scène, plus rituelle."
+      }
+    ]
+  },
+  {
+    "id": 527,
+    "slug": "i-hate-models-totsuka-no-tsurugi",
+    "titre": "Totsuka No Tsurugi",
+    "type": "ep",
+    "artistes": [
+      467
+    ],
+    "annee": 2017,
+    "label": "arts",
+    "genres": [
+      "industrial-techno",
+      "hard-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic",
+      "aggressive"
+    ],
+    "description": "Un EP de techno industrielle dense et rapide, qui a installé le style I Hate Models.",
+    "cover": "/images/music/sorties/i-hate-models-totsuka-no-tsurugi.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/9b1a3871065817e25164b52949d5a200/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/45416981",
+      "apple": "https://music.apple.com/fr/album/totsuka-no-tsurugi/1248434291"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 528,
+        "raison": "Le disque d'avant, plus brut : les premiers hangars."
+      },
+      {
+        "id": 535,
+        "raison": "La même techno industrielle, puissante et sans compromis."
+      },
+      {
+        "id": 489,
+        "raison": "La relève de cette techno saturée."
+      }
+    ]
+  },
+  {
+    "id": 528,
+    "slug": "i-hate-models-warehouse-memories",
+    "titre": "Warehouse Memories",
+    "type": "ep",
+    "artistes": [
+      467
+    ],
+    "annee": 2016,
+    "label": "arts",
+    "genres": [
+      "industrial-techno",
+      "hard-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic",
+      "aggressive"
+    ],
+    "description": "Les premiers pas d'I Hate Models : une techno de hangar, brute et nostalgique.",
+    "cover": "/images/music/sorties/i-hate-models-warehouse-memories.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/bd4d16cc280c202142d61bcd36e54380/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/40999611",
+      "apple": "https://music.apple.com/fr/album/warehouse-memories-ep/1232782843"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 527,
+        "raison": "La suite : plus épique, plus cinématographique."
+      },
+      {
+        "id": 531,
+        "raison": "La même année, la techno berlinoise brute."
+      },
+      {
+        "id": 490,
+        "raison": "La nouvelle génération de techno rapide."
+      }
+    ]
+  },
+  {
+    "id": 529,
+    "slug": "la-femme-psycho-tropical-berlin",
+    "titre": "Psycho Tropical Berlin",
+    "type": "album",
+    "artistes": [
+      468
+    ],
+    "annee": 2013,
+    "label": "disque-pointu",
+    "genres": [
+      "indie",
+      "post-punk"
+    ],
+    "moods": [
+      "dreamy",
+      "energetic"
+    ],
+    "description": "Le premier album de La Femme, entre surf, cold wave et yéyé, chanté en français avec un humour inquiétant.",
+    "cover": "/images/music/sorties/la-femme-psycho-tropical-berlin.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/4a8e29bc8636fe34b9ff8689ff99969f/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/6509088",
+      "apple": "https://music.apple.com/fr/album/psycho-tropical-berlin/635317424"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 552,
+        "raison": "Un rock à guitares hanté, entre post-punk et mélancolie."
+      },
+      {
+        "id": 530,
+        "raison": "La même scène française qui a renouvelé la pop des années 2010."
+      },
+      {
+        "id": 523,
+        "raison": "Une pop française rêveuse, quinze ans plus tôt."
+      }
+    ]
+  },
+  {
+    "id": 530,
+    "slug": "christine-and-the-queens-chaleur-humaine",
+    "titre": "Chaleur Humaine",
+    "type": "album",
+    "artistes": [
+      469
+    ],
+    "annee": 2014,
+    "label": "because-music",
+    "genres": [
+      "pop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Le premier album de Christine and the Queens, une pop synthétique et dansée sur l'identité.",
+    "cover": "/images/music/sorties/christine-and-the-queens-chaleur-humaine.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/d9fcaf9ab19436cce27af945d86eea98/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/53514702"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 529,
+        "raison": "La même scène française, plus rock et plus psychédélique."
+      },
+      {
+        "id": 515,
+        "raison": "Une même façon de parler de soi en français."
+      },
+      {
+        "id": 544,
+        "raison": "Une pop intime qui casse les codes du genre."
+      }
+    ]
+  },
+  {
+    "id": 531,
+    "slug": "kobosil-we-grow-you-decline",
+    "titre": "We Grow, You Decline",
+    "type": "album",
+    "artistes": [
+      470
+    ],
+    "annee": 2016,
+    "label": "ostgut-ton",
+    "genres": [
+      "techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "hypnotic"
+    ],
+    "description": "Le premier album de Kobosil chez Ostgut Ton, une techno berlinoise sombre et rigoureuse.",
+    "cover": "/images/music/sorties/kobosil-we-grow-you-decline.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/ce707a717749290582a69beda0581f0f/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/12239300",
+      "apple": "https://music.apple.com/fr/album/we-grow-you-decline/1075760388"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 535,
+        "raison": "Une techno dure et engagée, la même rigueur."
+      },
+      {
+        "id": 525,
+        "raison": "Les racines de cette techno, côté français."
+      },
+      {
+        "id": 532,
+        "raison": "Une électronique plus subtile, venue de la même scène allemande."
+      }
+    ]
+  },
+  {
+    "id": 532,
+    "slug": "skee-mask-compro",
+    "titre": "Compro",
+    "type": "album",
+    "artistes": [
+      471
+    ],
+    "annee": 2018,
+    "label": "ilian-tape",
+    "genres": [
+      "breakbeat",
+      "ambient"
+    ],
+    "moods": [
+      "atmospheric",
+      "hypnotic"
+    ],
+    "description": "Un album entre breakbeat et ambient, où les rythmes brisés se perdent dans la brume.",
+    "cover": "/images/music/sorties/skee-mask-compro.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/9dcf620a853ee27d53bf5fb92b2add4c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/63977342"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 539,
+        "raison": "Le modèle évident : des rythmes cassés et une ambiance de ville la nuit."
+      },
+      {
+        "id": 542,
+        "raison": "Une électronique douce et texturée."
+      },
+      {
+        "id": 540,
+        "raison": "La même électronique britannique, entre breakbeat et techno."
+      }
+    ]
+  },
+  {
+    "id": 533,
+    "slug": "amelie-lens-weight-of-the-land",
+    "titre": "Weight Of The Land",
+    "type": "ep",
+    "artistes": [
+      472
+    ],
+    "annee": 2017,
+    "label": "arts",
+    "genres": [
+      "techno"
+    ],
+    "moods": [
+      "hypnotic",
+      "energetic"
+    ],
+    "description": "Un EP qui a imposé Amelie Lens : une techno hypnotique faite de boucles tendues et de montées longues.",
+    "cover": "/images/music/sorties/amelie-lens-weight-of-the-land.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/5c870485f83a888f754289dbcd08cd26/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/45786012",
+      "apple": "https://music.apple.com/fr/album/weight-of-the-land/1257901093"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 534,
+        "raison": "Un mix de la même artiste : sa techno en continu."
+      },
+      {
+        "id": 531,
+        "raison": "Une techno sombre et hypnotique, côté berlinois."
+      },
+      {
+        "id": 525,
+        "raison": "Les racines de la techno européenne."
+      }
+    ]
+  },
+  {
+    "id": 534,
+    "slug": "amelie-lens-fabric-presents-amelie-lens",
+    "titre": "fabric presents Amelie Lens",
+    "type": "mixtape",
+    "artistes": [
+      472
+    ],
+    "annee": 2019,
+    "label": "fabric",
+    "genres": [
+      "techno"
+    ],
+    "moods": [
+      "hypnotic",
+      "energetic"
+    ],
+    "description": "Un mix pour la série du club fabric, qui résume la techno de grande scène d'Amelie Lens.",
+    "cover": "/images/music/sorties/amelie-lens-fabric-presents-amelie-lens.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/e904d97d31702312b837b86e58d615f1/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/120503972"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 533,
+        "raison": "Son disque d'avant, plus court et plus personnel."
+      },
+      {
+        "id": 535,
+        "raison": "Une techno puissante et sans compromis."
+      },
+      {
+        "id": 536,
+        "raison": "La même énergie de grande scène."
+      }
+    ]
+  },
+  {
+    "id": 535,
+    "slug": "paula-temple-edge-of-everything",
+    "titre": "Edge Of Everything",
+    "type": "album",
+    "artistes": [
+      473
+    ],
+    "annee": 2019,
+    "label": "noise-manifesto",
+    "genres": [
+      "industrial-techno"
+    ],
+    "moods": [
+      "aggressive",
+      "dark"
+    ],
+    "description": "Le premier album de Paula Temple, une techno industrielle d'une violence assumée, pleine de bruit et de tension.",
+    "cover": "/images/music/sorties/paula-temple-edge-of-everything.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/2367dd1d40984e67ece1e85e69097178/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/93185442",
+      "apple": "https://music.apple.com/fr/album/edge-of-everything/1459377127"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 527,
+        "raison": "Une techno industrielle et épique."
+      },
+      {
+        "id": 531,
+        "raison": "Une techno brute et répétitive."
+      },
+      {
+        "id": 536,
+        "raison": "La relève de cette techno dure, plus mystique."
+      }
+    ]
+  },
+  {
+    "id": 536,
+    "slug": "sara-landry-spiritual-driveby",
+    "titre": "Spiritual Driveby",
+    "type": "album",
+    "artistes": [
+      474
+    ],
+    "annee": 2024,
+    "label": "hekate-records",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "description": "Le premier album de Sara Landry, une hard techno rituelle et occulte, sortie sur son label Hekate.",
+    "cover": "/images/music/sorties/sara-landry-spiritual-driveby.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/2b9daa24c5b64b712e2ed460db935f34/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/928658571"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 537,
+        "raison": "Les premiers disques de Sara Landry, déjà rituels."
+      },
+      {
+        "id": 488,
+        "raison": "La même noirceur, version européenne."
+      },
+      {
+        "id": 535,
+        "raison": "Une référence de la techno industrielle."
+      }
+    ]
+  },
+  {
+    "id": 537,
+    "slug": "sara-landry-incoming",
+    "titre": "Incoming",
+    "type": "ep",
+    "artistes": [
+      474
+    ],
+    "annee": 2021,
+    "label": "hekate-records",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "description": "Un EP rapide et sombre, typique de l'esthétique Hekate.",
+    "cover": "/images/music/sorties/sara-landry-incoming.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/396c202cf7842cfa4fa3cb0dcc3c56a6/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/310722187",
+      "apple": "https://music.apple.com/fr/album/incoming-ep/1619168156"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 536,
+        "raison": "Trois ans plus tard, la même techno occulte, sur un album entier."
+      },
+      {
+        "id": 538,
+        "raison": "La même année, la même rage."
+      },
+      {
+        "id": 489,
+        "raison": "La nouvelle hard techno européenne."
+      }
+    ]
+  },
+  {
+    "id": 538,
+    "slug": "sara-landry-queen-of-the-banshees",
+    "titre": "Queen of the Banshees",
+    "type": "ep",
+    "artistes": [
+      474
+    ],
+    "annee": 2021,
+    "label": "raw-label",
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "description": "Un EP qui a fait connaître Sara Landry, une hard techno de sorcière, tendue et hypnotique.",
+    "cover": "/images/music/sorties/sara-landry-queen-of-the-banshees.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/a95297d0a613c292369127e5f21b9d3d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/196519822",
+      "apple": "https://music.apple.com/fr/album/queen-of-the-banshees-ep/1546866392"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 537,
+        "raison": "La même année, la même techno rituelle."
+      },
+      {
+        "id": 490,
+        "raison": "Un autre disque court pensé pour le club."
+      },
+      {
+        "id": 494,
+        "raison": "Une hard techno de festival."
+      }
+    ]
+  },
+  {
+    "id": 539,
+    "slug": "burial-untrue",
+    "titre": "Untrue",
+    "type": "album",
+    "artistes": [
+      475
+    ],
+    "annee": 2007,
+    "label": "hyperdub",
+    "genres": [
+      "uk-garage",
+      "ambient"
+    ],
+    "moods": [
+      "melancholic",
+      "atmospheric"
+    ],
+    "description": "Un album de nuit londonienne, plein de pluie, de craquements et de voix fantômes : un classique du UK garage.",
+    "cover": "/images/music/sorties/burial-untrue.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/4b2625e8eec6e7368b58180035915014/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/980871",
+      "apple": "https://music.apple.com/fr/album/untrue/1056902908"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 532,
+        "raison": "Une relève allemande qui a repris ces rythmes cassés."
+      },
+      {
+        "id": 543,
+        "raison": "La même mélancolie urbaine, plus lumineuse."
+      },
+      {
+        "id": 540,
+        "raison": "La même électronique britannique, entre breakbeat et nostalgie de rave."
+      }
+    ]
+  },
+  {
+    "id": 540,
+    "slug": "overmono-good-lies",
+    "titre": "Good Lies",
+    "type": "album",
+    "artistes": [
+      476
+    ],
+    "annee": 2023,
+    "label": "xl-recordings",
+    "genres": [
+      "uk-garage",
+      "breakbeat"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "description": "Le premier album d'Overmono, entre breakbeat, garage et techno, porté par des voix découpées.",
+    "cover": "/images/music/sorties/overmono-good-lies.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/45939a56cfc4fe2d81912eb54efd4f09/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/432214687",
+      "apple": "https://music.apple.com/fr/album/good-lies/1659656223"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 539,
+        "raison": "Le modèle de cette électronique britannique nocturne."
+      },
+      {
+        "id": 543,
+        "raison": "Une même nostalgie de rave, plus douce."
+      },
+      {
+        "id": 541,
+        "raison": "Une électronique émotive, construite à partir de voix et de souvenirs."
+      }
+    ]
+  },
+  {
+    "id": 541,
+    "slug": "fred-again-actual-life-april-14-december-17-2020",
+    "titre": "Actual Life (April 14 - December 17 2020)",
+    "type": "album",
+    "artistes": [
+      477
+    ],
+    "annee": 2021,
+    "label": null,
+    "genres": [
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "description": "Un album composé comme un journal de 2020, à partir de voix, de messages et de fragments de vie.",
+    "cover": "/images/music/sorties/fred-again-actual-life-april-14-december-17-2020.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/cc574212f4812c679b951fbe5592d65a/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/219209462"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 543,
+        "raison": "Le même goût des voix découpées et de la nostalgie de rave."
+      },
+      {
+        "id": 540,
+        "raison": "Une électronique britannique émotive et dansante."
+      },
+      {
+        "id": 542,
+        "raison": "Une électronique sensible, faite de petits détails."
+      }
+    ]
+  },
+  {
+    "id": 542,
+    "slug": "four-tet-there-is-love-in-you",
+    "titre": "There Is Love in You",
+    "type": "album",
+    "artistes": [
+      478
+    ],
+    "annee": 2010,
+    "label": "text-records",
+    "genres": [
+      "ambient",
+      "house"
+    ],
+    "moods": [
+      "dreamy",
+      "hypnotic"
+    ],
+    "description": "Un album délicat et chaleureux, devenu un classique de l'électronique d'écoute.",
+    "cover": "/images/music/sorties/four-tet-there-is-love-in-you.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/cb75b2c107266c06eb2a5fb696a0811e/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/182526842"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 523,
+        "raison": "La même électronique chaleureuse et planante."
+      },
+      {
+        "id": 532,
+        "raison": "Une électronique texturée et délicate."
+      },
+      {
+        "id": 541,
+        "raison": "Un disque sensible et émotif, construit à partir de voix."
+      }
+    ]
+  },
+  {
+    "id": 543,
+    "slug": "jamie-xx-in-colour",
+    "titre": "In Colour",
+    "type": "album",
+    "artistes": [
+      479
+    ],
+    "annee": 2015,
+    "label": "young",
+    "genres": [
+      "uk-garage",
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "description": "Le premier album solo de Jamie xx, hommage aux nuits de club britanniques, entre euphorie et nostalgie.",
+    "cover": "/images/music/sorties/jamie-xx-in-colour.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/0e24b8c4e5ace3a84fce519f36f8c9d4/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/10484910"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 539,
+        "raison": "La même mélancolie urbaine, plus sombre."
+      },
+      {
+        "id": 541,
+        "raison": "Le même goût des voix découpées et de la nostalgie."
+      },
+      {
+        "id": 540,
+        "raison": "Une électronique britannique entre club et mélancolie."
+      }
+    ]
+  },
+  {
+    "id": 544,
+    "slug": "frank-ocean-blonde",
+    "titre": "Blonde",
+    "type": "album",
+    "artistes": [
+      480
+    ],
+    "annee": 2016,
+    "label": "boys-dont-cry",
+    "genres": [
+      "alternative-rnb",
+      "neo-soul"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Un album intime et déstructuré, considéré comme l'un des disques majeurs de sa décennie.",
+    "cover": "/images/music/sorties/frank-ocean-blonde.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/f798a866107715dd6dc1049e498ce21f/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/104660202"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 545,
+        "raison": "Le premier album, plus soul et plus solaire."
+      },
+      {
+        "id": 497,
+        "raison": "Une même façon de mêler rupture et production déroutante."
+      },
+      {
+        "id": 504,
+        "raison": "La même pudeur et la même douceur, côté français."
+      }
+    ]
+  },
+  {
+    "id": 545,
+    "slug": "frank-ocean-channel-orange",
+    "titre": "channel ORANGE",
+    "type": "album",
+    "artistes": [
+      480
+    ],
+    "annee": 2012,
+    "label": null,
+    "genres": [
+      "alternative-rnb",
+      "neo-soul"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "description": "Le premier album de Frank Ocean, entre R&B, soul et récits de jeunesse californienne.",
+    "cover": "/images/music/sorties/frank-ocean-channel-orange.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/519400e29d268f449cf00af879e71af6/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/9908666"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 544,
+        "raison": "La suite : plus dépouillée, plus intime."
+      },
+      {
+        "id": 498,
+        "raison": "Un rap qui s'est ouvert à cette soul moderne."
+      },
+      {
+        "id": 518,
+        "raison": "La même voix chantée et sensuelle."
+      }
+    ]
+  },
+  {
+    "id": 546,
+    "slug": "kendrick-lamar-to-pimp-a-butterfly",
+    "titre": "To Pimp A Butterfly",
+    "type": "album",
+    "artistes": [
+      481
+    ],
+    "annee": 2015,
+    "label": "aftermath",
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "energetic",
+      "experimental"
+    ],
+    "description": "Un album-monde nourri de jazz et de funk, devenu un classique du rap des années 2010.",
+    "cover": "/images/music/sorties/kendrick-lamar-to-pimp-a-butterfly.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/00dd0da365a94b1829302d6b7fec70e6/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/9896728",
+      "apple": "https://music.apple.com/fr/album/to-pimp-a-butterfly/1440871877"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 549,
+        "raison": "Un rap ambitieux et engagé, aux arrangements orchestraux."
+      },
+      {
+        "id": 547,
+        "raison": "Un autre rap qui refuse la facilité."
+      },
+      {
+        "id": 495,
+        "raison": "Un album-concept tout aussi ambitieux."
+      }
+    ]
+  },
+  {
+    "id": 547,
+    "slug": "earl-sweatshirt-some-rap-songs",
+    "titre": "Some Rap Songs",
+    "type": "album",
+    "artistes": [
+      482
+    ],
+    "annee": 2018,
+    "label": null,
+    "genres": [
+      "experimental-hip-hop",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "experimental"
+    ],
+    "description": "Un album très court et très dense, fait de boucles de soul détraquées et de deuil.",
+    "cover": "/images/music/sorties/earl-sweatshirt-some-rap-songs.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/c4c207293020a9bf35c9bf25236a9fce/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/79981842"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 512,
+        "raison": "Le même rap introspectif aux boucles brumeuses."
+      },
+      {
+        "id": 508,
+        "raison": "Un rap dense et sombre, côté français."
+      },
+      {
+        "id": 546,
+        "raison": "Un autre rap américain qui bouscule les codes."
+      }
+    ]
+  },
+  {
+    "id": 548,
+    "slug": "kaytranada-99-9",
+    "titre": "99.9%",
+    "type": "album",
+    "artistes": [
+      483
+    ],
+    "annee": 2016,
+    "label": "xl-recordings",
+    "genres": [
+      "house",
+      "alternative-rnb"
+    ],
+    "moods": [
+      "chill",
+      "energetic"
+    ],
+    "description": "Le premier album de Kaytranada, une collection de grooves rebondissants et de featurings soul.",
+    "cover": "/images/music/sorties/kaytranada-99-9.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/3a6bd4ef02a0de57d81b137324ac0e03/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/14879705"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 497,
+        "raison": "Des accords soul et des productions inattendues."
+      },
+      {
+        "id": 541,
+        "raison": "Une électronique chaleureuse et dansante."
+      },
+      {
+        "id": 545,
+        "raison": "La même soul moderne."
+      }
+    ]
+  },
+  {
+    "id": 549,
+    "slug": "little-simz-sometimes-i-might-be-introvert",
+    "titre": "Sometimes I Might Be Introvert",
+    "type": "album",
+    "artistes": [
+      484
+    ],
+    "annee": 2021,
+    "label": "age-101",
+    "genres": [
+      "alternative-hip-hop",
+      "jazz-rap"
+    ],
+    "moods": [
+      "energetic"
+    ],
+    "description": "Un album orchestral et ambitieux, comme une comédie musicale sur l'identité et la famille.",
+    "cover": "/images/music/sorties/little-simz-sometimes-i-might-be-introvert.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/885b9bd8ed06098c8eddee790b81bca4/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/363782127"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 546,
+        "raison": "Un rap ambitieux aux arrangements orchestraux."
+      },
+      {
+        "id": 498,
+        "raison": "Un rap introspectif aux productions luxuriantes."
+      },
+      {
+        "id": 552,
+        "raison": "Une autre voix des îles britanniques, côté guitares."
+      }
+    ]
+  },
+  {
+    "id": 550,
+    "slug": "bladee-eversince",
+    "titre": "Eversince",
+    "type": "album",
+    "artistes": [
+      485
+    ],
+    "annee": 2016,
+    "label": "year0001",
+    "genres": [
+      "cloud-rap",
+      "hyperpop"
+    ],
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "description": "Un album de cloud rap éthéré et fragile, emblématique du son Drain Gang.",
+    "cover": "/images/music/sorties/bladee-eversince.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/0ced13997deb31d3c122c0b95c34362c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/304590547"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 514,
+        "raison": "Le même rap planant, la même année, côté français."
+      },
+      {
+        "id": 500,
+        "raison": "Une relève française qui reprend ces voix filtrées."
+      },
+      {
+        "id": 551,
+        "raison": "La même mélancolie brumeuse, côté guitares."
+      }
+    ]
+  },
+  {
+    "id": 551,
+    "slug": "slowdive-souvlaki",
+    "titre": "Souvlaki",
+    "type": "album",
+    "artistes": [
+      486
+    ],
+    "annee": 1993,
+    "label": "creation-records",
+    "genres": [
+      "shoegaze"
+    ],
+    "moods": [
+      "dreamy",
+      "atmospheric"
+    ],
+    "description": "Un classique du shoegaze anglais, où les guitares et les voix se dissolvent dans la réverbération.",
+    "cover": "/images/music/sorties/slowdive-souvlaki.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/4e045f8b3ff1cfc02bbd6211b87497d8/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/224401",
+      "apple": "https://music.apple.com/fr/album/souvlaki/399211729"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 523,
+        "raison": "La même douceur rêveuse, côté électronique."
+      },
+      {
+        "id": 550,
+        "raison": "Le shoegaze a inspiré ce rap brumeux."
+      },
+      {
+        "id": 552,
+        "raison": "Un rock à guitares hanté, trente ans plus tard."
+      }
+    ]
+  },
+  {
+    "id": 552,
+    "slug": "fontaines-d-c-romance",
+    "titre": "Romance",
+    "type": "album",
+    "artistes": [
+      487
+    ],
+    "annee": 2024,
+    "label": "xl-recordings",
+    "genres": [
+      "post-punk",
+      "indie"
+    ],
+    "moods": [
+      "melancholic",
+      "energetic"
+    ],
+    "description": "Un album plus ample et plus étrange, où Fontaines D.C. s'ouvre à de nouvelles textures sans perdre sa tension.",
+    "cover": "/images/music/sorties/fontaines-d-c-romance.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/cover/8fd422a840884ba1dfaccc3bb42ad67d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/album/623320871"
+    },
+    "addedAt": "2026-11-09",
+    "proches": [
+      {
+        "id": 529,
+        "raison": "Un rock à guitares psychédélique, côté français."
+      },
+      {
+        "id": 551,
+        "raison": "Les murs de guitares qui ont inspiré ce disque."
+      },
+      {
+        "id": 549,
+        "raison": "Une autre voix des îles britanniques, côté rap."
+      }
+    ]
+  }
+]

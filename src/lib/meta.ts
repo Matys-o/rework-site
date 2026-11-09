@@ -10,6 +10,8 @@ import {
   type Marque,
 } from "../data/brands";
 import { triosPublies, type Trio } from "../data/trios";
+import { ARTISTES, GENRES, SORTIES, lienArtiste, lienGenre, lienSortie } from "../data/musique";
+import { metaArtiste, metaGenre, metaMusique, metaSortie } from "./metaMusique";
 import { lienMarque } from "./liens";
 import {
   IMAGE_PARTAGE,
@@ -74,7 +76,7 @@ const ORGANISATION = {
   logo: absolue("/icons/icon-512.png"),
 };
 
-const base = (
+export const base = (
   m: Omit<
     Meta,
     "image" | "imageAlt" | "imageLargeur" | "imageHauteur" | "type" | "jsonLd"
@@ -234,6 +236,12 @@ export function metaFiche(m: Marque): Meta {
   });
 }
 
+export function metaRew(): Meta {
+  const texte =
+    "REW, le curateur culturel de rework° : dites-lui ce que vous aimez, il cherche dans l'archive des marques, des films et de la musique à découvrir.";
+  return base({ titre: `REW — votre curateur culturel | ${NOM_SITE}`, description: ajuster(texte), chemin: "/rew", resume: texte });
+}
+
 export function metaManifeste(): Meta {
   return base({
     titre: `À propos — Rework, c'est quoi ? | ${NOM_SITE}`,
@@ -377,6 +385,14 @@ export function routesPrerendues(date = new Date()): RoutePrerendue[] {
     { chemin: "/manifeste", meta: metaManifeste() },
     { chemin: "/trios", meta: metaTrios() },
     { chemin: "/confidentialite", meta: metaConfidentialite() },
+    { chemin: "/rew", meta: metaRew() },
+    ...(["accueil", "artistes", "albums", "genres"] as const).map((o) => {
+      const meta = metaMusique(o);
+      return { chemin: meta.chemin, meta };
+    }),
+    ...ARTISTES.map((a) => ({ chemin: lienArtiste(a.slug), meta: metaArtiste(a) })),
+    ...SORTIES.map((s) => ({ chemin: lienSortie(s.slug), meta: metaSortie(s) })),
+    ...GENRES.map((g) => ({ chemin: lienGenre(g.slug), meta: metaGenre(g) })),
     ...publies.map((t) => ({ chemin: lienTrio(t), meta: metaTrio(t) })),
     ...MARQUES.map((m) => ({ chemin: lienMarque(m.slug), meta: metaFiche(m) })),
   ];

@@ -1,3 +1,4 @@
+import { BandeauRew, BoxRew } from "../components/Rew/AccueilRew";
 import { useEffect } from "react";
 import { Apparition } from "../components/Apparition";
 import { Bouton } from "../components/Bouton";
@@ -89,6 +90,7 @@ export default function Accueil() {
                 Une marque au hasard
               </Bouton>
             </div>
+            <BandeauRew className="mt-5 md:mt-7" />
             <p className="t-cote-s mt-5 text-graphite">
               Gratuit · sans inscription
             </p>
@@ -103,6 +105,8 @@ export default function Accueil() {
             />
           </div>
         </section>
+
+        <BoxRew />
 
         {/* ── Les 5 univers ── */}
         <section id="domaines" className="scroll-mt-28 pt-6 md:pt-[60px]">

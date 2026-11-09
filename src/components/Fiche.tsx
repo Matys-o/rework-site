@@ -31,8 +31,10 @@ type FicheDossierProps = {
   onglet: string;
   /** Rang affiché en rouge à droite de l'onglet (« 01 » dans un trio) */
   numero?: string;
-  domaine: Domaine;
+  domaine: Pick<Domaine, "nom" | "couleur">;
   meta: string;
+  /** Couverture carrée (pochettes d'albums) */
+  carre?: boolean;
   titre: string;
   description: string;
   /** Lettre de la couverture — remplace la photo tant qu'on n'en a pas */
@@ -52,7 +54,7 @@ type FicheDossierProps = {
 };
 
 // Fiche (dossier à onglet) — survol : levée −8 px, ombre Levée, aura dilatée, flèche ↗ sur rouge
-export function FicheDossier({ onglet, numero, domaine, meta, titre, description, initiale, image, video, pastille, href, nomTransition, nomPropre, className }: FicheDossierProps) {
+export function FicheDossier({ onglet, numero, domaine, meta, carre, titre, description, initiale, image, video, pastille, href, nomTransition, nomPropre, className }: FicheDossierProps) {
   const Racine = href ? "a" : "article";
   // Survol : l'aura suit le curseur, tilt 3D (max 6°), reflet lumineux
   const { handlers, suivi, tilt, reflet, actif } = useCarteInteractive({ amplitudeAura: 0.45 });
@@ -86,7 +88,7 @@ export function FicheDossier({ onglet, numero, domaine, meta, titre, description
 
           <div
             ref={couvertureRef}
-            className="relative isolate aspect-[352/300] overflow-hidden rounded-carte bg-brume"
+            className={cn("relative isolate overflow-hidden rounded-carte bg-brume", carre ? "aspect-square" : "aspect-[352/300]")}
             style={nomTransition ? { viewTransitionName: nomTransition, viewTransitionClass: "couverture" } as CSSProperties : undefined}
           >
             <Aura

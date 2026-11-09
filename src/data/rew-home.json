@@ -1,0 +1,34 @@
+{
+  "_note": "Accueil REW, écrit à la main (aucun appel IA au chargement). bandeau = phrases qui alternent sous « Parle à REW » ; pastilles = exemples de la box (un clic envoie la demande) ; cartes = 1 film + 1 marque + 1 entrée Musique tirés au hasard à chaque visite.",
+  "bandeau": [
+    "Un cadeau pour quelqu'un qui aime le rose et le rock",
+    "Des marques comme Rick Owens, en moins cher",
+    "Une playlist techno industrielle",
+    "Des films avec une direction artistique incroyable",
+    "Des artistes dans le style de Tyler, The Creator"
+  ],
+  "pastilles": [
+    "Un cadeau pour ma fille qui adore le rose et le rock",
+    "Des marques dans l'esprit de Rick Owens, moins chères",
+    "Une playlist techno industrielle"
+  ],
+  "cartes": {
+    "cinema": [
+      { "id": 420, "raison": "pour ses couleurs saturées et ses robes qui racontent tout le film." },
+      { "id": 432, "raison": "pour Hong Kong la nuit et une chanson qui tourne en boucle." },
+      { "id": 422, "raison": "un classique des années 90 qu'on revoit sans jamais se lasser." }
+    ],
+    "marque": [
+      { "id": 188, "raison": "une platine pour écouter ses vinyles de rock comme il se doit." },
+      { "id": 404, "raison": "des instruments au design ludique pour ceux qui aiment créer du son." },
+      { "id": 165, "raison": "le bois japonais travaillé avec une précision presque silencieuse." },
+      { "id": 20, "raison": "du rose signature et une mode qui joue avec les codes des années 2000." },
+      { "id": 399, "raison": "le minimalisme japonais du quotidien, sans logo ni superflu." }
+    ],
+    "musique": [
+      { "id": 447, "raison": "une hard techno sombre qui garde une vraie mélancolie." },
+      { "id": 523, "raison": "un album doux et rêveur pour les dimanches qui traînent." },
+      { "id": 551, "raison": "des murs de guitares rêveuses pour qui aime le rock vintage." }
+    ]
+  }
+}

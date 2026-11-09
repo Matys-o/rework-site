@@ -19,6 +19,7 @@
   --color-aura-tech: #ff7a1a;    /* orange machine */
   --color-aura-digital: #8cc8ff; /* bleu glacier */
   --color-aura-film: #b49bff;    /* lilas projecteur */
+  --color-aura-musique: #5ef0b6; /* vert spectre */
 
   /* Rayons — DA 06 Matières */
   --radius-pill: 999px;
@@ -66,6 +67,7 @@
   --rw-aura-tech: var(--color-aura-tech);
   --rw-aura-digital: var(--color-aura-digital);
   --rw-aura-film: var(--color-aura-film);
+  --rw-aura-musique: var(--color-aura-musique);
 
   /* Marge latérale fluide : 16 px (320) → 80 px (≥ 1600) ; contenu max 1280 px */
   --marge: clamp(16px, 5vw, 80px);
