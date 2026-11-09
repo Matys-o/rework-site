@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build && node scripts/prerendu.mjs",
+    "build": "node scripts/rew-index.mjs && tsc --noEmit && vite build && node scripts/prerendu.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name rework-archive --branch main",
     "discord:install": "npm ci --prefix discord",
@@ -14,6 +14,7 @@
     "discord:weekly": "npm --prefix discord run weekly --"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
     "lenis": "^1.3.27",
     "motion": "^12.43.0",
     "react": "^19.1.0",

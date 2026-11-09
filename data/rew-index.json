@@ -1,0 +1,12585 @@
+{
+ "_note": "Index de REW. esthetique/culture/ambiance/positionnement/motsCles/affinites servent au rapprochement. Corrigeable à la main : ajoute \"_manuel\": true pour qu'une entrée ne soit jamais réécrite. Régénérer : node scripts/rew-index.mjs [--ia]",
+ "entrees": [
+  {
+   "id": 1,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "indé paris"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "indé",
+    "paris"
+   ],
+   "affinites": [
+    389,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 2,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "street",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "légende",
+    "usa"
+   ],
+   "affinites": [
+    45,
+    65,
+    68
+   ]
+  },
+  {
+   "id": 3,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "hype"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "hype",
+    "londres"
+   ],
+   "affinites": [
+    11,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 4,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "outdoor",
+    "gorpcore"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "gorpcore",
+    "canada"
+   ],
+   "affinites": [
+    50,
+    5,
+    15
+   ]
+  },
+  {
+   "id": 5,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "outdoor",
+    "tech"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tech",
+    "annecy"
+   ],
+   "affinites": [
+    4,
+    15,
+    21
+   ]
+  },
+  {
+   "id": 6,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "luxe",
+    "paris"
+   ],
+   "affinites": [
+    22,
+    71,
+    349
+   ]
+  },
+  {
+   "id": 7,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "indé nord"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "indé",
+    "nord",
+    "lille"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 8,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "pretaporter",
+    "flâneur"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "flâneur",
+    "paris"
+   ],
+   "affinites": [
+    25,
+    39,
+    70
+   ]
+  },
+  {
+   "id": 9,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "skate"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "skate",
+    "bordeaux"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 10,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "rétro"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "rétro",
+    "dijon"
+   ],
+   "affinites": [
+    8,
+    16,
+    25
+   ]
+  },
+  {
+   "id": 11,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "street",
+    "skate uk"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "skate",
+    "londres"
+   ],
+   "affinites": [
+    3,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 12,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "skate"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "skate",
+    "suède"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 13,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "euro wave"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "euro",
+    "wave",
+    "anvers"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 14,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "luxury street"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "luxury",
+    "street",
+    "uk"
+   ],
+   "affinites": [
+    425,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 15,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "tech lab"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "tech",
+    "lab",
+    "italie"
+   ],
+   "affinites": [
+    21,
+    84,
+    85
+   ]
+  },
+  {
+   "id": 16,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "pretaporter",
+    "preppy"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "preppy",
+    "new york"
+   ],
+   "affinites": [
+    8,
+    10,
+    25
+   ]
+  },
+  {
+   "id": 17,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "workwear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "workwear",
+    "usa/eu"
+   ],
+   "affinites": [
+    43,
+    53,
+    55
+   ]
+  },
+  {
+   "id": 18,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "createurs",
+    "japon"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "japon"
+   ],
+   "affinites": [
+    41,
+    42,
+    52
+   ]
+  },
+  {
+   "id": 19,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "createurs",
+    "anti-fashion"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "anti",
+    "fashion",
+    "suède"
+   ],
+   "affinites": [
+    20,
+    18,
+    24
+   ]
+  },
+  {
+   "id": 20,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "avant",
+    "garde",
+    "suède"
+   ],
+   "affinites": [
+    19,
+    18,
+    24
+   ]
+  },
+  {
+   "id": 21,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "techwear"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "techwear",
+    "italie"
+   ],
+   "affinites": [
+    15,
+    84,
+    85
+   ]
+  },
+  {
+   "id": 22,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "haute couture"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "haute",
+    "couture",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    71,
+    349
+   ]
+  },
+  {
+   "id": 23,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "minimalisme"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "minimalisme",
+    "allemagne"
+   ],
+   "affinites": [
+    6,
+    22,
+    49
+   ]
+  },
+  {
+   "id": 24,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "dark"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "dark",
+    "usa/paris"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 25,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "pretaporter",
+    "essential"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "essential",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    39,
+    70
+   ]
+  },
+  {
+   "id": 26,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "outdoor",
+    "gorpcore"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "gorpcore",
+    "japon"
+   ],
+   "affinites": [
+    27,
+    28,
+    56
+   ]
+  },
+  {
+   "id": 27,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "ski tech"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "ski",
+    "tech",
+    "japon"
+   ],
+   "affinites": [
+    26,
+    28,
+    56
+   ]
+  },
+  {
+   "id": 28,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "outdoor",
+    "hiking"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "hiking",
+    "japon"
+   ],
+   "affinites": [
+    26,
+    27,
+    56
+   ]
+  },
+  {
+   "id": 29,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "chaussures",
+    "running"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "running",
+    "paris"
+   ],
+   "affinites": [
+    352,
+    362,
+    30
+   ]
+  },
+  {
+   "id": 30,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "wellness"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "wellness",
+    "usa"
+   ],
+   "affinites": [
+    33,
+    80,
+    366
+   ]
+  },
+  {
+   "id": 31,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "accessoires",
+    "eyewear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "eyewear",
+    "usa"
+   ],
+   "affinites": [
+    91,
+    92,
+    336
+   ]
+  },
+  {
+   "id": 32,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "outdoor",
+    "usa"
+   ],
+   "affinites": [
+    433,
+    4,
+    5
+   ]
+  },
+  {
+   "id": 33,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "chaussures",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sneakers",
+    "usa"
+   ],
+   "affinites": [
+    30,
+    80,
+    366
+   ]
+  },
+  {
+   "id": 34,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "chaussures",
+    "tech run"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tech",
+    "run",
+    "japon"
+   ],
+   "affinites": [
+    51,
+    82,
+    29
+   ]
+  },
+  {
+   "id": 35,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "chaussures",
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "luxe",
+    "allemagne"
+   ],
+   "affinites": [
+    422,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 36,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "createurs",
+    "curator"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "curator",
+    "canada"
+   ],
+   "affinites": [
+    432,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 37,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "createurs",
+    "futur"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "futur",
+    "londres"
+   ],
+   "affinites": [
+    38,
+    46,
+    342
+   ]
+  },
+  {
+   "id": 38,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "createurs",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "culture",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    46,
+    342
+   ]
+  },
+  {
+   "id": 39,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "pretaporter",
+    "intemporel"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "intemporel",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    70
+   ]
+  },
+  {
+   "id": 40,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "matière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "matière",
+    "japon"
+   ],
+   "affinites": [
+    8,
+    10,
+    16
+   ]
+  },
+  {
+   "id": 41,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "avant",
+    "garde",
+    "japon"
+   ],
+   "affinites": [
+    18,
+    42,
+    52
+   ]
+  },
+  {
+   "id": 42,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "maître"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "maître",
+    "japon"
+   ],
+   "affinites": [
+    18,
+    41,
+    52
+   ]
+  },
+  {
+   "id": 43,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "workwear",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "craft",
+    "japon"
+   ],
+   "affinites": [
+    53,
+    17,
+    55
+   ]
+  },
+  {
+   "id": 44,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "pays-bas"
+   ],
+   "affinites": [
+    77,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 45,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "empire"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "empire",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    65,
+    68
+   ]
+  },
+  {
+   "id": 46,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "indus"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "indus",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    38,
+    342
+   ]
+  },
+  {
+   "id": 47,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "légende",
+    "belgique"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 48,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "archive"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "archive",
+    "autriche"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 49,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "luxe",
+    "tech luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "tech",
+    "luxe",
+    "italie"
+   ],
+   "affinites": [
+    64,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 50,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "outdoor",
+    "tech"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "tech",
+    "canada"
+   ],
+   "affinites": [
+    4,
+    5,
+    15
+   ]
+  },
+  {
+   "id": 51,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "chaussures",
+    "sport"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "sport",
+    "japon"
+   ],
+   "affinites": [
+    34,
+    82,
+    29
+   ]
+  },
+  {
+   "id": 52,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "punk"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "punk",
+    "japon"
+   ],
+   "affinites": [
+    18,
+    41,
+    42
+   ]
+  },
+  {
+   "id": 53,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "workwear",
+    "militaire"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "militaire",
+    "japon"
+   ],
+   "affinites": [
+    43,
+    17,
+    55
+   ]
+  },
+  {
+   "id": 54,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "biker"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "biker",
+    "japon"
+   ],
+   "affinites": [
+    72,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 55,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "workwear",
+    "pacifiste"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "pacifiste",
+    "uk"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 56,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "tech"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "tech",
+    "japon"
+   ],
+   "affinites": [
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "id": 57,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "outdoor",
+    "camping"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "camping",
+    "japon"
+   ],
+   "affinites": [
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "id": 58,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "fishing"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "fishing",
+    "japon"
+   ],
+   "affinites": [
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "id": 59,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "workwear"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "workwear",
+    "usa"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 60,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "createurs",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "craft",
+    "usa"
+   ],
+   "affinites": [
+    62,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 61,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "concept"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "concept",
+    "uk"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 62,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "indus"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "indus",
+    "usa"
+   ],
+   "affinites": [
+    60,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 63,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "luxe",
+    "usa"
+   ],
+   "affinites": [
+    67,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 64,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "luxe",
+    "icon"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "icon",
+    "italie"
+   ],
+   "affinites": [
+    49,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 65,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "street",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    45,
+    68
+   ]
+  },
+  {
+   "id": 66,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "street",
+    "skate"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "skate",
+    "italie"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 67,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "luxe",
+    "rock"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "rock",
+    "usa"
+   ],
+   "affinites": [
+    63,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 68,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "street",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    45,
+    65
+   ]
+  },
+  {
+   "id": 69,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "luxe",
+    "resort"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "resort",
+    "france"
+   ],
+   "affinites": [
+    95,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 70,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "pretaporter",
+    "parisien"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "parisien",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 71,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "japon"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "japon",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    349
+   ]
+  },
+  {
+   "id": 72,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "street",
+    "japon"
+   ],
+   "affinites": [
+    54,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 73,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "street",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "légende",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    45,
+    65
+   ]
+  },
+  {
+   "id": 74,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "skate"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "skate",
+    "canada"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 75,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "preppy"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "preppy",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    45,
+    65
+   ]
+  },
+  {
+   "id": 76,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "street",
+    "queens"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "queens",
+    "usa"
+   ],
+   "affinites": [
+    2,
+    45,
+    65
+   ]
+  },
+  {
+   "id": 77,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "culture",
+    "pays-bas"
+   ],
+   "affinites": [
+    44,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 78,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "footwear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "footwear",
+    "pays-bas"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 79,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "chaussures",
+    "minimal"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "minimal",
+    "suède"
+   ],
+   "affinites": [
+    81,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 80,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "chaussures",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "sneakers",
+    "usa"
+   ],
+   "affinites": [
+    30,
+    33,
+    366
+   ]
+  },
+  {
+   "id": 81,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "vintage"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "vintage",
+    "suède"
+   ],
+   "affinites": [
+    79,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 82,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "chaussures",
+    "militaire"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "militaire",
+    "japon"
+   ],
+   "affinites": [
+    34,
+    51,
+    29
+   ]
+  },
+  {
+   "id": 83,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "chaussures",
+    "tech run"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tech",
+    "run",
+    "france"
+   ],
+   "affinites": [
+    434,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 84,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "gorpcore"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "gorpcore",
+    "italie"
+   ],
+   "affinites": [
+    15,
+    21,
+    85
+   ]
+  },
+  {
+   "id": 85,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "outdoor",
+    "footwear"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "footwear",
+    "italie"
+   ],
+   "affinites": [
+    15,
+    21,
+    84
+   ]
+  },
+  {
+   "id": 86,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "createurs",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "avant",
+    "garde",
+    "corée"
+   ],
+   "affinites": [
+    88,
+    89,
+    18
+   ]
+  },
+  {
+   "id": 87,
+   "univers": "mode",
+   "esthetique": [],
+   "culture": [
+    "createurs",
+    "indus"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "indus",
+    "danemark"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 88,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "volume"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "volume",
+    "corée"
+   ],
+   "affinites": [
+    86,
+    89,
+    18
+   ]
+  },
+  {
+   "id": 89,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "paris"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "paris",
+    "corée"
+   ],
+   "affinites": [
+    86,
+    88,
+    18
+   ]
+  },
+  {
+   "id": 90,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "créatif",
+    "corée"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 91,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "accessoires",
+    "eyewear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "eyewear",
+    "corée"
+   ],
+   "affinites": [
+    31,
+    92,
+    336
+   ]
+  },
+  {
+   "id": 92,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "accessoires",
+    "bijoux"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bijoux",
+    "japon"
+   ],
+   "affinites": [
+    31,
+    91,
+    336
+   ]
+  },
+  {
+   "id": 93,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "createurs",
+    "hybride"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "hybride",
+    "japon"
+   ],
+   "affinites": [
+    18,
+    41,
+    42
+   ]
+  },
+  {
+   "id": 94,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "createurs",
+    "regen"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "regen",
+    "france"
+   ],
+   "affinites": [
+    420,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 95,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "tech"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "tech",
+    "france"
+   ],
+   "affinites": [
+    69,
+    6,
+    22
+   ]
+  },
+  {
+   "id": 96,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "mobilier",
+    "espagne"
+   ],
+   "affinites": [
+    158,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 97,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "mobilier",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "légende",
+    "suisse"
+   ],
+   "affinites": [
+    151,
+    96,
+    99
+   ]
+  },
+  {
+   "id": 98,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "systemes",
+    "modulaire"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "modulaire",
+    "suisse"
+   ],
+   "affinites": [
+    104,
+    123,
+    124
+   ]
+  },
+  {
+   "id": 99,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "scandinave"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "scandinave",
+    "danemark"
+   ],
+   "affinites": [
+    101,
+    102,
+    106
+   ]
+  },
+  {
+   "id": 100,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "mobilier",
+    "plastique"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "plastique",
+    "italie"
+   ],
+   "affinites": [
+    110,
+    111,
+    120
+   ]
+  },
+  {
+   "id": 101,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "new nordic"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "new",
+    "nordic",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    102,
+    106
+   ]
+  },
+  {
+   "id": 102,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "brutaliste"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "brutaliste",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    106
+   ]
+  },
+  {
+   "id": 103,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "italie"
+   ],
+   "affinites": [
+    119,
+    134,
+    170
+   ]
+  },
+  {
+   "id": 104,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "systemes",
+    "bureau"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bureau",
+    "usa"
+   ],
+   "affinites": [
+    98,
+    123,
+    124
+   ]
+  },
+  {
+   "id": 105,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "modernisme"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "modernisme",
+    "usa"
+   ],
+   "affinites": [
+    169,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 106,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "mobilier",
+    "scandinave"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "scandinave",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 107,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "minimaliste"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "minimaliste",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 108,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "objets",
+    "déco"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "déco",
+    "danemark"
+   ],
+   "affinites": [
+    112,
+    129,
+    115
+   ]
+  },
+  {
+   "id": 109,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bois",
+    "finlande"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 110,
+   "univers": "design",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "mobilier",
+    "maestro"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "maestro",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    111,
+    120
+   ]
+  },
+  {
+   "id": 111,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "mobilier",
+    "pop"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "pop",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    120
+   ]
+  },
+  {
+   "id": 112,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "objets",
+    "textile"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "textile",
+    "danemark"
+   ],
+   "affinites": [
+    108,
+    129,
+    115
+   ]
+  },
+  {
+   "id": 113,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "avant",
+    "garde",
+    "suède"
+   ],
+   "affinites": [
+    130,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 114,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "luxe",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 115,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "objets",
+    "lifestyle"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "lifestyle",
+    "australie"
+   ],
+   "affinites": [
+    108,
+    112,
+    129
+   ]
+  },
+  {
+   "id": 116,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "danois"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "danois",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 117,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "craft",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 118,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "danemark"
+   ],
+   "affinites": [
+    103,
+    119,
+    132
+   ]
+  },
+  {
+   "id": 119,
+   "univers": "design",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    134,
+    170
+   ]
+  },
+  {
+   "id": 120,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "mobilier",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 121,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "minimaliste"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "minimaliste",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 122,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "pionnier"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "pionnier",
+    "allemagne"
+   ],
+   "affinites": [
+    152,
+    153,
+    96
+   ]
+  },
+  {
+   "id": 123,
+   "univers": "design",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "systemes",
+    "système"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "système",
+    "suède"
+   ],
+   "affinites": [
+    98,
+    104,
+    124
+   ]
+  },
+  {
+   "id": 124,
+   "univers": "design",
+   "esthetique": [
+    "jaune"
+   ],
+   "culture": [
+    "systemes",
+    "couleur"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "couleur",
+    "danemark"
+   ],
+   "affinites": [
+    98,
+    104,
+    123
+   ]
+  },
+  {
+   "id": 125,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "cuisine"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "cuisine",
+    "danemark"
+   ],
+   "affinites": [
+    128,
+    176,
+    177
+   ]
+  },
+  {
+   "id": 126,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "moderne"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "moderne",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 127,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "pont"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "pont",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 128,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "cuisine",
+    "indus"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "indus",
+    "danemark"
+   ],
+   "affinites": [
+    125,
+    176,
+    177
+   ]
+  },
+  {
+   "id": 129,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "objets",
+    "japandi"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "japandi",
+    "danemark"
+   ],
+   "affinites": [
+    108,
+    112,
+    115
+   ]
+  },
+  {
+   "id": 130,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "process"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "process",
+    "suède"
+   ],
+   "affinites": [
+    113,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 131,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "new zeeland"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "new",
+    "zeeland",
+    "nz"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 132,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luminaires",
+    "éditeur"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "éditeur",
+    "espagne"
+   ],
+   "affinites": [
+    174,
+    103,
+    118
+   ]
+  },
+  {
+   "id": 133,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "luminaires",
+    "réédition"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "réédition",
+    "france"
+   ],
+   "affinites": [
+    103,
+    118,
+    119
+   ]
+  },
+  {
+   "id": 134,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    119,
+    170
+   ]
+  },
+  {
+   "id": 135,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "radical"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "radical",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 136,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "art"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "art",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 137,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bois",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 138,
+   "univers": "design",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "mobilier",
+    "verre"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "verre",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 139,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "icône"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "icône",
+    "france"
+   ],
+   "affinites": [
+    141,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 140,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "cuir"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "cuir",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 141,
+   "univers": "design",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "mobilier",
+    "éditeur"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "éditeur",
+    "france"
+   ],
+   "affinites": [
+    139,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 142,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "systemes",
+    "bureau"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bureau",
+    "italie"
+   ],
+   "affinites": [
+    146,
+    147,
+    98
+   ]
+  },
+  {
+   "id": 143,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "légèreté"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "légèreté",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 144,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "éclectique"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "éclectique",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 145,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "textile"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "textile",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 146,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "systemes",
+    "système"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "système",
+    "italie"
+   ],
+   "affinites": [
+    142,
+    147,
+    98
+   ]
+  },
+  {
+   "id": 147,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "systemes",
+    "rangement"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "rangement",
+    "italie"
+   ],
+   "affinites": [
+    142,
+    146,
+    98
+   ]
+  },
+  {
+   "id": 148,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "confort"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "confort",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 149,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "luxe",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 150,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "minimal"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "minimal",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 151,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "cuir"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "cuir",
+    "suisse"
+   ],
+   "affinites": [
+    97,
+    96,
+    99
+   ]
+  },
+  {
+   "id": 152,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bois",
+    "allemagne"
+   ],
+   "affinites": [
+    122,
+    153,
+    96
+   ]
+  },
+  {
+   "id": 153,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "classique"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "classique",
+    "allemagne"
+   ],
+   "affinites": [
+    122,
+    152,
+    96
+   ]
+  },
+  {
+   "id": 154,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "exterieur",
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "outdoor",
+    "france"
+   ],
+   "affinites": [
+    155,
+    156,
+    157
+   ]
+  },
+  {
+   "id": 155,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "exterieur",
+    "jardin"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "jardin",
+    "italie"
+   ],
+   "affinites": [
+    154,
+    156,
+    157
+   ]
+  },
+  {
+   "id": 156,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "exterieur",
+    "patio"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "patio",
+    "espagne"
+   ],
+   "affinites": [
+    157,
+    154,
+    155
+   ]
+  },
+  {
+   "id": 157,
+   "univers": "design",
+   "esthetique": [],
+   "culture": [
+    "exterieur",
+    "textile"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "textile",
+    "espagne"
+   ],
+   "affinites": [
+    156,
+    154,
+    155
+   ]
+  },
+  {
+   "id": 158,
+   "univers": "design",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "mobilier",
+    "art"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "art",
+    "espagne"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 159,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "rebelle"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "rebelle",
+    "pays-bas"
+   ],
+   "affinites": [
+    161,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 160,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "systemes",
+    "cabinet"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "cabinet",
+    "pays-bas"
+   ],
+   "affinites": [
+    98,
+    104,
+    123
+   ]
+  },
+  {
+   "id": 161,
+   "univers": "design",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "mobilier",
+    "confort"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "confort",
+    "pays-bas"
+   ],
+   "affinites": [
+    159,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 162,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "heritage"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "heritage",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 163,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "craft",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 164,
+   "univers": "design",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "mobilier",
+    "space age"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "space",
+    "age",
+    "danemark"
+   ],
+   "affinites": [
+    99,
+    101,
+    102
+   ]
+  },
+  {
+   "id": 165,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "bois",
+    "japon"
+   ],
+   "affinites": [
+    166,
+    167,
+    96
+   ]
+  },
+  {
+   "id": 166,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "industrie"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "industrie",
+    "japon"
+   ],
+   "affinites": [
+    165,
+    167,
+    96
+   ]
+  },
+  {
+   "id": 167,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "zen"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "zen",
+    "japon"
+   ],
+   "affinites": [
+    165,
+    166,
+    96
+   ]
+  },
+  {
+   "id": 168,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "fusion"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "fusion",
+    "chine"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 169,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "alu"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "alu",
+    "usa"
+   ],
+   "affinites": [
+    105,
+    96,
+    97
+   ]
+  },
+  {
+   "id": 170,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    119,
+    134
+   ]
+  },
+  {
+   "id": 171,
+   "univers": "design",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "luminaires",
+    "verre"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "verre",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    119,
+    134
+   ]
+  },
+  {
+   "id": 172,
+   "univers": "design",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "luminaires",
+    "poésie"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "poésie",
+    "allemagne"
+   ],
+   "affinites": [
+    103,
+    118,
+    119
+   ]
+  },
+  {
+   "id": 173,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luminaires",
+    "emotion"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "emotion",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    119,
+    134
+   ]
+  },
+  {
+   "id": 174,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luminaires",
+    "minimal"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "minimal",
+    "espagne"
+   ],
+   "affinites": [
+    132,
+    103,
+    118
+   ]
+  },
+  {
+   "id": 175,
+   "univers": "design",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "luminaires",
+    "essence"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "essence",
+    "italie"
+   ],
+   "affinites": [
+    103,
+    119,
+    134
+   ]
+  },
+  {
+   "id": 176,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "cuisine",
+    "bain"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "bain",
+    "italie"
+   ],
+   "affinites": [
+    177,
+    179,
+    125
+   ]
+  },
+  {
+   "id": 177,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "cuisine"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "cuisine",
+    "italie"
+   ],
+   "affinites": [
+    176,
+    179,
+    125
+   ]
+  },
+  {
+   "id": 178,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "cuisine",
+    "système"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "système",
+    "allemagne"
+   ],
+   "affinites": [
+    125,
+    128,
+    176
+   ]
+  },
+  {
+   "id": 179,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "cuisine",
+    "eco"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "eco",
+    "italie"
+   ],
+   "affinites": [
+    176,
+    177,
+    125
+   ]
+  },
+  {
+   "id": 180,
+   "univers": "design",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "mobilier",
+    "métal"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "métal",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 181,
+   "univers": "design",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "mobilier",
+    "tech"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "tech",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 182,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilier",
+    "contrat"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "contrat",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 183,
+   "univers": "design",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "mobilier",
+    "indus"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "indus",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 184,
+   "univers": "design",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "mobilier",
+    "recherche"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "recherche",
+    "italie"
+   ],
+   "affinites": [
+    100,
+    110,
+    111
+   ]
+  },
+  {
+   "id": 185,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "british"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "british",
+    "uk"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 186,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "luminaires",
+    "matière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "matière",
+    "uk"
+   ],
+   "affinites": [
+    187,
+    103,
+    118
+   ]
+  },
+  {
+   "id": 187,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "luminaires",
+    "théâtre"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "théâtre",
+    "uk"
+   ],
+   "affinites": [
+    186,
+    103,
+    118
+   ]
+  },
+  {
+   "id": 188,
+   "univers": "tech",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "son",
+    "vinyl"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "vinyl",
+    "japon"
+   ],
+   "affinites": [
+    208,
+    209,
+    198
+   ]
+  },
+  {
+   "id": 189,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "image",
+    "optique"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "optique",
+    "japon"
+   ],
+   "affinites": [
+    190,
+    191,
+    192
+   ]
+  },
+  {
+   "id": 190,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "image"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "image",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    191,
+    192
+   ]
+  },
+  {
+   "id": 191,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image",
+    "micro"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "micro",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    190,
+    192
+   ]
+  },
+  {
+   "id": 192,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "image",
+    "reflex"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "reflex",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 193,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "image",
+    "archive"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "archive",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 194,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image",
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "luxe",
+    "allemagne"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 195,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "image",
+    "electro"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "electro",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 196,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image",
+    "pro"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "pro",
+    "japon"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 197,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image",
+    "digital"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "digital",
+    "danemark"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 198,
+   "univers": "tech",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "son",
+    "dap"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "dap",
+    "corée"
+   ],
+   "affinites": [
+    188,
+    199,
+    200
+   ]
+  },
+  {
+   "id": 199,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "son",
+    "audio"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "audio",
+    "usa"
+   ],
+   "affinites": [
+    203,
+    204,
+    206
+   ]
+  },
+  {
+   "id": 200,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "son",
+    "hi-fi"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "uk"
+   ],
+   "affinites": [
+    201,
+    202,
+    188
+   ]
+  },
+  {
+   "id": 201,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "son",
+    "speaker"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "speaker",
+    "uk"
+   ],
+   "affinites": [
+    200,
+    202,
+    188
+   ]
+  },
+  {
+   "id": 202,
+   "univers": "tech",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "son",
+    "innovation"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "innovation",
+    "uk"
+   ],
+   "affinites": [
+    200,
+    201,
+    188
+   ]
+  },
+  {
+   "id": 203,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "son",
+    "heritage"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "heritage",
+    "usa"
+   ],
+   "affinites": [
+    199,
+    204,
+    206
+   ]
+  },
+  {
+   "id": 204,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "son",
+    "casque"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "casque",
+    "usa"
+   ],
+   "affinites": [
+    199,
+    203,
+    206
+   ]
+  },
+  {
+   "id": 205,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "son",
+    "pro"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "pro",
+    "allemagne"
+   ],
+   "affinites": [
+    207,
+    210,
+    211
+   ]
+  },
+  {
+   "id": 206,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "micro"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "micro",
+    "usa"
+   ],
+   "affinites": [
+    199,
+    203,
+    204
+   ]
+  },
+  {
+   "id": 207,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "studio"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "studio",
+    "allemagne"
+   ],
+   "affinites": [
+    205,
+    210,
+    211
+   ]
+  },
+  {
+   "id": 208,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "sampler"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sampler",
+    "japon"
+   ],
+   "affinites": [
+    188,
+    209,
+    198
+   ]
+  },
+  {
+   "id": 209,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "club"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "club",
+    "japon"
+   ],
+   "affinites": [
+    188,
+    208,
+    198
+   ]
+  },
+  {
+   "id": 210,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "digital"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "digital",
+    "allemagne"
+   ],
+   "affinites": [
+    205,
+    207,
+    211
+   ]
+  },
+  {
+   "id": 211,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "live"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "live",
+    "allemagne"
+   ],
+   "affinites": [
+    205,
+    207,
+    210
+   ]
+  },
+  {
+   "id": 212,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "son",
+    "software"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "software",
+    "nz"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 213,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "mobilite",
+    "ev"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "usa"
+   ],
+   "affinites": [
+    214,
+    219,
+    223
+   ]
+  },
+  {
+   "id": 214,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilite",
+    "luxe ev"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "luxe",
+    "usa"
+   ],
+   "affinites": [
+    213,
+    219,
+    223
+   ]
+  },
+  {
+   "id": 215,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilite",
+    "future"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "future",
+    "chine"
+   ],
+   "affinites": [
+    213,
+    214,
+    216
+   ]
+  },
+  {
+   "id": 216,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilite",
+    "hyper"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "hyper",
+    "croatie"
+   ],
+   "affinites": [
+    213,
+    214,
+    215
+   ]
+  },
+  {
+   "id": 217,
+   "univers": "tech",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "mobilite",
+    "ingénierie"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "ingénierie",
+    "suède"
+   ],
+   "affinites": [
+    221,
+    225,
+    226
+   ]
+  },
+  {
+   "id": 218,
+   "univers": "tech",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "mobilite",
+    "art"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "art",
+    "italie"
+   ],
+   "affinites": [
+    220,
+    224,
+    213
+   ]
+  },
+  {
+   "id": 219,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilite",
+    "restomod"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "restomod",
+    "usa"
+   ],
+   "affinites": [
+    213,
+    214,
+    223
+   ]
+  },
+  {
+   "id": 220,
+   "univers": "tech",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "mobilite",
+    "restomod"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "restomod",
+    "italie"
+   ],
+   "affinites": [
+    218,
+    224,
+    213
+   ]
+  },
+  {
+   "id": 221,
+   "univers": "tech",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "mobilite",
+    "performance"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "performance",
+    "suède"
+   ],
+   "affinites": [
+    217,
+    225,
+    226
+   ]
+  },
+  {
+   "id": 222,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilite",
+    "4x4"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "4x4",
+    "uk"
+   ],
+   "affinites": [
+    213,
+    214,
+    215
+   ]
+  },
+  {
+   "id": 223,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "mobilite",
+    "icon"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "icon",
+    "usa"
+   ],
+   "affinites": [
+    213,
+    214,
+    219
+   ]
+  },
+  {
+   "id": 224,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "mobilite",
+    "design"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "design",
+    "italie"
+   ],
+   "affinites": [
+    218,
+    220,
+    213
+   ]
+  },
+  {
+   "id": 225,
+   "univers": "tech",
+   "esthetique": [
+    "jaune"
+   ],
+   "culture": [
+    "mobilite",
+    "aéro"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "aéro",
+    "suède"
+   ],
+   "affinites": [
+    217,
+    221,
+    226
+   ]
+  },
+  {
+   "id": 226,
+   "univers": "tech",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "mobilite",
+    "sécurité"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "sécurité",
+    "suède"
+   ],
+   "affinites": [
+    217,
+    221,
+    225
+   ]
+  },
+  {
+   "id": 227,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "objets-tech",
+    "eco"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "eco",
+    "chine"
+   ],
+   "affinites": [
+    228,
+    229,
+    230
+   ]
+  },
+  {
+   "id": 228,
+   "univers": "tech",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "objets-tech",
+    "connect"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "connect",
+    "chine"
+   ],
+   "affinites": [
+    227,
+    229,
+    230
+   ]
+  },
+  {
+   "id": 229,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "objets-tech",
+    "display"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "display",
+    "corée"
+   ],
+   "affinites": [
+    230,
+    227,
+    228
+   ]
+  },
+  {
+   "id": 230,
+   "univers": "tech",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "objets-tech",
+    "oled"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "oled",
+    "corée"
+   ],
+   "affinites": [
+    229,
+    227,
+    228
+   ]
+  },
+  {
+   "id": 231,
+   "univers": "tech",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "objets-tech",
+    "nav"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "nav",
+    "usa"
+   ],
+   "affinites": [
+    227,
+    228,
+    229
+   ]
+  },
+  {
+   "id": 232,
+   "univers": "tech",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "objets-tech",
+    "time"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "time",
+    "japon"
+   ],
+   "affinites": [
+    233,
+    227,
+    228
+   ]
+  },
+  {
+   "id": 233,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "objets-tech",
+    "creativity"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "creativity",
+    "japon"
+   ],
+   "affinites": [
+    232,
+    227,
+    228
+   ]
+  },
+  {
+   "id": 234,
+   "univers": "tech",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "objets-tech",
+    "interface"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "interface",
+    "suisse"
+   ],
+   "affinites": [
+    227,
+    228,
+    229
+   ]
+  },
+  {
+   "id": 235,
+   "univers": "tech",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "objets-tech",
+    "stream"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "stream",
+    "allemagne"
+   ],
+   "affinites": [
+    227,
+    228,
+    229
+   ]
+  },
+  {
+   "id": 236,
+   "univers": "digital",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "creation",
+    "3d"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "pays-bas"
+   ],
+   "affinites": [
+    244,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 237,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "creation",
+    "engine"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "engine",
+    "usa"
+   ],
+   "affinites": [
+    238,
+    243,
+    245
+   ]
+  },
+  {
+   "id": 238,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "creation",
+    "engine"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "engine",
+    "usa"
+   ],
+   "affinites": [
+    237,
+    243,
+    245
+   ]
+  },
+  {
+   "id": 239,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "creation",
+    "motion"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "motion",
+    "allemagne"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 240,
+   "univers": "digital",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "creation",
+    "vfx"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "vfx",
+    "canada"
+   ],
+   "affinites": [
+    279,
+    236,
+    237
+   ]
+  },
+  {
+   "id": 241,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "creation",
+    "art"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "art",
+    "australie"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 242,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "creation",
+    "suite"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "suite",
+    "uk"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 243,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "creation",
+    "standard"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "standard",
+    "usa"
+   ],
+   "affinites": [
+    237,
+    238,
+    245
+   ]
+  },
+  {
+   "id": 244,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "creation",
+    "ui"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "pays-bas"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 245,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "creation",
+    "proto"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "proto",
+    "usa"
+   ],
+   "affinites": [
+    237,
+    238,
+    243
+   ]
+  },
+  {
+   "id": 246,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "productivite",
+    "whiteboard"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "whiteboard",
+    "usa"
+   ],
+   "affinites": [
+    250,
+    251,
+    254
+   ]
+  },
+  {
+   "id": 247,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "chat"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "chat",
+    "usa"
+   ],
+   "affinites": [
+    249,
+    258,
+    259
+   ]
+  },
+  {
+   "id": 248,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "message"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "message",
+    "dubai"
+   ],
+   "affinites": [
+    247,
+    249,
+    258
+   ]
+  },
+  {
+   "id": 249,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "privacy"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "privacy",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    258,
+    259
+   ]
+  },
+  {
+   "id": 250,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "productivite",
+    "note"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "note",
+    "usa"
+   ],
+   "affinites": [
+    246,
+    251,
+    254
+   ]
+  },
+  {
+   "id": 251,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "productivite",
+    "graph"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "graph",
+    "usa"
+   ],
+   "affinites": [
+    246,
+    250,
+    254
+   ]
+  },
+  {
+   "id": 252,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "productivite",
+    "doc"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "doc",
+    "uk"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 253,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "productivite",
+    "task"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "task",
+    "allemagne"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 254,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "productivite",
+    "time"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "time",
+    "usa"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 255,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "productivite",
+    "mail"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "mail",
+    "usa"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 256,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "commerce"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "commerce",
+    "usa"
+   ],
+   "affinites": [
+    257,
+    266,
+    268
+   ]
+  },
+  {
+   "id": 257,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "finance",
+    "support"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "support",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    266,
+    268
+   ]
+  },
+  {
+   "id": 258,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "write"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "write",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    249,
+    259
+   ]
+  },
+  {
+   "id": 259,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "communication",
+    "blog"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "blog",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    249,
+    258
+   ]
+  },
+  {
+   "id": 260,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "live"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "live",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    249,
+    258
+   ]
+  },
+  {
+   "id": 261,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "video"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "video",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    249,
+    258
+   ]
+  },
+  {
+   "id": 262,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "communication",
+    "art video"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "art",
+    "video",
+    "usa"
+   ],
+   "affinites": [
+    247,
+    249,
+    258
+   ]
+  },
+  {
+   "id": 263,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "productivite",
+    "file"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "file",
+    "pays-bas"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 264,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "productivite",
+    "cloud"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "cloud",
+    "usa"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 265,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "finance",
+    "commerce"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "commerce",
+    "canada"
+   ],
+   "affinites": [
+    256,
+    257,
+    266
+   ]
+  },
+  {
+   "id": 266,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "pay"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "pay",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    257,
+    268
+   ]
+  },
+  {
+   "id": 267,
+   "univers": "digital",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "finance",
+    "bank"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "bank",
+    "uk"
+   ],
+   "affinites": [
+    256,
+    257,
+    265
+   ]
+  },
+  {
+   "id": 268,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "crypto"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "crypto",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    257,
+    266
+   ]
+  },
+  {
+   "id": 269,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "nft"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "nft",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    257,
+    266
+   ]
+  },
+  {
+   "id": 270,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "web3"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "web3",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    257,
+    266
+   ]
+  },
+  {
+   "id": 271,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "finance",
+    "protocol"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "protocol",
+    "usa"
+   ],
+   "affinites": [
+    256,
+    257,
+    266
+   ]
+  },
+  {
+   "id": 272,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "savoir"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "savoir",
+    "usa"
+   ],
+   "affinites": [
+    273,
+    274,
+    275
+   ]
+  },
+  {
+   "id": 273,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "memory"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "memory",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    274,
+    275
+   ]
+  },
+  {
+   "id": 274,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "open"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "open",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    275
+   ]
+  },
+  {
+   "id": 275,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "kernel"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "kernel",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 276,
+   "univers": "digital",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "dev",
+    "maker"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "maker",
+    "uk"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 277,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "dev",
+    "hardware"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "hardware",
+    "italie"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 278,
+   "univers": "digital",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "creation",
+    "code art"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "code",
+    "art",
+    "usa"
+   ],
+   "affinites": [
+    237,
+    238,
+    243
+   ]
+  },
+  {
+   "id": 279,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "creation",
+    "visual"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "visual",
+    "canada"
+   ],
+   "affinites": [
+    240,
+    236,
+    237
+   ]
+  },
+  {
+   "id": 280,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "creation",
+    "ai"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "usa"
+   ],
+   "affinites": [
+    237,
+    238,
+    243
+   ]
+  },
+  {
+   "id": 281,
+   "univers": "digital",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "creation",
+    "ai art"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "art",
+    "usa"
+   ],
+   "affinites": [
+    237,
+    238,
+    243
+   ]
+  },
+  {
+   "id": 282,
+   "univers": "digital",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "dev",
+    "intelligence"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "intelligence",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 283,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "community"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "community",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 284,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "ide"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "ide",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 285,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "dev",
+    "cloud"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "cloud",
+    "usa"
+   ],
+   "affinites": [
+    272,
+    273,
+    274
+   ]
+  },
+  {
+   "id": 286,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "drame",
+    "Masaki Kobayashi"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 287,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "guerre",
+    "Masaki Kobayashi"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 288,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "drame",
+    "Sidney Lumet"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 289,
+   "univers": "cinema",
+   "esthetique": [
+    "années 80"
+   ],
+   "culture": [
+    "guerre",
+    "Elem Klimov"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "urss"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 290,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "polar",
+    "Akira Kurosawa"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 291,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "épopée",
+    "Akira Kurosawa"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "épopée",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 292,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "drame",
+    "Frank Darabont"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 293,
+   "univers": "cinema",
+   "esthetique": [
+    "années 70"
+   ],
+   "culture": [
+    "polar",
+    "Francis Ford Coppola"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 294,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "guerre",
+    "Masaki Kobayashi"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 295,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "polar",
+    "Fernando Meirelles"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "brésil"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 296,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "fantasy",
+    "Peter Jackson"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "fantasy",
+    "nouvelle-zélande"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 297,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "histoire",
+    "Steven Spielberg"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "histoire",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 298,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "drame",
+    "Edward Yang"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "taïwan"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 299,
+   "univers": "cinema",
+   "esthetique": [
+    "années 80"
+   ],
+   "culture": [
+    "drame",
+    "Giuseppe Tornatore"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "italie"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 300,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "drame",
+    "Akira Kurosawa"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 301,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "western",
+    "Sergio Leone"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "western",
+    "italie"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 302,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "thriller",
+    "Bong Joon Ho"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "corée du sud"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 303,
+   "univers": "cinema",
+   "esthetique": [
+    "années 70"
+   ],
+   "culture": [
+    "polar",
+    "Francis Ford Coppola"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 304,
+   "univers": "cinema",
+   "esthetique": [
+    "années 80"
+   ],
+   "culture": [
+    "épopée",
+    "Akira Kurosawa"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "épopée",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 305,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "drame",
+    "Mathieu Kassovitz"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "france"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 306,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "polar",
+    "Jacques Becker"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "france"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 307,
+   "univers": "cinema",
+   "esthetique": [
+    "années 70"
+   ],
+   "culture": [
+    "drame",
+    "Ingmar Bergman"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "allemagne"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 308,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "thriller",
+    "Christopher Nolan"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "royaume-uni"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 309,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "drame",
+    "Edward Yang"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "taïwan"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 310,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "guerre",
+    "Masaki Kobayashi"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 311,
+   "univers": "cinema",
+   "esthetique": [
+    "années 80"
+   ],
+   "culture": [
+    "animation",
+    "Isao Takahata"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "animation",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 312,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "animation",
+    "Hideaki Anno, Kazuya Tsurumaki"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "animation",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 313,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "guerre",
+    "Gillo Pontecorvo"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "italie"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 314,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "drame",
+    "Mikhaïl Kalatozov"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "cuba"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 315,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "guerre",
+    "Mikhaïl Kalatozov"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "urss"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 316,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "polar",
+    "Martin Scorsese"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 317,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "drame",
+    "Paul Thomas Anderson"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 318,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "science-fiction",
+    "Christopher Nolan"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "science",
+    "fiction",
+    "royaume-uni"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 319,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "drame",
+    "Denis Villeneuve"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "canada"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 320,
+   "univers": "cinema",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "animation",
+    "Travis Knight"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "animation",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 321,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "drame",
+    "Hiroshi Teshigahara"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 322,
+   "univers": "cinema",
+   "esthetique": [
+    "avant 1950"
+   ],
+   "culture": [
+    "drame",
+    "Frank Capra"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 323,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "guerre",
+    "Stanley Kubrick"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 324,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "fantasy",
+    "Peter Jackson"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "fantasy",
+    "nouvelle-zélande"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 325,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "histoire",
+    "Andreï Tarkovski"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "histoire",
+    "urss"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 326,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "film noir",
+    "Billy Wilder"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "film",
+    "noir",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 327,
+   "univers": "cinema",
+   "esthetique": [
+    "années 70"
+   ],
+   "culture": [
+    "guerre",
+    "Francis Ford Coppola"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 328,
+   "univers": "cinema",
+   "esthetique": [
+    "années 70"
+   ],
+   "culture": [
+    "guerre",
+    "Larissa Chepitko"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "guerre",
+    "urss"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 329,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "animation",
+    "Hayao Miyazaki"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "animation",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 330,
+   "univers": "cinema",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "drame",
+    "Javier Ambrossi, Javier Calvo"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "espagne"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 331,
+   "univers": "cinema",
+   "esthetique": [
+    "années 60"
+   ],
+   "culture": [
+    "comédie",
+    "Billy Wilder"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "comédie",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 332,
+   "univers": "cinema",
+   "esthetique": [
+    "années 50"
+   ],
+   "culture": [
+    "drame",
+    "Yasujirō Ozu"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 333,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "romance",
+    "Céline Sciamma"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "romance",
+    "france"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 334,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "drame",
+    "Damien Chazelle"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 335,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "polar",
+    "Bong Joon Ho"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "corée du sud"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 336,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "accessoires",
+    "parfum"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "parfum",
+    "paris"
+   ],
+   "affinites": [
+    31,
+    91,
+    92
+   ]
+  },
+  {
+   "id": 337,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "parisien"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "parisien",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 338,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "luxe",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "craft",
+    "vicence"
+   ],
+   "affinites": [
+    6,
+    22,
+    23
+   ]
+  },
+  {
+   "id": 339,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "luxe",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "craft",
+    "madrid"
+   ],
+   "affinites": [
+    6,
+    22,
+    23
+   ]
+  },
+  {
+   "id": 340,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "luxe",
+    "new york"
+   ],
+   "affinites": [
+    6,
+    22,
+    23
+   ]
+  },
+  {
+   "id": 341,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "créatif",
+    "anvers"
+   ],
+   "affinites": [
+    382,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 342,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "culture",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 343,
+   "univers": "mode",
+   "esthetique": [
+    "jaune"
+   ],
+   "culture": [
+    "createurs",
+    "matière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "matière",
+    "tokyo"
+   ],
+   "affinites": [
+    344,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 344,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "japon"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "japon",
+    "tokyo"
+   ],
+   "affinites": [
+    343,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 345,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "workwear"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "workwear",
+    "kojima"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 346,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "matière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "matière",
+    "tokyo"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 347,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "createurs",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "créatif",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 348,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "createurs",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "avant",
+    "garde",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 349,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "volume"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "volume",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 350,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "luxe",
+    "futur"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "futur",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 351,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "luxe",
+    "métal"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "métal",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 352,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "chaussures",
+    "sport"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sport",
+    "paris"
+   ],
+   "affinites": [
+    29,
+    362,
+    30
+   ]
+  },
+  {
+   "id": 353,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "parisien"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "parisien",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 354,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "pretaporter",
+    "parisien"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "parisien",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 355,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "pretaporter",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "culture",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 356,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "pretaporter",
+    "intemporel"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "intemporel",
+    "paris"
+   ],
+   "affinites": [
+    8,
+    25,
+    39
+   ]
+  },
+  {
+   "id": 357,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "createurs",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "créatif",
+    "paris"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 358,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "street",
+    "séoul"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "séoul"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 359,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "workwear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "workwear",
+    "italie"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 360,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "outdoor",
+    "grenoble"
+   ],
+   "affinites": [
+    4,
+    5,
+    15
+   ]
+  },
+  {
+   "id": 361,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "chaussures",
+    "tech run"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tech",
+    "run",
+    "zurich"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 362,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "chaussures",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sneakers",
+    "paris"
+   ],
+   "affinites": [
+    29,
+    352,
+    30
+   ]
+  },
+  {
+   "id": 363,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "intemporel"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "intemporel",
+    "somerset"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 364,
+   "univers": "mode",
+   "esthetique": [
+    "jaune"
+   ],
+   "culture": [
+    "chaussures",
+    "punk"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "punk",
+    "northampton"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 365,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "chaussures",
+    "skate"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "skate",
+    "anaheim"
+   ],
+   "affinites": [
+    29,
+    30,
+    33
+   ]
+  },
+  {
+   "id": 366,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "chaussures",
+    "icon"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "icon",
+    "usa"
+   ],
+   "affinites": [
+    30,
+    33,
+    80
+   ]
+  },
+  {
+   "id": 367,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "workwear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "workwear",
+    "san francisco"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 368,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "workwear",
+    "biker"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "biker",
+    "new york"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 369,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "workwear",
+    "intemporel"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "intemporel",
+    "south shields"
+   ],
+   "affinites": [
+    17,
+    43,
+    53
+   ]
+  },
+  {
+   "id": 370,
+   "univers": "mode",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "outdoor",
+    "ventura"
+   ],
+   "affinites": [
+    4,
+    5,
+    15
+   ]
+  },
+  {
+   "id": 371,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "outdoor",
+    "suisse"
+   ],
+   "affinites": [
+    4,
+    5,
+    15
+   ]
+  },
+  {
+   "id": 372,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "indé nord"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "indé",
+    "nord",
+    "copenhague"
+   ],
+   "affinites": [
+    374,
+    8,
+    10
+   ]
+  },
+  {
+   "id": 373,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "copenhague"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 374,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "pretaporter",
+    "indé nord"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "indé",
+    "nord",
+    "copenhague"
+   ],
+   "affinites": [
+    372,
+    8,
+    10
+   ]
+  },
+  {
+   "id": 375,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "pretaporter",
+    "intemporel"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "intemporel",
+    "londres"
+   ],
+   "affinites": [
+    8,
+    10,
+    16
+   ]
+  },
+  {
+   "id": 376,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "createurs",
+    "craft"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "craft",
+    "brighton"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 377,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "créatif",
+    "los angeles"
+   ],
+   "affinites": [
+    378,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 378,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "street",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "créatif",
+    "los angeles"
+   ],
+   "affinites": [
+    377,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 379,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "street",
+    "tokyo"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 380,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "createurs",
+    "avant-garde"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "avant",
+    "garde",
+    "berlin"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 381,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "createurs",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "culture",
+    "londres"
+   ],
+   "affinites": [
+    37,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 382,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "createurs",
+    "outdoor"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "outdoor",
+    "anvers"
+   ],
+   "affinites": [
+    341,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 383,
+   "univers": "mode",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "createurs",
+    "anti-fashion"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "anti",
+    "fashion",
+    "new york"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 384,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "créatif"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "créatif",
+    "los angeles"
+   ],
+   "affinites": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": 385,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "luxe",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "légende",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 386,
+   "univers": "mode",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "luxe",
+    "futur"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "futur",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 387,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "luxe"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "luxe",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 388,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "luxe",
+    "légende"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "légende",
+    "paris"
+   ],
+   "affinites": [
+    6,
+    22,
+    71
+   ]
+  },
+  {
+   "id": 389,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sneakers",
+    "paris"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 390,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "street",
+    "culture"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "culture",
+    "caen"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 391,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "bois",
+    "londres"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 392,
+   "univers": "design",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "mobilier",
+    "métal"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "métal",
+    "autun"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 393,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "exterieur",
+    "jardin"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "jardin",
+    "thoissey"
+   ],
+   "affinites": [
+    154,
+    155,
+    156
+   ]
+  },
+  {
+   "id": 394,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "luminaires",
+    "éditeur"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "éditeur",
+    "paris"
+   ],
+   "affinites": [
+    103,
+    118,
+    119
+   ]
+  },
+  {
+   "id": 395,
+   "univers": "design",
+   "esthetique": [
+    "jaune"
+   ],
+   "culture": [
+    "objets",
+    "mobilier"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "mobilier",
+    "anvers"
+   ],
+   "affinites": [
+    396,
+    108,
+    112
+   ]
+  },
+  {
+   "id": 396,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "objets",
+    "déco"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "déco",
+    "anvers"
+   ],
+   "affinites": [
+    395,
+    108,
+    112
+   ]
+  },
+  {
+   "id": 397,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "pop"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "pop",
+    "turin"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 398,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "objets",
+    "textile"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "textile",
+    "ebeltoft"
+   ],
+   "affinites": [
+    108,
+    112,
+    115
+   ]
+  },
+  {
+   "id": 399,
+   "univers": "design",
+   "esthetique": [
+    "beige"
+   ],
+   "culture": [
+    "objets",
+    "minimal"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "minimal",
+    "tokyo"
+   ],
+   "affinites": [
+    108,
+    112,
+    115
+   ]
+  },
+  {
+   "id": 400,
+   "univers": "design",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "mobilier",
+    "couleur"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "couleur",
+    "yecla"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 401,
+   "univers": "design",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "luminaires",
+    "lumière"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "lumière",
+    "copenhague"
+   ],
+   "affinites": [
+    103,
+    118,
+    119
+   ]
+  },
+  {
+   "id": 402,
+   "univers": "design",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "mobilier",
+    "bois"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "bois",
+    "anvers"
+   ],
+   "affinites": [
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": 403,
+   "univers": "tech",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "objets-tech",
+    "design"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "design",
+    "francfort"
+   ],
+   "affinites": [
+    227,
+    228,
+    229
+   ]
+  },
+  {
+   "id": 404,
+   "univers": "tech",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "son",
+    "electro"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "electro",
+    "stockholm"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 405,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image",
+    "optique"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "optique",
+    "wetzlar"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 406,
+   "univers": "tech",
+   "esthetique": [
+    "orange"
+   ],
+   "culture": [
+    "son",
+    "audio"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "audio",
+    "struer"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 407,
+   "univers": "tech",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "objets-tech",
+    "interface"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "interface",
+    "londres"
+   ],
+   "affinites": [
+    227,
+    228,
+    229
+   ]
+  },
+  {
+   "id": 408,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "image",
+    "tokyo"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 409,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "image"
+   ],
+   "ambiance": [],
+   "positionnement": "luxe",
+   "motsCles": [
+    "image",
+    "göteborg"
+   ],
+   "affinites": [
+    189,
+    190,
+    191
+   ]
+  },
+  {
+   "id": 410,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "electro"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "electro",
+    "osaka"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 411,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "creation",
+    "ui"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "san francisco"
+   ],
+   "affinites": [
+    417,
+    236,
+    237
+   ]
+  },
+  {
+   "id": 412,
+   "univers": "digital",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "creation",
+    "proto"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "proto",
+    "amsterdam"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 413,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "productivite",
+    "doc"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "doc",
+    "san francisco"
+   ],
+   "affinites": [
+    414,
+    246,
+    250
+   ]
+  },
+  {
+   "id": 414,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "productivite",
+    "task"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "task",
+    "san francisco"
+   ],
+   "affinites": [
+    413,
+    246,
+    250
+   ]
+  },
+  {
+   "id": 415,
+   "univers": "digital",
+   "esthetique": [],
+   "culture": [
+    "creation",
+    "visual"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "visual",
+    "new york"
+   ],
+   "affinites": [
+    236,
+    237,
+    238
+   ]
+  },
+  {
+   "id": 416,
+   "univers": "digital",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "communication",
+    "video"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "video",
+    "auckland"
+   ],
+   "affinites": [
+    247,
+    248,
+    249
+   ]
+  },
+  {
+   "id": 417,
+   "univers": "digital",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "creation",
+    "3d"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "san francisco"
+   ],
+   "affinites": [
+    411,
+    236,
+    237
+   ]
+  },
+  {
+   "id": 418,
+   "univers": "digital",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "productivite",
+    "launcher"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "launcher",
+    "londres"
+   ],
+   "affinites": [
+    246,
+    250,
+    251
+   ]
+  },
+  {
+   "id": 419,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "tapisserie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tapisserie",
+    "france"
+   ],
+   "affinites": [
+    426,
+    427,
+    428
+   ]
+  },
+  {
+   "id": 419,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 70"
+   ],
+   "culture": [
+    "street",
+    "science-fiction",
+    "Andreï Tarkovski"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "science",
+    "fiction",
+    "urss"
+   ],
+   "affinites": [
+    426,
+    427,
+    428
+   ]
+  },
+  {
+   "id": 420,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "broderie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "broderie",
+    "france"
+   ],
+   "affinites": [
+    94,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 420,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 00"
+   ],
+   "culture": [
+    "createurs",
+    "romance",
+    "Wong Kar-wai"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "romance",
+    "hong kong"
+   ],
+   "affinites": [
+    94,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 421,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "accessoires",
+    "bonnets"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "bonnets",
+    "hong kong"
+   ],
+   "affinites": [
+    31,
+    91,
+    92
+   ]
+  },
+  {
+   "id": 421,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 60"
+   ],
+   "culture": [
+    "accessoires",
+    "science-fiction",
+    "Stanley Kubrick"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "science",
+    "fiction",
+    "royaume-uni"
+   ],
+   "affinites": [
+    31,
+    91,
+    92
+   ]
+  },
+  {
+   "id": 422,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sneakers",
+    "allemagne"
+   ],
+   "affinites": [
+    35,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 422,
+   "univers": "cinema",
+   "esthetique": [
+    "blanc",
+    "années 90"
+   ],
+   "culture": [
+    "chaussures",
+    "polar",
+    "Quentin Tarantino"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "polar",
+    "états-unis"
+   ],
+   "affinites": [
+    35,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 423,
+   "univers": "mode",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "street",
+    "art brodé"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "art",
+    "brodé",
+    "autriche"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 423,
+   "univers": "cinema",
+   "esthetique": [
+    "vert",
+    "années 70"
+   ],
+   "culture": [
+    "street",
+    "thriller",
+    "Martin Scorsese"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 424,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "écouteurs"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "écouteurs",
+    "france"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 424,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 60"
+   ],
+   "culture": [
+    "son",
+    "thriller",
+    "Alfred Hitchcock"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 425,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "street",
+    "ravewear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "ravewear",
+    "uk"
+   ],
+   "affinites": [
+    14,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 425,
+   "univers": "cinema",
+   "esthetique": [
+    "rouge",
+    "années 00"
+   ],
+   "culture": [
+    "street",
+    "thriller",
+    "David Lynch"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": [
+    14,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 426,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "france"
+   ],
+   "affinites": [
+    419,
+    427,
+    428
+   ]
+  },
+  {
+   "id": 426,
+   "univers": "cinema",
+   "esthetique": [
+    "rouge",
+    "années 60"
+   ],
+   "culture": [
+    "street",
+    "drame",
+    "Ingmar Bergman"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "drame",
+    "suède"
+   ],
+   "affinites": [
+    419,
+    427,
+    428
+   ]
+  },
+  {
+   "id": 427,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "drops"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "drops",
+    "france"
+   ],
+   "affinites": [
+    419,
+    426,
+    428
+   ]
+  },
+  {
+   "id": 427,
+   "univers": "cinema",
+   "esthetique": [
+    "noir",
+    "années 50"
+   ],
+   "culture": [
+    "street",
+    "drame",
+    "François Truffaut"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "drame",
+    "france"
+   ],
+   "affinites": [
+    419,
+    426,
+    428
+   ]
+  },
+  {
+   "id": 428,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "france"
+   ],
+   "affinites": [
+    419,
+    426,
+    427
+   ]
+  },
+  {
+   "id": 428,
+   "univers": "cinema",
+   "esthetique": [
+    "bleu",
+    "années 90"
+   ],
+   "culture": [
+    "street",
+    "animation",
+    "Hayao Miyazaki"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "animation",
+    "japon"
+   ],
+   "affinites": [
+    419,
+    426,
+    427
+   ]
+  },
+  {
+   "id": 429,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "denim"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "denim",
+    "belgique"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 429,
+   "univers": "cinema",
+   "esthetique": [
+    "noir",
+    "années 80"
+   ],
+   "culture": [
+    "street",
+    "animation",
+    "Katsuhiro Ōtomo"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "animation",
+    "japon"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 430,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "chicano"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "chicano",
+    "hong kong"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 430,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 90"
+   ],
+   "culture": [
+    "street",
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 431,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "distressed"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "distressed",
+    "berlin"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 431,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 80"
+   ],
+   "culture": [
+    "street",
+    "drame",
+    "Wim Wenders"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "drame",
+    "allemagne / france"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 432,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "archive"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "archive",
+    "canada"
+   ],
+   "affinites": [
+    36,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 432,
+   "univers": "cinema",
+   "esthetique": [
+    "noir",
+    "années 90"
+   ],
+   "culture": [
+    "createurs",
+    "romance",
+    "Wong Kar-wai"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "romance",
+    "hong kong"
+   ],
+   "affinites": [
+    36,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 433,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "ski"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "ski",
+    "usa"
+   ],
+   "affinites": [
+    32,
+    4,
+    5
+   ]
+  },
+  {
+   "id": 433,
+   "univers": "cinema",
+   "esthetique": [
+    "gris",
+    "années 70"
+   ],
+   "culture": [
+    "outdoor",
+    "polar",
+    "Jean-Pierre Melville"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "polar",
+    "france"
+   ],
+   "affinites": [
+    32,
+    4,
+    5
+   ]
+  },
+  {
+   "id": 434,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "chaussures",
+    "asymétrie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "asymétrie",
+    "france"
+   ],
+   "affinites": [
+    83,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 434,
+   "univers": "cinema",
+   "esthetique": [
+    "rouge",
+    "années 20"
+   ],
+   "culture": [
+    "chaussures",
+    "drame",
+    "Charlotte Wells"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "drame",
+    "royaume-uni"
+   ],
+   "affinites": [
+    83,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 435,
+   "univers": "cinema",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "drame",
+    "Wim Wenders"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "drame",
+    "japon"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 436,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "science-fiction",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "science",
+    "fiction",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 437,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 438,
+   "univers": "cinema",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 439,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 440,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "polar",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "polar",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 441,
+   "univers": "cinema",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "drame",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 442,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "drame",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 443,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis / suède"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 444,
+   "univers": "cinema",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 445,
+   "univers": "cinema",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "drame",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "drame",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 446,
+   "univers": "cinema",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "thriller",
+    "David Fincher"
+   ],
+   "ambiance": [],
+   "positionnement": "classique",
+   "motsCles": [
+    "thriller",
+    "états-unis"
+   ],
+   "affinites": []
+  },
+  {
+   "id": 447,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hard techno",
+    "techno industrielle",
+    "cologne",
+    "allemagne"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    467,
+    448,
+    474
+   ]
+  },
+  {
+   "id": 448,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hard techno",
+    "pays-bas"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "hard-techno"
+   ],
+   "affinites": [
+    447,
+    474,
+    477
+   ]
+  },
+  {
+   "id": 449,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hip-hop alternatif",
+    "neo-soul",
+    "los angeles",
+    "états-unis"
+   ],
+   "ambiance": [
+    "expérimental",
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "alternative-hip-hop",
+    "neo-soul"
+   ],
+   "affinites": [
+    480,
+    482,
+    483,
+    452
+   ]
+  },
+  {
+   "id": 450,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "cloud rap",
+    "rap underground",
+    "france"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "cloud-rap",
+    "underground-rap"
+   ],
+   "affinites": [
+    458,
+    452,
+    485
+   ]
+  },
+  {
+   "id": 451,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif",
+    "nantes",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    455,
+    480,
+    457
+   ]
+  },
+  {
+   "id": 452,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hip-hop alternatif",
+    "cloud rap",
+    "toulouse",
+    "france"
+   ],
+   "ambiance": [
+    "sombre",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "alternative-hip-hop",
+    "cloud-rap"
+   ],
+   "affinites": [
+    449,
+    458,
+    450
+   ]
+  },
+  {
+   "id": 453,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "rap underground",
+    "drill",
+    "france"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "underground-rap",
+    "drill"
+   ],
+   "affinites": [
+    454,
+    457,
+    482
+   ]
+  },
+  {
+   "id": 454,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "boom bap",
+    "rap underground",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "boom-bap",
+    "underground-rap"
+   ],
+   "affinites": [
+    455,
+    453,
+    456
+   ]
+  },
+  {
+   "id": 455,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "jazz rap",
+    "boom bap",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "calme"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "jazz-rap",
+    "boom-bap"
+   ],
+   "affinites": [
+    454,
+    451,
+    456
+   ]
+  },
+  {
+   "id": 456,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "boom bap",
+    "montreuil",
+    "france"
+   ],
+   "ambiance": [
+    "calme",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "boom-bap"
+   ],
+   "affinites": [
+    455,
+    454,
+    457
+   ]
+  },
+  {
+   "id": 457,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "rap underground",
+    "jazz rap",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "underground-rap",
+    "jazz-rap"
+   ],
+   "affinites": [
+    453,
+    451,
+    482
+   ]
+  },
+  {
+   "id": 458,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "cloud rap",
+    "corbeil-essonnes",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "cloud-rap"
+   ],
+   "affinites": [
+    452,
+    450,
+    461
+   ]
+  },
+  {
+   "id": 459,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hip-hop alternatif",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    460,
+    452,
+    469
+   ]
+  },
+  {
+   "id": 460,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "trap",
+    "hip-hop alternatif",
+    "bruxelles",
+    "belgique"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "trap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    461,
+    459,
+    453
+   ]
+  },
+  {
+   "id": 461,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "trap",
+    "r&b alternatif",
+    "bruxelles",
+    "belgique"
+   ],
+   "ambiance": [
+    "calme",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "trap",
+    "alternative-rnb"
+   ],
+   "affinites": [
+    460,
+    480,
+    458
+   ]
+  },
+  {
+   "id": 462,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "french touch",
+    "house",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    463,
+    465,
+    464
+   ]
+  },
+  {
+   "id": 463,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "french touch",
+    "house",
+    "paris",
+    "france"
+   ],
+   "ambiance": [
+    "euphorique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    462,
+    464,
+    465
+   ]
+  },
+  {
+   "id": 464,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "french touch",
+    "ambient",
+    "versailles",
+    "france"
+   ],
+   "ambiance": [
+    "rêveur",
+    "calme"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "french-touch",
+    "ambient"
+   ],
+   "affinites": [
+    463,
+    486,
+    478
+   ]
+  },
+  {
+   "id": 465,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "french touch",
+    "france"
+   ],
+   "ambiance": [
+    "sombre",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "french-touch"
+   ],
+   "affinites": [
+    462,
+    463,
+    452
+   ]
+  },
+  {
+   "id": 466,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "techno",
+    "house",
+    "france"
+   ],
+   "ambiance": [
+    "hypnotique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "techno",
+    "house"
+   ],
+   "affinites": [
+    470,
+    463,
+    472
+   ]
+  },
+  {
+   "id": 467,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "techno industrielle",
+    "hard techno",
+    "france"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "industrial-techno",
+    "hard-techno"
+   ],
+   "affinites": [
+    447,
+    473,
+    474
+   ]
+  },
+  {
+   "id": 468,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "indie",
+    "post-punk",
+    "biarritz",
+    "france"
+   ],
+   "ambiance": [
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "indie",
+    "post-punk"
+   ],
+   "affinites": [
+    487,
+    469,
+    464
+   ]
+  },
+  {
+   "id": 469,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "pop",
+    "nantes",
+    "france"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "pop"
+   ],
+   "affinites": [
+    468,
+    480,
+    459
+   ]
+  },
+  {
+   "id": 470,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "techno",
+    "techno industrielle",
+    "berlin",
+    "allemagne"
+   ],
+   "ambiance": [
+    "sombre",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    473,
+    466,
+    471
+   ]
+  },
+  {
+   "id": 471,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "breakbeat",
+    "ambient",
+    "munich",
+    "allemagne"
+   ],
+   "ambiance": [
+    "atmosphérique",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "breakbeat",
+    "ambient"
+   ],
+   "affinites": [
+    475,
+    478,
+    476
+   ]
+  },
+  {
+   "id": 472,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "techno",
+    "belgique"
+   ],
+   "ambiance": [
+    "hypnotique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "techno"
+   ],
+   "affinites": [
+    470,
+    474,
+    466
+   ]
+  },
+  {
+   "id": 473,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "techno industrielle",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "agressif",
+    "sombre"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "industrial-techno"
+   ],
+   "affinites": [
+    467,
+    470,
+    474
+   ]
+  },
+  {
+   "id": 474,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hard techno",
+    "techno industrielle",
+    "états-unis"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    447,
+    467,
+    448
+   ]
+  },
+  {
+   "id": 475,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "uk garage",
+    "ambient",
+    "londres",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "uk-garage",
+    "ambient"
+   ],
+   "affinites": [
+    471,
+    479,
+    476
+   ]
+  },
+  {
+   "id": 476,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "uk garage",
+    "breakbeat",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "uk-garage",
+    "breakbeat"
+   ],
+   "affinites": [
+    475,
+    479,
+    477
+   ]
+  },
+  {
+   "id": 477,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "house",
+    "londres",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "house"
+   ],
+   "affinites": [
+    479,
+    476,
+    478
+   ]
+  },
+  {
+   "id": 478,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "ambient",
+    "house",
+    "londres",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "rêveur",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "ambient",
+    "house"
+   ],
+   "affinites": [
+    471,
+    477,
+    464
+   ]
+  },
+  {
+   "id": 479,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "uk garage",
+    "house",
+    "londres",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "uk-garage",
+    "house"
+   ],
+   "affinites": [
+    475,
+    477,
+    476
+   ]
+  },
+  {
+   "id": 480,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "r&b alternatif",
+    "neo-soul",
+    "états-unis"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "alternative-rnb",
+    "neo-soul"
+   ],
+   "affinites": [
+    449,
+    451,
+    461
+   ]
+  },
+  {
+   "id": 481,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif",
+    "compton",
+    "états-unis"
+   ],
+   "ambiance": [
+    "énergique",
+    "expérimental"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    482,
+    484,
+    449
+   ]
+  },
+  {
+   "id": 482,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hip-hop expérimental",
+    "rap underground",
+    "los angeles",
+    "états-unis"
+   ],
+   "ambiance": [
+    "sombre",
+    "expérimental"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "experimental-hip-hop",
+    "underground-rap"
+   ],
+   "affinites": [
+    449,
+    457,
+    453
+   ]
+  },
+  {
+   "id": 483,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "house",
+    "r&b alternatif",
+    "montréal",
+    "canada"
+   ],
+   "ambiance": [
+    "calme",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "house",
+    "alternative-rnb"
+   ],
+   "affinites": [
+    449,
+    477,
+    480
+   ]
+  },
+  {
+   "id": 484,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "hip-hop alternatif",
+    "jazz rap",
+    "londres",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "alternative-hip-hop",
+    "jazz-rap"
+   ],
+   "affinites": [
+    481,
+    449,
+    487
+   ]
+  },
+  {
+   "id": 485,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "cloud rap",
+    "hyperpop",
+    "stockholm",
+    "suède"
+   ],
+   "ambiance": [
+    "rêveur",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "cloud-rap",
+    "hyperpop"
+   ],
+   "affinites": [
+    458,
+    450,
+    486
+   ]
+  },
+  {
+   "id": 486,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "shoegaze",
+    "reading",
+    "royaume-uni"
+   ],
+   "ambiance": [
+    "rêveur",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "shoegaze"
+   ],
+   "affinites": [
+    464,
+    485,
+    487
+   ]
+  },
+  {
+   "id": 487,
+   "univers": "musique",
+   "esthetique": [],
+   "culture": [
+    "post-punk",
+    "indie",
+    "dublin",
+    "irlande"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "artiste",
+    "post-punk",
+    "indie"
+   ],
+   "affinites": [
+    468,
+    486,
+    484
+   ]
+  },
+  {
+   "id": 488,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    489,
+    526,
+    536,
+    447
+   ]
+  },
+  {
+   "id": 489,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    488,
+    527,
+    537,
+    447
+   ]
+  },
+  {
+   "id": 490,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    489,
+    538,
+    531,
+    447
+   ]
+  },
+  {
+   "id": 491,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "single",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    492,
+    488,
+    526,
+    447
+   ]
+  },
+  {
+   "id": 492,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "single",
+    "hard-techno"
+   ],
+   "affinites": [
+    493,
+    491,
+    536,
+    448
+   ]
+  },
+  {
+   "id": 493,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "single",
+    "hard-techno"
+   ],
+   "affinites": [
+    494,
+    492,
+    538,
+    448
+   ]
+  },
+  {
+   "id": 494,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "single",
+    "hard-techno"
+   ],
+   "affinites": [
+    493,
+    491,
+    537,
+    448
+   ]
+  },
+  {
+   "id": 495,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "expérimental",
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "neo-soul"
+   ],
+   "affinites": [
+    496,
+    506,
+    546,
+    449
+   ]
+  },
+  {
+   "id": 496,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "expérimental",
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "neo-soul"
+   ],
+   "affinites": [
+    495,
+    497,
+    509,
+    449
+   ]
+  },
+  {
+   "id": 497,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "expérimental",
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "neo-soul"
+   ],
+   "affinites": [
+    498,
+    544,
+    548,
+    449
+   ]
+  },
+  {
+   "id": 498,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "expérimental",
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "neo-soul"
+   ],
+   "affinites": [
+    497,
+    545,
+    549,
+    449
+   ]
+  },
+  {
+   "id": 499,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "cloud rap",
+    "rap underground"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "cloud-rap",
+    "underground-rap"
+   ],
+   "affinites": [
+    500,
+    513,
+    506,
+    450
+   ]
+  },
+  {
+   "id": 500,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "cloud rap",
+    "rap underground"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "cloud-rap",
+    "underground-rap"
+   ],
+   "affinites": [
+    499,
+    501,
+    550,
+    450
+   ]
+  },
+  {
+   "id": 501,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "cloud rap",
+    "rap underground"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "cloud-rap",
+    "underground-rap"
+   ],
+   "affinites": [
+    500,
+    507,
+    514,
+    450
+   ]
+  },
+  {
+   "id": 502,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    504,
+    510,
+    544,
+    451
+   ]
+  },
+  {
+   "id": 503,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    502,
+    512,
+    511,
+    451
+   ]
+  },
+  {
+   "id": 504,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    505,
+    510,
+    545,
+    451
+   ]
+  },
+  {
+   "id": 505,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    504,
+    512,
+    510,
+    451
+   ]
+  },
+  {
+   "id": 506,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "cloud rap"
+   ],
+   "ambiance": [
+    "sombre",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "cloud-rap"
+   ],
+   "affinites": [
+    507,
+    495,
+    513,
+    452
+   ]
+  },
+  {
+   "id": 507,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "cloud rap"
+   ],
+   "ambiance": [
+    "sombre",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "cloud-rap"
+   ],
+   "affinites": [
+    506,
+    514,
+    501,
+    452
+   ]
+  },
+  {
+   "id": 508,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "rap underground",
+    "drill"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "underground-rap",
+    "drill"
+   ],
+   "affinites": [
+    509,
+    512,
+    547,
+    453
+   ]
+  },
+  {
+   "id": 509,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "boom bap",
+    "rap underground"
+   ],
+   "ambiance": [
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "boom-bap",
+    "underground-rap"
+   ],
+   "affinites": [
+    510,
+    508,
+    511,
+    454
+   ]
+  },
+  {
+   "id": 510,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "jazz rap",
+    "boom bap"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "calme"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "jazz-rap",
+    "boom-bap"
+   ],
+   "affinites": [
+    509,
+    511,
+    504,
+    455
+   ]
+  },
+  {
+   "id": 511,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "boom bap"
+   ],
+   "ambiance": [
+    "calme",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "boom-bap"
+   ],
+   "affinites": [
+    510,
+    512,
+    509,
+    456
+   ]
+  },
+  {
+   "id": 512,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "rap underground",
+    "jazz rap"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "underground-rap",
+    "jazz-rap"
+   ],
+   "affinites": [
+    508,
+    547,
+    505,
+    457
+   ]
+  },
+  {
+   "id": 513,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "cloud rap"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "cloud-rap"
+   ],
+   "affinites": [
+    514,
+    506,
+    499,
+    458
+   ]
+  },
+  {
+   "id": 514,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "cloud rap"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "cloud-rap"
+   ],
+   "affinites": [
+    513,
+    507,
+    550,
+    458
+   ]
+  },
+  {
+   "id": 515,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    516,
+    517,
+    530,
+    459
+   ]
+  },
+  {
+   "id": 516,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    515,
+    509,
+    506,
+    459
+   ]
+  },
+  {
+   "id": 517,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "trap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "trap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    518,
+    515,
+    508,
+    460
+   ]
+  },
+  {
+   "id": 518,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "trap",
+    "r&b alternatif"
+   ],
+   "ambiance": [
+    "calme",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "trap",
+    "alternative-rnb"
+   ],
+   "affinites": [
+    517,
+    544,
+    513,
+    461
+   ]
+  },
+  {
+   "id": 519,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "french touch",
+    "house"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    520,
+    521,
+    524,
+    462
+   ]
+  },
+  {
+   "id": 520,
+   "univers": "musique",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "french touch",
+    "house"
+   ],
+   "ambiance": [
+    "énergique",
+    "euphorique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    519,
+    524,
+    522,
+    462
+   ]
+  },
+  {
+   "id": 521,
+   "univers": "musique",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "french touch",
+    "house"
+   ],
+   "ambiance": [
+    "euphorique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    522,
+    519,
+    523,
+    463
+   ]
+  },
+  {
+   "id": 522,
+   "univers": "musique",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "french touch",
+    "house"
+   ],
+   "ambiance": [
+    "euphorique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch",
+    "house"
+   ],
+   "affinites": [
+    521,
+    525,
+    520,
+    463
+   ]
+  },
+  {
+   "id": 523,
+   "univers": "musique",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "french touch",
+    "ambient"
+   ],
+   "ambiance": [
+    "rêveur",
+    "calme"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch",
+    "ambient"
+   ],
+   "affinites": [
+    521,
+    551,
+    542,
+    464
+   ]
+  },
+  {
+   "id": 524,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "french touch"
+   ],
+   "ambiance": [
+    "sombre",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "french-touch"
+   ],
+   "affinites": [
+    520,
+    521,
+    506,
+    465
+   ]
+  },
+  {
+   "id": 525,
+   "univers": "musique",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "techno",
+    "house"
+   ],
+   "ambiance": [
+    "hypnotique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "techno",
+    "house"
+   ],
+   "affinites": [
+    522,
+    531,
+    533,
+    466
+   ]
+  },
+  {
+   "id": 526,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "techno industrielle",
+    "hard techno"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "industrial-techno",
+    "hard-techno"
+   ],
+   "affinites": [
+    488,
+    535,
+    536,
+    467
+   ]
+  },
+  {
+   "id": 527,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno industrielle",
+    "hard techno"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "industrial-techno",
+    "hard-techno"
+   ],
+   "affinites": [
+    528,
+    535,
+    489,
+    467
+   ]
+  },
+  {
+   "id": 528,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno industrielle",
+    "hard techno"
+   ],
+   "ambiance": [
+    "sombre",
+    "mélancolique",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "industrial-techno",
+    "hard-techno"
+   ],
+   "affinites": [
+    527,
+    531,
+    490,
+    467
+   ]
+  },
+  {
+   "id": 529,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "indie",
+    "post-punk"
+   ],
+   "ambiance": [
+    "rêveur",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "indie",
+    "post-punk"
+   ],
+   "affinites": [
+    552,
+    530,
+    523,
+    468
+   ]
+  },
+  {
+   "id": 530,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "pop"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "pop"
+   ],
+   "affinites": [
+    529,
+    515,
+    544,
+    469
+   ]
+  },
+  {
+   "id": 531,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    535,
+    525,
+    532,
+    470
+   ]
+  },
+  {
+   "id": 532,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "breakbeat",
+    "ambient"
+   ],
+   "ambiance": [
+    "atmosphérique",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "breakbeat",
+    "ambient"
+   ],
+   "affinites": [
+    539,
+    542,
+    540,
+    471
+   ]
+  },
+  {
+   "id": 533,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno"
+   ],
+   "ambiance": [
+    "hypnotique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "techno"
+   ],
+   "affinites": [
+    534,
+    531,
+    525,
+    472
+   ]
+  },
+  {
+   "id": 534,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno"
+   ],
+   "ambiance": [
+    "hypnotique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "mixtape",
+    "techno"
+   ],
+   "affinites": [
+    533,
+    535,
+    536,
+    472
+   ]
+  },
+  {
+   "id": 535,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "agressif",
+    "sombre"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "industrial-techno"
+   ],
+   "affinites": [
+    527,
+    531,
+    536,
+    473
+   ]
+  },
+  {
+   "id": 536,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    537,
+    488,
+    535,
+    474
+   ]
+  },
+  {
+   "id": 537,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    536,
+    538,
+    489,
+    474
+   ]
+  },
+  {
+   "id": 538,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hard techno",
+    "techno industrielle"
+   ],
+   "ambiance": [
+    "sombre",
+    "agressif"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "ep",
+    "hard-techno",
+    "industrial-techno"
+   ],
+   "affinites": [
+    537,
+    490,
+    494,
+    474
+   ]
+  },
+  {
+   "id": 539,
+   "univers": "musique",
+   "esthetique": [
+    "années 00"
+   ],
+   "culture": [
+    "uk garage",
+    "ambient"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "uk-garage",
+    "ambient"
+   ],
+   "affinites": [
+    532,
+    543,
+    540,
+    475
+   ]
+  },
+  {
+   "id": 540,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "uk garage",
+    "breakbeat"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "uk-garage",
+    "breakbeat"
+   ],
+   "affinites": [
+    539,
+    543,
+    541,
+    476
+   ]
+  },
+  {
+   "id": 541,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "house"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "house"
+   ],
+   "affinites": [
+    543,
+    540,
+    542,
+    477
+   ]
+  },
+  {
+   "id": 542,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "ambient",
+    "house"
+   ],
+   "ambiance": [
+    "rêveur",
+    "hypnotique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "ambient",
+    "house"
+   ],
+   "affinites": [
+    523,
+    532,
+    541,
+    478
+   ]
+  },
+  {
+   "id": 543,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "uk garage",
+    "house"
+   ],
+   "ambiance": [
+    "euphorique",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "uk-garage",
+    "house"
+   ],
+   "affinites": [
+    539,
+    541,
+    540,
+    479
+   ]
+  },
+  {
+   "id": 544,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "r&b alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-rnb",
+    "neo-soul"
+   ],
+   "affinites": [
+    545,
+    497,
+    504,
+    480
+   ]
+  },
+  {
+   "id": 545,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "r&b alternatif",
+    "neo-soul"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "rêveur"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-rnb",
+    "neo-soul"
+   ],
+   "affinites": [
+    544,
+    498,
+    518,
+    480
+   ]
+  },
+  {
+   "id": 546,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "jazz rap",
+    "hip-hop alternatif"
+   ],
+   "ambiance": [
+    "énergique",
+    "expérimental"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "jazz-rap",
+    "alternative-hip-hop"
+   ],
+   "affinites": [
+    549,
+    547,
+    495,
+    481
+   ]
+  },
+  {
+   "id": 547,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "hip-hop expérimental",
+    "rap underground"
+   ],
+   "ambiance": [
+    "sombre",
+    "expérimental"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "experimental-hip-hop",
+    "underground-rap"
+   ],
+   "affinites": [
+    512,
+    508,
+    546,
+    482
+   ]
+  },
+  {
+   "id": 548,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "house",
+    "r&b alternatif"
+   ],
+   "ambiance": [
+    "calme",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "house",
+    "alternative-rnb"
+   ],
+   "affinites": [
+    497,
+    541,
+    545,
+    483
+   ]
+  },
+  {
+   "id": 549,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "hip-hop alternatif",
+    "jazz rap"
+   ],
+   "ambiance": [
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "alternative-hip-hop",
+    "jazz-rap"
+   ],
+   "affinites": [
+    546,
+    498,
+    552,
+    484
+   ]
+  },
+  {
+   "id": 550,
+   "univers": "musique",
+   "esthetique": [
+    "années 10"
+   ],
+   "culture": [
+    "cloud rap",
+    "hyperpop"
+   ],
+   "ambiance": [
+    "rêveur",
+    "mélancolique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "cloud-rap",
+    "hyperpop"
+   ],
+   "affinites": [
+    514,
+    500,
+    551,
+    485
+   ]
+  },
+  {
+   "id": 551,
+   "univers": "musique",
+   "esthetique": [
+    "années 90"
+   ],
+   "culture": [
+    "shoegaze"
+   ],
+   "ambiance": [
+    "rêveur",
+    "atmosphérique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "shoegaze"
+   ],
+   "affinites": [
+    523,
+    550,
+    552,
+    486
+   ]
+  },
+  {
+   "id": 552,
+   "univers": "musique",
+   "esthetique": [
+    "années 20"
+   ],
+   "culture": [
+    "post-punk",
+    "indie"
+   ],
+   "ambiance": [
+    "mélancolique",
+    "énergique"
+   ],
+   "positionnement": "",
+   "motsCles": [
+    "album",
+    "post-punk",
+    "indie"
+   ],
+   "affinites": [
+    529,
+    551,
+    549,
+    487
+   ]
+  }
+ ]
+}
