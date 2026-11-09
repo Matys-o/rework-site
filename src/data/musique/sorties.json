@@ -1082,84 +1082,6 @@
     ]
   },
   {
-    "id": 515,
-    "slug": "lomepal-jeannine",
-    "titre": "Jeannine",
-    "type": "album",
-    "artistes": [
-      459
-    ],
-    "annee": 2018,
-    "label": "pineale",
-    "genres": [
-      "alternative-hip-hop"
-    ],
-    "moods": [
-      "melancholic",
-      "energetic"
-    ],
-    "description": "Un album sur la folie et la famille, nommé d'après sa grand-mère, entre rap, rock et chanson.",
-    "cover": "/images/music/sorties/lomepal-jeannine.webp",
-    "imgSource": "https://cdn-images.dzcdn.net/images/cover/a3fe9416859bed917f91aaa720aab1a5/1000x1000-000000-80-0-0.jpg",
-    "liens": {
-      "deezer": "https://www.deezer.com/album/78191942"
-    },
-    "addedAt": "2026-11-09",
-    "proches": [
-      {
-        "id": 516,
-        "raison": "Le premier album, plus énergique et plus insouciant."
-      },
-      {
-        "id": 517,
-        "raison": "Deux albums qui ont fait entrer l'introspection dans le rap français grand public."
-      },
-      {
-        "id": 530,
-        "raison": "Une même pop française qui parle de soi sans détour."
-      }
-    ]
-  },
-  {
-    "id": 516,
-    "slug": "lomepal-flip",
-    "titre": "FLIP",
-    "type": "album",
-    "artistes": [
-      459
-    ],
-    "annee": 2017,
-    "label": "pineale",
-    "genres": [
-      "alternative-hip-hop"
-    ],
-    "moods": [
-      "melancholic",
-      "energetic"
-    ],
-    "description": "Le premier album de Lomepal, plein d'énergie, où il raconte le skate, l'amour et le doute.",
-    "cover": "/images/music/sorties/lomepal-flip.webp",
-    "imgSource": "https://cdn-images.dzcdn.net/images/cover/9f445e8b1e26b075a68f26e6c3c227b6/1000x1000-000000-80-0-0.jpg",
-    "liens": {
-      "deezer": "https://www.deezer.com/album/65413892"
-    },
-    "addedAt": "2026-11-09",
-    "proches": [
-      {
-        "id": 515,
-        "raison": "Le second album, plus sombre et plus familial."
-      },
-      {
-        "id": 509,
-        "raison": "Le même rap technique et décomplexé de la fin des années 2010."
-      },
-      {
-        "id": 506,
-        "raison": "Une autre façon de mêler rap et récit personnel."
-      }
-    ]
-  },
-  {
     "id": 517,
     "slug": "damso-ipseite",
     "titre": "Ipséité",
@@ -1188,10 +1110,6 @@
       {
         "id": 518,
         "raison": "Deux rappeurs belges qui ont imposé leur son en France à la même époque."
-      },
-      {
-        "id": 515,
-        "raison": "Le même rap introspectif devenu grand public."
       },
       {
         "id": 508,
@@ -1718,10 +1636,6 @@
       {
         "id": 529,
         "raison": "La même scène française, plus rock et plus psychédélique."
-      },
-      {
-        "id": 515,
-        "raison": "Une même façon de parler de soi en français."
       },
       {
         "id": 544,

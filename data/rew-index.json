@@ -18064,78 +18064,6 @@
    "_ia": true
   },
   {
-   "id": 515,
-   "univers": "musique",
-   "esthetique": [
-    "années 10",
-    "folie",
-    "famille"
-   ],
-   "culture": [
-    "hip-hop alternatif",
-    "rap",
-    "rock",
-    "chanson"
-   ],
-   "ambiance": [
-    "mélancolique",
-    "énergique",
-    "intime",
-    "éclectique"
-   ],
-   "positionnement": "pointu",
-   "motsCles": [
-    "album",
-    "alternative-hip-hop",
-    "jeannine",
-    "rap rock",
-    "chanson française",
-    "album 2018"
-   ],
-   "affinites": [
-    516,
-    517,
-    530,
-    459
-   ],
-   "_ia": true
-  },
-  {
-   "id": 516,
-   "univers": "musique",
-   "esthetique": [
-    "années 10",
-    "skate",
-    "énergique"
-   ],
-   "culture": [
-    "hip-hop alternatif",
-    "rap français",
-    "skate"
-   ],
-   "ambiance": [
-    "mélancolique",
-    "énergique",
-    "doux-amer"
-   ],
-   "positionnement": "accessible",
-   "motsCles": [
-    "album",
-    "alternative-hip-hop",
-    "lomepal",
-    "flip",
-    "rap skate",
-    "premier album"
-   ],
-   "affinites": [
-    515,
-    509,
-    506,
-    459
-   ],
-   "_ia": true
-  },
-  {
    "id": 517,
    "univers": "musique",
    "esthetique": [
@@ -18166,7 +18094,6 @@
    ],
    "affinites": [
     518,
-    515,
     508,
     460
    ],
@@ -18664,7 +18591,6 @@
    ],
    "affinites": [
     529,
-    515,
     544,
     469
    ],
