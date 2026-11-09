@@ -298,7 +298,7 @@
     "uk"
    ],
    "affinites": [
-    425,
+    559,
     1,
     2
    ]
@@ -686,7 +686,7 @@
     "usa"
    ],
    "affinites": [
-    433,
+    567,
     4,
     5
    ]
@@ -749,7 +749,7 @@
     "allemagne"
    ],
    "affinites": [
-    422,
+    556,
     29,
     30
    ]
@@ -771,7 +771,7 @@
     "canada"
    ],
    "affinites": [
-    432,
+    566,
     18,
     19
    ]
@@ -1776,7 +1776,7 @@
     "france"
    ],
    "affinites": [
-    434,
+    568,
     29,
     30
    ]
@@ -2017,7 +2017,7 @@
     "france"
    ],
    "affinites": [
-    420,
+    554,
     18,
     19
    ]
@@ -8863,35 +8863,11 @@
   },
   {
    "id": 419,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "street",
-    "tapisserie"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "tapisserie",
-    "france"
-   ],
-   "affinites": [
-    426,
-    427,
-    428
-   ]
-  },
-  {
-   "id": 419,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 70"
    ],
    "culture": [
-    "street",
     "science-fiction",
     "Andreï Tarkovski"
    ],
@@ -8902,43 +8878,15 @@
     "fiction",
     "urss"
    ],
-   "affinites": [
-    426,
-    427,
-    428
-   ]
-  },
-  {
-   "id": 420,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "createurs",
-    "broderie"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "broderie",
-    "france"
-   ],
-   "affinites": [
-    94,
-    18,
-    19
-   ]
+   "affinites": []
   },
   {
    "id": 420,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 00"
    ],
    "culture": [
-    "createurs",
     "romance",
     "Wong Kar-wai"
    ],
@@ -8948,43 +8896,15 @@
     "romance",
     "hong kong"
    ],
-   "affinites": [
-    94,
-    18,
-    19
-   ]
-  },
-  {
-   "id": 421,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "accessoires",
-    "bonnets"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "bonnets",
-    "hong kong"
-   ],
-   "affinites": [
-    31,
-    91,
-    92
-   ]
+   "affinites": []
   },
   {
    "id": 421,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 60"
    ],
    "culture": [
-    "accessoires",
     "science-fiction",
     "Stanley Kubrick"
    ],
@@ -8995,43 +8915,15 @@
     "fiction",
     "royaume-uni"
    ],
-   "affinites": [
-    31,
-    91,
-    92
-   ]
-  },
-  {
-   "id": 422,
-   "univers": "mode",
-   "esthetique": [
-    "blanc"
-   ],
-   "culture": [
-    "chaussures",
-    "sneakers"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "sneakers",
-    "allemagne"
-   ],
-   "affinites": [
-    35,
-    29,
-    30
-   ]
+   "affinites": []
   },
   {
    "id": 422,
    "univers": "cinema",
    "esthetique": [
-    "blanc",
     "années 90"
    ],
    "culture": [
-    "chaussures",
     "polar",
     "Quentin Tarantino"
    ],
@@ -9041,44 +8933,15 @@
     "polar",
     "états-unis"
    ],
-   "affinites": [
-    35,
-    29,
-    30
-   ]
-  },
-  {
-   "id": 423,
-   "univers": "mode",
-   "esthetique": [
-    "vert"
-   ],
-   "culture": [
-    "street",
-    "art brodé"
-   ],
-   "ambiance": [],
-   "positionnement": "premium",
-   "motsCles": [
-    "art",
-    "brodé",
-    "autriche"
-   ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
+   "affinites": []
   },
   {
    "id": 423,
    "univers": "cinema",
    "esthetique": [
-    "vert",
     "années 70"
    ],
    "culture": [
-    "street",
     "thriller",
     "Martin Scorsese"
    ],
@@ -9088,43 +8951,15 @@
     "thriller",
     "états-unis"
    ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
-  },
-  {
-   "id": 424,
-   "univers": "tech",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "son",
-    "écouteurs"
-   ],
-   "ambiance": [],
-   "positionnement": "accessible",
-   "motsCles": [
-    "écouteurs",
-    "france"
-   ],
-   "affinites": [
-    188,
-    198,
-    199
-   ]
+   "affinites": []
   },
   {
    "id": 424,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 60"
    ],
    "culture": [
-    "son",
     "thriller",
     "Alfred Hitchcock"
    ],
@@ -9134,43 +8969,15 @@
     "thriller",
     "états-unis"
    ],
-   "affinites": [
-    188,
-    198,
-    199
-   ]
-  },
-  {
-   "id": 425,
-   "univers": "mode",
-   "esthetique": [
-    "rouge"
-   ],
-   "culture": [
-    "street",
-    "ravewear"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "ravewear",
-    "uk"
-   ],
-   "affinites": [
-    14,
-    1,
-    2
-   ]
+   "affinites": []
   },
   {
    "id": 425,
    "univers": "cinema",
    "esthetique": [
-    "rouge",
     "années 00"
    ],
    "culture": [
-    "street",
     "thriller",
     "David Lynch"
    ],
@@ -9180,42 +8987,15 @@
     "thriller",
     "états-unis"
    ],
-   "affinites": [
-    14,
-    1,
-    2
-   ]
-  },
-  {
-   "id": 426,
-   "univers": "mode",
-   "esthetique": [
-    "rouge"
-   ],
-   "culture": [
-    "street"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "street",
-    "france"
-   ],
-   "affinites": [
-    419,
-    427,
-    428
-   ]
+   "affinites": []
   },
   {
    "id": 426,
    "univers": "cinema",
    "esthetique": [
-    "rouge",
     "années 60"
    ],
    "culture": [
-    "street",
     "drame",
     "Ingmar Bergman"
    ],
@@ -9225,43 +9005,15 @@
     "drame",
     "suède"
    ],
-   "affinites": [
-    419,
-    427,
-    428
-   ]
-  },
-  {
-   "id": 427,
-   "univers": "mode",
-   "esthetique": [
-    "noir"
-   ],
-   "culture": [
-    "street",
-    "drops"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "drops",
-    "france"
-   ],
-   "affinites": [
-    419,
-    426,
-    428
-   ]
+   "affinites": []
   },
   {
    "id": 427,
    "univers": "cinema",
    "esthetique": [
-    "noir",
     "années 50"
    ],
    "culture": [
-    "street",
     "drame",
     "François Truffaut"
    ],
@@ -9271,42 +9023,15 @@
     "drame",
     "france"
    ],
-   "affinites": [
-    419,
-    426,
-    428
-   ]
-  },
-  {
-   "id": 428,
-   "univers": "mode",
-   "esthetique": [
-    "bleu"
-   ],
-   "culture": [
-    "street"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "street",
-    "france"
-   ],
-   "affinites": [
-    419,
-    426,
-    427
-   ]
+   "affinites": []
   },
   {
    "id": 428,
    "univers": "cinema",
    "esthetique": [
-    "bleu",
     "années 90"
    ],
    "culture": [
-    "street",
     "animation",
     "Hayao Miyazaki"
    ],
@@ -9316,43 +9041,15 @@
     "animation",
     "japon"
    ],
-   "affinites": [
-    419,
-    426,
-    427
-   ]
-  },
-  {
-   "id": 429,
-   "univers": "mode",
-   "esthetique": [
-    "noir"
-   ],
-   "culture": [
-    "street",
-    "denim"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "denim",
-    "belgique"
-   ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
+   "affinites": []
   },
   {
    "id": 429,
    "univers": "cinema",
    "esthetique": [
-    "noir",
     "années 80"
    ],
    "culture": [
-    "street",
     "animation",
     "Katsuhiro Ōtomo"
    ],
@@ -9362,43 +9059,15 @@
     "animation",
     "japon"
    ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
-  },
-  {
-   "id": 430,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "street",
-    "chicano"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "chicano",
-    "hong kong"
-   ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
+   "affinites": []
   },
   {
    "id": 430,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 90"
    ],
    "culture": [
-    "street",
     "thriller",
     "David Fincher"
    ],
@@ -9408,43 +9077,15 @@
     "thriller",
     "états-unis"
    ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
-  },
-  {
-   "id": 431,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "street",
-    "distressed"
-   ],
-   "ambiance": [],
-   "positionnement": "premium",
-   "motsCles": [
-    "distressed",
-    "berlin"
-   ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
+   "affinites": []
   },
   {
    "id": 431,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 80"
    ],
    "culture": [
-    "street",
     "drame",
     "Wim Wenders"
    ],
@@ -9454,43 +9095,15 @@
     "drame",
     "allemagne / france"
    ],
-   "affinites": [
-    1,
-    2,
-    3
-   ]
-  },
-  {
-   "id": 432,
-   "univers": "mode",
-   "esthetique": [
-    "noir"
-   ],
-   "culture": [
-    "createurs",
-    "archive"
-   ],
-   "ambiance": [],
-   "positionnement": "premium",
-   "motsCles": [
-    "archive",
-    "canada"
-   ],
-   "affinites": [
-    36,
-    18,
-    19
-   ]
+   "affinites": []
   },
   {
    "id": 432,
    "univers": "cinema",
    "esthetique": [
-    "noir",
     "années 90"
    ],
    "culture": [
-    "createurs",
     "romance",
     "Wong Kar-wai"
    ],
@@ -9500,43 +9113,15 @@
     "romance",
     "hong kong"
    ],
-   "affinites": [
-    36,
-    18,
-    19
-   ]
-  },
-  {
-   "id": 433,
-   "univers": "mode",
-   "esthetique": [
-    "gris"
-   ],
-   "culture": [
-    "outdoor",
-    "ski"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "ski",
-    "usa"
-   ],
-   "affinites": [
-    32,
-    4,
-    5
-   ]
+   "affinites": []
   },
   {
    "id": 433,
    "univers": "cinema",
    "esthetique": [
-    "gris",
     "années 70"
    ],
    "culture": [
-    "outdoor",
     "polar",
     "Jean-Pierre Melville"
    ],
@@ -9546,43 +9131,15 @@
     "polar",
     "france"
    ],
-   "affinites": [
-    32,
-    4,
-    5
-   ]
-  },
-  {
-   "id": 434,
-   "univers": "mode",
-   "esthetique": [
-    "rouge"
-   ],
-   "culture": [
-    "chaussures",
-    "asymétrie"
-   ],
-   "ambiance": [],
-   "positionnement": "intermédiaire",
-   "motsCles": [
-    "asymétrie",
-    "france"
-   ],
-   "affinites": [
-    83,
-    29,
-    30
-   ]
+   "affinites": []
   },
   {
    "id": 434,
    "univers": "cinema",
    "esthetique": [
-    "rouge",
     "années 20"
    ],
    "culture": [
-    "chaussures",
     "drame",
     "Charlotte Wells"
    ],
@@ -9592,11 +9149,7 @@
     "drame",
     "royaume-uni"
    ],
-   "affinites": [
-    83,
-    29,
-    30
-   ]
+   "affinites": []
   },
   {
    "id": 435,
@@ -12579,6 +12132,357 @@
     551,
     549,
     487
+   ]
+  },
+  {
+   "id": 553,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "tapisserie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "tapisserie",
+    "france"
+   ],
+   "affinites": [
+    560,
+    561,
+    562
+   ]
+  },
+  {
+   "id": 554,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "createurs",
+    "broderie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "broderie",
+    "france"
+   ],
+   "affinites": [
+    94,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 555,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "accessoires",
+    "bonnets"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "bonnets",
+    "hong kong"
+   ],
+   "affinites": [
+    31,
+    91,
+    92
+   ]
+  },
+  {
+   "id": 556,
+   "univers": "mode",
+   "esthetique": [
+    "blanc"
+   ],
+   "culture": [
+    "chaussures",
+    "sneakers"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "sneakers",
+    "allemagne"
+   ],
+   "affinites": [
+    35,
+    29,
+    30
+   ]
+  },
+  {
+   "id": 557,
+   "univers": "mode",
+   "esthetique": [
+    "vert"
+   ],
+   "culture": [
+    "street",
+    "art brodé"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "art",
+    "brodé",
+    "autriche"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 558,
+   "univers": "tech",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "son",
+    "écouteurs"
+   ],
+   "ambiance": [],
+   "positionnement": "accessible",
+   "motsCles": [
+    "écouteurs",
+    "france"
+   ],
+   "affinites": [
+    188,
+    198,
+    199
+   ]
+  },
+  {
+   "id": 559,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "street",
+    "ravewear"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "ravewear",
+    "uk"
+   ],
+   "affinites": [
+    14,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 560,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "france"
+   ],
+   "affinites": [
+    553,
+    561,
+    562
+   ]
+  },
+  {
+   "id": 561,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "drops"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "drops",
+    "france"
+   ],
+   "affinites": [
+    553,
+    560,
+    562
+   ]
+  },
+  {
+   "id": 562,
+   "univers": "mode",
+   "esthetique": [
+    "bleu"
+   ],
+   "culture": [
+    "street"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "street",
+    "france"
+   ],
+   "affinites": [
+    553,
+    560,
+    561
+   ]
+  },
+  {
+   "id": 563,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "street",
+    "denim"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "denim",
+    "belgique"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 564,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "chicano"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "chicano",
+    "hong kong"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 565,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "street",
+    "distressed"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "distressed",
+    "berlin"
+   ],
+   "affinites": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 566,
+   "univers": "mode",
+   "esthetique": [
+    "noir"
+   ],
+   "culture": [
+    "createurs",
+    "archive"
+   ],
+   "ambiance": [],
+   "positionnement": "premium",
+   "motsCles": [
+    "archive",
+    "canada"
+   ],
+   "affinites": [
+    36,
+    18,
+    19
+   ]
+  },
+  {
+   "id": 567,
+   "univers": "mode",
+   "esthetique": [
+    "gris"
+   ],
+   "culture": [
+    "outdoor",
+    "ski"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "ski",
+    "usa"
+   ],
+   "affinites": [
+    32,
+    4,
+    5
+   ]
+  },
+  {
+   "id": 568,
+   "univers": "mode",
+   "esthetique": [
+    "rouge"
+   ],
+   "culture": [
+    "chaussures",
+    "asymétrie"
+   ],
+   "ambiance": [],
+   "positionnement": "intermédiaire",
+   "motsCles": [
+    "asymétrie",
+    "france"
+   ],
+   "affinites": [
+    83,
+    29,
+    30
    ]
   }
  ]
