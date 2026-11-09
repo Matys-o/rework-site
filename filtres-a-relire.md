@@ -3,9 +3,9 @@
 Généré par `node scripts/filtres-relecture.mjs`. Famille et prix se corrigent dans `src/data/attributs.json` (id → [famille, prix]).
 Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €€€ premium · €€€€ luxe. Couleur = calculée depuis l'image (`node scripts/couleurs.mjs`), « — » = pas d'image exploitable.
 
-## Mode (152)
+## Mode (165)
 
-### street (30)
+### street (38)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
@@ -13,40 +13,49 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 90 | ADER Error | €€ | Corée | 2014 | bleu |
 | 7 | Amoses | €€ | Lille | 2016 | bleu |
 | 358 | Andersson Bell | €€ | Séoul | 2014 | beige |
+| 428 | ARNTREAL | €€ | France |  | beige |
 | 13 | Arte Antwerp | €€ | Anvers | 2009 | noir |
 | 419 | Artifice | €€ | France | 2023 | gris |
+| 429 | ATELIER-MO6 | €€ | Belgique |  | noir |
 | 390 | Avnier | €€ | Caen | 2018 | blanc |
 | 76 | Awake NY | €€ | USA | 2012 | rouge |
 | 377 | Brain Dead | €€ | Los Angeles | 2014 | bleu |
 | 3 | Corteiz | €€ | Londres | 2017 | bleu |
 | 77 | Daily Paper | €€ | Pays-Bas | 2012 | bleu |
 | 74 | Dime | €€ | Canada | 2005 | noir |
+| 425 | FERAL | €€ | UK | 2023 | rouge |
+| 426 | Forever Vacation | €€ | France | 2017 | rouge |
 | 1 | Human With Attitude | €€ | Paris | 2016 | gris |
 | 378 | Online Ceramics | €€ | Los Angeles | 2016 | beige |
 | 11 | Palace | €€ | Londres | 2009 | — |
 | 44 | Patta | €€ | Pays-Bas | 2004 | — |
 | 389 | Pigalle | €€ | Paris | 2008 | bleu |
 | 12 | Polar Skate Co | €€ | Suède | 2011 | bleu |
+| 427 | Side Arts | €€ | France |  | noir |
 | 2 | Stüssy | €€ | USA | 1980 | blanc |
+| 430 | Supermade | €€ | Hong Kong | 2021 | gris |
 | 73 | Supreme | €€ | USA | 1994 | — |
 | 373 | Wood Wood | €€ | Copenhague | 2002 | beige |
 | 72 | Bape | €€€ | Japon | 1993 | — |
 | 379 | Cav Empt | €€€ | Tokyo | 2011 | gris |
 | 65 | Heron Preston | €€€ | USA | 2016 | gris |
 | 45 | Kith | €€€ | USA | 2011 | gris |
+| 423 | maezen | €€€ | Autriche | 2021 | vert |
 | 54 | Neighborhood | €€€ | Japon | 1994 | gris |
 | 75 | Noah | €€€ | USA | 2015 | gris |
+| 431 | Ravemore Berlin | €€€ | Berlin | 2021 | gris |
 | 14 | Represent | €€€ | UK | 2011 | gris |
 | 66 | Palm Angels | €€€€ | Italie | 2015 | beige |
 | 68 | Rhude | €€€€ | USA | 2015 | — |
 
-### outdoor (17)
+### outdoor (18)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
 | 32 | Nike ACG | €€ | USA | 1989 | — |
 | 370 | Patagonia | €€ | Ventura | 1973 | vert |
 | 5 | Salomon | €€ | Annecy | 1947 | — |
+| 433 | Snowears | €€ | USA |  | gris |
 | 28 | And Wander | €€€ | Japon | 2011 | beige |
 | 4 | Arc'teryx | €€€ | Canada | 1989 | — |
 | 21 | C.P. Company | €€€ | Italie | 1971 | gris |
@@ -122,7 +131,7 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 53 | WTAPS | €€€ | Japon | 1996 | rouge |
 | 43 | Visvim | €€€€ | Japon | 2001 | rouge |
 
-### createurs (36)
+### createurs (37)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
@@ -145,6 +154,7 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 18 | Needles | €€€ | Japon | 1997 | beige |
 | 380 | Ottolinger | €€€ | Berlin | 2015 | beige |
 | 19 | Our Legacy | €€€ | Suède | 2005 | bleu |
+| 432 | Persona | €€€ | Canada |  | noir |
 | 86 | Post Archive Faction | €€€ | Corée | 2018 | blanc |
 | 376 | Story mfg. | €€€ | Brighton | 2013 | orange |
 | 52 | Undercover | €€€ | Japon | 1990 | gris |
@@ -163,7 +173,7 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 38 | Wales Bonner | €€€€ | Londres | 2014 | — |
 | 42 | Yohji Yamamoto | €€€€ | Japon | 1972 | gris |
 
-### chaussures (20)
+### chaussures (22)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
@@ -171,6 +181,7 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 365 | Vans | € | Anaheim | 1966 | gris |
 | 34 | Asics | €€ | Japon | 1949 | — |
 | 79 | Axel Arigato | €€ | Suède | 2014 | orange |
+| 434 | CAVAL | €€ | France |  | rouge |
 | 363 | Clarks Originals | €€ | Somerset | 1825 | blanc |
 | 364 | Dr. Martens | €€ | Northampton | 1960 | jaune |
 | 78 | Filling Pieces | €€ | Pays-Bas | 2009 | blanc |
@@ -180,6 +191,7 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 361 | On | €€ | Zurich | 2010 | bleu |
 | 82 | Reproduction of Found | €€ | Japon | 2016 | gris |
 | 362 | Veja | €€ | Paris | 2004 | beige |
+| 422 | Vision Sneaker | €€ | Allemagne |  | blanc |
 | 35 | Birkenstock 1774 | €€€ | Allemagne | 1774 | beige |
 | 80 | Common Projects | €€€ | USA | 2004 | gris |
 | 30 | District Vision | €€€ | USA | 2016 | blanc |
@@ -188,12 +200,13 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 81 | Spalwart | €€€ | Suède | 2010 | blanc |
 | 51 | Y-3 | €€€ | Japon | 2002 | gris |
 
-### accessoires (4)
+### accessoires (5)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
 | 91 | Gentle Monster | €€ | Corée | 2011 | gris |
 | 31 | Oakley | €€ | USA | 1975 | — |
+| 421 | seika | €€ | Hong Kong | 2024 | gris |
 | 92 | Ambush | €€€ | Japon | 2008 | beige |
 | 336 | Guerlain | €€€ | Paris | 1828 | orange |
 
@@ -333,12 +346,13 @@ Prix = estimation éditoriale : € accessible · €€ milieu de gamme · €�
 | 155 | Unopiù | €€€ | Italie | 1978 | gris |
 | 156 | Kettal | €€€€ | Espagne | 1966 | beige |
 
-## Tech (56)
+## Tech (57)
 
-### son (19)
+### son (20)
 
 | id | Marque | Prix | Origine | Année | Couleur |
 |---|---|---|---|---|---|
+| 424 | KROVA | € | France |  | gris |
 | 212 | Serato | € | NZ | 1998 | noir |
 | 211 | Ableton | €€ | Allemagne | 1999 | gris |
 | 208 | Akai | €€ | Japon | 1946 | gris |
