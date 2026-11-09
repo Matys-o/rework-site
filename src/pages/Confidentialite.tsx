@@ -34,6 +34,11 @@ const SECTIONS = [
       "Tant que vous restez inscrit·e. Après votre désinscription, l'adresse ne reste que sur la liste de blocage de Brevo, pour qu'on ne vous écrive plus jamais.",
   },
   {
+    titre: "REW, le curateur",
+    texte:
+      "Quand vous écrivez à REW, votre message et le début de la conversation sont envoyés à Anthropic, le fournisseur de l'IA, uniquement pour générer la réponse. rework° ne conserve ni ne journalise vos messages : la conversation reste dans votre navigateur et disparaît avec « Nouvelle conversation » ou à la fermeture de l'onglet. N'y écrivez pas d'informations personnelles.",
+  },
+  {
     titre: "Mesure d'audience",
     texte:
       "Le site compte ses visites avec Umami, sans cookies : ni votre adresse IP ni rien qui permette de vous identifier n'est conservé. On voit seulement des totaux : les pages lues, le pays, le type d'appareil, et le site d'où l'on arrive.",

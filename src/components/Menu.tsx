@@ -1,3 +1,5 @@
+import { rew } from "../lib/rew/client";
+import { Orbe } from "./Rew/CarteRew";
 import { useEffect, useRef } from "react";
 import { DOMAINES, TOTAL_ENTREES, TOTAL_MARQUES } from "../data/brands";
 import { ARTISTES } from "../data/musique";
@@ -15,6 +17,7 @@ const ENTREES = [
   { label: "Musique", href: LIENS.musique, compteur: String(ARTISTES.length) },
   { label: "Trios", href: LIENS.trios, compteur: "×3" },
   { label: "À propos", href: LIENS.manifeste, compteur: "—" },
+  { label: "REW", href: "/rew", compteur: "" },
 ];
 
 type MenuProps = {
@@ -106,13 +109,19 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
                 <li key={e.label} {...entree(i)}>
                   <a
                     href={e.href}
-                    onClick={onFermer}
+                    onClick={(ev) => {
+                      onFermer();
+                      if (e.href === "/rew") {
+                        ev.preventDefault();
+                        rew.ouvrir();
+                      }
+                    }}
                     className="group inline-flex items-start gap-2.5 text-encre md:gap-5"
                   >
                     <span className="font-display text-[clamp(44px,14vw,132px)] leading-[0.9] font-extrabold tracking-[-0.04em] [font-variation-settings:'opsz'_96] transition-colors duration-240 ease-rw group-hover:text-signal md:leading-[0.88] md:tracking-[-0.05em]">
                       {e.label}
                     </span>
-                    <span className="t-cote-s md:t-cote-m text-signal">{e.compteur}</span>
+                    {e.href === "/rew" ? <Orbe taille={22} className="mt-2 md:mt-4 md:size-9!" /> : <span className="t-cote-s md:t-cote-m text-signal">{e.compteur}</span>}
                   </a>
                 </li>
               ))}

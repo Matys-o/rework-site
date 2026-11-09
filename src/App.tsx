@@ -10,6 +10,8 @@ import { Defilement } from "./components/Defilement";
 import { FpsMetre } from "./components/FpsMetre";
 import IntroRework from "./components/IntroRework/IntroRework";
 import { Navigation } from "./components/Navigation";
+import { BoutonRewMobile, RouteRew } from "./components/Rew/RouteRew";
+import { PanneauRew } from "./components/Rew/PanneauRew";
 import Accueil from "./pages/Accueil";
 import Composants from "./pages/Composants";
 import Confidentialite, { InscriptionConfirmee } from "./pages/Confidentialite";
@@ -31,6 +33,7 @@ function Pages() {
       <Route path="/marque/:slug" element={<MarquePage />} />
       <Route path="/manifeste" element={<Manifeste />} />
       <Route path="/hasard" element={<Hasard />} />
+      <Route path="/rew" element={<RouteRew />} />
       <Route path="/musique" element={<MusiqueAccueil />} />
       <Route path="/musique/artistes" element={<MusiqueArtistes />} />
       <Route path="/musique/albums" element={<MusiqueAlbums />} />
@@ -56,6 +59,8 @@ export default function App() {
         <Defilement />
         <Navigation />
         <Pages />
+        <PanneauRew />
+        <BoutonRewMobile />
         <FpsMetre />
         {/* Intro animée : une seule fois, hors des routes */}
         <IntroRework />

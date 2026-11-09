@@ -64,7 +64,6 @@ export const onRequestPost = async ({ request, env }: Contexte) => {
     origine !== SITE_URL
   )
     return erreur(403, "invalide");
-  if (!env.ANTHROPIC_API_KEY) return erreur(503, "indisponible");
 
   let corps: { messages?: unknown; profil?: unknown };
   try {
@@ -82,6 +81,7 @@ export const onRequestPost = async ({ request, env }: Contexte) => {
   const messages = historiquePropre(brut);
   if (!messages || !messages[messages.length - 1].content.trim())
     return erreur(400, "invalide");
+  if (!env.ANTHROPIC_API_KEY) return erreur(503, "indisponible");
 
   if (
     depasse(await empreinte(request.headers.get("cf-connecting-ip") ?? "local"))

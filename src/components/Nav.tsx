@@ -1,3 +1,5 @@
+import { rew } from "../lib/rew/client";
+import { Orbe } from "./Rew/CarteRew";
 import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router";
@@ -110,6 +112,19 @@ export function Nav({ className, onChercher, surSombre = false, flou = false }: 
                 </Lien>
               </li>
             ))}
+            <li>
+              <Lien
+                href="/rew"
+                actif={pathname === "/rew"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  rew.ouvrir();
+                }}
+                className="inline-flex items-center gap-1.5"
+              >
+                REW <Orbe taille={11} />
+              </Lien>
+            </li>
           </ul>
 
           <div className="flex items-center gap-2.5">

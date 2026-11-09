@@ -15,3 +15,6 @@ discord/.env
 discord/.env.*
 !discord/.env.example
 discord/node_modules/
+
+# Secrets locaux de wrangler pages dev (ANTHROPIC_API_KEY…)
+.dev.vars
