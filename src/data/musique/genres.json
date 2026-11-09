@@ -1,0 +1,184 @@
+[
+  {
+    "id": "rap",
+    "slug": "rap",
+    "nom": "Rap & Hip-Hop",
+    "parent": null,
+    "description": "Né dans le Bronx dans les années 70, le hip-hop repose sur le rythme et la parole. Aujourd'hui, c'est le genre qui se réinvente le plus vite."
+  },
+  {
+    "id": "alternative-hip-hop",
+    "slug": "alternative-hip-hop",
+    "nom": "Hip-hop alternatif",
+    "parent": "rap",
+    "description": "Un rap qui sort des codes : instrumentaux inattendus, emprunts à la soul, au rock ou à l'électronique, et une identité artistique forte."
+  },
+  {
+    "id": "underground-rap",
+    "slug": "underground-rap",
+    "nom": "Rap underground",
+    "parent": "rap",
+    "description": "Un rap qui avance hors des circuits grand public, souvent plus dense, plus sombre et plus libre dans la forme."
+  },
+  {
+    "id": "cloud-rap",
+    "slug": "cloud-rap",
+    "nom": "Cloud rap",
+    "parent": "rap",
+    "description": "Des productions planantes, des voix chargées d'effets et une ambiance de rêve éveillé. L'atmosphère passe avant la punchline."
+  },
+  {
+    "id": "jazz-rap",
+    "slug": "jazz-rap",
+    "nom": "Jazz rap",
+    "parent": "rap",
+    "description": "Le rap posé sur des samples et des accords jazz : contrebasses, cuivres feutrés, piano, et souvent une écriture soignée."
+  },
+  {
+    "id": "trap",
+    "slug": "trap",
+    "nom": "Trap",
+    "parent": "rap",
+    "description": "Venue d'Atlanta : charleys rapides, basses 808 profondes et refrains mélodiques, souvent avec de l'autotune."
+  },
+  {
+    "id": "drill",
+    "slug": "drill",
+    "nom": "Drill",
+    "parent": "rap",
+    "description": "Née à Chicago puis réinventée à Londres : un rythme glissant, des basses inquiétantes et un flow froid."
+  },
+  {
+    "id": "experimental-hip-hop",
+    "slug": "experimental-hip-hop",
+    "nom": "Hip-hop expérimental",
+    "parent": "rap",
+    "description": "Un rap qui casse la structure : boucles détraquées, morceaux courts ou bruitistes, voix inattendues."
+  },
+  {
+    "id": "boom-bap",
+    "slug": "boom-bap",
+    "nom": "Boom bap",
+    "parent": "rap",
+    "description": "Le son classique du rap des années 90 : une grosse caisse et une caisse claire bien marquées, et des samples de soul ou de jazz."
+  },
+  {
+    "id": "electronic",
+    "slug": "electronic",
+    "nom": "Électronique",
+    "parent": null,
+    "description": "Toutes les musiques nées des machines : synthés, boîtes à rythmes et samplers, du club à l'écoute au casque."
+  },
+  {
+    "id": "techno",
+    "slug": "techno",
+    "nom": "Techno",
+    "parent": "electronic",
+    "description": "Née à Detroit au milieu des années 80 : une musique répétitive et hypnotique, construite sur un rythme régulier et des sons de machines."
+  },
+  {
+    "id": "hard-techno",
+    "slug": "hard-techno",
+    "nom": "Hard techno",
+    "parent": "techno",
+    "description": "Une techno plus rapide et plus saturée, avec des kicks massifs et des montées pensées pour l'euphorie collective."
+  },
+  {
+    "id": "industrial-techno",
+    "slug": "industrial-techno",
+    "nom": "Techno industrielle",
+    "parent": "techno",
+    "description": "Une techno qui puise dans les sons d'usine : percussions métalliques, distorsion et ambiance de hangar."
+  },
+  {
+    "id": "house",
+    "slug": "house",
+    "nom": "House",
+    "parent": "electronic",
+    "description": "Née à Chicago au début des années 80 : un rythme à quatre temps, des basses rondes et un héritage disco et soul."
+  },
+  {
+    "id": "french-touch",
+    "slug": "french-touch",
+    "nom": "French Touch",
+    "parent": "house",
+    "description": "La house française de la fin des années 90 : samples disco filtrés, basses compressées et mélodies accrocheuses."
+  },
+  {
+    "id": "uk-garage",
+    "slug": "uk-garage",
+    "nom": "UK garage",
+    "parent": "electronic",
+    "description": "Une musique de club anglaise aux rythmes décalés et aux voix découpées, héritée du garage new-yorkais."
+  },
+  {
+    "id": "ambient",
+    "slug": "ambient",
+    "nom": "Ambient",
+    "parent": "electronic",
+    "description": "Une musique d'atmosphère, faite de nappes et de textures, qui s'écoute autant qu'elle s'habite."
+  },
+  {
+    "id": "breakbeat",
+    "slug": "breakbeat",
+    "nom": "Breakbeat",
+    "parent": "electronic",
+    "description": "Une électronique construite sur des rythmes brisés, souvent issus de samples de batterie funk."
+  },
+  {
+    "id": "alternative",
+    "slug": "alternative",
+    "nom": "Alternative & autres",
+    "parent": null,
+    "description": "Tout ce qui se joue entre les cases : R&B, soul, pop, rock indépendant et expérimentations."
+  },
+  {
+    "id": "indie",
+    "slug": "indie",
+    "nom": "Indie",
+    "parent": "alternative",
+    "description": "Le rock et la pop indépendants, souvent produits hors des grandes maisons de disques, avec une liberté de ton."
+  },
+  {
+    "id": "alternative-rnb",
+    "slug": "alternative-rnb",
+    "nom": "R&B alternatif",
+    "parent": "alternative",
+    "description": "Un R&B plus intime et plus libre, qui emprunte à l'électronique et au rap."
+  },
+  {
+    "id": "neo-soul",
+    "slug": "neo-soul",
+    "nom": "Neo-soul",
+    "parent": "alternative",
+    "description": "La soul revisitée depuis les années 90 : accords jazz, grooves souples et voix chaudes."
+  },
+  {
+    "id": "pop",
+    "slug": "pop",
+    "nom": "Pop",
+    "parent": "alternative",
+    "description": "Des chansons construites autour du refrain et de la mélodie, faites pour être partagées."
+  },
+  {
+    "id": "hyperpop",
+    "slug": "hyperpop",
+    "nom": "Hyperpop",
+    "parent": "alternative",
+    "description": "Une pop poussée à l'extrême : voix suraiguës, productions saturées et esthétique née sur Internet."
+  },
+  {
+    "id": "shoegaze",
+    "slug": "shoegaze",
+    "nom": "Shoegaze",
+    "parent": "alternative",
+    "description": "Un rock aux guitares noyées de réverbération et de saturation, où les voix se fondent dans le son."
+  },
+  {
+    "id": "post-punk",
+    "slug": "post-punk",
+    "nom": "Post-punk",
+    "parent": "alternative",
+    "description": "Né après l'explosion punk : un rock tendu, sec et anguleux, souvent sombre et poétique."
+  }
+]

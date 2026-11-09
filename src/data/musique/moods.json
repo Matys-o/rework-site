@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dark",
+    "label": "Sombre"
+  },
+  {
+    "id": "melancholic",
+    "label": "Mélancolique"
+  },
+  {
+    "id": "energetic",
+    "label": "Énergique"
+  },
+  {
+    "id": "hypnotic",
+    "label": "Hypnotique"
+  },
+  {
+    "id": "atmospheric",
+    "label": "Atmosphérique"
+  },
+  {
+    "id": "experimental",
+    "label": "Expérimental"
+  },
+  {
+    "id": "chill",
+    "label": "Calme"
+  },
+  {
+    "id": "aggressive",
+    "label": "Agressif"
+  },
+  {
+    "id": "dreamy",
+    "label": "Rêveur"
+  },
+  {
+    "id": "euphoric",
+    "label": "Euphorique"
+  }
+]

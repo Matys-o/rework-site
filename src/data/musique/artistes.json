@@ -1,0 +1,1770 @@
+[
+  {
+    "id": 447,
+    "slug": "kuko",
+    "nom": "KUKO",
+    "pays": "Allemagne",
+    "ville": "Cologne",
+    "debut": null,
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "labels": [
+      "44-label-group",
+      "krach"
+    ],
+    "description": "Une hard techno lourde mais jamais froide : sous les kicks saturés, KUKO glisse des nappes mélancoliques et des voix d'appel perdu. Le son d'une rave de Cologne vue depuis le bord du dancefloor, à quatre heures du matin.",
+    "image": "/images/music/artistes/kuko.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/cb1a8a1f4fced40cd21d37b2add69451/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/186647907",
+      "apple": "https://music.apple.com/fr/artist/kuko/1649486274"
+    },
+    "proches": [
+      {
+        "id": 467,
+        "raison": "La même tristesse noyée dans l'industriel : des kicks massifs portés par des mélodies d'après-fête."
+      },
+      {
+        "id": 448,
+        "raison": "Deux visages de la nouvelle hard techno européenne, révélés par les réseaux et la voix au premier plan."
+      },
+      {
+        "id": 474,
+        "raison": "Une approche aussi sombre et rituelle de la techno rapide, côté américain."
+      }
+    ],
+    "sorties": [
+      488,
+      489,
+      490,
+      491
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 448,
+    "slug": "winson",
+    "nom": "WINSON",
+    "pays": "Pays-Bas",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "hard-techno"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "labels": [],
+    "description": "Parti de remixes hard techno de tubes pop publiés sur TikTok, WINSON a construit un style à part : des voix très présentes, presque chantées, posées sur une hard techno directe et euphorique, pensée pour les grandes scènes.",
+    "image": "/images/music/artistes/winson.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/b9a0cbdffa10662d2da68c4d70be337d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/9814846"
+    },
+    "proches": [
+      {
+        "id": 447,
+        "raison": "Même génération hard techno, même place donnée aux voix, mais là où KUKO s'assombrit, WINSON cherche l'euphorie."
+      },
+      {
+        "id": 474,
+        "raison": "La hard techno rapide et frontale, avec un sens du drop pensé pour les festivals."
+      },
+      {
+        "id": 477,
+        "raison": "Un même usage de la voix comme moteur émotionnel de la musique de club."
+      }
+    ],
+    "sorties": [
+      492,
+      493,
+      494
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 449,
+    "slug": "tyler-the-creator",
+    "nom": "Tyler, The Creator",
+    "pays": "États-Unis",
+    "ville": "Los Angeles",
+    "debut": null,
+    "genres": [
+      "alternative-hip-hop",
+      "neo-soul"
+    ],
+    "moods": [
+      "experimental",
+      "dreamy",
+      "energetic"
+    ],
+    "labels": [
+      "columbia"
+    ],
+    "description": "Rappeur, producteur et directeur artistique de tout ce qui l'entoure, Tyler fait des albums comme des films à personnages. Accords jazz, synthés saturés et soul rêveuse : chaque disque arrive avec son costume, sa couleur et son univers visuel.",
+    "image": "/images/music/artistes/tyler-the-creator.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/5eceecd683beab6dd901a7931294a121/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1194083",
+      "apple": "https://music.apple.com/fr/artist/tyler-the-creator/420368335"
+    },
+    "proches": [
+      {
+        "id": 480,
+        "raison": "Compagnons de route depuis Odd Future, ils partagent la même soul introspective et les harmonies jazz."
+      },
+      {
+        "id": 482,
+        "raison": "Issus du même collectif, ils ont pris deux chemins : la couleur pour Tyler, l'abstraction pour Earl."
+      },
+      {
+        "id": 483,
+        "raison": "Une même gourmandise pour les grooves soul et les accords chaleureux."
+      },
+      {
+        "id": 452,
+        "raison": "Même idée de l'album comme univers complet, avec personnages, décors et identité visuelle forte."
+      }
+    ],
+    "sorties": [
+      495,
+      496,
+      497,
+      498
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 450,
+    "slug": "ajna",
+    "nom": "Ajna",
+    "pays": "France",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "cloud-rap",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "labels": [
+      "antarch"
+    ],
+    "description": "Un rap de nuit, mélodique et embrumé, où les refrains flottent au-dessus de productions sombres. Ajna avance projet après projet avec une direction artistique tenue, entre mélancolie et envie de s'élever.",
+    "image": "/images/music/artistes/ajna.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/de23d7525952ba5c066c9269c05a94a2/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1197134"
+    },
+    "proches": [
+      {
+        "id": 458,
+        "raison": "La même mélancolie planante, des voix noyées d'effets et un rap pensé comme une atmosphère."
+      },
+      {
+        "id": 452,
+        "raison": "Un univers nocturne construit avec soin, de la production jusqu'aux visuels."
+      },
+      {
+        "id": 485,
+        "raison": "Le cloud rap dans sa version la plus vaporeuse : des mélodies fragiles plutôt que des punchlines."
+      }
+    ],
+    "sorties": [
+      499,
+      500,
+      501
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 451,
+    "slug": "cielbleu",
+    "nom": "Cielbleu",
+    "pays": "France",
+    "ville": "Nantes",
+    "debut": null,
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "labels": [
+      "etincelle",
+      "naive"
+    ],
+    "description": "Le rappeur nantais écrit comme on tient un carnet : des scènes du quotidien, une mélancolie douce, des mots choisis. Ses productions empruntent à la soul et au jazz, entre rap, chanson et spoken word.",
+    "image": "/images/music/artistes/cielbleu.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/96302ee80d600299e4801dca21f2ba22/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/146321412",
+      "apple": "https://music.apple.com/fr/artist/cielbleu/369857170"
+    },
+    "proches": [
+      {
+        "id": 455,
+        "raison": "Le même rap à textes posé sur des boucles jazz, avec un soin du mot qui tient de la chanson."
+      },
+      {
+        "id": 480,
+        "raison": "Une influence revendiquée : la même façon de chanter le spleen sur des accords soul."
+      },
+      {
+        "id": 457,
+        "raison": "Un rap introspectif et brumeux, où l'atmosphère compte autant que le texte."
+      }
+    ],
+    "sorties": [
+      502,
+      503,
+      504,
+      505
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 452,
+    "slug": "laylow",
+    "nom": "Laylow",
+    "pays": "France",
+    "ville": "Toulouse",
+    "debut": null,
+    "genres": [
+      "alternative-hip-hop",
+      "cloud-rap"
+    ],
+    "moods": [
+      "dark",
+      "atmospheric"
+    ],
+    "labels": [
+      "digitalmundo"
+    ],
+    "description": "Le Toulousain construit des albums-concepts où le rap rencontre la science-fiction. Voix filtrées, productions cinématographiques et personnages récurrents : chaque projet ressemble à une plongée dans une ville virtuelle.",
+    "image": "/images/music/artistes/laylow.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/bbcb2b1a7a1500d7fce0705a7769e93e/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4510044"
+    },
+    "proches": [
+      {
+        "id": 449,
+        "raison": "Deux artistes qui font de l'album un film, avec narration, personnages et direction artistique totale."
+      },
+      {
+        "id": 458,
+        "raison": "Le même rap nocturne et texturé, plus proche de l'atmosphère que du couplet."
+      },
+      {
+        "id": 450,
+        "raison": "Une génération qui a hérité de cette exigence visuelle et de ces mélodies sombres."
+      }
+    ],
+    "sorties": [
+      506,
+      507
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 453,
+    "slug": "freeze-corleone",
+    "nom": "Freeze Corleone",
+    "pays": "France",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "underground-rap",
+      "drill"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "labels": [],
+    "description": "Un flow froid et implacable, des textes saturés de références et des instrus drill aux nappes inquiétantes. Freeze Corleone a imposé un rap dense, sans refrain facile, qui récompense l'écoute attentive.",
+    "image": "/images/music/artistes/freeze-corleone.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/cdac7dd9008bcce4c12809c93989e348/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/13755123"
+    },
+    "proches": [
+      {
+        "id": 454,
+        "raison": "Deux techniciens du rap français, pour qui la densité du texte passe avant tout."
+      },
+      {
+        "id": 457,
+        "raison": "Le même goût pour l'ombre et les références cachées, loin des formats radio."
+      },
+      {
+        "id": 482,
+        "raison": "Un rap exigeant qui ne cherche pas à plaire, dense et volontairement opaque."
+      }
+    ],
+    "sorties": [
+      508
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 454,
+    "slug": "alpha-wann",
+    "nom": "Alpha Wann",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": null,
+    "genres": [
+      "boom-bap",
+      "underground-rap"
+    ],
+    "moods": [
+      "energetic"
+    ],
+    "labels": [
+      "don-dada-records"
+    ],
+    "description": "Membre de 1995 puis de L'Entourage, Alpha Wann est l'un des techniciens les plus respectés du rap français. Placements millimétrés, rimes multiples et instrus qui cognent : un rap d'artisan, fier de l'être.",
+    "image": "/images/music/artistes/alpha-wann.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/418669334bffc682465ad946569dbda7/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4428187"
+    },
+    "proches": [
+      {
+        "id": 455,
+        "raison": "Même école, même groupe L'Entourage, même amour du boom bap et de la belle rime."
+      },
+      {
+        "id": 453,
+        "raison": "Deux références du rap technique, chacune avec son propre langage."
+      },
+      {
+        "id": 456,
+        "raison": "Un boom bap moderne, élégant et sans compromis."
+      }
+    ],
+    "sorties": [
+      509
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 455,
+    "slug": "jazzy-bazz",
+    "nom": "Jazzy Bazz",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": null,
+    "genres": [
+      "jazz-rap",
+      "boom-bap"
+    ],
+    "moods": [
+      "melancholic",
+      "chill"
+    ],
+    "labels": [],
+    "description": "Le plus mélodique de L'Entourage écrit Paris par le détail : les quartiers, les nuits, les amis. Ses morceaux respirent le jazz, la soul et un boom bap feutré, avec une écriture soignée.",
+    "image": "/images/music/artistes/jazzy-bazz.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/c9bc5d50723bab902575c9614cc68925/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4409884"
+    },
+    "proches": [
+      {
+        "id": 454,
+        "raison": "Compagnons de L'Entourage, ils ont posé ensemble les bases d'un boom bap parisien moderne."
+      },
+      {
+        "id": 451,
+        "raison": "Un rap à textes sur des accords jazz, avec la même douceur mélancolique."
+      },
+      {
+        "id": 456,
+        "raison": "Le boom bap feutré, élégant, qui prend le temps de raconter."
+      }
+    ],
+    "sorties": [
+      510
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 456,
+    "slug": "prince-waly",
+    "nom": "Prince Waly",
+    "pays": "France",
+    "ville": "Montreuil",
+    "debut": null,
+    "genres": [
+      "boom-bap"
+    ],
+    "moods": [
+      "chill",
+      "melancholic"
+    ],
+    "labels": [],
+    "description": "Venu de Montreuil, Prince Waly fait un boom bap nostalgique et lumineux, nourri de samples soul et de cinéma. Une voix posée, un regard tendre sur la rue et l'enfance.",
+    "image": "/images/music/artistes/prince-waly.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/592841fd9cbcaf00287084fcb5f87625/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/6745115"
+    },
+    "proches": [
+      {
+        "id": 455,
+        "raison": "Même boom bap chaleureux et nostalgique, porté par des samples soul."
+      },
+      {
+        "id": 454,
+        "raison": "Un rap qui assume ses racines old school sans sonner daté."
+      },
+      {
+        "id": 457,
+        "raison": "Une sensibilité commune pour les ambiances feutrées et les textes introspectifs."
+      }
+    ],
+    "sorties": [
+      511
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 457,
+    "slug": "nepal",
+    "nom": "Népal",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": null,
+    "genres": [
+      "underground-rap",
+      "jazz-rap"
+    ],
+    "moods": [
+      "melancholic",
+      "atmospheric"
+    ],
+    "labels": [],
+    "description": "Discret, masqué, Népal a laissé une œuvre brumeuse et introspective, produite en grande partie par lui-même. Des boucles jazz enfumées, une voix calme et des textes qui tournent autour de l'absence.",
+    "image": "/images/music/artistes/nepal.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/d985eaeb702a8ddf8ca83f928ed36c0b/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/308440"
+    },
+    "proches": [
+      {
+        "id": 453,
+        "raison": "Deux figures de l'underground parisien, qui ont imposé leur langage sans passer par les codes du grand public."
+      },
+      {
+        "id": 451,
+        "raison": "Un rap introspectif et brumeux, où l'atmosphère compte autant que le texte."
+      },
+      {
+        "id": 482,
+        "raison": "La même façon de rapper bas, de près, sur des boucles qui tournent comme des pensées."
+      }
+    ],
+    "sorties": [
+      512
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 458,
+    "slug": "pnl",
+    "nom": "PNL",
+    "pays": "France",
+    "ville": "Corbeil-Essonnes",
+    "debut": null,
+    "genres": [
+      "cloud-rap"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "labels": [
+      "qlf-records"
+    ],
+    "description": "Deux frères des Tarterêts qui ont tout fait seuls : sans interview, sans maison de disques, avec des clips tournés au bout du monde. Leur cloud rap planant et autotuné a changé le son et l'image du rap français.",
+    "image": "/images/music/artistes/pnl.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/9277fdce45b79945918c24f69cb6e8e3/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1519461"
+    },
+    "proches": [
+      {
+        "id": 452,
+        "raison": "Le même rap atmosphérique, où les voix filtrées valent autant que les mots."
+      },
+      {
+        "id": 450,
+        "raison": "Une génération directement nourrie par cette mélancolie planante."
+      },
+      {
+        "id": 461,
+        "raison": "Un rap francophone mélodique et chanté, qui brouille la frontière avec le R&B."
+      }
+    ],
+    "sorties": [
+      513,
+      514
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 459,
+    "slug": "lomepal",
+    "nom": "Lomepal",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": null,
+    "genres": [
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "melancholic",
+      "energetic"
+    ],
+    "labels": [],
+    "description": "Ancien skateur, Lomepal écrit un rap très personnel, entre confession et énergie rock. Ses albums racontent la famille, le doute et les excès avec une franchise rare.",
+    "image": "/images/music/artistes/lomepal.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/4922191a231c95a4190f78561501a542/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/5111084"
+    },
+    "proches": [
+      {
+        "id": 460,
+        "raison": "Deux plumes qui se mettent à nu, sans filtre, dans un rap devenu très populaire."
+      },
+      {
+        "id": 452,
+        "raison": "Des albums pensés comme des récits, avec un vrai fil narratif."
+      },
+      {
+        "id": 469,
+        "raison": "La même façon de mêler confession intime et énergie pop."
+      }
+    ],
+    "sorties": [
+      515,
+      516
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 460,
+    "slug": "damso",
+    "nom": "Damso",
+    "pays": "Belgique",
+    "ville": "Bruxelles",
+    "debut": null,
+    "genres": [
+      "trap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "dark",
+      "melancholic"
+    ],
+    "labels": [],
+    "description": "Le Bruxellois écrit un rap cru et introspectif, capable de passer du plus sombre au plus tendre dans le même morceau. Une voix grave, des refrains lancinants et une plume qui dérange autant qu'elle touche.",
+    "image": "/images/music/artistes/damso.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/f1a596b126611260994271ce4cb54bb0/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/9197980"
+    },
+    "proches": [
+      {
+        "id": 461,
+        "raison": "Deux piliers de la scène bruxelloise qui ont ouvert le rap belge au grand public."
+      },
+      {
+        "id": 459,
+        "raison": "La même franchise brutale dans l'écriture de soi."
+      },
+      {
+        "id": 453,
+        "raison": "Un rap sombre qui ne cherche pas la lumière facile."
+      }
+    ],
+    "sorties": [
+      517
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 461,
+    "slug": "hamza",
+    "nom": "Hamza",
+    "pays": "Belgique",
+    "ville": "Bruxelles",
+    "debut": null,
+    "genres": [
+      "trap",
+      "alternative-rnb"
+    ],
+    "moods": [
+      "chill",
+      "dreamy"
+    ],
+    "labels": [],
+    "description": "Surnommé le Sauce God, Hamza mélange trap, R&B et dancehall avec une aisance mélodique rare en francophonie. Des refrains sucrés, des productions moelleuses et une voix qui glisse.",
+    "image": "/images/music/artistes/hamza.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/943814c7c1558fd0afd0aafbc2ebef03/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/171998",
+      "apple": "https://music.apple.com/fr/artist/hamza-khan/1869555856"
+    },
+    "proches": [
+      {
+        "id": 460,
+        "raison": "La même scène bruxelloise, versant mélodique et solaire."
+      },
+      {
+        "id": 480,
+        "raison": "Une même idée du chant R&B dans le rap, langoureux et chaleureux."
+      },
+      {
+        "id": 458,
+        "raison": "Un rap chanté, porté par l'autotune et les ambiances planantes."
+      }
+    ],
+    "sorties": [
+      518
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 462,
+    "slug": "justice",
+    "nom": "Justice",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": 2003,
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "energetic",
+      "euphoric"
+    ],
+    "labels": [
+      "ed-banger"
+    ],
+    "description": "Le duo d'Ed Banger a donné à l'électro française un son de stade : basses saturées, disco distordu et grandeur quasi religieuse, symbolisée par leur croix. Une électronique théâtrale qui emprunte au rock.",
+    "image": "/images/music/artistes/justice.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/3dca9fb58e93ea3901c2e8e50cf130a7/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/6404",
+      "apple": "https://music.apple.com/fr/artist/justice/145072812"
+    },
+    "proches": [
+      {
+        "id": 463,
+        "raison": "Les héritiers directs de la French Touch, avec un son plus sale et plus rock."
+      },
+      {
+        "id": 465,
+        "raison": "Même génération Ed Banger et même goût pour les synthés rétrofuturistes."
+      },
+      {
+        "id": 464,
+        "raison": "L'autre visage de l'électronique française exportée, version douce et rêveuse."
+      }
+    ],
+    "sorties": [
+      519,
+      520
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 463,
+    "slug": "daft-punk",
+    "nom": "Daft Punk",
+    "pays": "France",
+    "ville": "Paris",
+    "debut": 1993,
+    "genres": [
+      "french-touch",
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "energetic"
+    ],
+    "labels": [],
+    "description": "Deux casques devenus les visages les plus célèbres de la musique électronique. De la house filtrée de leurs débuts au disco futuriste, Daft Punk a fait de la French Touch un langage mondial.",
+    "image": "/images/music/artistes/daft-punk.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/638e69b9caaf9f9f3f8826febea7b543/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/27",
+      "apple": "https://music.apple.com/fr/artist/daft-punk/5468295"
+    },
+    "proches": [
+      {
+        "id": 462,
+        "raison": "La génération suivante, qui a durci et saturé l'héritage French Touch."
+      },
+      {
+        "id": 464,
+        "raison": "Même moment, même pays : l'électronique française qui conquiert le monde à la fin des années 90."
+      },
+      {
+        "id": 465,
+        "raison": "La même fascination pour les machines, les voitures et les années 80."
+      }
+    ],
+    "sorties": [
+      521,
+      522
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 464,
+    "slug": "air",
+    "nom": "Air",
+    "pays": "France",
+    "ville": "Versailles",
+    "debut": 1995,
+    "genres": [
+      "french-touch",
+      "ambient"
+    ],
+    "moods": [
+      "dreamy",
+      "chill"
+    ],
+    "labels": [],
+    "description": "Le duo versaillais a inventé une électronique en apesanteur : synthés vintage, voix vocodées et mélodies douces comme une fin d'après-midi. Une pop rêveuse qui a fait voyager la French Touch.",
+    "image": "/images/music/artistes/air.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/3422c03685935024ad0db1607b74d18b/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/369"
+    },
+    "proches": [
+      {
+        "id": 463,
+        "raison": "L'autre versant de la French Touch de 1997-1998, plus planant que dansant."
+      },
+      {
+        "id": 486,
+        "raison": "Deux façons de faire de la musique en suspension, entre douceur et brume."
+      },
+      {
+        "id": 478,
+        "raison": "Une électronique délicate et mélodique, faite pour l'écoute autant que pour la danse."
+      }
+    ],
+    "sorties": [
+      523
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 465,
+    "slug": "kavinsky",
+    "nom": "Kavinsky",
+    "pays": "France",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "french-touch"
+    ],
+    "moods": [
+      "dark",
+      "energetic"
+    ],
+    "labels": [],
+    "description": "Kavinsky a imaginé un personnage revenu d'entre les morts au volant d'une Testarossa, et une musique pour l'accompagner : synthés des années 80, basses tendues et ambiance de film nocturne.",
+    "image": "/images/music/artistes/kavinsky.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/109f6a90627dbcf043def392d50b0c72/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/13358"
+    },
+    "proches": [
+      {
+        "id": 462,
+        "raison": "La même famille Ed Banger et les mêmes synthés rétrofuturistes."
+      },
+      {
+        "id": 463,
+        "raison": "Une fascination commune pour les machines et l'imaginaire des années 80."
+      },
+      {
+        "id": 452,
+        "raison": "La même idée d'un personnage de fiction qui porte toute une musique."
+      }
+    ],
+    "sorties": [
+      524
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 466,
+    "slug": "laurent-garnier",
+    "nom": "Laurent Garnier",
+    "pays": "France",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "techno",
+      "house"
+    ],
+    "moods": [
+      "hypnotic",
+      "energetic"
+    ],
+    "labels": [
+      "f-communications"
+    ],
+    "description": "Pionnier de la techno en France, Laurent Garnier a importé l'esprit de Manchester et de Detroit avant de devenir l'un des DJ les plus respectés du monde. Un son qui passe de la house au jazz sans jamais perdre le groove.",
+    "image": "/images/music/artistes/laurent-garnier.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/a8a32a9184a88268a07aa5def94d9995/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/5469",
+      "apple": "https://music.apple.com/fr/artist/laurent-garnier/28243486"
+    },
+    "proches": [
+      {
+        "id": 470,
+        "raison": "Deux générations de la techno de club, de la France des années 90 au Berlin d'aujourd'hui."
+      },
+      {
+        "id": 463,
+        "raison": "Les mêmes années 90, quand la France découvre la musique électronique."
+      },
+      {
+        "id": 472,
+        "raison": "Une techno hypnotique pensée pour les longues nuits de club."
+      }
+    ],
+    "sorties": [
+      525
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 467,
+    "slug": "i-hate-models",
+    "nom": "I Hate Models",
+    "pays": "France",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "industrial-techno",
+      "hard-techno"
+    ],
+    "moods": [
+      "dark",
+      "melancholic",
+      "aggressive"
+    ],
+    "labels": [
+      "arts"
+    ],
+    "description": "Le producteur français a imposé une techno industrielle à la fois brutale et sentimentale : des kicks qui écrasent tout, et au-dessus des mélodies de rave nostalgique. Une musique de hangar qui a le cœur lourd.",
+    "image": "/images/music/artistes/i-hate-models.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/7d0aa499f17559d34daf84762232b400/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/11199104",
+      "apple": "https://music.apple.com/fr/artist/i-hate-models/1163791501"
+    },
+    "proches": [
+      {
+        "id": 447,
+        "raison": "La même hard techno mélancolique, où la tristesse se danse."
+      },
+      {
+        "id": 473,
+        "raison": "Deux références d'une techno industrielle sans concession."
+      },
+      {
+        "id": 474,
+        "raison": "Une techno rapide et sombre, aux allures de rituel."
+      }
+    ],
+    "sorties": [
+      526,
+      527,
+      528
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 468,
+    "slug": "la-femme",
+    "nom": "La Femme",
+    "pays": "France",
+    "ville": "Biarritz",
+    "debut": null,
+    "genres": [
+      "indie",
+      "post-punk"
+    ],
+    "moods": [
+      "dreamy",
+      "energetic"
+    ],
+    "labels": [
+      "disque-pointu"
+    ],
+    "description": "Né à Biarritz, La Femme mélange surf rock, cold wave et yéyé dans une pop psychédélique en français. Des voix détachées, des synthés vintage et un humour un peu inquiétant.",
+    "image": "/images/music/artistes/la-femme.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/6309a82b32dee6b5d8c09b9d767d70d1/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/995510",
+      "apple": "https://music.apple.com/fr/artist/la-femme/61494839"
+    },
+    "proches": [
+      {
+        "id": 487,
+        "raison": "La même énergie post-punk, version française et plus psychédélique."
+      },
+      {
+        "id": 469,
+        "raison": "Une pop française qui assume ses influences anglaises et sa singularité."
+      },
+      {
+        "id": 464,
+        "raison": "Une même fascination pour les synthés vintage et les mélodies en suspension."
+      }
+    ],
+    "sorties": [
+      529
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 469,
+    "slug": "christine-and-the-queens",
+    "nom": "Christine and the Queens",
+    "pays": "France",
+    "ville": "Nantes",
+    "debut": null,
+    "genres": [
+      "pop"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "labels": [
+      "because-music"
+    ],
+    "description": "Une pop synthétique et dansée, écrite entre le français et l'anglais. Héloïse Letissier a fait de la scène un manifeste : gestes, costumes et chansons qui parlent d'identité avec élégance.",
+    "image": "/images/music/artistes/christine-and-the-queens.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/82805ca87186714d1d961d2d2b621925/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1520407"
+    },
+    "proches": [
+      {
+        "id": 468,
+        "raison": "Une pop française exportée, qui puise dans les années 80."
+      },
+      {
+        "id": 480,
+        "raison": "Une même façon de chanter l'identité et le désir avec délicatesse."
+      },
+      {
+        "id": 459,
+        "raison": "La confession intime transformée en pop énergique."
+      }
+    ],
+    "sorties": [
+      530
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 470,
+    "slug": "kobosil",
+    "nom": "Kobosil",
+    "pays": "Allemagne",
+    "ville": "Berlin",
+    "debut": null,
+    "genres": [
+      "techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "hypnotic"
+    ],
+    "labels": [
+      "ostgut-ton"
+    ],
+    "description": "Résident du Berghain, Kobosil fait une techno berlinoise rigoureuse et sombre, rapide et sans fioriture. Un son de club pur, pensé pour les longues nuits de la capitale.",
+    "image": "/images/music/artistes/kobosil.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/25bab0e6562db63b3a3bcb717f8ef553/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/5593232",
+      "apple": "https://music.apple.com/fr/artist/kobosil/690031931"
+    },
+    "proches": [
+      {
+        "id": 473,
+        "raison": "La techno industrielle dans ce qu'elle a de plus physique."
+      },
+      {
+        "id": 466,
+        "raison": "Deux générations de DJ pour qui la nuit se construit sur la durée."
+      },
+      {
+        "id": 471,
+        "raison": "L'Allemagne électronique, versant club et versant rêveur."
+      }
+    ],
+    "sorties": [
+      531
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 471,
+    "slug": "skee-mask",
+    "nom": "Skee Mask",
+    "pays": "Allemagne",
+    "ville": "Munich",
+    "debut": null,
+    "genres": [
+      "breakbeat",
+      "ambient"
+    ],
+    "moods": [
+      "atmospheric",
+      "hypnotic"
+    ],
+    "labels": [
+      "ilian-tape"
+    ],
+    "description": "Le Munichois mêle breakbeat, techno et nappes ambient dans des morceaux qui semblent toujours en mouvement. Une électronique brumeuse et précise, entre club et rêverie.",
+    "image": "/images/music/artistes/skee-mask.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/1b83aa8929c3bc6430999a7ec02e842e/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/6900965"
+    },
+    "proches": [
+      {
+        "id": 475,
+        "raison": "Les mêmes rythmes brisés noyés dans les textures, héritiers de la rave anglaise."
+      },
+      {
+        "id": 478,
+        "raison": "Une électronique d'orfèvre, faite de détails et de nappes."
+      },
+      {
+        "id": 476,
+        "raison": "Le breakbeat britannique réinventé avec une sensibilité mélodique."
+      }
+    ],
+    "sorties": [
+      532
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 472,
+    "slug": "amelie-lens",
+    "nom": "Amelie Lens",
+    "pays": "Belgique",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "techno"
+    ],
+    "moods": [
+      "hypnotic",
+      "energetic"
+    ],
+    "labels": [],
+    "description": "Figure majeure de la techno belge, Amelie Lens fait une musique hypnotique et tendue, construite sur des boucles acides et des montées longues. Un son de grande scène, resté fidèle au club.",
+    "image": "/images/music/artistes/amelie-lens.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/1660fae3331d94973c21fd212978ae92/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/9757762",
+      "apple": "https://music.apple.com/fr/artist/amelie-lens/1078801898"
+    },
+    "proches": [
+      {
+        "id": 470,
+        "raison": "Une techno rapide et hypnotique, taillée pour les nuits longues."
+      },
+      {
+        "id": 474,
+        "raison": "La techno qui accélère, pensée pour les grandes scènes."
+      },
+      {
+        "id": 466,
+        "raison": "Deux DJ pour qui la construction d'un set compte autant que les morceaux."
+      }
+    ],
+    "sorties": [
+      534,
+      533
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 473,
+    "slug": "paula-temple",
+    "nom": "Paula Temple",
+    "pays": "Royaume-Uni",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "industrial-techno"
+    ],
+    "moods": [
+      "aggressive",
+      "dark"
+    ],
+    "labels": [
+      "noise-manifesto"
+    ],
+    "description": "Paula Temple fait une techno industrielle d'une violence assumée : rythmes concassés, bruit blanc et tension permanente. Elle défend aussi, avec son label Noise Manifesto, une scène plus diverse.",
+    "image": "/images/music/artistes/paula-temple.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/4d135141ce0920356bd99f63e5f72a3c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4574271",
+      "apple": "https://music.apple.com/fr/artist/paula-temple/574798082"
+    },
+    "proches": [
+      {
+        "id": 467,
+        "raison": "Deux visages de la techno industrielle européenne, brutale et sans concession."
+      },
+      {
+        "id": 470,
+        "raison": "La rigueur du club berlinois, version la plus sombre."
+      },
+      {
+        "id": 474,
+        "raison": "Une même techno rapide et menaçante."
+      }
+    ],
+    "sorties": [
+      535
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 474,
+    "slug": "sara-landry",
+    "nom": "Sara Landry",
+    "pays": "États-Unis",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "hard-techno",
+      "industrial-techno"
+    ],
+    "moods": [
+      "dark",
+      "aggressive"
+    ],
+    "labels": [
+      "hekate-records"
+    ],
+    "description": "L'Américaine a fait de la hard techno un rituel : tempos très rapides, ambiances occultes et esthétique de sorcière assumée. Son label Hekate porte cette techno sombre et théâtrale.",
+    "image": "/images/music/artistes/sara-landry.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/685207b0b8596b07bd5cda9504e7e2bc/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/14105097",
+      "apple": "https://music.apple.com/fr/artist/sara-landry/1332641349"
+    },
+    "proches": [
+      {
+        "id": 447,
+        "raison": "La même hard techno sombre, entre puissance et mélancolie."
+      },
+      {
+        "id": 467,
+        "raison": "Une techno industrielle à la fois brutale et sentimentale."
+      },
+      {
+        "id": 448,
+        "raison": "La nouvelle génération hard techno, révélée par les réseaux et les grands festivals."
+      }
+    ],
+    "sorties": [
+      536,
+      537,
+      538
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 475,
+    "slug": "burial",
+    "nom": "Burial",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "debut": null,
+    "genres": [
+      "uk-garage",
+      "ambient"
+    ],
+    "moods": [
+      "melancholic",
+      "atmospheric"
+    ],
+    "labels": [
+      "hyperdub"
+    ],
+    "description": "Longtemps anonyme, Burial a capturé le Londres de la nuit dans des morceaux pleins de craquements, de pluie et de voix fantômes. Un UK garage fantomatique, qui sonne comme le souvenir d'une rave.",
+    "image": "/images/music/artistes/burial.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/2a1ab5047e9c97a112ea4239ef6a71f7/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/6281",
+      "apple": "https://music.apple.com/fr/artist/burial/468355684"
+    },
+    "proches": [
+      {
+        "id": 471,
+        "raison": "Des rythmes brisés noyés dans les textures, héritiers de la rave anglaise."
+      },
+      {
+        "id": 479,
+        "raison": "Deux Londoniens qui ont fait du garage une musique de nostalgie."
+      },
+      {
+        "id": 476,
+        "raison": "La même tendresse pour le UK garage et ses voix découpées."
+      }
+    ],
+    "sorties": [
+      539
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 476,
+    "slug": "overmono",
+    "nom": "Overmono",
+    "pays": "Royaume-Uni",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "uk-garage",
+      "breakbeat"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "labels": [
+      "xl-recordings"
+    ],
+    "description": "Les frères Russell mêlent breakbeat, garage et techno avec un sens mélodique rare. Des voix découpées, des basses chaudes et une euphorie toujours teintée de mélancolie.",
+    "image": "/images/music/artistes/overmono.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/1b456c0ec0b7d1240092b1896f1e9d5d/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/11820537",
+      "apple": "https://music.apple.com/fr/artist/overmono/1129806758"
+    },
+    "proches": [
+      {
+        "id": 475,
+        "raison": "Le même UK garage aux voix fantômes, version plus lumineuse."
+      },
+      {
+        "id": 479,
+        "raison": "Une électronique britannique qui fait danser le cœur serré."
+      },
+      {
+        "id": 477,
+        "raison": "Les voix samplées comme moteur émotionnel de la musique de club."
+      }
+    ],
+    "sorties": [
+      540
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 477,
+    "slug": "fred-again",
+    "nom": "Fred again..",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "debut": null,
+    "genres": [
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "labels": [],
+    "description": "Fred again.. compose à partir de fragments de vie : messages vocaux, vidéos filmées au téléphone, voix d'inconnus. Sa house émotive transforme ces moments en hymnes collectifs.",
+    "image": "/images/music/artistes/fred-again.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/3f0a4f39334266aa963038d95bbb267f/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/76053262"
+    },
+    "proches": [
+      {
+        "id": 479,
+        "raison": "Deux Londoniens qui fabriquent de l'émotion avec des voix samplées."
+      },
+      {
+        "id": 476,
+        "raison": "Une euphorie de club toujours teintée de mélancolie."
+      },
+      {
+        "id": 478,
+        "raison": "Des amis et collaborateurs, unis par une électronique sensible."
+      }
+    ],
+    "sorties": [
+      541
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 478,
+    "slug": "four-tet",
+    "nom": "Four Tet",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "debut": null,
+    "genres": [
+      "ambient",
+      "house"
+    ],
+    "moods": [
+      "dreamy",
+      "hypnotic"
+    ],
+    "labels": [
+      "text-records"
+    ],
+    "description": "Kieran Hebden fabrique une électronique artisanale, faite de samples folk, de harpes, de rythmes souples et de nappes chaleureuses. Une musique qui fonctionne aussi bien au casque qu'en club.",
+    "image": "/images/music/artistes/four-tet.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/c5114cb88b590ed1352d75bfb7eb8033/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1744"
+    },
+    "proches": [
+      {
+        "id": 471,
+        "raison": "Une électronique d'orfèvre, faite de détails et de textures."
+      },
+      {
+        "id": 477,
+        "raison": "Des amis et collaborateurs, unis par une électronique sensible."
+      },
+      {
+        "id": 464,
+        "raison": "Une électronique douce et mélodique, faite pour l'écoute."
+      }
+    ],
+    "sorties": [
+      542
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 479,
+    "slug": "jamie-xx",
+    "nom": "Jamie xx",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "debut": null,
+    "genres": [
+      "uk-garage",
+      "house"
+    ],
+    "moods": [
+      "euphoric",
+      "melancholic"
+    ],
+    "labels": [
+      "young"
+    ],
+    "description": "Producteur de The xx, Jamie xx a sorti en solo une électronique qui célèbre la culture club britannique : steel drums, samples de vieilles raves et voix découpées, entre nostalgie et euphorie.",
+    "image": "/images/music/artistes/jamie-xx.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/70dbe25ea73d45141c79192872c5b3e8/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/808980"
+    },
+    "proches": [
+      {
+        "id": 475,
+        "raison": "Deux Londoniens qui ont fait du garage une musique de souvenirs."
+      },
+      {
+        "id": 477,
+        "raison": "La même manière de fabriquer de l'émotion avec des voix samplées."
+      },
+      {
+        "id": 476,
+        "raison": "Une électronique britannique euphorique et mélancolique à la fois."
+      }
+    ],
+    "sorties": [
+      543
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 480,
+    "slug": "frank-ocean",
+    "nom": "Frank Ocean",
+    "pays": "États-Unis",
+    "ville": null,
+    "debut": null,
+    "genres": [
+      "alternative-rnb",
+      "neo-soul"
+    ],
+    "moods": [
+      "melancholic",
+      "dreamy"
+    ],
+    "labels": [],
+    "description": "Rare et secret, Frank Ocean a redéfini le R&B avec des albums intimes et déstructurés. Des voix modifiées, des guitares claires et des chansons sur l'amour et le temps qui passe.",
+    "image": "/images/music/artistes/frank-ocean.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/882155c08dc31d6464d6d580083c968c/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/1350335"
+    },
+    "proches": [
+      {
+        "id": 449,
+        "raison": "Compagnons d'Odd Future, unis par la même soul introspective."
+      },
+      {
+        "id": 451,
+        "raison": "Une influence directe : le spleen chanté sur des accords soul."
+      },
+      {
+        "id": 461,
+        "raison": "Le R&B langoureux qui se glisse dans le rap."
+      }
+    ],
+    "sorties": [
+      544,
+      545
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 481,
+    "slug": "kendrick-lamar",
+    "nom": "Kendrick Lamar",
+    "pays": "États-Unis",
+    "ville": "Compton",
+    "debut": null,
+    "genres": [
+      "jazz-rap",
+      "alternative-hip-hop"
+    ],
+    "moods": [
+      "energetic",
+      "experimental"
+    ],
+    "labels": [],
+    "description": "Le rappeur de Compton écrit des albums-mondes sur l'Amérique noire, la foi et la célébrité. Jazz, funk et spoken word : une ambition artistique qui a fait de lui une référence de sa génération.",
+    "image": "/images/music/artistes/kendrick-lamar.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/be0a7c550567f4af0ed202d7235b74d6/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/525046",
+      "apple": "https://music.apple.com/fr/artist/kendrick-lamar/368183298"
+    },
+    "proches": [
+      {
+        "id": 482,
+        "raison": "Deux rappeurs de Los Angeles pour qui l'album est une forme d'art à part entière."
+      },
+      {
+        "id": 484,
+        "raison": "Le même rap ambitieux et orchestral, entre jazz et soul."
+      },
+      {
+        "id": 449,
+        "raison": "Une même génération californienne qui a fait exploser les codes du rap."
+      }
+    ],
+    "sorties": [
+      546
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 482,
+    "slug": "earl-sweatshirt",
+    "nom": "Earl Sweatshirt",
+    "pays": "États-Unis",
+    "ville": "Los Angeles",
+    "debut": null,
+    "genres": [
+      "experimental-hip-hop",
+      "underground-rap"
+    ],
+    "moods": [
+      "dark",
+      "experimental"
+    ],
+    "labels": [],
+    "description": "Ancien d'Odd Future, Earl Sweatshirt a choisi l'abstraction : des boucles de soul détraquées, des morceaux très courts et une voix grave qui murmure ses deuils. Un rap qui ressemble à un journal intime.",
+    "image": "/images/music/artistes/earl-sweatshirt.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/6b52a349bff96760f2ff3483634dedf4/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4073450"
+    },
+    "proches": [
+      {
+        "id": 449,
+        "raison": "Le même collectif d'origine, deux directions opposées."
+      },
+      {
+        "id": 457,
+        "raison": "Un rap bas et intime, posé sur des boucles qui tournent comme des pensées."
+      },
+      {
+        "id": 453,
+        "raison": "Un rap exigeant et opaque, qui récompense l'écoute attentive."
+      }
+    ],
+    "sorties": [
+      547
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 483,
+    "slug": "kaytranada",
+    "nom": "Kaytranada",
+    "pays": "Canada",
+    "ville": "Montréal",
+    "debut": null,
+    "genres": [
+      "house",
+      "alternative-rnb"
+    ],
+    "moods": [
+      "chill",
+      "energetic"
+    ],
+    "labels": [
+      "xl-recordings"
+    ],
+    "description": "Le producteur montréalais d'origine haïtienne a inventé un groove reconnaissable entre mille : des basses rebondissantes, des percussions décalées et des featurings soul et rap.",
+    "image": "/images/music/artistes/kaytranada.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/419700a883e298d30cfbada1fabda5a1/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4452092"
+    },
+    "proches": [
+      {
+        "id": 449,
+        "raison": "Une même gourmandise pour les grooves soul et les accords chauds."
+      },
+      {
+        "id": 477,
+        "raison": "Une house moderne qui parle au corps et au cœur."
+      },
+      {
+        "id": 480,
+        "raison": "Le R&B contemporain et sa sensualité."
+      }
+    ],
+    "sorties": [
+      548
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 484,
+    "slug": "little-simz",
+    "nom": "Little Simz",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "debut": null,
+    "genres": [
+      "alternative-hip-hop",
+      "jazz-rap"
+    ],
+    "moods": [
+      "energetic"
+    ],
+    "labels": [
+      "age-101"
+    ],
+    "description": "La rappeuse londonienne signe des albums ambitieux, orchestrés comme des comédies musicales. Cordes, chœurs et flows précis pour parler de famille, d'identité et de confiance.",
+    "image": "/images/music/artistes/little-simz.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/f36e7a6e40e7d6f79116ba30365ad9f9/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/4578590"
+    },
+    "proches": [
+      {
+        "id": 481,
+        "raison": "Le même rap ambitieux, orchestral et introspectif."
+      },
+      {
+        "id": 449,
+        "raison": "Des albums pensés comme de grands récits colorés."
+      },
+      {
+        "id": 487,
+        "raison": "Deux voix majeures de la jeune scène des îles britanniques."
+      }
+    ],
+    "sorties": [
+      549
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 485,
+    "slug": "bladee",
+    "nom": "Bladee",
+    "pays": "Suède",
+    "ville": "Stockholm",
+    "debut": null,
+    "genres": [
+      "cloud-rap",
+      "hyperpop"
+    ],
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "labels": [
+      "year0001"
+    ],
+    "description": "Figure du collectif Drain Gang, le Suédois chante plus qu'il ne rappe, d'une voix fragile et autotunée. Un cloud rap éthéré, presque naïf, qui a influencé toute une génération en ligne.",
+    "image": "/images/music/artistes/bladee.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/d502fdda3c318e4955383c0ebfd86bad/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/5804578"
+    },
+    "proches": [
+      {
+        "id": 458,
+        "raison": "Le même cloud rap planant, où la voix devient une texture."
+      },
+      {
+        "id": 450,
+        "raison": "Des mélodies vaporeuses plutôt que des punchlines."
+      },
+      {
+        "id": 486,
+        "raison": "Une musique de brume, où la voix se fond dans le son."
+      }
+    ],
+    "sorties": [
+      550
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 486,
+    "slug": "slowdive",
+    "nom": "Slowdive",
+    "pays": "Royaume-Uni",
+    "ville": "Reading",
+    "debut": 1989,
+    "genres": [
+      "shoegaze"
+    ],
+    "moods": [
+      "dreamy",
+      "atmospheric"
+    ],
+    "labels": [
+      "creation-records"
+    ],
+    "description": "Groupe phare du shoegaze anglais, Slowdive superpose des guitares saturées de réverbération et des voix murmurées. Un mur de son doux, qui semble venir de très loin.",
+    "image": "/images/music/artistes/slowdive.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/16417737fe6efb615f826ef4902e7faf/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/2021",
+      "apple": "https://music.apple.com/fr/artist/slowdive/528315"
+    },
+    "proches": [
+      {
+        "id": 464,
+        "raison": "Deux façons de faire de la musique en suspension."
+      },
+      {
+        "id": 485,
+        "raison": "La voix noyée dans la texture, héritage direct du shoegaze."
+      },
+      {
+        "id": 487,
+        "raison": "Le rock anglais, version brume plutôt que version colère."
+      }
+    ],
+    "sorties": [
+      551
+    ],
+    "addedAt": "2026-11-09"
+  },
+  {
+    "id": 487,
+    "slug": "fontaines-d-c",
+    "nom": "Fontaines D.C.",
+    "pays": "Irlande",
+    "ville": "Dublin",
+    "debut": null,
+    "genres": [
+      "post-punk",
+      "indie"
+    ],
+    "moods": [
+      "melancholic",
+      "energetic"
+    ],
+    "labels": [
+      "xl-recordings"
+    ],
+    "description": "Le groupe de Dublin a ravivé le post-punk avec une poésie irlandaise rugueuse. Au fil des albums, il s'ouvre à des sons plus amples et plus étranges, sans perdre sa tension.",
+    "image": "/images/music/artistes/fontaines-d-c.webp",
+    "imgSource": "https://cdn-images.dzcdn.net/images/artist/ee622eb8af3748a4e56c53c20f99a651/1000x1000-000000-80-0-0.jpg",
+    "liens": {
+      "deezer": "https://www.deezer.com/artist/14175163"
+    },
+    "proches": [
+      {
+        "id": 468,
+        "raison": "La même énergie post-punk, version française et psychédélique."
+      },
+      {
+        "id": 486,
+        "raison": "Le rock des îles britanniques, entre tension et brume."
+      },
+      {
+        "id": 484,
+        "raison": "Deux voix majeures de la jeune scène des îles britanniques."
+      }
+    ],
+    "sorties": [
+      552
+    ],
+    "addedAt": "2026-11-09"
+  }
+]
