@@ -527,44 +527,6 @@
     "addedAt": "2026-11-09"
   },
   {
-    "id": 459,
-    "slug": "lomepal",
-    "nom": "Lomepal",
-    "pays": "France",
-    "ville": "Paris",
-    "debut": null,
-    "genres": [
-      "alternative-hip-hop"
-    ],
-    "moods": [
-      "melancholic",
-      "energetic"
-    ],
-    "labels": [],
-    "description": "Ancien skateur, Lomepal écrit un rap très personnel, entre confession et énergie rock. Ses albums racontent la famille, le doute et les excès avec une franchise rare.",
-    "image": "/images/music/artistes/lomepal.webp",
-    "imgSource": "https://cdn-images.dzcdn.net/images/artist/4922191a231c95a4190f78561501a542/1000x1000-000000-80-0-0.jpg",
-    "liens": {
-      "deezer": "https://www.deezer.com/artist/5111084"
-    },
-    "proches": [
-      {
-        "id": 460,
-        "raison": "Deux plumes qui se mettent à nu, sans filtre, dans un rap devenu très populaire."
-      },
-      {
-        "id": 452,
-        "raison": "Des albums pensés comme des récits, avec un vrai fil narratif."
-      },
-      {
-        "id": 469,
-        "raison": "La même façon de mêler confession intime et énergie pop."
-      }
-    ],
-    "sorties": [],
-    "addedAt": "2026-11-09"
-  },
-  {
     "id": 460,
     "slug": "damso",
     "nom": "Damso",
@@ -590,10 +552,6 @@
       {
         "id": 461,
         "raison": "Deux piliers de la scène bruxelloise qui ont ouvert le rap belge au grand public."
-      },
-      {
-        "id": 459,
-        "raison": "La même franchise brutale dans l'écriture de soi."
       },
       {
         "id": 453,
@@ -982,10 +940,6 @@
       {
         "id": 480,
         "raison": "Une même façon de chanter l'identité et le désir avec délicatesse."
-      },
-      {
-        "id": 459,
-        "raison": "La confession intime transformée en pop énergique."
       }
     ],
     "sorties": [

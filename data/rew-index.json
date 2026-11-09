@@ -15905,44 +15905,6 @@
    "_ia": true
   },
   {
-   "id": 459,
-   "univers": "musique",
-   "esthetique": [
-    "rock",
-    "skate"
-   ],
-   "culture": [
-    "hip-hop alternatif",
-    "paris",
-    "france",
-    "alternative hip-hop",
-    "rap confession",
-    "rock"
-   ],
-   "ambiance": [
-    "mélancolique",
-    "énergique",
-    "intime",
-    "franc"
-   ],
-   "positionnement": "accessible",
-   "motsCles": [
-    "artiste",
-    "alternative-hip-hop",
-    "lomepal",
-    "rap français",
-    "rap rock",
-    "confession",
-    "alternative hip-hop"
-   ],
-   "affinites": [
-    460,
-    452,
-    469
-   ],
-   "_ia": true
-  },
-  {
    "id": 460,
    "univers": "musique",
    "esthetique": [
@@ -15975,7 +15937,6 @@
    ],
    "affinites": [
     461,
-    459,
     453
    ],
    "_ia": true
@@ -16337,8 +16298,7 @@
    ],
    "affinites": [
     468,
-    480,
-    459
+    480
    ],
    "_ia": true
   },
