@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 7,
+    "total": 8,
     "cycle": 1,
     "publiees": [
       {
@@ -51,6 +51,13 @@
         "nom": "Raycast",
         "date": "2026-11-08",
         "message": "1568987887314276495"
+      },
+      {
+        "id": 568,
+        "slug": "caval",
+        "nom": "CAVAL",
+        "date": "2026-11-09",
+        "message": "1569395824339976237"
       }
     ],
     "ignorees": [
@@ -70,7 +77,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 7,
+    "total": 8,
     "cycle": 1,
     "publiees": [
       {
@@ -121,6 +128,13 @@
         "nom": "Gone Girl",
         "date": "2026-11-08",
         "message": "1568987903084728362"
+      },
+      {
+        "id": 443,
+        "slug": "millenium-les-hommes-qui-n-aimaient-pas-les-femmes",
+        "nom": "Millénium : Les hommes qui n'aimaient pas les femmes",
+        "date": "2026-11-09",
+        "message": "1569395841733500938"
       }
     ],
     "ignorees": [],
