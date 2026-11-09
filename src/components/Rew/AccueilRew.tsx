@@ -5,6 +5,7 @@ import { cn } from "../../lib/cn";
 import { carteParId } from "../../lib/rew/cartes";
 import { LONGUEUR_MAX, rew } from "../../lib/rew/client";
 import type { CarteRew as Carte } from "../../lib/rew/types";
+import { useEcran } from "../../lib/useEcran";
 import { FlecheSurvol } from "../Icone";
 import { CarteRew, Orbe } from "./CarteRew";
 
@@ -92,6 +93,8 @@ function tirage(): Carte[] {
 /** Box noire REW (maquette 1156:958), juste après le mur d'images */
 export function BoxRew() {
   const reduit = useReducedMotion();
+  // Éventail sur grand écran ; en mobile, pile légèrement décalée (sans rotation)
+  const large = useEcran("(min-width: 1024px)");
   const [texte, setTexte] = useState("");
   const [visible, setVisible] = useState(false);
   const [survol, setSurvol] = useState<number | null>(null);
@@ -122,7 +125,9 @@ export function BoxRew() {
     return {
       transform: reduit
         ? undefined
-        : `rotate(${actif ? 0 : base.r * (ouvert ? 1.4 : 1)}deg) translateX(${base.x}px) ${actif ? "scale(1.03)" : ""}`,
+        : large
+          ? `rotate(${actif ? 0 : base.r * (ouvert ? 1.4 : 1)}deg) translateX(${base.x}px) ${actif ? "scale(1.03)" : ""}`
+          : `translateX(${i * 6}px)`,
       zIndex: actif ? 10 : i + 1,
       opacity: visible ? 1 : 0,
       transition: reduit
@@ -139,7 +144,7 @@ export function BoxRew() {
     >
       <div
         className={cn(
-          "relative isolate mx-auto grid max-w-[1280px] gap-10 overflow-hidden rounded-[32px] bg-encre px-6 py-10 text-papier transition-opacity duration-700 md:rounded-[44px] md:px-12 md:py-14 lg:grid-cols-2 lg:gap-8",
+          "relative isolate mx-auto grid max-w-[1280px] gap-10 overflow-hidden rounded-[32px] bg-encre px-6 py-10 text-papier transition-opacity duration-700 md:rounded-[44px] md:px-12 md:py-14 grid-cols-[minmax(0,1fr)] lg:grid-cols-2 lg:gap-8",
           visible ? "opacity-100" : "opacity-0",
         )}
       >
@@ -223,7 +228,7 @@ export function BoxRew() {
 
         {/* Cartes en éventail (pile décalée en mobile) */}
         <ul
-          className="flex flex-col justify-center gap-3 lg:gap-0 lg:pl-6"
+          className="flex min-w-0 flex-col justify-center gap-3 pr-3 lg:gap-0 lg:pr-0 lg:pl-6"
           onMouseLeave={() => setSurvol(null)}
         >
           {cartes.map((c, i) => (

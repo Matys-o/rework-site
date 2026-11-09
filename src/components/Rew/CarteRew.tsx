@@ -61,7 +61,7 @@ export function CarteRew({
         aria-hidden
         className={cn(
           "relative block shrink-0 overflow-hidden rounded-[16px] bg-brume",
-          compacte ? "size-[104px]" : "size-[112px] sm:size-[128px]",
+          compacte ? "size-[76px] sm:size-[104px]" : "size-[112px] sm:size-[128px]",
         )}
       >
         {carte.image ? (
