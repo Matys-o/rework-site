@@ -1,17 +1,17 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, type CSSProperties } from "react";
 import { useParams } from "react-router";
-import { Apparition } from "../components/Apparition";
 import { Aura } from "../components/Aura";
 import { Bouton } from "../components/Bouton";
-import { Fiche, RangFilm } from "../components/Fiche";
+import { RangFilm } from "../components/Fiche";
+import { MemeUnivers, PourquoiRew, usePourquoiRew } from "../components/References";
 import { Footer } from "../components/Footer";
 import { Conteneur } from "../components/Grille";
 import { Nav } from "../components/Nav";
 import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import { MediaCouverture } from "../components/MediaCouverture";
 import { Tampon } from "../components/Tampon";
-import { DOMAINES, MARQUES, metaMarque, trouverMarque, voisins, type DomaineId, type Marque } from "../data/brands";
+import { DOMAINES, metaMarque, trouverMarque, voisins, type DomaineId, type Marque } from "../data/brands";
 import { cn } from "../lib/cn";
 import { LIENS, lienDomaine, lienMarque } from "../lib/liens";
 import { metaFiche } from "../lib/meta";
@@ -30,13 +30,6 @@ function tailleTitre(titre: string) {
   const uneLigne = 1000 / (titre.length * RATIO);
   const k = uneLigne >= 120 ? titre.length * RATIO : Math.max(...titre.split(" ").map((m) => m.length)) * RATIO;
   return { "--k": k } as CSSProperties;
-}
-
-/** 3 autres marques du même domaine : celles qui suivent dans l'archive (par id), en bouclant */
-function aLireEnsuite(marque: Marque) {
-  const memeDomaine = MARQUES.filter((m) => m.domaine === marque.domaine);
-  const i = memeDomaine.indexOf(marque);
-  return [1, 2, 3].map((k) => memeDomaine[(i + k) % memeDomaine.length]).filter((m) => m !== marque);
 }
 
 /** « https://www.vitra.com/fr » → « vitra.com » */
@@ -72,6 +65,8 @@ function Voisin({ marque, sens }: { marque: Marque; sens: "precedent" | "suivant
 export default function MarquePage() {
   const { slug } = useParams();
   const marque = trouverMarque(slug);
+  // Arrivée depuis une carte REW : son « Pourquoi » (contexte de la recommandation, à part du texte de la fiche)
+  const pourquoi = usePourquoiRew(marque ? lienMarque(marque.slug) : "");
 
   useMeta(marque ? metaFiche(marque) : null);
   useEffect(() => {
@@ -238,6 +233,7 @@ export default function MarquePage() {
             </div>
             <div className="flex flex-col items-start gap-8 md:col-span-6 md:pt-10">
               <p className="t-texte-m md:t-texte-l text-carbone">{marque.description}</p>
+              <PourquoiRew raison={pourquoi} />
               {marque.url && (
                 <Bouton type="encre" href={marque.url} externe>
                   {film ? "Voir sur Letterboxd" : "Visiter le site"}
@@ -247,19 +243,8 @@ export default function MarquePage() {
           </Conteneur>
         </section>
 
-        {/* ── À lire ensuite ── */}
-        <section className="hidden pt-20 md:block">
-          <Conteneur>
-            <p className="t-cote-m text-signal">/ Dans le même univers</p>
-            <ul className="mt-[23px] grid justify-items-center gap-x-10 gap-y-[52px] md:grid-cols-2 xl:grid-cols-3">
-              {aLireEnsuite(marque).map((m, i) => (
-                <Apparition as="li" rang={i} key={m.slug} className="w-full max-w-[400px]">
-                  <Fiche marque={m} />
-                </Apparition>
-              ))}
-            </ul>
-          </Conteneur>
-        </section>
+        {/* ── Dans le même univers : références proches, toutes catégories ── */}
+        <MemeUnivers id={marque.id} />
 
         {/* ── Précédent / suivant ── */}
         <nav aria-label="Autres entrées"className="pt-12 md:pt-[52px]">

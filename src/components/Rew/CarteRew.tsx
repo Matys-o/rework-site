@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { cn } from "../../lib/cn";
+import { memoriserRaison } from "../../lib/rew/client";
 import { NOMS_UNIVERS, type CarteRew as Carte } from "../../lib/rew/types";
 import { MediaCouverture } from "../MediaCouverture";
 
@@ -57,6 +58,7 @@ export function CarteRew({
     >
       <a
         href={carte.fiche}
+        onClick={() => memoriserRaison(carte)}
         tabIndex={-1}
         aria-hidden
         className={cn(
@@ -88,6 +90,7 @@ export function CarteRew({
         >
           <a
             href={carte.fiche}
+        onClick={() => memoriserRaison(carte)}
             className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
           >
             {carte.nom}
@@ -131,6 +134,7 @@ export function CarteRew({
           )}
           <a
             href={carte.fiche}
+        onClick={() => memoriserRaison(carte)}
             className={cn(
               "t-cote-s py-2 underline-offset-4 hover:underline",
               sombre ? "text-papier/75" : "text-graphite hover:text-encre",

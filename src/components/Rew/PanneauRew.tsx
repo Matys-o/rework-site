@@ -1,9 +1,16 @@
-import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 import { cn } from "../../lib/cn";
 import {
   LONGUEUR_MAX,
   MESSAGES_ERREUR,
   rew,
+  texteAttente,
   useRew,
   type Tour,
 } from "../../lib/rew/client";
@@ -89,9 +96,33 @@ function TourRew({ tour, dernier }: { tour: Tour; dernier: boolean }) {
   );
 }
 
+/** Attente : le texte suit l'avancement réel (lecture, recherche, rédaction, relance) pour ne jamais sembler figé */
+function Attente({ debut, essai, long }: { debut: number; essai: number; long: boolean }) {
+  const [maintenant, setMaintenant] = useState(() => Date.now());
+  useEffect(() => {
+    const t = setInterval(() => setMaintenant(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  return (
+    <p
+      className="rew-apparition flex items-center gap-2.5 self-start text-[15px] text-graphite"
+      role="status"
+    >
+      <Orbe taille={18} rapide />
+      {texteAttente(maintenant - debut, essai, long)}
+      <span className="rew-points" aria-hidden>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </span>
+    </p>
+  );
+}
+
 // Panneau REW : à droite (≈ 480 px) sur desktop, plein écran sur mobile. URL /rew, Échap ou retour = fermer, focus piégé.
 export function PanneauRew() {
-  const { ouvert, tours, enCours, brouillon, ouverture } = useRew();
+  const { ouvert, tours, enCours, essai, debut, long, brouillon, ouverture } =
+    useRew();
   const panneauRef = useRef<HTMLDivElement>(null);
   const champRef = useRef<HTMLTextAreaElement>(null);
   const filRef = useRef<HTMLDivElement>(null);
@@ -238,20 +269,7 @@ export function PanneauRew() {
           {tours.map((t, i) => (
             <TourRew key={i} tour={t} dernier={i === tours.length - 1} />
           ))}
-          {enCours && (
-            <p
-              className="rew-apparition flex items-center gap-2.5 self-start text-[15px] text-graphite"
-              role="status"
-            >
-              <Orbe taille={18} rapide />
-              REW cherche dans l'archive
-              <span className="rew-points" aria-hidden>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
-              </span>
-            </p>
-          )}
+          {enCours && <Attente debut={debut} essai={essai} long={long} />}
         </div>
 
         {/* Saisie */}

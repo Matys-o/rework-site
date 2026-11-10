@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, useState, type FormEvent } from "react";
-import { TOTAL_ENTREES } from "../data/brands";
+import { STATS } from "../data/archive";
 import { LIENS as ROUTES, lienDomaine } from "../lib/liens";
 import { useFacteurParallax } from "../lib/mouvement";
 import { Aura } from "./Aura";
@@ -301,7 +301,7 @@ export function Footer() {
             </span>
             Paris
           </p>
-          <p className="hidden md:block">R°{TOTAL_ENTREES} · 48°51′N 2°21′E</p>
+          <p className="hidden md:block">R°{STATS.total} · 48°51′N 2°21′E</p>
         </div>
       </div>
     </footer>

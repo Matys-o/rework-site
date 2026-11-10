@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/rew-index.mjs && tsc --noEmit && vite build && node scripts/prerendu.mjs",
+    "build": "node scripts/rew-index.mjs && node scripts/proches.mjs && tsc --noEmit && vite build && node scripts/prerendu.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name rework-archive --branch main",
     "discord:install": "npm ci --prefix discord",

@@ -1,5 +1,8 @@
 // Types partagés entre la Pages Function /api/rew et l'interface REW.
 
+/** Longueur maximale d'un message : assez pour un brief de moodboard détaillé (≈ 250 mots) */
+export const LONGUEUR_MAX = 1500;
+
 export const UNIVERS_REW = [
   "mode",
   "design",
@@ -72,6 +75,17 @@ export type ErreurRew = {
     | "invalide"
     | "indisponible"
     | "refus"
+    // Temporaires (le navigateur retente une fois tout seul) : délai du modèle, fournisseur saturé, réponse illisible, autre
     | "delai"
+    | "surcharge"
+    | "generation"
     | "erreur";
 };
+
+/** Codes d'erreur qui valent une nouvelle tentative automatique ; les autres sont définitifs */
+export const ERREURS_TEMPORAIRES: ErreurRew["erreur"][] = [
+  "delai",
+  "surcharge",
+  "generation",
+  "erreur",
+];

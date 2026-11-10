@@ -14,6 +14,7 @@ import {
   TitreSectionMusique,
 } from "../components/Musique";
 import { Nav } from "../components/Nav";
+import { MemeUnivers, PourquoiRew, usePourquoiRew } from "../components/References";
 import { SerifRevele, TitreRevele, dureeCascade } from "../components/Revele";
 import {
   ARTISTES,
@@ -26,6 +27,7 @@ import {
   genreEtEnfants,
   lienArtiste,
   lienGenre,
+  lienSortie,
   nomGenre,
   nomLabel,
   nomMood,
@@ -142,6 +144,7 @@ export function ArtistePage() {
   const { slug } = useParams();
   const a = trouverArtiste(slug);
   useMeta(a ? metaArtiste(a) : null);
+  const pourquoi = usePourquoiRew(a ? lienArtiste(a.slug) : "");
   if (!a)
     return (
       <Introuvable
@@ -246,6 +249,7 @@ export function ArtistePage() {
                 {a.description}
               </p>
               <LiensEcoute liens={a.liens} />
+              <PourquoiRew raison={pourquoi} />
             </div>
           </Conteneur>
         </section>
@@ -297,6 +301,10 @@ export function ArtistePage() {
             </Conteneur>
           </section>
         )}
+        <MemeUnivers
+          id={a.id}
+          exclure={[...a.sorties, ...proches.slice(0, 3).map((p) => p.id)]}
+        />
         <div className="h-16 md:h-24" />
       </main>
       <Footer />
@@ -310,6 +318,7 @@ export function SortiePage() {
   const { slug } = useParams();
   const s = trouverSortie(slug);
   useMeta(s ? metaSortie(s) : null);
+  const pourquoi = usePourquoiRew(s ? lienSortie(s.slug) : "");
   if (!s)
     return (
       <Introuvable
@@ -386,6 +395,7 @@ export function SortiePage() {
                   {s.description}
                 </p>
                 <LiensEcoute liens={s.liens} className="mt-8" />
+                <PourquoiRew raison={pourquoi} className="mt-8" />
               </div>
             </div>
 
@@ -471,6 +481,10 @@ export function SortiePage() {
             </Conteneur>
           </section>
         )}
+        <MemeUnivers
+          id={s.id}
+          exclure={[...s.artistes, ...autres.slice(0, 4).map((x) => x.id), ...proches.slice(0, 3).map((p) => p.id)]}
+        />
         <div className="h-16 md:h-24" />
       </main>
       <Footer />
