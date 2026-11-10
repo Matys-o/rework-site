@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 7,
+    "total": 9,
     "cycle": 1,
     "publiees": [
       {
@@ -51,6 +51,20 @@
         "nom": "Raycast",
         "date": "2026-11-08",
         "message": "1568987887314276495"
+      },
+      {
+        "id": 568,
+        "slug": "caval",
+        "nom": "CAVAL",
+        "date": "2026-11-09",
+        "message": "1569395824339976237"
+      },
+      {
+        "id": 567,
+        "slug": "snowears",
+        "nom": "Snowears",
+        "date": "2026-11-10",
+        "message": "1569733008838099079"
       }
     ],
     "ignorees": [
@@ -70,7 +84,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 7,
+    "total": 9,
     "cycle": 1,
     "publiees": [
       {
@@ -121,10 +135,29 @@
         "nom": "Gone Girl",
         "date": "2026-11-08",
         "message": "1568987903084728362"
+      },
+      {
+        "id": 443,
+        "slug": "millenium-les-hommes-qui-n-aimaient-pas-les-femmes",
+        "nom": "Millénium : Les hommes qui n'aimaient pas les femmes",
+        "date": "2026-11-09",
+        "message": "1569395841733500938"
+      },
+      {
+        "id": 442,
+        "slug": "the-social-network",
+        "nom": "The Social Network",
+        "date": "2026-11-10",
+        "message": "1569733026051657840"
       }
     ],
     "ignorees": [],
     "cycleDebut": "2026-11-02"
   },
-  "trio": {}
+  "trio": {
+    "2026-W46": {
+      "date": "2026-11-09",
+      "message": "1569402403349074034"
+    }
+  }
 }
