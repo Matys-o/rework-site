@@ -4,7 +4,7 @@ import { EnTetePage, TITRE_SECTION } from "../components/EnTetePage";
 import { Footer } from "../components/Footer";
 import { Conteneur } from "../components/Grille";
 import { Nav } from "../components/Nav";
-import { TOTAL_ENTREES } from "../data/brands";
+import { STATS } from "../data/archive";
 import { LIENS } from "../lib/liens";
 import { metaManifeste } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
@@ -16,7 +16,7 @@ const POINTS = [
   {
     numero: "01",
     titre: "Une sélection",
-    texte: `${TOTAL_ENTREES} marques et films choisis un par un. Pas un annuaire.`,
+    texte: `${STATS.total} références (marques, films, musique) choisies une par une. Pas un annuaire.`,
     couleur: "var(--color-aura-mode)",
   },
   {

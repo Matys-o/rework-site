@@ -2,21 +2,25 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "react-router";
 import { Bouton } from "../components/Bouton";
-import { Fiche } from "../components/Fiche";
 import { Filtre } from "../components/Filtre";
 import { Footer } from "../components/Footer";
 import { Conteneur } from "../components/Grille";
 import { Icone } from "../components/Icone";
-import { EnTeteIndex, LigneIndex } from "../components/LigneIndex";
+import { EnTeteIndex, LigneReference } from "../components/LigneIndex";
+import { FicheReference } from "../components/References";
 import { Nav } from "../components/Nav";
 import { Recherche } from "../components/Recherche";
 import {
-  DOMAINES,
-  MARQUES,
-  TOTAL_MARQUES,
-  type DomaineId,
-  type Marque,
-} from "../data/brands";
+  REFERENCES,
+  STATS,
+  categorieDe,
+  chercher,
+  nomDe,
+  universDe,
+  type Reference,
+} from "../data/archive";
+import { DOMAINES, type DomaineId } from "../data/brands";
+import { UNIVERS_MUSIQUE } from "../data/musique";
 import { cn } from "../lib/cn";
 import { metaIndex } from "../lib/meta";
 import { EASE_REVELE, defilerVers } from "../lib/mouvement";
@@ -35,44 +39,89 @@ import {
 
 const PAR_PAGE = 24;
 
+/** Année d'une référence : fondation, sortie du film ou de l'album, début de l'artiste */
+const anneeDe = (r: Reference) =>
+  (r.type === "marque"
+    ? r.marque.annee
+    : r.type === "artiste"
+      ? r.artiste.debut
+      : r.sortie.annee) || 0;
+
+type Ligne = { r: Reference; rang: number };
 const TRIS = {
+  // Recherche : les meilleures correspondances d'abord (nom exact, début du nom…)
+  pertinence: {
+    label: "pertinence",
+    trier: (a: Ligne, b: Ligne) => a.rang - b.rang,
+  },
   // « récent » = dernières entrées d'abord (plus grand id)
-  recent: { label: "récent ↓", trier: (a: Marque, b: Marque) => b.id - a.id },
+  recent: { label: "récent ↓", trier: (a: Ligne, b: Ligne) => b.r.id - a.r.id },
   nom: {
     label: "A → Z",
-    trier: (a: Marque, b: Marque) => a.nom.localeCompare(b.nom, "fr"),
+    trier: (a: Ligne, b: Ligne) => nomDe(a.r).localeCompare(nomDe(b.r), "fr"),
   },
   annee: {
     label: "année ↑",
-    trier: (a: Marque, b: Marque) => a.annee - b.annee,
+    trier: (a: Ligne, b: Ligne) => anneeDe(a.r) - anneeDe(b.r),
   },
   // Réservé au domaine Film, dont c'est le tri par défaut
   rang: {
     label: "rang Letterboxd ↑",
-    trier: (a: Marque, b: Marque) =>
-      (a.rang ?? Infinity) - (b.rang ?? Infinity),
+    trier: (a: Ligne, b: Ligne) =>
+      ((a.r.type === "marque" && a.r.marque.rang) || Infinity) -
+      ((b.r.type === "marque" && b.r.marque.rang) || Infinity),
   },
 } as const;
 type Tri = keyof typeof TRIS;
 const ORDRE_TRIS_MARQUES: Tri[] = ["recent", "nom", "annee"];
 const ORDRE_TRIS_FILMS: Tri[] = ["rang", "recent", "nom", "annee"];
 
-/** Recherche insensible à la casse et aux accents */
-const normaliser = (s: string) =>
-  s
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase();
+const ORDRE_TRIS_RECHERCHE: Tri[] = ["pertinence", "recent", "nom", "annee"];
+
+/** « 3 marques · 1 film · 2 en musique » : la répartition des résultats par catégorie */
+function repartition(refs: Reference[]) {
+  const n = { marques: 0, films: 0, musique: 0 };
+  for (const r of refs) {
+    const u = universDe(r);
+    if (u === "film") n.films++;
+    else if (u === "musique") n.musique++;
+    else n.marques++;
+  }
+  return [
+    n.marques && `${n.marques} marque${n.marques > 1 ? "s" : ""}`,
+    n.films && `${n.films} film${n.films > 1 ? "s" : ""}`,
+    n.musique && `${n.musique} en musique`,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
 
 const estDomaine = (v: string | null): v is DomaineId => !!v && v in DOMAINES;
 
 /** « 446 marques et films », « 78 films », « 150 marques · Mode » */
 function titreIndex(domaine: DomaineId | null) {
-  if (!domaine) return `${TOTAL_MARQUES} marques`;
+  if (!domaine) return `${STATS.marques} marques`;
   const d = DOMAINES[domaine];
   return domaine === "film"
     ? `${d.entrees} films`
     : `${d.entrees} marques · ${d.nom}`;
+}
+
+/** « ● Film », « ● Musique · Album » : la catégorie d'un résultat, dans la couleur d'aura de son univers */
+function Categorie({ reference }: { reference: Reference }) {
+  const u = universDe(reference);
+  const couleur =
+    u === "musique" ? UNIVERS_MUSIQUE.couleur : DOMAINES[u].couleur;
+  return (
+    <p className="t-cote-s mb-1 flex items-center gap-2 px-1 text-graphite">
+      <span
+        aria-hidden
+        className="size-2.5 rounded-full"
+        style={{ background: couleur }}
+      />
+      {categorieDe(reference)}
+    </p>
+  );
 }
 
 export default function Index() {
@@ -95,7 +144,12 @@ export default function Index() {
     ? (params.get("domaine") as DomaineId)
     : null;
   const vue = params.get("vue") === "liste" ? "liste" : "grille";
-  const ordreTris = domaine === "film" ? ORDRE_TRIS_FILMS : ORDRE_TRIS_MARQUES;
+  const enRecherche = q.trim().length > 0;
+  const ordreTris = enRecherche
+    ? ORDRE_TRIS_RECHERCHE
+    : domaine === "film"
+      ? ORDRE_TRIS_FILMS
+      : ORDRE_TRIS_MARQUES;
   const triParDefaut = ordreTris[0];
   const tri: Tri = ordreTris.includes(params.get("tri") as Tri)
     ? (params.get("tri") as Tri)
@@ -167,32 +221,40 @@ export default function Index() {
     setLimite(PAR_PAGE);
   };
 
-  // Base = univers + recherche ; les filtres avancés s'appliquent ensuite
-  const base = useMemo(() => {
-    const termes = normaliser(q.trim()).split(/\s+/).filter(Boolean);
-    // Page Marques : tout sauf les films, qui ont leur propre page (?domaine=film)
-    return MARQUES.filter((m) =>
-      domaine ? m.domaine === domaine : m.domaine !== "film",
-    )
-      .filter((m) => {
-        if (!termes.length) return true;
-        const texte = normaliser(
-          [m.nom, m.origine, m.etiquette, m.realisation, m.titreOriginal].join(
-            " ",
-          ),
+  // Base = univers + recherche ; les filtres avancés s'appliquent ensuite.
+  // Sans recherche : la page Marques (sans les films) ou l'univers choisi. Avec une recherche : TOUTE l'archive
+  // (marques, films, musique), sauf si un univers a été choisi volontairement.
+  const { base, ailleurs } = useMemo(() => {
+    const trouvees = enRecherche ? chercher(q) : null;
+    const refs = trouvees
+      ? trouvees.filter((r) => !domaine || universDe(r) === domaine)
+      : REFERENCES.filter(
+          (r) =>
+            r.type === "marque" &&
+            (domaine
+              ? r.marque.domaine === domaine
+              : r.marque.domaine !== "film"),
         );
-        return termes.every((t) => texte.includes(t));
-      })
-      .map((m) => ({ m, a: attributsDe(m) }));
-  }, [q, domaine]);
+    return {
+      base: refs.map((r, rang) => ({
+        r,
+        rang,
+        a: r.type === "marque" ? attributsDe(r.marque) : null,
+      })),
+      // Résultats dans toute l'archive, pour proposer d'élargir quand l'univers choisi n'a rien
+      ailleurs: trouvees && domaine ? trouvees.length : 0,
+    };
+  }, [q, domaine, enRecherche]);
 
+  // Les filtres avancés (famille, pays, époque, couleur, prix) décrivent des marques et des films :
+  // une entrée musicale n'y répond pas, elle sort des résultats dès qu'un filtre est actif
   const resultats = useMemo(
     () =>
       base
-        .filter(({ a }) => correspond(a, selection))
-        .map(({ m }) => m)
-        .sort(TRIS[tri].trier),
-    [base, selection, tri],
+        .filter(({ a }) => (a ? correspond(a, selection) : nbFiltres === 0))
+        .sort(TRIS[tri].trier)
+        .map(({ r }) => r),
+    [base, selection, tri, nbFiltres],
   );
 
   // Compteurs du panneau : pour chaque filtre, les marques qui passent tous les AUTRES filtres
@@ -202,6 +264,7 @@ export default function Index() {
     ) as Record<CleFiltre, Record<string, number>>;
     const parPays: Record<string, number> = {};
     for (const { a } of base) {
+      if (!a) continue;
       if (a.pays) parPays[a.pays] = (parPays[a.pays] ?? 0) + 1;
       for (const k of CLES_FILTRES) {
         if (a[k] && correspond(a, selection, k))
@@ -253,7 +316,7 @@ export default function Index() {
           texte={
             domaine === "film"
               ? "Cherchez par titre, réalisateur ou pays."
-              : "Cherchez par nom, ville ou catégorie, ou choisissez un univers."
+              : "Cherchez dans toute l'archive (marques, films, musique) par nom, ville ou genre, ou choisissez un univers."
           }
         >
           {/* Recherche · vue · tri */}
@@ -270,7 +333,7 @@ export default function Index() {
                 aide={
                   domaine === "film"
                     ? "Chercher un film, un réalisateur…"
-                    : "Chercher une marque, une ville…"
+                    : "Chercher une marque, un film, un artiste…"
                 }
               />
             </div>
@@ -346,7 +409,7 @@ export default function Index() {
             <li className="shrink-0">
               <Filtre
                 label="Toutes"
-                compte={TOTAL_MARQUES}
+                compte={STATS.marques}
                 couleur="var(--color-signal)"
                 ton="blanc"
                 actif={!domaine}
@@ -370,6 +433,31 @@ export default function Index() {
                 </li>
               ))}
           </ul>
+
+          {/* Recherche : combien de résultats, dans quelles catégories (et où, si un univers est choisi) */}
+          {enRecherche && resultats.length > 0 && (
+            <p
+              className="t-cote-s flex flex-wrap items-center gap-x-3 gap-y-1 pb-3 text-graphite"
+              role="status"
+            >
+              <span className="text-encre">
+                {resultats.length} résultat{resultats.length > 1 ? "s" : ""}
+                {domaine
+                  ? ` · ${DOMAINES[domaine].nom}`
+                  : " dans toute l'archive"}
+              </span>
+              <span>{repartition(resultats)}</span>
+              {domaine && ailleurs > resultats.length && (
+                <button
+                  type="button"
+                  onClick={() => changerDomaine(null)}
+                  className="cursor-pointer py-2 underline underline-offset-4 transition-colors duration-240 ease-rw hover:text-signal"
+                >
+                  Voir les {ailleurs} dans toute l'archive
+                </button>
+              )}
+            </p>
+          )}
 
           {/* Filtres actifs : pastilles retirables */}
           {nbFiltres > 0 && (
@@ -427,25 +515,34 @@ export default function Index() {
             {resultats.length === 0 ? (
               <div className="flex flex-col items-start gap-6 py-16 md:py-24">
                 <p className="t-serif-m md:t-serif-l">
-                  Aucun résultat{q && ` pour « ${q} »`}.
+                  Aucun résultat{q && ` pour « ${q} »`}
+                  {domaine && ` dans ${DOMAINES[domaine].nom}`}.
                 </p>
-                <Bouton
-                  type="verre"
-                  onClick={() => {
-                    setQ("");
-                    setParams({}, { replace: true });
-                  }}
-                >
-                  Tout réafficher
-                </Bouton>
+                <div className="flex flex-wrap gap-3">
+                  {/* L'univers choisi n'a rien, mais le reste de l'archive oui */}
+                  {ailleurs > 0 && (
+                    <Bouton type="encre" onClick={() => changerDomaine(null)}>
+                      {`Voir ${ailleurs > 1 ? `les ${ailleurs} résultats` : "le résultat"} dans toute l'archive`}
+                    </Bouton>
+                  )}
+                  <Bouton
+                    type="verre"
+                    onClick={() => {
+                      setQ("");
+                      setParams({}, { replace: true });
+                    }}
+                  >
+                    Tout réafficher
+                  </Bouton>
+                </div>
               </div>
             ) : vue === "grille" ? (
               // Changement de filtre : la grille se réorganise (animation layout), les fiches sortantes s'effacent
               <ul className="grid justify-items-center gap-y-[30px] md:grid-cols-2 md:gap-x-10 md:gap-y-[52px] xl:grid-cols-3">
                 <AnimatePresence mode="popLayout" initial={false}>
-                  {affiches.map((m, i) => (
+                  {affiches.map((r, i) => (
                     <motion.li
-                      key={m.slug}
+                      key={r.id}
                       layout
                       initial={{ opacity: 0, y: 40 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -461,7 +558,9 @@ export default function Index() {
                       }}
                       className="w-full max-w-[400px]"
                     >
-                      <Fiche marque={m} />
+                      {/* Recherche globale : la catégorie de chaque résultat, au-dessus de sa fiche */}
+                      {enRecherche && <Categorie reference={r} />}
+                      <FicheReference reference={r} />
                     </motion.li>
                   ))}
                 </AnimatePresence>
@@ -474,9 +573,9 @@ export default function Index() {
                 </div>
                 <ul className="mt-3">
                   <AnimatePresence mode="popLayout" initial={false}>
-                    {affiches.map((m, i) => (
+                    {affiches.map((r, i) => (
                       <motion.li
-                        key={m.slug}
+                        key={r.id}
                         layout
                         initial={{ opacity: 0, y: 24 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -488,7 +587,7 @@ export default function Index() {
                         }}
                         className="mt-1 first:mt-0"
                       >
-                        <LigneIndex marque={m} />
+                        <LigneReference reference={r} />
                       </motion.li>
                     ))}
                   </AnimatePresence>

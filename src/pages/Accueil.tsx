@@ -8,16 +8,11 @@ import { Conteneur } from "../components/Grille";
 import { MurMarques } from "../components/MurMarques";
 import { Nav } from "../components/Nav";
 import { TrioConnexions } from "../components/TrioConnexions";
-import {
-  DOMAINES,
-  MARQUES,
-  TOTAL_ENTREES,
-  nouvellesEntrees,
-  type Domaine,
-  type Marque,
-} from "../data/brands";
+import { ARTISTES } from "../data/musique";
+import { NB_UNIVERS, STATS, UNIVERS, type Univers } from "../data/archive";
+import { MARQUES, nouvellesEntrees, type Marque } from "../data/brands";
 import { trioDeLaSemaine } from "../data/trios";
-import { LIENS, lienDomaine } from "../lib/liens";
+import { LIENS } from "../lib/liens";
 import { lienTrio, metaAccueil } from "../lib/meta";
 import { useMeta } from "../lib/useMeta";
 
@@ -31,9 +26,11 @@ const NOUVELLES = nouvellesEntrees(5);
 const imageLocale = (m: Marque) =>
   !!m.image?.startsWith("/images/") && !m.video;
 
-/** Image d'une tuile univers : l'entrée la plus récente du domaine qui a une photo locale */
-const imageUnivers = (d: Domaine) =>
-  [...MARQUES].reverse().find((m) => m.domaine === d.id && imageLocale(m));
+/** Image d'une tuile univers : l'entrée la plus récente de l'univers qui a une photo locale */
+const imageUnivers = (u: Univers) =>
+  u.id === "musique"
+    ? [...ARTISTES].reverse().find((a) => a.image?.startsWith("/images/"))?.image
+    : [...MARQUES].reverse().find((m) => m.domaine === u.id && imageLocale(m))?.image;
 
 const TITRE_SECTION =
   "font-display text-[28px] leading-[1.1] font-bold tracking-[-0.02em] [font-variation-settings:'opsz'_14]";
@@ -42,6 +39,8 @@ const TITRE_SECTION =
 const RANGEE =
   "-mx-(--marge) mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-(--marge) px-(--marge) pb-4 [scrollbar-width:none] lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible lg:px-0";
 const CELLULE = "w-[78vw] max-w-[320px] shrink-0 snap-start lg:w-auto lg:max-w-none";
+/** Les six univers : même rangée, six colonnes en desktop */
+const RANGEE_UNIVERS = RANGEE.replace("lg:grid-cols-5", "lg:grid-cols-6 lg:gap-4");
 
 export default function Accueil() {
   useMeta(META);
@@ -68,7 +67,7 @@ export default function Accueil() {
               Mis à jour chaque semaine
             </p>
             <h1 className="mt-5 max-w-[720px] font-display text-[clamp(40px,11vw,68px)] leading-[0.92] font-extrabold tracking-[-0.05em] [font-variation-settings:'opsz'_96] md:mt-[22px]">
-              {TOTAL_ENTREES} marques et films{" "}
+              {STATS.total} références{" "}
               <br className="hidden sm:block" />à découvrir.
             </h1>
             <p className="mt-5 max-w-[620px] text-[17px] leading-[1.5] md:mt-6 md:text-[20px]">
@@ -108,30 +107,30 @@ export default function Accueil() {
 
         <BoxRew />
 
-        {/* ── Les 5 univers ── */}
+        {/* ── Les 6 univers ── */}
         <section id="domaines" className="scroll-mt-28 pt-6 md:pt-[60px]">
           <Conteneur>
             <Apparition>
               <h2 className={TITRE_SECTION}>
-                {Object.keys(DOMAINES).length} univers
+                {NB_UNIVERS} univers
               </h2>
               <p className="t-texte-m mt-1 text-graphite">
                 Choisissez par où commencer.
               </p>
             </Apparition>
-            <ul className={RANGEE}>
-              {Object.values(DOMAINES).map((d, i) => {
+            <ul className={RANGEE_UNIVERS}>
+              {UNIVERS.map((d, i) => {
                 const image = imageUnivers(d);
                 return (
                   <Apparition as="li" rang={i} key={d.id} className={CELLULE}>
                     <FicheDossier
-                      href={lienDomaine(d.id)}
+                      href={d.lien}
                       onglet={d.numero}
                       domaine={d}
                       meta={`${d.entrees} entrées`}
-                      titre={d.id === "film" ? "Films" : d.nom}
+                      titre={d.titre}
                       description={d.description}
-                      image={image?.image}
+                      image={image}
                     />
                   </Apparition>
                 );
@@ -184,7 +183,7 @@ export default function Accueil() {
                 href={LIENS.index}
                 className="shrink-0 text-[15px] font-medium transition-colors duration-240 ease-rw hover:text-signal"
               >
-                Voir les {TOTAL_ENTREES} →
+                Voir les {STATS.marques} marques →
               </a>
             </Apparition>
             <ul className={RANGEE}>

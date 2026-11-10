@@ -1,9 +1,12 @@
 // Cloudflare Pages Function — POST /api/rew : REW, le curateur culturel.
 // La clé ANTHROPIC_API_KEY reste côté serveur (secret Cloudflare), jamais dans le code du navigateur ni dans le repo.
 // Rien n'est stocké ni journalisé : la conversation et le profil vivent dans la session du navigateur.
+// Les journaux ne contiennent que des durées, des longueurs et des codes d'erreur.
 import Anthropic from "@anthropic-ai/sdk";
 import { SITE_URL } from "../../src/lib/site";
 import {
+  BUDGET_MS,
+  EchecRew,
   LONGUEUR_MAX,
   RefusRew,
   historiquePropre,
@@ -16,7 +19,6 @@ type Env = { ANTHROPIC_API_KEY?: string };
 type Contexte = { request: Request; env: Env };
 
 const LIMITE_HEURE = 20;
-const DELAI_MS = 25_000;
 
 const json = (statut: number, corps: unknown) =>
   new Response(JSON.stringify(corps), {
@@ -55,6 +57,10 @@ function depasse(cle: string) {
   if (compteurs.size > 5000) compteurs.delete(compteurs.keys().next().value!);
   return false;
 }
+/** Une demande qui échoue de notre côté ne compte pas : la nouvelle tentative automatique ne coûte rien au visiteur */
+function rembourser(cle: string) {
+  compteurs.get(cle)?.pop();
+}
 
 export const onRequestPost = async ({ request, env }: Contexte) => {
   const origine = request.headers.get("origin");
@@ -83,35 +89,41 @@ export const onRequestPost = async ({ request, env }: Contexte) => {
     return erreur(400, "invalide");
   if (!env.ANTHROPIC_API_KEY) return erreur(503, "indisponible");
 
-  if (
-    depasse(await empreinte(request.headers.get("cf-connecting-ip") ?? "local"))
-  )
-    return erreur(429, "limite");
+  const cle = await empreinte(
+    request.headers.get("cf-connecting-ip") ?? "local",
+  );
+  if (depasse(cle)) return erreur(429, "limite");
 
+  // Délais et nouvelle tentative gérés appel par appel dans repondre() : le SDK ne retente pas tout seul
+  // (avant : timeout 25 s × 2 essais en silence, sans distinction des erreurs)
   const client = new Anthropic({
     apiKey: env.ANTHROPIC_API_KEY,
-    timeout: DELAI_MS,
-    maxRetries: 1,
+    maxRetries: 0,
   });
+  const debut = Date.now();
   try {
-    return json(
-      200,
-      await repondre(client, messages, profilPropre(corps.profil)),
+    const reponse = await repondre(
+      client,
+      messages,
+      profilPropre(corps.profil),
+      debut + BUDGET_MS,
     );
+    console.log(
+      `rew ok : ${Date.now() - debut} ms, message de ${messages[messages.length - 1].content.length} caractères`,
+    );
+    return json(200, reponse);
   } catch (e) {
     if (e instanceof RefusRew) return erreur(200, "refus");
-    if (e instanceof Anthropic.APIConnectionTimeoutError)
-      return erreur(504, "delai");
-    if (e instanceof Anthropic.RateLimitError) return erreur(429, "limite");
-    // Aucun contenu de conversation dans les journaux : seulement le type d'erreur
+    rembourser(cle);
+    const code = e instanceof EchecRew ? e.code : "inconnue";
     console.error(
-      "rew :",
-      e instanceof Anthropic.APIError
-        ? `API ${e.status}`
-        : e instanceof Error
-          ? e.message
-          : "inconnue",
+      `rew échec : ${code} après ${Date.now() - debut} ms`,
+      e instanceof EchecRew ? "" : e instanceof Error ? e.message : "",
     );
+    if (code === "config") return erreur(503, "indisponible");
+    if (code === "delai") return erreur(504, "delai");
+    if (code === "surcharge") return erreur(503, "surcharge");
+    if (code === "generation") return erreur(502, "generation");
     return erreur(502, "erreur");
   }
 };

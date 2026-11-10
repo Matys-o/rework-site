@@ -1,8 +1,7 @@
 import { rew } from "../lib/rew/client";
 import { Orbe } from "./Rew/CarteRew";
 import { useEffect, useRef } from "react";
-import { DOMAINES, TOTAL_ENTREES, TOTAL_MARQUES } from "../data/brands";
-import { ARTISTES } from "../data/musique";
+import { STATS, UNIVERS } from "../data/archive";
 import { cn } from "../lib/cn";
 import { LIENS, lienDomaine } from "../lib/liens";
 import { lenis } from "../lib/mouvement";
@@ -12,9 +11,9 @@ import { Icone } from "./Icone";
 import { Logo } from "./Logo";
 
 const ENTREES = [
-  { label: "Marques", href: LIENS.index, compteur: String(TOTAL_MARQUES) },
-  { label: "Films", href: lienDomaine("film"), compteur: String(DOMAINES.film.entrees) },
-  { label: "Musique", href: LIENS.musique, compteur: String(ARTISTES.length) },
+  { label: "Marques", href: LIENS.index, compteur: String(STATS.marques) },
+  { label: "Films", href: lienDomaine("film"), compteur: String(STATS.films) },
+  { label: "Musique", href: LIENS.musique, compteur: String(STATS.musique) },
   { label: "Trios", href: LIENS.trios, compteur: "×3" },
   { label: "À propos", href: LIENS.manifeste, compteur: "—" },
   { label: "REW", href: "/rew", compteur: "" },
@@ -132,9 +131,9 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
             <div {...entree(4)}>
               <p className="t-cote-m hidden lg:block">/ univers</p>
               <ul className="flex max-w-[300px] flex-wrap gap-x-[11px] gap-y-3 lg:mt-5 lg:flex-col lg:items-start lg:gap-4">
-                {Object.values(DOMAINES).map((d) => (
+                {UNIVERS.map((d) => (
                   <li key={d.id}>
-                    <Filtre ton="blanc" href={lienDomaine(d.id)} onClick={onFermer} label={d.nom} compte={d.entrees} couleur={d.couleur} />
+                    <Filtre ton="blanc" href={d.lien} onClick={onFermer} label={d.nom} compte={d.entrees} couleur={d.couleur} />
                   </li>
                 ))}
               </ul>
@@ -162,7 +161,7 @@ export function Menu({ ouvert, onFermer }: MenuProps) {
         </div>
 
         <p className="t-cote-s mt-16 text-carbone">
-          48°51′N 2°21′E — Paris<span className="hidden md:inline"> — R°{TOTAL_ENTREES}</span>
+          48°51′N 2°21′E — Paris<span className="hidden md:inline"> — R°{STATS.total}</span>
         </p>
       </div>
     </div>

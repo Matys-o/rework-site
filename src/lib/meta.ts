@@ -4,12 +4,11 @@
 import {
   DOMAINES,
   MARQUES,
-  TOTAL_ENTREES,
-  TOTAL_MARQUES,
   type DomaineId,
   type Marque,
 } from "../data/brands";
 import { triosPublies, type Trio } from "../data/trios";
+import { LISTE_UNIVERS, NB_UNIVERS, STATS } from "../data/archive";
 import { ARTISTES, GENRES, SORTIES, lienArtiste, lienGenre, lienSortie } from "../data/musique";
 import { metaArtiste, metaGenre, metaMusique, metaSortie } from "./metaMusique";
 import { lienMarque } from "./liens";
@@ -65,10 +64,6 @@ export function ajuster(texte: string, ...suites: string[]) {
   return `${coupe.slice(0, coupe.lastIndexOf(" ")).replace(/[\s,;:.—–-]+$/, "")}…`;
 }
 
-const NOMS_DOMAINES = Object.values(DOMAINES).map((d) => d.nom.toLowerCase());
-/** « mode, design, tech, digital et film » */
-const LISTE_DOMAINES = `${NOMS_DOMAINES.slice(0, -1).join(", ")} et ${NOMS_DOMAINES.at(-1)}`;
-
 const ORGANISATION = {
   "@type": "Organization",
   name: NOM_SITE,
@@ -101,9 +96,9 @@ export const imagePartageFiche = (m: Marque) => `/og/fiches/${m.slug}.jpg`;
 
 export function metaAccueil(): Meta {
   return base({
-    titre: `rework° — ${TOTAL_ENTREES} marques et films à découvrir`,
+    titre: `rework° — ${STATS.total} références à découvrir`,
     description: ajuster(
-      `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}. Pour chaque marque : ce qu'elle fait, d'où elle vient, et le lien vers son site.`,
+      `${STATS.total} références à découvrir en ${NB_UNIVERS} univers : ${LISTE_UNIVERS}. Pour chaque entrée : ce qu'elle est, d'où elle vient, et le lien pour aller plus loin.`,
       "Et trois fois par semaine, un trio : un film relié à deux marques.",
     ),
     chemin: "/",
@@ -115,7 +110,7 @@ export function metaAccueil(): Meta {
         alternateName: "Rework",
         url: `${SITE_URL}/`,
         inLanguage: "fr-FR",
-        description: `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}.`,
+        description: `${STATS.total} références à découvrir : ${LISTE_UNIVERS}.`,
         publisher: ORGANISATION,
         potentialAction: {
           "@type": "SearchAction",
@@ -127,7 +122,7 @@ export function metaAccueil(): Meta {
         },
       },
     ],
-    resume: `${TOTAL_ENTREES} marques et films à découvrir : ${LISTE_DOMAINES}.`,
+    resume: `${STATS.total} références à découvrir : ${LISTE_UNIVERS}.`,
   });
 }
 
@@ -135,7 +130,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
   const d = domaine ? DOMAINES[domaine] : null;
   const titre = d
     ? `${d.nom} — ${d.entrees} entrées | ${NOM_SITE}`
-    : `Toutes les marques — ${TOTAL_MARQUES} marques | ${NOM_SITE}`;
+    : `Toutes les marques — ${STATS.marques} marques | ${NOM_SITE}`;
   const description = d
     ? ajuster(
         `${d.nom} : ${d.entrees} entrées sur Rework. ${d.description}`,
@@ -144,7 +139,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
           : "Cherchez par nom, ville ou catégorie, triez par date d'ajout ou par nom.",
       )
     : ajuster(
-        `Les ${TOTAL_MARQUES} marques de Rework : mode, design, tech et digital. Les films ont leur propre page.`,
+        `Les ${STATS.marques} marques de Rework : mode, design, tech et digital. Les films ont leur propre page.`,
         "Cherchez par nom, ville ou catégorie, ou choisissez un univers.",
       );
   const chemin = d ? `/index?domaine=${d.id}` : "/index";
@@ -163,7 +158,7 @@ export function metaIndex(domaine?: DomaineId | null): Meta {
         isPartOf: { "@type": "WebSite", name: NOM_SITE, url: `${SITE_URL}/` },
         mainEntity: {
           "@type": "ItemList",
-          numberOfItems: d ? d.entrees : TOTAL_MARQUES,
+          numberOfItems: d ? d.entrees : STATS.marques,
         },
       },
     ],
