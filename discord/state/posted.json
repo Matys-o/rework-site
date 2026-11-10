@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 8,
+    "total": 9,
     "cycle": 1,
     "publiees": [
       {
@@ -58,6 +58,13 @@
         "nom": "CAVAL",
         "date": "2026-11-09",
         "message": "1569395824339976237"
+      },
+      {
+        "id": 567,
+        "slug": "snowears",
+        "nom": "Snowears",
+        "date": "2026-11-10",
+        "message": "1569733008838099079"
       }
     ],
     "ignorees": [
@@ -77,7 +84,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 8,
+    "total": 9,
     "cycle": 1,
     "publiees": [
       {
@@ -135,6 +142,13 @@
         "nom": "Millénium : Les hommes qui n'aimaient pas les femmes",
         "date": "2026-11-09",
         "message": "1569395841733500938"
+      },
+      {
+        "id": 442,
+        "slug": "the-social-network",
+        "nom": "The Social Network",
+        "date": "2026-11-10",
+        "message": "1569733026051657840"
       }
     ],
     "ignorees": [],
