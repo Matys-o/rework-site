@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 10,
+    "total": 11,
     "cycle": 1,
     "publiees": [
       {
@@ -72,6 +72,13 @@
         "nom": "Persona",
         "date": "2026-11-11",
         "message": "1570087801330864324"
+      },
+      {
+        "id": 565,
+        "slug": "ravemore-berlin",
+        "nom": "Ravemore Berlin",
+        "date": "2026-11-12",
+        "message": "1570463320543207517"
       }
     ],
     "ignorees": [
@@ -91,7 +98,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 10,
+    "total": 11,
     "cycle": 1,
     "publiees": [
       {
@@ -163,6 +170,13 @@
         "nom": "L'Étrange Histoire de Benjamin Button",
         "date": "2026-11-11",
         "message": "1570087831638905029"
+      },
+      {
+        "id": 440,
+        "slug": "zodiac",
+        "nom": "Zodiac",
+        "date": "2026-11-12",
+        "message": "1570463336296878081"
       }
     ],
     "ignorees": [],
