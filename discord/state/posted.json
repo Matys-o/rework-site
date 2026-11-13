@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 11,
+    "total": 12,
     "cycle": 1,
     "publiees": [
       {
@@ -79,6 +79,13 @@
         "nom": "Ravemore Berlin",
         "date": "2026-11-12",
         "message": "1570463320543207517"
+      },
+      {
+        "id": 564,
+        "slug": "supermade",
+        "nom": "Supermade",
+        "date": "2026-11-13",
+        "message": "1570815391062818897"
       }
     ],
     "ignorees": [
@@ -98,7 +105,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 11,
+    "total": 12,
     "cycle": 1,
     "publiees": [
       {
@@ -177,6 +184,13 @@
         "nom": "Zodiac",
         "date": "2026-11-12",
         "message": "1570463336296878081"
+      },
+      {
+        "id": 439,
+        "slug": "panic-room",
+        "nom": "Panic Room",
+        "date": "2026-11-13",
+        "message": "1570815408691351594"
       }
     ],
     "ignorees": [],
