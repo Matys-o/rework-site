@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 12,
+    "total": 13,
     "cycle": 1,
     "publiees": [
       {
@@ -86,6 +86,13 @@
         "nom": "Supermade",
         "date": "2026-11-13",
         "message": "1570815391062818897"
+      },
+      {
+        "id": 563,
+        "slug": "atelier-mo6",
+        "nom": "ATELIER-MO6",
+        "date": "2026-11-14",
+        "message": "1571160804487733310"
       }
     ],
     "ignorees": [
@@ -105,7 +112,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 12,
+    "total": 13,
     "cycle": 1,
     "publiees": [
       {
@@ -191,6 +198,13 @@
         "nom": "Panic Room",
         "date": "2026-11-13",
         "message": "1570815408691351594"
+      },
+      {
+        "id": 438,
+        "slug": "the-game",
+        "nom": "The Game",
+        "date": "2026-11-14",
+        "message": "1571160823873806399"
       }
     ],
     "ignorees": [],
