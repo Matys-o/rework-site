@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 13,
+    "total": 14,
     "cycle": 1,
     "publiees": [
       {
@@ -93,6 +93,13 @@
         "nom": "ATELIER-MO6",
         "date": "2026-11-14",
         "message": "1571160804487733310"
+      },
+      {
+        "id": 562,
+        "slug": "arntreal",
+        "nom": "ARNTREAL",
+        "date": "2026-11-15",
+        "message": "1571531575449882815"
       }
     ],
     "ignorees": [
@@ -112,7 +119,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 13,
+    "total": 14,
     "cycle": 1,
     "publiees": [
       {
@@ -205,6 +212,13 @@
         "nom": "The Game",
         "date": "2026-11-14",
         "message": "1571160823873806399"
+      },
+      {
+        "id": 437,
+        "slug": "seven",
+        "nom": "Seven",
+        "date": "2026-11-15",
+        "message": "1571531592474689617"
       }
     ],
     "ignorees": [],
