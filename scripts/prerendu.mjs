@@ -70,6 +70,20 @@ try {
   }
   console.log(`lettre : ${publiees.length} version(s) web, ${itemsTrios.length} images (${degradees.length} sur l'aura : ${degradees.join(", ")})`);
 
+  // ── Dressing : images de partage des tenues (JPEG 1200 × 630, cadrées en haut de la photo) ──
+  const { TENUES_PUBLIEES } = await vite.ssrLoadModule("/src/data/dressing.ts");
+  await mkdir(path.join(dist, "og", "dressing"), { recursive: true });
+  let ogTenues = 0;
+  for (const t of TENUES_PUBLIEES) {
+    if (!t.image) continue;
+    await sharp(path.join(racine, "public", t.image))
+      .resize(1200, 630, { fit: "cover", position: "top" })
+      .jpeg({ quality: 82 })
+      .toFile(path.join(dist, "og", "dressing", `${t.slug}.jpg`));
+    ogTenues++;
+  }
+  console.log(`images de partage : ${ogTenues} tenue(s) du Dressing`);
+
   // ── sitemap.xml : toutes les pages prérendues + les filtres de domaine de l'index ──
   const aujourdHui = new Date().toISOString().slice(0, 10);
   const entrees = [

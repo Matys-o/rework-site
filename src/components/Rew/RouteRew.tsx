@@ -1,15 +1,14 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router";
-import Accueil from "../../pages/Accueil";
+import { Navigate, useLocation } from "react-router";
 import { rew, useRew } from "../../lib/rew/client";
 import { Orbe } from "./CarteRew";
 
-/** /rew (lien partageable) : l'accueil, avec REW ouvert par-dessus */
+/** /rew (ancien lien du menu, partageable) : redirige vers l'accueil, avec REW ouvert par-dessus */
 export function RouteRew() {
   useEffect(() => {
     rew.ouvrir();
   }, []);
-  return <Accueil />;
+  return <Navigate to="/" replace />;
 }
 
 /** Mobile, hors accueil : petit bouton rond noir avec l'orbe, en bas à droite */

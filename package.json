@@ -11,7 +11,10 @@
     "discord:install": "npm ci --prefix discord",
     "discord:setup": "npm --prefix discord run setup --",
     "discord:daily": "npm --prefix discord run daily --",
-    "discord:weekly": "npm --prefix discord run weekly --"
+    "discord:weekly": "npm --prefix discord run weekly --",
+    "rew:eval": "node scripts/rew-eval.mjs",
+    "dressing:check": "node scripts/dressing-check.mjs",
+    "dressing:images": "node scripts/dressing-images.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.6.0",

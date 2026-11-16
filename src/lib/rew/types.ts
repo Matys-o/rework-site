@@ -60,12 +60,59 @@ export type CarteRew = {
   raison: string;
 };
 
+/** Ce que REW a compris de la demande, en clair (renvoyé pour l'affichage et l'éval) */
+export type ContraintesRew = {
+  genre: "" | "homme" | "femme" | "mixte";
+  /** En euros, 0 = pas de borne */
+  budget: { min: number; max: number };
+  couleurs: string[];
+  exclusions: string[];
+  saison: string;
+  occasion: string;
+  univers: UniversRew[];
+  /** Entrées de l'archive citées, noms corrigés (« rik ovens » → Rick Owens) */
+  references: string[];
+  langue: string;
+  categorie: string;
+};
+
+/** Une tenue du Dressing proposée par REW */
+export type TenueRew = {
+  slug: string;
+  style: string;
+  genre: string;
+  phrase: string;
+  image?: string;
+  fiche: string;
+  fourchette: { min: number; max: number };
+  raison: string;
+};
+
+/** Une pièce précise (données produits du Dressing) */
+export type ProduitRew = {
+  id: string;
+  brandName: string;
+  /** Fiche rework° de la marque, absente pour une marque hors archive */
+  brandFiche?: string;
+  name: string;
+  color: string;
+  price: number;
+  checkedAt: string;
+  url: string;
+  img?: string;
+  raison: string;
+};
+
 export type ReponseRew = {
   message: string;
   sections: { univers: UniversRew; cartes: CarteRew[] }[];
   conclusion: string;
   question: string;
   profil: ProfilRew;
+  reformulation?: string;
+  contraintes?: ContraintesRew;
+  tenues?: TenueRew[];
+  produits?: ProduitRew[];
 };
 
 export type ErreurRew = {

@@ -10,7 +10,7 @@ import { Logo } from "./Logo";
 const COLONNES = [
   {
     titre: "Explorer",
-    liens: ["Marques", "Films", "Trios", "Ajoutées cette semaine", "Au hasard"],
+    liens: ["Marques", "Films", "Trios", "Dressing", "Ajoutées cette semaine", "Au hasard"],
   },
   {
     titre: "Rework",
@@ -25,6 +25,7 @@ const LIENS: Record<string, string> = {
   Marques: ROUTES.index,
   Films: lienDomaine("film"),
   Trios: ROUTES.trios,
+  Dressing: ROUTES.dressing,
   "Ajoutées cette semaine": ROUTES.nouvelles,
   "Au hasard": ROUTES.hasard,
   "La lettre": ROUTES.lettre,
@@ -34,7 +35,7 @@ const LIENS: Record<string, string> = {
 };
 
 const COLONNES_MOBILE = [
-  ["Marques", "Films", "Trios", "La lettre", "À propos", "Contact"],
+  ["Marques", "Films", "Trios", "Dressing", "La lettre", "À propos", "Contact"],
   ["Discord", "Instagram", "Are.na", "Twitter"],
 ];
 

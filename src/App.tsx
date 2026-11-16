@@ -10,7 +10,9 @@ import { Defilement } from "./components/Defilement";
 import { FpsMetre } from "./components/FpsMetre";
 import IntroRework from "./components/IntroRework/IntroRework";
 import { Navigation } from "./components/Navigation";
-import { BoutonRewMobile, RouteRew } from "./components/Rew/RouteRew";
+import { RouteRew } from "./components/Rew/RouteRew";
+import { BoutonRew } from "./components/Rew/BoutonRew";
+import Dressing, { SelectionsPage, TenuePage } from "./pages/Dressing";
 import { PanneauRew } from "./components/Rew/PanneauRew";
 import Accueil from "./pages/Accueil";
 import Composants from "./pages/Composants";
@@ -41,6 +43,9 @@ function Pages() {
       <Route path="/musique/artiste/:slug" element={<ArtistePage />} />
       <Route path="/musique/album/:slug" element={<SortiePage />} />
       <Route path="/musique/genre/:slug" element={<GenrePage />} />
+      <Route path="/dressing" element={<Dressing />} />
+      <Route path="/dressing/selections" element={<SelectionsPage />} />
+      <Route path="/dressing/:slug" element={<TenuePage />} />
       <Route path="/trios" element={<Trios />} />
       <Route path="/trios/:semaine" element={<TrioPage />} />
       <Route path="/confidentialite" element={<Confidentialite />} />
@@ -60,7 +65,7 @@ export default function App() {
         <Navigation />
         <Pages />
         <PanneauRew />
-        <BoutonRewMobile />
+        <BoutonRew />
         <FpsMetre />
         {/* Intro animée : une seule fois, hors des routes */}
         <IntroRework />
