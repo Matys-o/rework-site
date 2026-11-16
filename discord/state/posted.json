@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 14,
+    "total": 15,
     "cycle": 1,
     "publiees": [
       {
@@ -100,6 +100,13 @@
         "nom": "ARNTREAL",
         "date": "2026-11-15",
         "message": "1571531575449882815"
+      },
+      {
+        "id": 561,
+        "slug": "side-arts",
+        "nom": "Side Arts",
+        "date": "2026-11-16",
+        "message": "1571927188599607399"
       }
     ],
     "ignorees": [
@@ -119,7 +126,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 14,
+    "total": 15,
     "cycle": 1,
     "publiees": [
       {
@@ -219,6 +226,13 @@
         "nom": "Seven",
         "date": "2026-11-15",
         "message": "1571531592474689617"
+      },
+      {
+        "id": 436,
+        "slug": "alien",
+        "nom": "Alien³",
+        "date": "2026-11-16",
+        "message": "1571927206635110435"
       }
     ],
     "ignorees": [],
