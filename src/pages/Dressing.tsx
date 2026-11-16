@@ -423,8 +423,10 @@ export function TenuePage() {
                 <button
                   type="button"
                   onClick={() =>
+                    // La demande part tout de suite (avant : champ pré-rempli terminé par « Budget : », rien ne se passait)
                     rew.ouvrir({
-                      texte: `Propose-moi une variante de la tenue « ${t.style} » du Dressing (${t.id}, ${t.genre}) : ${t.pieces.map((p) => p.description.toLowerCase()).join(", ")}. Budget : `,
+                      texte: `Propose-moi une variante de la tenue « ${t.style} » du Dressing (${t.id}, ${t.genre === "homme" ? "pour homme" : "pour femme"}) : ${t.pieces.map((p) => p.description.toLowerCase()).join(", ")}. Garde le même esprit avec d'autres marques de l'archive${total ? `, pour un budget d'environ ${Math.round(total)} € au total` : ""}.`,
+                      envoyer: true,
                     })
                   }
                   className="t-cote-s inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill bg-encre px-5 text-papier transition-colors duration-240 ease-rw hover:bg-signal"
@@ -485,4 +487,3 @@ export function SelectionsPage() {
     </>
   );
 }
-
