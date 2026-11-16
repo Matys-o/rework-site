@@ -139,3 +139,15 @@ html.lenis body {
 @media (prefers-reduced-motion: reduce) {
   .rew-orbe, .rew-apparition, .rew-fondu, .rew-points span { animation: none; }
 }
+
+/* Dressing : fondu croisé rapide de la carte produit au changement de budget (pas de saut : même cellule de grille) */
+.dressing-fondu {
+  animation: dressing-fondu 200ms var(--ease-rw) both;
+}
+@keyframes dressing-fondu {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dressing-fondu { animation: none; }
+}

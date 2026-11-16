@@ -18,6 +18,8 @@ import { NOMS_UNIVERS } from "../../lib/rew/types";
 import { lenis } from "../../lib/mouvement";
 import { Icone } from "../Icone";
 import { CarteRew, Orbe } from "./CarteRew";
+import { CartePiece } from "../Dressing/CartePiece";
+import { PRODUIT_PAR_ID } from "../../data/dressing";
 
 export const ACCUEIL_REW =
   "Salut, moi c'est REW. Tu cherches quelque chose de précis, un nouvel artiste, ou ta prochaine obsession ? Dis-moi ce que tu aimes, je te trouve les références qui valent le coup.";
@@ -89,6 +91,47 @@ function TourRew({ tour, dernier }: { tour: Tour; dernier: boolean }) {
           ))}
         </section>
       ))}
+      {!!r.tenues?.length && (
+        <section className="flex flex-col gap-2.5">
+          <h3 className="t-cote-s text-signal">
+            {String(r.sections.length + 1).padStart(2, "0")} — Dressing
+          </h3>
+          {r.tenues.map((t) => (
+            <a
+              key={t.slug}
+              href={t.fiche}
+              className="rew-apparition group/tenue flex gap-4 rounded-[22px] border border-encre/8 bg-blanc p-3 pr-4 shadow-repos transition-shadow duration-240 ease-rw hover:shadow-levee"
+              style={{ animationDelay: `${carte++ * 80}ms` } as CSSProperties}
+            >
+              <span className="relative block aspect-[4/5] w-[96px] shrink-0 overflow-hidden rounded-[14px] bg-brume">
+                {t.image && <img src={t.image} alt="" loading="lazy" className="absolute inset-0 size-full object-cover" />}
+              </span>
+              <span className="flex min-w-0 flex-col">
+                <span className="t-cote-s text-graphite">Tenue {t.genre} · de {t.fourchette.min} € à {t.fourchette.max} €</span>
+                <span className="mt-1 text-[16px] font-medium">{t.style}</span>
+                {t.raison && <span className="mt-1 font-serif text-[16px] leading-[1.25] italic">{t.raison}</span>}
+                <span className="t-cote-s mt-auto pt-2 text-encre group-hover/tenue:text-signal">Voir la tenue →</span>
+              </span>
+            </a>
+          ))}
+        </section>
+      )}
+      {!!r.produits?.length && (
+        <section className="flex flex-col gap-2.5">
+          <h3 className="t-cote-s text-signal">
+            {String(r.sections.length + (r.tenues?.length ? 2 : 1)).padStart(2, "0")} — Pièces
+          </h3>
+          {r.produits.map((p) => (
+            <CartePiece
+              key={p.id}
+              produit={PRODUIT_PAR_ID.get(p.id) ?? { ...p, brandId: null }}
+              raison={p.raison}
+              className="rew-apparition"
+              style={{ animationDelay: `${carte++ * 80}ms` } as CSSProperties}
+            />
+          ))}
+        </section>
+      )}
       {(r.conclusion || r.question) && (
         <Bulle>{[r.conclusion, r.question].filter(Boolean).join(" ")}</Bulle>
       )}

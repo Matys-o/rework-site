@@ -8,6 +8,8 @@ import {
   type Marque,
 } from "../data/brands";
 import { triosPublies, type Trio } from "../data/trios";
+import { TENUES_PUBLIEES, fourchette, lienTenue, type Tenue } from "../data/dressing";
+import { selectionCourante } from "../data/selections";
 import { LISTE_UNIVERS, NB_UNIVERS, STATS } from "../data/archive";
 import { ARTISTES, GENRES, SORTIES, lienArtiste, lienGenre, lienSortie } from "../data/musique";
 import { metaArtiste, metaGenre, metaMusique, metaSortie } from "./metaMusique";
@@ -237,6 +239,44 @@ export function metaRew(): Meta {
   return base({ titre: `REW — votre curateur culturel | ${NOM_SITE}`, description: ajuster(texte), chemin: "/rew", resume: texte });
 }
 
+export function metaDressing(): Meta {
+  const s = selectionCourante();
+  return base({
+    titre: `Dressing — tenues et pièces à tous les budgets | ${NOM_SITE}`,
+    description: ajuster(
+      "Des tenues repérées sur Pinterest et Cosmos, recomposées avec les marques de l'archive rework°. Choisis ton budget pièce par pièce, du € au €€€.",
+    ),
+    chemin: "/dressing",
+    resume: `${TENUES_PUBLIEES.length} tenues, et où trouver chaque pièce à ton budget.${s ? ` Sélection de la semaine : ${s.theme}.` : ""}`,
+  });
+}
+
+export function metaTenue(t: Tenue): Meta {
+  const f = fourchette(t);
+  return base({
+    titre: `${t.style} — tenue ${t.genre} du Dressing | ${NOM_SITE}`,
+    description: ajuster(
+      `${t.phrase} ${t.pieces.map((p) => p.description).join(", ")}. De ${f.min} € à ${f.max} €, budget au choix pour chaque pièce.`,
+    ),
+    chemin: lienTenue(t.slug),
+    image: t.image ? `/og/dressing/${t.slug}.jpg` : IMAGE_PARTAGE,
+    imageAlt: t.image ? `Tenue ${t.style}` : IMAGE_PARTAGE_ALT,
+    type: "article",
+    resume: `${t.phrase} De ${f.min} € à ${f.max} €.`,
+  });
+}
+
+export function metaSelections(): Meta {
+  return base({
+    titre: `Les sélections de la semaine — Dressing | ${NOM_SITE}`,
+    description: ajuster(
+      "Chaque semaine, six à huit pièces autour d'un thème de saison, de marques différentes et à tous les budgets, vérifiées sur les sites officiels.",
+    ),
+    chemin: "/dressing/selections",
+    resume: "Six à huit pièces par semaine, à tous les budgets.",
+  });
+}
+
 export function metaManifeste(): Meta {
   return base({
     titre: `À propos — Rework, c'est quoi ? | ${NOM_SITE}`,
@@ -381,6 +421,9 @@ export function routesPrerendues(date = new Date()): RoutePrerendue[] {
     { chemin: "/trios", meta: metaTrios() },
     { chemin: "/confidentialite", meta: metaConfidentialite() },
     { chemin: "/rew", meta: metaRew() },
+    { chemin: "/dressing", meta: metaDressing() },
+    { chemin: "/dressing/selections", meta: metaSelections() },
+    ...TENUES_PUBLIEES.map((t) => ({ chemin: lienTenue(t.slug), meta: metaTenue(t) })),
     ...(["accueil", "artistes", "albums", "genres"] as const).map((o) => {
       const meta = metaMusique(o);
       return { chemin: meta.chemin, meta };

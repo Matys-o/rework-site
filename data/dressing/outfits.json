@@ -1,0 +1,1082 @@
+[
+ {
+  "id": "H-01",
+  "slug": "h-01-minimal-ample",
+  "genre": "homme",
+  "style": "Minimal ample",
+  "saison": "mi-saison",
+  "phrase": "Le blanc, le taupe, rien de plus.",
+  "imageSource": "https://fr.pinterest.com/pin/959970476844455206/",
+  "imageSourceImg": "https://i.pinimg.com/736x/07/42/a4/0742a4a060e691b8b984a153560e1010.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Henley manches longues écru, maille côtelée",
+    "piste": "A.P.C. · Our Legacy · Lemaire",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "lemaire-henley-ml-enoki"
+    }
+   },
+   {
+    "role": "Pantalon",
+    "description": "Pantalon large à plis, taupe",
+    "piste": "Auralee · Our Legacy · Margaret Howell",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "apc-pantalon-taupe-ample-plis"
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Mocassins en cuir noir brillant",
+    "piste": "Clarks Originals · Dr. Martens · Hender Scheme",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "lemaire-formal-slip-on-noir"
+    }
+   },
+   {
+    "role": "Sac",
+    "description": "Grand sac d’épaule en cuir noir",
+    "piste": "A.P.C. · Lemaire",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "apc-sac-neige-maxi-noir"
+    }
+   }
+  ],
+  "image": "/images/dressing/h-01-minimal-ample.webp"
+ },
+ {
+  "id": "H-02",
+  "slug": "h-02-gorpcore",
+  "genre": "homme",
+  "style": "Gorpcore",
+  "saison": "automne",
+  "phrase": "La rando, mais en ville.",
+  "imageSource": "https://fr.pinterest.com/pin/389842911506939946/",
+  "imageSourceImg": "https://i.pinimg.com/736x/27/e4/af/27e4affc83075bf6a74e7088d403604f.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Veste coquille kaki olive à capuche",
+    "piste": "Arc'teryx · Goldwin · Patagonia",
+    "options": {
+     "eco": null,
+     "mid": "arcteryx-beta-jacket-mongoose",
+     "premium": "arcteryx-beta-ar-dark-jade-mongoose"
+    }
+   },
+   {
+    "role": "Pantalon",
+    "description": "Pantalon large noir en nylon",
+    "piste": "And Wander · Snow Peak · Nike ACG",
+    "options": {
+     "eco": "nike-acg-dolomiti",
+     "mid": "nike-acg-smith-summit",
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers trail crème",
+    "piste": "Salomon · Asics · Hoka",
+    "options": {
+     "eco": null,
+     "mid": "salomon-xt-6-vanilla-ice",
+     "premium": null
+    }
+   },
+   {
+    "role": "Bonnet",
+    "description": "Bonnet en maille à motif",
+    "piste": "Arc'teryx · Mammut",
+    "options": {
+     "eco": null,
+     "mid": "arcteryx-grotto-toque-bracken",
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-02-gorpcore.webp"
+ },
+ {
+  "id": "H-03",
+  "slug": "h-03-workwear",
+  "genre": "homme",
+  "style": "Workwear",
+  "saison": "automne",
+  "phrase": "Le bleu de travail, sorti de l'atelier.",
+  "imageSource": "https://fr.pinterest.com/pin/828310556502115154/",
+  "imageSourceImg": "https://i.pinimg.com/736x/02/01/2e/02012e77f99b37ca0e39fc1ed6fc1cea.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Veste à capuche zippée noire, toile workwear",
+    "piste": "Carhartt WIP · Engineered Garments",
+    "options": {
+     "eco": null,
+     "mid": "carhartt-og-active-jacket-black",
+     "premium": null
+    }
+   },
+   {
+    "role": "Jean",
+    "description": "Jean large délavé",
+    "piste": "Levi's · Carhartt WIP · Kapital",
+    "options": {
+     "eco": null,
+     "mid": "carhartt-ruben-pant-blue-stone-washed",
+     "premium": null
+    }
+   },
+   {
+    "role": "Bonnet",
+    "description": "Bonnet en maille noir",
+    "piste": "Carhartt WIP · Norse Projects",
+    "options": {
+     "eco": "carhartt-acrylic-watch-hat-black",
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers skate noires et blanches",
+    "piste": "Vans · Converse",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-03-workwear.webp"
+ },
+ {
+  "id": "H-04",
+  "slug": "h-04-skate",
+  "genre": "homme",
+  "style": "Skate",
+  "saison": "",
+  "phrase": "Baggy, casquette, et une planche pas loin.",
+  "imageSource": "https://fr.pinterest.com/pin/516788126007321990/",
+  "imageSourceImg": "https://i.pinimg.com/736x/a7/fa/4a/a7fa4a9a40309c328c5efb37343be7c0.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "T-shirt graphique noir",
+    "piste": "Polar Skate Co · Dime · Palace",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "T-shirt manches longues blanc (en dessous)",
+    "piste": "Stüssy · Vans",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Jean baggy bleu clair",
+    "piste": "Polar Skate Co · Levi's",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Casquette",
+    "piste": "Dime · Palace · Stüssy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers Old Skool",
+    "piste": "Vans",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-04-skate.webp"
+ },
+ {
+  "id": "H-05",
+  "slug": "h-05-preppy",
+  "genre": "homme",
+  "style": "Preppy",
+  "saison": "",
+  "phrase": "Le club de rugby version New York.",
+  "imageSource": "https://fr.pinterest.com/pin/312296555426990837/",
+  "imageSourceImg": "https://i.pinimg.com/736x/c9/27/32/c927320a636e2aed3ef31b4e5ce33767.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Polo rugby marine et blanc",
+    "piste": "Aimé Leon Dore · Noah · Lacoste",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Chino crème",
+    "piste": "Drôle de Monsieur · A.P.C. · Officine Générale",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Casquette en coton",
+    "piste": "Aimé Leon Dore · Noah",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Chaussures en daim marron",
+    "piste": "Clarks Originals · New Balance",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-05-preppy.webp"
+ },
+ {
+  "id": "H-06",
+  "slug": "h-06-japonais-ample",
+  "genre": "homme",
+  "style": "Japonais ample",
+  "saison": "",
+  "phrase": "Des volumes larges et des matières qui durent.",
+  "imageSource": "https://fr.pinterest.com/pin/311381761759556032/",
+  "imageSourceImg": "https://i.pinimg.com/736x/53/c1/35/53c135e8c23b674e150ae31db48eaaa2.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Surchemise marine",
+    "piste": "Kapital · Engineered Garments · Nanamica",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon très large camel",
+    "piste": "Auralee · Needles · Kapital",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Casquette",
+    "piste": "Nanamica · Kapital",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Chaussures en cuir marron",
+    "piste": "Hender Scheme · Clarks Originals",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-06-japonais-ample.webp"
+ },
+ {
+  "id": "H-07",
+  "slug": "h-07-dark",
+  "genre": "homme",
+  "style": "Dark",
+  "saison": "",
+  "phrase": "Tout en noir, en volume.",
+  "imageSource": "https://fr.pinterest.com/pin/812547957814048046/",
+  "imageSourceImg": "https://i.pinimg.com/736x/13/41/43/134143abdcf65873449c3fc0be86a926.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Bomber matelassé noir",
+    "piste": "Rick Owens · A-COLD-WALL* · Juun.J",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "Hoodie noir",
+    "piste": "Rick Owens · 1017 ALYX 9SM",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon parachute noir",
+    "piste": "Rick Owens · Yohji Yamamoto · A-COLD-WALL*",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Boots noires",
+    "piste": "Dr. Martens · Rick Owens",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-07-dark.webp"
+ },
+ {
+  "id": "H-08",
+  "slug": "h-08-street-graphique",
+  "genre": "homme",
+  "style": "Street graphique",
+  "saison": "",
+  "phrase": "Un gros visuel dans le dos, le reste est simple.",
+  "imageSource": "https://fr.pinterest.com/pin/775041417140459957/",
+  "imageSourceImg": "https://i.pinimg.com/736x/19/6f/e8/196fe8c35affe4702679e516c78b37a3.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "T-shirt graphique blanc",
+    "piste": "Stüssy · Brain Dead · Online Ceramics",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon baggy noir",
+    "piste": "Corteiz · Patta · Carhartt WIP",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Bonnet noir",
+    "piste": "Stüssy · Daily Paper",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers",
+    "piste": "New Balance · Vans",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-08-street-graphique.webp"
+ },
+ {
+  "id": "H-09",
+  "slug": "h-09-tailoring-decontracte",
+  "genre": "homme",
+  "style": "Tailoring décontracté",
+  "saison": "",
+  "phrase": "Le blazer, sans le costume.",
+  "imageSource": "https://fr.pinterest.com/pin/639229740901721214/",
+  "imageSourceImg": "https://i.pinimg.com/736x/b2/c4/88/b2c48829ef6b025247e8154e7e39a44c.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Blazer en tweed beige",
+    "piste": "Officine Générale · Ami Paris · Margaret Howell",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "T-shirt blanc épais",
+    "piste": "A.P.C. · Our Legacy · Lemaire",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Jean large brut",
+    "piste": "Levi's · A.P.C. · Our Legacy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Mocassins marron",
+    "piste": "Clarks Originals · Hender Scheme",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Casquette",
+    "piste": "Aimé Leon Dore · Drôle de Monsieur",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-09-tailoring-decontracte.webp"
+ },
+ {
+  "id": "H-10",
+  "slug": "h-10-running",
+  "genre": "homme",
+  "style": "Running",
+  "saison": "",
+  "phrase": "La tenue de course qu'on garde après la course.",
+  "imageSource": "https://fr.pinterest.com/pin/605663849912272369/",
+  "imageSourceImg": "https://i.pinimg.com/736x/ba/9a/61/ba9a61d1c5d154798acda66de7ff404c.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Coupe-vent color block",
+    "piste": "Satisfy · District Vision · Nike ACG",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Short de running",
+    "piste": "Satisfy · On · Asics",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers running argent",
+    "piste": "New Balance · Asics · Hoka",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Casquette blanche",
+    "piste": "Satisfy · District Vision",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/h-10-running.webp"
+ },
+ {
+  "id": "F-01",
+  "slug": "f-01-quiet-luxury",
+  "genre": "femme",
+  "style": "Quiet luxury",
+  "saison": "",
+  "phrase": "Le chocolat, la flanelle, aucun logo.",
+  "imageSource": "https://fr.pinterest.com/pin/425660602302312202/",
+  "imageSourceImg": "https://i.pinimg.com/736x/bd/59/42/bd5942b30f1d457e480cbfbb9772e1b9.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Pull col montant chocolat",
+    "piste": "The Row · Jil Sander · Margaret Howell",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon large en flanelle",
+    "piste": "Lemaire · The Row · Sézane",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Sac structuré en cuir",
+    "piste": "The Row · Hermès · Polène (hors archive)",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Lunettes de soleil",
+    "piste": "Gentle Monster",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-01-quiet-luxury.webp"
+ },
+ {
+  "id": "F-02",
+  "slug": "f-02-parisienne",
+  "genre": "femme",
+  "style": "Parisienne",
+  "saison": "automne",
+  "phrase": "Chemise blanche, jean, une touche de bordeaux.",
+  "imageSource": "https://fr.pinterest.com/pin/549579960799985794/",
+  "imageSourceImg": "https://i.pinimg.com/736x/8e/64/d1/8e64d115a0133b29e90544d92bbed30e.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Chemise",
+    "description": "Chemise blanche fluide",
+    "piste": "Sézane · Rouje · A.P.C.",
+    "options": {
+     "eco": null,
+     "mid": "rouje-chemise-palmyra-blanc",
+     "premium": null
+    }
+   },
+   {
+    "role": "Jean",
+    "description": "Jean évasé bleu, longueur cheville",
+    "piste": "Levi's · Rouje · Maison 123",
+    "options": {
+     "eco": null,
+     "mid": "rouje-jean-verneuil",
+     "premium": null
+    }
+   },
+   {
+    "role": "Bottines",
+    "description": "Bottines bordeaux, bout carré, talon bloc",
+    "piste": "Sézane · Rouje",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "rouje-bottines-claudia-bordeaux"
+    }
+   },
+   {
+    "role": "Sac",
+    "description": "Sac en cuir bordeaux, porté épaule",
+    "piste": "Sézane · Maison 123",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "apc-sac-simone-small-bordeaux"
+    }
+   }
+  ],
+  "image": "/images/dressing/f-02-parisienne.webp"
+ },
+ {
+  "id": "F-03",
+  "slug": "f-03-scandi",
+  "genre": "femme",
+  "style": "Scandi",
+  "saison": "",
+  "phrase": "Le blazer trop grand et une couleur qui claque.",
+  "imageSource": "https://fr.pinterest.com/pin/742038476143515443/",
+  "imageSourceImg": "https://i.pinimg.com/736x/eb/ff/84/ebff8409af203088e007082b1087d873.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Blazer oversize bleu ciel",
+    "piste": "Ganni · Acne Studios · Our Legacy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "T-shirt graphique gris",
+    "piste": "Ganni · Wood Wood",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon large crème",
+    "piste": "Norse Projects · Acne Studios",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Ballerines rouges",
+    "piste": "Ganni · Repetto (hors archive)",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-03-scandi.webp"
+ },
+ {
+  "id": "F-04",
+  "slug": "f-04-gorpcore",
+  "genre": "femme",
+  "style": "Gorpcore",
+  "saison": "automne",
+  "phrase": "Équipée pour la montagne, et pour lundi matin.",
+  "imageSource": "https://fr.pinterest.com/pin/439171401184458059/",
+  "imageSourceImg": "https://i.pinimg.com/736x/c6/01/e9/c601e93ffcad7ba51106acfedbe455af.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Veste technique noire",
+    "piste": "Arc'teryx · Mammut · Patagonia",
+    "options": {
+     "eco": null,
+     "mid": "arcteryx-beta-jacket-women-black",
+     "premium": null
+    }
+   },
+   {
+    "role": "Pantalon",
+    "description": "Pantalon large beige crème",
+    "piste": "And Wander · Snow Peak · The North Face",
+    "options": {
+     "eco": null,
+     "mid": "carhartt-brandon-pant-salt",
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers trail claires",
+    "piste": "Salomon · Hoka",
+    "options": {
+     "eco": null,
+     "mid": "salomon-xt-6-vanilla-ice",
+     "premium": null
+    }
+   },
+   {
+    "role": "Lunettes",
+    "description": "Lunettes de sport",
+    "piste": "Oakley · District Vision",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-04-gorpcore.webp"
+ },
+ {
+  "id": "F-05",
+  "slug": "f-05-romantique",
+  "genre": "femme",
+  "style": "Romantique",
+  "saison": "",
+  "phrase": "De la dentelle, du blanc, du mouvement.",
+  "imageSource": "https://fr.pinterest.com/pin/1054757175245293816/",
+  "imageSourceImg": "https://i.pinimg.com/736x/e5/f5/50/e5f55087c9232e23158f4451d6e963c6.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Blouse en dentelle col V",
+    "piste": "Simone Rocha · Bode · Sézane",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Jupe longue blanche à volants",
+    "piste": "Simone Rocha · Rouje · Sézane",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Ballerines",
+    "piste": "Simone Rocha · Rouje",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-05-romantique.webp"
+ },
+ {
+  "id": "F-06",
+  "slug": "f-06-y2k",
+  "genre": "femme",
+  "style": "Y2K",
+  "saison": "",
+  "phrase": "Le cuir, la taille basse, la ceinture cloutée.",
+  "imageSource": "https://fr.pinterest.com/pin/1126603663100738441/",
+  "imageSourceImg": "https://i.pinimg.com/736x/ac/97/17/ac971793281a0dda218d01f1cde1425b.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Veste en cuir",
+    "piste": "Schott NYC · Diesel",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "Crop top graphique",
+    "piste": "Diesel · Vaquera · Jean Paul Gaultier",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Cargo ou jean noir taille basse",
+    "piste": "Diesel · Levi's · Ottolinger",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Ceinture cloutée",
+    "piste": "Diesel · Dr. Martens",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-06-y2k.webp"
+ },
+ {
+  "id": "F-07",
+  "slug": "f-07-tailoring-minimal",
+  "genre": "femme",
+  "style": "Tailoring minimal",
+  "saison": "mi-saison",
+  "phrase": "Une maille douce sur un pantalon d'homme.",
+  "imageSource": "https://fr.pinterest.com/pin/290482244740065513/",
+  "imageSourceImg": "https://i.pinimg.com/736x/e8/98/3b/e8983b5363b2696b8060de36c4826b29.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Maille",
+    "description": "Pull cache-cœur beige, col V",
+    "piste": "Lemaire · Jil Sander · Sézane",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Pantalon",
+    "description": "Pantalon large plissé gris",
+    "piste": "Lemaire · Margaret Howell · Our Legacy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "lemaire-large-pleated-pants-tonic-grey"
+    }
+   },
+   {
+    "role": "Sac",
+    "description": "Petit sac souple en cuir noir",
+    "piste": "Lemaire · The Row",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "apc-sac-ninon-noir"
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Ballerines noires",
+    "piste": "The Row · Sézane",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": "lemaire-ballerina-noir"
+    }
+   }
+  ],
+  "image": "/images/dressing/f-07-tailoring-minimal.webp"
+ },
+ {
+  "id": "F-08",
+  "slug": "f-08-dark",
+  "genre": "femme",
+  "style": "Dark",
+  "saison": "",
+  "phrase": "Capuche, gris anthracite, lunettes fines.",
+  "imageSource": "https://fr.pinterest.com/pin/670051250827274914/",
+  "imageSourceImg": "https://i.pinimg.com/736x/49/3e/ac/493eac63657361697ff9c2e7eb98692a.jpg",
+  "credit": "Pinterest",
+  "pieces": [
+   {
+    "role": "Haut",
+    "description": "Hoodie court anthracite",
+    "piste": "Rick Owens · Ottolinger · Balenciaga",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Pantalon de jogging noir large",
+    "piste": "Rick Owens · Y-3",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Lunettes ovales noires",
+    "piste": "Gentle Monster",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Sneakers noires",
+    "piste": "Rick Owens · Y-3 · Converse",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-08-dark.webp"
+ },
+ {
+  "id": "F-09",
+  "slug": "f-09-sporty-chic",
+  "genre": "femme",
+  "style": "Sporty chic",
+  "saison": "",
+  "phrase": "La veste de sport, portée comme une pièce de mode.",
+  "imageSource": "https://www.cosmos.so/e/1355956636",
+  "imageSourceImg": "https://cdn.cosmos.so/c28a794c-d81b-4790-886e-4865cb68ac5f",
+  "credit": "Cosmos",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Veste demi-zip grise",
+    "piste": "Nike ACG · Lacoste · Satisfy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Haut",
+    "description": "Cycliste noir",
+    "piste": "Y-3 · Satisfy · On",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Baskets montantes noires",
+    "piste": "Y-3 · Asics · Converse",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Accessoire",
+    "description": "Lunettes de sport",
+    "piste": "Oakley · Gentle Monster",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-09-sporty-chic.webp"
+ },
+ {
+  "id": "F-10",
+  "slug": "f-10-workwear-denim",
+  "genre": "femme",
+  "style": "Workwear denim",
+  "saison": "",
+  "phrase": "Bleu sur bleu, à la manière d'un uniforme.",
+  "imageSource": "https://www.cosmos.so/e/1044805006",
+  "imageSourceImg": "https://cdn.cosmos.so/9755fdbe-24b1-483b-883c-5cb7ecb41209",
+  "credit": "Cosmos",
+  "pieces": [
+   {
+    "role": "Veste",
+    "description": "Surchemise bleu vif",
+    "piste": "Carhartt WIP · Story mfg. · Our Legacy",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Bas",
+    "description": "Jean large délavé",
+    "piste": "Levi's · Carhartt WIP · Kapital",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   },
+   {
+    "role": "Chaussures",
+    "description": "Baskets en toile",
+    "piste": "Converse · Veja · Vans",
+    "options": {
+     "eco": null,
+     "mid": null,
+     "premium": null
+    }
+   }
+  ],
+  "image": "/images/dressing/f-10-workwear-denim.webp"
+ }
+]

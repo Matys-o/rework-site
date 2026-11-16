@@ -1,5 +1,3 @@
-import { rew } from "../lib/rew/client";
-import { Orbe } from "./Rew/CarteRew";
 import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router";
@@ -19,6 +17,8 @@ const ENTREES = [
   { label: "Musique", href: LIENS.musique, actif: (p: string) => p.startsWith("/musique") },
   { label: "Trios", href: LIENS.trios, actif: (p: string) => p.startsWith("/trios") },
   { label: "À propos", href: LIENS.manifeste, actif: (p: string) => p === "/manifeste" },
+  // Ancienne entrée REW : REW s'ouvre désormais avec le bouton flottant (BoutonRew), sur toutes les pages
+  { label: "Dressing", href: LIENS.dressing, actif: (p: string) => p.startsWith("/dressing") },
 ];
 
 type NavProps = {
@@ -112,19 +112,6 @@ export function Nav({ className, onChercher, surSombre = false, flou = false }: 
                 </Lien>
               </li>
             ))}
-            <li>
-              <Lien
-                href="/rew"
-                actif={pathname === "/rew"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  rew.ouvrir();
-                }}
-                className="inline-flex items-center gap-1.5"
-              >
-                REW <Orbe taille={11} />
-              </Lien>
-            </li>
           </ul>
 
           <div className="flex items-center gap-2.5">

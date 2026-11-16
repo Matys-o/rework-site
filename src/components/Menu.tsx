@@ -1,5 +1,6 @@
 import { rew } from "../lib/rew/client";
 import { Orbe } from "./Rew/CarteRew";
+import { TENUES_PUBLIEES } from "../data/dressing";
 import { useEffect, useRef } from "react";
 import { STATS, UNIVERS } from "../data/archive";
 import { cn } from "../lib/cn";
@@ -16,7 +17,7 @@ const ENTREES = [
   { label: "Musique", href: LIENS.musique, compteur: String(STATS.musique) },
   { label: "Trios", href: LIENS.trios, compteur: "×3" },
   { label: "À propos", href: LIENS.manifeste, compteur: "—" },
-  { label: "REW", href: "/rew", compteur: "" },
+  { label: "Dressing", href: LIENS.dressing, compteur: String(TENUES_PUBLIEES.length) },
 ];
 
 type MenuProps = {
