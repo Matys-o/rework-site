@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 15,
+    "total": 16,
     "cycle": 1,
     "publiees": [
       {
@@ -107,6 +107,13 @@
         "nom": "Side Arts",
         "date": "2026-11-16",
         "message": "1571927188599607399"
+      },
+      {
+        "id": 560,
+        "slug": "forever-vacation",
+        "nom": "Forever Vacation",
+        "date": "2026-11-17",
+        "message": "1572288773897715813"
       }
     ],
     "ignorees": [
@@ -126,7 +133,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 15,
+    "total": 16,
     "cycle": 1,
     "publiees": [
       {
@@ -233,6 +240,13 @@
         "nom": "Alien³",
         "date": "2026-11-16",
         "message": "1571927206635110435"
+      },
+      {
+        "id": 435,
+        "slug": "perfect-days",
+        "nom": "Perfect Days",
+        "date": "2026-11-17",
+        "message": "1572288788984627214"
       }
     ],
     "ignorees": [],
