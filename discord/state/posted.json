@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 16,
+    "total": 17,
     "cycle": 1,
     "publiees": [
       {
@@ -114,6 +114,13 @@
         "nom": "Forever Vacation",
         "date": "2026-11-17",
         "message": "1572288773897715813"
+      },
+      {
+        "id": 559,
+        "slug": "feral",
+        "nom": "FERAL",
+        "date": "2026-11-18",
+        "message": "1572643280175235093"
       }
     ],
     "ignorees": [
@@ -133,7 +140,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 16,
+    "total": 17,
     "cycle": 1,
     "publiees": [
       {
@@ -247,6 +254,13 @@
         "nom": "Perfect Days",
         "date": "2026-11-17",
         "message": "1572288788984627214"
+      },
+      {
+        "id": 434,
+        "slug": "aftersun",
+        "nom": "Aftersun",
+        "date": "2026-11-18",
+        "message": "1572643309363527692"
       }
     ],
     "ignorees": [],
