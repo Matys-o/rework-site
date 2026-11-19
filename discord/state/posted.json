@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 17,
+    "total": 18,
     "cycle": 1,
     "publiees": [
       {
@@ -121,6 +121,13 @@
         "nom": "FERAL",
         "date": "2026-11-18",
         "message": "1572643280175235093"
+      },
+      {
+        "id": 558,
+        "slug": "krova",
+        "nom": "KROVA",
+        "date": "2026-11-19",
+        "message": "1573007565971918851"
       }
     ],
     "ignorees": [
@@ -140,7 +147,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 17,
+    "total": 18,
     "cycle": 1,
     "publiees": [
       {
@@ -261,6 +268,13 @@
         "nom": "Aftersun",
         "date": "2026-11-18",
         "message": "1572643309363527692"
+      },
+      {
+        "id": 433,
+        "slug": "le-cercle-rouge",
+        "nom": "Le Cercle rouge",
+        "date": "2026-11-19",
+        "message": "1573007588583411854"
       }
     ],
     "ignorees": [],
