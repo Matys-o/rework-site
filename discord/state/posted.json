@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 18,
+    "total": 19,
     "cycle": 1,
     "publiees": [
       {
@@ -128,6 +128,13 @@
         "nom": "KROVA",
         "date": "2026-11-19",
         "message": "1573007565971918851"
+      },
+      {
+        "id": 557,
+        "slug": "maezen",
+        "nom": "maezen",
+        "date": "2026-11-20",
+        "message": "1573365002868367421"
       }
     ],
     "ignorees": [
@@ -147,7 +154,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 18,
+    "total": 19,
     "cycle": 1,
     "publiees": [
       {
@@ -275,6 +282,13 @@
         "nom": "Le Cercle rouge",
         "date": "2026-11-19",
         "message": "1573007588583411854"
+      },
+      {
+        "id": 432,
+        "slug": "chungking-express",
+        "nom": "Chungking Express",
+        "date": "2026-11-20",
+        "message": "1573365018592940275"
       }
     ],
     "ignorees": [],
