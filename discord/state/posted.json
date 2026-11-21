@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 19,
+    "total": 20,
     "cycle": 1,
     "publiees": [
       {
@@ -135,6 +135,13 @@
         "nom": "maezen",
         "date": "2026-11-20",
         "message": "1573365002868367421"
+      },
+      {
+        "id": 556,
+        "slug": "vision-sneaker",
+        "nom": "Vision Sneaker",
+        "date": "2026-11-21",
+        "message": "1573714480754458708"
       }
     ],
     "ignorees": [
@@ -154,7 +161,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 19,
+    "total": 20,
     "cycle": 1,
     "publiees": [
       {
@@ -289,6 +296,13 @@
         "nom": "Chungking Express",
         "date": "2026-11-20",
         "message": "1573365018592940275"
+      },
+      {
+        "id": 431,
+        "slug": "paris-texas",
+        "nom": "Paris, Texas",
+        "date": "2026-11-21",
+        "message": "1573714501755346955"
       }
     ],
     "ignorees": [],
