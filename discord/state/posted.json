@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 20,
+    "total": 21,
     "cycle": 1,
     "publiees": [
       {
@@ -142,6 +142,13 @@
         "nom": "Vision Sneaker",
         "date": "2026-11-21",
         "message": "1573714480754458708"
+      },
+      {
+        "id": 555,
+        "slug": "seika",
+        "nom": "seika",
+        "date": "2026-11-22",
+        "message": "1574076514079612929"
       }
     ],
     "ignorees": [
@@ -161,7 +168,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 20,
+    "total": 21,
     "cycle": 1,
     "publiees": [
       {
@@ -303,6 +310,13 @@
         "nom": "Paris, Texas",
         "date": "2026-11-21",
         "message": "1573714501755346955"
+      },
+      {
+        "id": 430,
+        "slug": "fight-club",
+        "nom": "Fight Club",
+        "date": "2026-11-22",
+        "message": "1574076531259736257"
       }
     ],
     "ignorees": [],
