@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 21,
+    "total": 22,
     "cycle": 1,
     "publiees": [
       {
@@ -149,6 +149,13 @@
         "nom": "seika",
         "date": "2026-11-22",
         "message": "1574076514079612929"
+      },
+      {
+        "id": 554,
+        "slug": "flower-market",
+        "nom": "Flower Market",
+        "date": "2026-11-23",
+        "message": "1574497778279915791"
       }
     ],
     "ignorees": [
@@ -168,7 +175,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 21,
+    "total": 22,
     "cycle": 1,
     "publiees": [
       {
@@ -317,6 +324,13 @@
         "nom": "Fight Club",
         "date": "2026-11-22",
         "message": "1574076531259736257"
+      },
+      {
+        "id": 429,
+        "slug": "akira",
+        "nom": "Akira",
+        "date": "2026-11-23",
+        "message": "1574497795711180821"
       }
     ],
     "ignorees": [],
