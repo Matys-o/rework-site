@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 22,
+    "total": 23,
     "cycle": 1,
     "publiees": [
       {
@@ -156,6 +156,13 @@
         "nom": "Flower Market",
         "date": "2026-11-23",
         "message": "1574497778279915791"
+      },
+      {
+        "id": 553,
+        "slug": "artifice",
+        "nom": "Artifice",
+        "date": "2026-11-24",
+        "message": "1574854085679653047"
       }
     ],
     "ignorees": [
@@ -175,7 +182,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 22,
+    "total": 23,
     "cycle": 1,
     "publiees": [
       {
@@ -331,6 +338,13 @@
         "nom": "Akira",
         "date": "2026-11-23",
         "message": "1574497795711180821"
+      },
+      {
+        "id": 428,
+        "slug": "princesse-mononoke",
+        "nom": "Princesse Mononoké",
+        "date": "2026-11-24",
+        "message": "1574854103568228584"
       }
     ],
     "ignorees": [],
