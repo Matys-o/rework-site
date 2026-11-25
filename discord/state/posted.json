@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 23,
+    "total": 24,
     "cycle": 1,
     "publiees": [
       {
@@ -163,6 +163,13 @@
         "nom": "Artifice",
         "date": "2026-11-24",
         "message": "1574854085679653047"
+      },
+      {
+        "id": 417,
+        "slug": "spline",
+        "nom": "Spline",
+        "date": "2026-11-25",
+        "message": "1575204882657575033"
       }
     ],
     "ignorees": [
@@ -182,7 +189,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 23,
+    "total": 24,
     "cycle": 1,
     "publiees": [
       {
@@ -345,6 +352,13 @@
         "nom": "Princesse Mononoké",
         "date": "2026-11-24",
         "message": "1574854103568228584"
+      },
+      {
+        "id": 427,
+        "slug": "les-quatre-cents-coups",
+        "nom": "Les Quatre Cents Coups",
+        "date": "2026-11-25",
+        "message": "1575204895781556410"
       }
     ],
     "ignorees": [],
