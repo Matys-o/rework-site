@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 24,
+    "total": 25,
     "cycle": 1,
     "publiees": [
       {
@@ -170,6 +170,13 @@
         "nom": "Spline",
         "date": "2026-11-25",
         "message": "1575204882657575033"
+      },
+      {
+        "id": 416,
+        "slug": "letterboxd",
+        "nom": "Letterboxd",
+        "date": "2026-11-26",
+        "message": "1575563051401220133"
       }
     ],
     "ignorees": [
@@ -189,7 +196,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 24,
+    "total": 25,
     "cycle": 1,
     "publiees": [
       {
@@ -359,6 +366,13 @@
         "nom": "Les Quatre Cents Coups",
         "date": "2026-11-25",
         "message": "1575204895781556410"
+      },
+      {
+        "id": 426,
+        "slug": "persona",
+        "nom": "Persona",
+        "date": "2026-11-26",
+        "message": "1575563069902553089"
       }
     ],
     "ignorees": [],
