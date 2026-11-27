@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 25,
+    "total": 26,
     "cycle": 1,
     "publiees": [
       {
@@ -177,6 +177,13 @@
         "nom": "Letterboxd",
         "date": "2026-11-26",
         "message": "1575563051401220133"
+      },
+      {
+        "id": 414,
+        "slug": "linear",
+        "nom": "Linear",
+        "date": "2026-11-27",
+        "message": "1575920174178115797"
       }
     ],
     "ignorees": [
@@ -191,12 +198,18 @@
         "slug": "mozilla",
         "date": "2026-11-05",
         "raison": "image inaccessible (https://cdn.cosmos.so/mozilla-dino.jpg)"
+      },
+      {
+        "id": 415,
+        "slug": "are-na",
+        "date": "2026-11-27",
+        "raison": "pas d'image en HTTPS"
       }
     ],
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 25,
+    "total": 26,
     "cycle": 1,
     "publiees": [
       {
@@ -373,6 +386,13 @@
         "nom": "Persona",
         "date": "2026-11-26",
         "message": "1575563069902553089"
+      },
+      {
+        "id": 425,
+        "slug": "mulholland-drive",
+        "nom": "Mulholland Drive",
+        "date": "2026-11-27",
+        "message": "1575920211821863095"
       }
     ],
     "ignorees": [],
