@@ -1,6 +1,6 @@
 {
   "marque": {
-    "total": 26,
+    "total": 27,
     "cycle": 1,
     "publiees": [
       {
@@ -184,6 +184,13 @@
         "nom": "Linear",
         "date": "2026-11-27",
         "message": "1575920174178115797"
+      },
+      {
+        "id": 413,
+        "slug": "notion",
+        "nom": "Notion",
+        "date": "2026-11-28",
+        "message": "1576264729532301504"
       }
     ],
     "ignorees": [
@@ -209,7 +216,7 @@
     "cycleDebut": "2026-11-02"
   },
   "film": {
-    "total": 26,
+    "total": 27,
     "cycle": 1,
     "publiees": [
       {
@@ -393,6 +400,13 @@
         "nom": "Mulholland Drive",
         "date": "2026-11-27",
         "message": "1575920211821863095"
+      },
+      {
+        "id": 424,
+        "slug": "psychose",
+        "nom": "Psychose",
+        "date": "2026-11-28",
+        "message": "1576264755318886442"
       }
     ],
     "ignorees": [],
